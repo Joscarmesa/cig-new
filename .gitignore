@@ -1,0 +1,6 @@
+# Ignorar archivos y carpetas generados
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
