@@ -1,12 +1,10 @@
-from flask import Flask, render_template # importar librerias
+from flask import Flask
+from routes import register_routes
 
-app = Flask(__name__) #creando la instancia de la aplicacion
+app = Flask(__name__)
 
-#definiendo ruta de inicio
-@app.route('/')
-def index():
-    return render_template('index.html')
+# Registra las rutas desde el archivo routes.py
+register_routes(app)
 
-#iniciando aplicacion
-if __name__ == '__main__': 
-    app.run (debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
