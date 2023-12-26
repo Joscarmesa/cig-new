@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>DentCare - Dental Clinic Website Template</title>
+  <title>CIG </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="Free HTML Templates" name="keywords" />
   <meta content="Free HTML Templates" name="description" />
@@ -50,11 +50,11 @@
 
   {% include 'partials/topbar.html' %}
 
-  {% include 'inicio.html' %}
+  {% block main_content %}
+    {% include 'inicio.html' %}
+  {% endblock %}
 
   {% include 'partials/footer.html' %}
-
-
 
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>

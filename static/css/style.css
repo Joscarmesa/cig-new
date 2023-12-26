@@ -1,27 +1,30 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06A3DA;
-    --secondary: #F57E57;
+    --primary: #7d2c2c;
+    --secondary: rgb(98, 93, 178);
     --light: #EEF9FF;
-    --dark: #091E3E;
+    --dark: rgba(45, 9, 62, 0.67454);
 }
 
 h1,
 h2,
 .font-weight-bold {
     font-weight: 700 !important;
+    color: var(--primary);
 }
 
 h3,
 h4,
 .font-weight-semi-bold {
     font-weight: 600 !important;
+    color: var(--secondary);
 }
 
 h5,
 h6,
 .font-weight-medium {
     font-weight: 500 !important;
+    
 }
 
 .btn {
@@ -32,6 +35,7 @@ h6,
 
 .btn-primary,
 .btn-secondary {
+    background-color: var(--dark);
     color: #FFFFFF;
 }
 
@@ -130,7 +134,7 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(9, 30, 62, .85);
+    background: rgba(65, 65, 65, 0.455);
     z-index: 1;
 }
 
@@ -190,17 +194,17 @@ h6,
 }
 
 .hero-header {
-    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(62, 9, 9, 0.85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .bg-appointment {
-    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(62, 9, 9, 0.85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .appointment-form {
-    background: rgba(6, 163, 218, .7);
+    background: rgba(218, 6, 6, 0.7);
 }
 
 .service-item img,
@@ -240,7 +244,7 @@ h6,
 }
 
 .offer-text {
-    background: rgba(6, 163, 218, .85);
+    background: rgba(218, 6, 6, 0.85);
 }
 
 .price-carousel .owl-nav {
@@ -285,7 +289,7 @@ h6,
 }
 
 .testimonial-carousel {
-    background: rgba(6, 163, 218, .85);
+    background: rgba(218, 6, 6, 0.85);
 }
 
 .testimonial-carousel .owl-nav {
