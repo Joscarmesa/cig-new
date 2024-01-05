@@ -1,15 +1,15 @@
 /********** Template CSS **********/
 :root {
-    --primary: #7d2c2c;
-    --secondary: rgb(98, 93, 178);
-    --light: #EEF9FF;
-    --dark: rgba(45, 9, 62, 0.67454);
+    --primary: #7a0c3c;
+    --secondary: rgb(233, 6, 146);
+    --light: #0f95dd;
+    --dark: rgba(170, 15, 242, 0.675);
 }
 
 h1,
 h2,
 .font-weight-bold {
-    font-weight: 700 !important;
+    font-weight: 900 !important;
     color: var(--primary);
 }
 
