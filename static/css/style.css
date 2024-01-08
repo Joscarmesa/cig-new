@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
     --primary: #7a0c3c;
-    --secondary: rgb(233, 6, 146);
+    --secondary: rgb(51, 33, 215);
     --light: #0f95dd;
-    --dark: rgba(170, 15, 242, 0.675);
+    --dark: rgba(113, 42, 63, 0.532);
 }
 
 h1,
