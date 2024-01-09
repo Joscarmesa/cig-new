@@ -24,7 +24,7 @@ h5,
 h6,
 .font-weight-medium {
     font-weight: 500 !important;
-    
+
 }
 
 .btn {
@@ -123,6 +123,7 @@ h6,
 }
 
 @media (max-width: 991.98px) {
+
     .navbar-light .navbar-nav .nav-link,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
@@ -134,7 +135,7 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(65, 65, 65, 0.455);
+    background: #2e2cc93f;
     z-index: 1;
 }
 
@@ -226,7 +227,7 @@ h6,
     bottom: 0;
     left: 15px;
     right: 15px;
-    border-radius:100px / 15px;
+    border-radius: 100px / 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, .7);
     opacity: 0;
     transition: .5s;
@@ -239,7 +240,7 @@ h6,
 }
 
 .bg-offer {
-    background:url(../img/carousel-1.jpg) center center no-repeat;
+    background: url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -327,3 +328,32 @@ h6,
     width: 120px;
     height: 120px;
 }
+
+/* Modificando el Banner start */
+.bg-secondary {
+    justify-content: TOP;
+    /* Centra horizontalmente */
+    overflow: hidden;
+}
+
+/*disculpe mis comentarios tontos, es que estoy chiquito y me pierdo*/
+
+.bg-secondary .contact-info {
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    margin: auto;
+    /* Centra el contenedor verticalmente */
+    font: size 100%;
+    overflow: hidden;
+    /*poniendo el espacio maximo de los elementos*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%; /* Asegura que el contenedor ocupe la altura máxima */
+}
+
+.bg-secondary .contact-info div {
+    flex: 1; /* Permite que cada div ocupe el espacio disponible de manera uniforme */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido de cada div */
+  }
