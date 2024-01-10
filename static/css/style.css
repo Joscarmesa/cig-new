@@ -339,10 +339,6 @@ h6,
 /*disculpe mis comentarios tontos, es que estoy chiquito y me pierdo*/
 
 .bg-secondary .contact-info {
-    text-align: center;
-    /* Centra el contenido horizontalmente */
-    margin: auto;
-    /* Centra el contenedor verticalmente */
     font: size 100%;
     overflow: hidden;
     /*poniendo el espacio maximo de los elementos*/
@@ -351,9 +347,3 @@ h6,
     justify-content: space-around;
     height: 100%; /* Asegura que el contenedor ocupe la altura máxima */
 }
-
-.bg-secondary .contact-info div {
-    flex: 1; /* Permite que cada div ocupe el espacio disponible de manera uniforme */
-    display: flex;
-    align-items: center; /* Centra verticalmente el contenido de cada div */
-  }
