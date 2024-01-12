@@ -218,19 +218,19 @@ h6,
     background: var(--dark);
 }
 
-.service-item img,
-.service-item .bg-light,
-.service-item .bg-light h5,
+.enfermedades-item img,
+.enfermedades-item .bg-light,
+.enfermedades-item .bg-light h5,
 .eventos-item .eventos-text {
     transition: .5s;
 }
 
-.service-item:hover img {
+.enfermedades-item:hover img {
     transform: scale(1.15);
 }
 
 .eventos-item .eventos-text::after,
-.service-item .bg-light::after {
+.enfermedades-item .bg-light::after {
     position: absolute;
     content: "";
     top: 50%;
@@ -245,7 +245,7 @@ h6,
 }
 
 .eventos-item:hover .eventos-text::after,
-.service-item:hover .bg-light::after {
+.enfermedades-item:hover .bg-light::after {
     opacity: 1;
 }
 
@@ -258,7 +258,7 @@ h6,
     background: var(--dark);
 }
 
-.price-carousel .owl-nav {
+.ensayos-carousel .owl-nav {
     position: absolute;
     width: calc(100% + 45px);
     height: 45px;
@@ -270,12 +270,12 @@ h6,
     transition: .5s;
 }
 
-.price-carousel:hover .owl-nav {
+.ensayos-carousel:hover .owl-nav {
     opacity: 1;
 }
 
-.price-carousel .owl-nav .owl-prev,
-.price-carousel .owl-nav .owl-next {
+.ensayos-carousel .owl-nav .owl-prev,
+.ensayos-carousel .owl-nav .owl-next {
     position: relative;
     width: 45px;
     height: 45px;
@@ -289,8 +289,8 @@ h6,
     transition: .5s;
 }
 
-.price-carousel .owl-nav .owl-prev:hover,
-.price-carousel .owl-nav .owl-next:hover {
+.ensayos-carousel .owl-nav .owl-prev:hover,
+.ensayos-carousel .owl-nav .owl-next:hover {
     background: var(--secondary);
 }
 

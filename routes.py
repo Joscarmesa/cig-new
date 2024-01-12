@@ -13,9 +13,9 @@ def register_routes(app):
     def contact():
         return render_template('contact.html')
 
-    @app.route('/service')
-    def service():
-        return render_template('service.html')
+    @app.route('/enfermedades')
+    def enfermedades():
+        return render_template('enfermedades.html')
 
     @app.route('/eventos')
     def eventos():
@@ -28,3 +28,7 @@ def register_routes(app):
     @app.route('/manifiesto')
     def manifiesto():
         return render_template('manifiesto.html')
+    
+    @app.route('/ensayos')
+    def ensayos():
+        return render_template('ensayos.html')

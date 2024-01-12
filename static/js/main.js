@@ -80,8 +80,8 @@
     $(".twentytwenty-container").twentytwenty({});
 
 
-    // Price carousel
-    $(".price-carousel").owlCarousel({
+    // ensayos carousel
+    $(".ensayos-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
         margin: 45,
