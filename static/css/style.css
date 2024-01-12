@@ -1,9 +1,19 @@
 /********** Template CSS **********/
 :root {
     --primary: #7a0c3c;
-    --secondary: rgb(51, 33, 215);
-    --light: #0f95dd;
-    --dark: rgba(113, 42, 63, 0.532);
+    --primary-rgb: 57, 20, 55;
+
+    --secondary: #1D3E54;
+    --secondary-rgb: 29, 62, 84;
+
+    --light: #FFB3D4;
+    --light-rgb: 255, 179, 212;
+
+    --dark: #47152B;
+    --dark-rgb: 71, 21, 43;
+
+
+
 }
 
 h1,
@@ -199,19 +209,19 @@ h6,
     background-size: cover;
 }
 
-.bg-appointment {
+.bg-citas {
     background: linear-gradient(rgba(62, 9, 9, 0.85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
-.appointment-form {
-    background: rgba(218, 6, 6, 0.7);
+.citas-form {
+    background: var(--dark);
 }
 
 .service-item img,
 .service-item .bg-light,
 .service-item .bg-light h5,
-.team-item .team-text {
+.eventos-item .eventos-text {
     transition: .5s;
 }
 
@@ -219,7 +229,7 @@ h6,
     transform: scale(1.15);
 }
 
-.team-item .team-text::after,
+.eventos-item .eventos-text::after,
 .service-item .bg-light::after {
     position: absolute;
     content: "";
@@ -234,7 +244,7 @@ h6,
     z-index: -1;
 }
 
-.team-item:hover .team-text::after,
+.eventos-item:hover .eventos-text::after,
 .service-item:hover .bg-light::after {
     opacity: 1;
 }
@@ -245,7 +255,7 @@ h6,
 }
 
 .offer-text {
-    background: rgba(218, 6, 6, 0.85);
+    background: var(--dark);
 }
 
 .price-carousel .owl-nav {
@@ -284,16 +294,16 @@ h6,
     background: var(--secondary);
 }
 
-.bg-testimonial {
+.bg-especialistas {
     background: url(../img/carousel-2.jpg) center center no-repeat;
     background-size: cover;
 }
 
-.testimonial-carousel {
+.especialistas-carousel {
     background: rgba(218, 6, 6, 0.85);
 }
 
-.testimonial-carousel .owl-nav {
+.especialistas-carousel .owl-nav {
     position: absolute;
     width: calc(100% + 46px);
     height: 46px;
@@ -304,8 +314,8 @@ h6,
     z-index: 1;
 }
 
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
+.especialistas-carousel .owl-nav .owl-prev,
+.especialistas-carousel .owl-nav .owl-next {
     position: relative;
     width: 46px;
     height: 46px;
@@ -319,12 +329,12 @@ h6,
     transition: .5s;
 }
 
-.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial-carousel .owl-nav .owl-next:hover {
+.especialistas-carousel .owl-nav .owl-prev:hover,
+.especialistas-carousel .owl-nav .owl-next:hover {
     background: var(--secondary);
 }
 
-.testimonial-carousel .owl-item img {
+.especialistas-carousel .owl-item img {
     width: 120px;
     height: 120px;
 }

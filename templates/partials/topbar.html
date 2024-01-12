@@ -41,15 +41,14 @@
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <div class="navbar-nav ms-auto py-0">
       <a href="{{ url_for('index') }}" class="nav-item nav-link active">Inicio</a>
-      <a href="{{ url_for('about') }}" class="nav-item nav-link">Manifiesto</a>
+      <a href="{{ url_for('manifiesto') }}" class="nav-item nav-link">Manifiesto</a>
       <a href="{{ url_for('service') }}" class="nav-item nav-link">Enfermedades</a>
       <div class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
         <div class="dropdown-menu m-0">
-          <a href="{{ url_for('price') }}" class="dropdown-item">Citas</a>
-          <a href="{{ url_for('team') }}" class="dropdown-item">Blog</a>
-          <a href="{{ url_for('testimonial') }}" class="dropdown-item">Eventos</a>
-          <a href="{{ url_for('appointment') }}" class="dropdown-item">Citas</a>
+          <a href="{{ url_for('eventos') }}" class="dropdown-item">Eventos</a>
+          <a href="{{ url_for('especialistas') }}" class="dropdown-item">Especialistas</a>
+          <a href="{{ url_for('especialistas') }}" class="dropdown-item">Ensayos Clinicos</a>
         </div>
       </div>
       <a href="{{ url_for('contact') }}" class="nav-item nav-link">Contacto</a>
@@ -57,7 +56,7 @@
     <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#searchModal">
       <i class="bi bi-search"></i>
     </button>
-    <a href="{{ url_for('appointment') }}" class="btn btn-primary py-2 px-4 ms-3">Cita</a>
+    <a href="{{ url_for('citas') }}" class="btn btn-primary py-2 px-4 ms-3">Citas</a>
   </div>
 </nav>
 <!-- Navbar End -->

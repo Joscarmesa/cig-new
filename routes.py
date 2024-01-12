@@ -5,30 +5,26 @@ def register_routes(app):
     def index():
         return render_template('index.html')
 
-    @app.route('/appointment')
-    def appointment():
-        return render_template('appointment.html')
+    @app.route('/citas')
+    def citas():
+        return render_template('citas.html')
 
     @app.route('/contact')
     def contact():
         return render_template('contact.html')
 
-    @app.route('/price')
-    def price():
-        return render_template('price.html')
-
     @app.route('/service')
     def service():
         return render_template('service.html')
 
-    @app.route('/team')
-    def team():
-        return render_template('team.html')
+    @app.route('/eventos')
+    def eventos():
+        return render_template('eventos.html')
 
-    @app.route('/testimonial')
-    def testimonial():
-        return render_template('testimonial.html')
+    @app.route('/especialistas')
+    def especialistas():
+        return render_template('especialistas.html')
 
-    @app.route('/about')
-    def about():
-        return render_template('about.html')
+    @app.route('/manifiesto')
+    def manifiesto():
+        return render_template('manifiesto.html')
