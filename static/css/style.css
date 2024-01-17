@@ -205,12 +205,12 @@ h6,
 }
 
 .hero-header {
-    background: linear-gradient(rgba(62, 9, 9, 0.85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(62, 9, 9, 0.85), rgba(9, 30, 62, .85)), url(../img/doctors.jpeg) center center no-repeat;
     background-size: cover;
 }
 
 .bg-citas {
-    background: linear-gradient(rgba(62, 9, 9, 0.85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(62, 9, 9, 0.85), rgba(9, 30, 62, .85)), url(../img/doctors.jpeg) center center no-repeat;
     background-size: cover;
 }
 
@@ -250,7 +250,7 @@ h6,
 }
 
 .bg-offer {
-    background: url(../img/carousel-1.jpg) center center no-repeat;
+    background: url(../img/doctors.jpeg) center center no-repeat;
     background-size: cover;
 }
 
@@ -295,49 +295,18 @@ h6,
 }
 
 .bg-especialistas {
-    background: url(../img/carousel-2.jpg) center center no-repeat;
+    background: url(../img/especialistas-bg.jpg) center center no-repeat;
     background-size: cover;
+    width: fit;
+    height: 60em;
+
 }
 
 .especialistas-carousel {
-    background: rgba(55, 43, 144, 0.85);
+    background: url(https://giphy.com/gifs/animated-gif-motion-graphics-26BRGoqbUQvk8nwTC);
 }
 
-.especialistas-carousel .owl-nav {
-    position: absolute;
-    width: calc(100% + 46px);
-    height: 46px;
-    top: calc(50% - 23px);
-    left: -23px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
-}
 
-.especialistas-carousel .owl-nav .owl-prev,
-.especialistas-carousel .owl-nav .owl-next {
-    position: relative;
-    width: 46px;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    background: var(--primary);
-    border-radius: 2px;
-    font-size: 22px;
-    transition: .5s;
-}
-
-.especialistas-carousel .owl-nav .owl-prev:hover,
-.especialistas-carousel .owl-nav .owl-next:hover {
-    background: var(--secondary);
-}
-
-.especialistas-carousel .owl-item img {
-    width: 740px;
-    height: 788px;
-}
 
 /* Modificando el Banner start */
 .bg-secondary {
