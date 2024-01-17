@@ -300,7 +300,7 @@ h6,
 }
 
 .especialistas-carousel {
-    background: rgba(218, 6, 6, 0.85);
+    background: rgba(55, 43, 144, 0.85);
 }
 
 .especialistas-carousel .owl-nav {
@@ -335,8 +335,8 @@ h6,
 }
 
 .especialistas-carousel .owl-item img {
-    width: 120px;
-    height: 120px;
+    width: 740px;
+    height: 788px;
 }
 
 /* Modificando el Banner start */
