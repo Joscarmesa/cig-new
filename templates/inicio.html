@@ -1,4 +1,3 @@
-
 {% block main_content %}
 <!-- Carousel Start -->
 <div class="container-fluid p-0">
@@ -52,8 +51,9 @@
 <div class="container-fluid banner mb-5">
   <div class="container">
     <div class="row gx-0">
-      <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-        <div class="bg-primary d-flex flex-column p-5" style="height: 300px">
+      <!-- Primera columna, ahora ocupa 6 de 12 unidades -->
+      <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
+        <div class="bg-primary d-flex flex-column p-5" style="height: 300px;">
           <h3 class="text-white mb-3">Horario de atención</h3>
           <div class="d-flex justify-content-between text-white mb-3">
             <h6 class="text-white mb-0">Lunes a Viernes</h6>
@@ -67,25 +67,11 @@
             <h6 class="text-white mb-0">Domingo</h6>
             <p class="mb-0">Cerrado</p>
           </div>
-          <a class="btn btn-light" href="">Agendar cita</a>
         </div>
       </div>
-      <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-        <div class="bg-dark d-flex flex-column p-5" style="height: 300px">
-          <h3 class="text-white mb-3">Seleccione una fecha</h3>
-          <div class="date mb-3" id="date" data-target-input="nearest">
-            <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-              placeholder="Fecha de su cita" data-target="#date" data-toggle="datetimepicker" style="height: 40px" />
-          </div>
-          <select class="form-select bg-light border-0 mb-3" style="height: 40px">
-            <option selected>Seleccione su estudio</option>
-            <option value="1">Fibroscan</option>
-          </select>
-          <a class="btn btn-light" href="">Agendar</a>
-        </div>
-      </div>
-      <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-        <div class="bg-secondary d-flex flex-column p-5" style="height: 300px">
+      <!-- Segunda columna, también ocupa 6 de 12 unidades -->
+      <div class="col-lg-6 wow zoomIn" data-wow-delay="0.6s">
+        <div class="bg-secondary d-flex flex-column p-5" style="height: 300px;">
           <h3 class="text-white mb-3">Información de contacto</h3>
           <div class="contact-info mb-3">
             <div class="d-flex justify-content-between">
@@ -98,22 +84,19 @@
             </div>
             <div class="d-flex justify-content-between">
               <span class="text-white">Sucursal Universidad:</span>
-              <span class="text-white"> 559-314-4340</span>
+              <span class="text-white">559-314-4340</span>
             </div>
             <div class="d-flex justify-content-between">
               <span class="text-white">WhatsApp:</span>
               <span class="text-white">564-407-1939</span>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-</div>
-<!-- Banner Start -->
-
+<!-- Banner End -->
 
 <!-- About Start -->
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -130,7 +113,7 @@
         </div>
         <h4 class="text-body fst-italic mb-4">
           Somos el primer centro de investigación interesado en crear
-                    conciencia y atender a las personas.
+          conciencia y atender a las personas.
         </h4>
         <p class="mb-4">
           Nuestro centro de investigación ofrece un servicio a la altura de las mejores instituciones a nivel
@@ -154,19 +137,112 @@
             </h5>
           </div>
         </div>
-        <a href="citas.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">Agendar
-          cita</a>
       </div>
       <div class="col-lg-5" style="min-height: 500px">
         <div class="position-relative h-100">
-          <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{{ url_for('static', filename='img/pulgar.jpeg') }}"
-            style="object-fit: cover" />
+          <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
+            src="{{ url_for('static', filename='img/pulgar.jpeg') }}" style="object-fit: cover" />
         </div>
       </div>
     </div>
   </div>
 </div>
 <!-- About End -->
+
+<!-- enfermedades Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container">
+    <div class="row g-5 mb-5">
+      <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
+        <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
+          <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/daño.jpeg') }}"
+            style="object-fit: cover;">
+          <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/sano.jpeg') }}"
+            style="object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="section-title mb-5">
+          <h5 class="position-relative d-inline-block text-primary text-uppercase">Informate sobre</h5>
+          <h1 class="display-5 mb-0">Enfermedades hepáticas</h1>
+        </div>
+        <div class="row g-5">
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-1.jpg" alt="">
+            </div>
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
+              <h5 class="m-0">Hepatitis C</h5>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-2.jpg" alt="">
+            </div>
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
+              <h5 class="m-0">Hepatitis B</h5>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.3s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-3.jpg" alt="">
+            </div>
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
+              <h5 class="m-0">Colangitis biliar primaria</h5>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="">
+            </div>
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
+              <h5 class="m-0">Enfermedad hepática por alcohol</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="col-lg-7">
+        <div class="row g-5">
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="">
+            </div>
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
+              <h5 class="m-0">Cirrosis</h5>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="">
+            </div>
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
+              <h5 class="m-0">Transplante hepático</h5>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="">
+            </div>
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
+              <h5 class="m-0">Cáncer de hígado</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
+        <div
+          class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
+          <h3 class="text-white mb-3">Agendar una cita</h3>
+          <p class="text-white mb-3">Ven e informate acerca de estas enfermedades y ayudanos a mantenerte saludable</p>
+          <h2 class="text-white mb-0">55 1054 6591 </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- enfermedades End -->
 
 <!-- citas Start -->
 <div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -214,16 +290,14 @@
               </div>
               <div class="col-12 col-sm-6">
                 <div class="date" id="date1" data-target-input="nearest">
-                  <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-                    placeholder="Fecha" data-target="#date1" data-toggle="datetimepicker"
-                    style="height: 55px" />
+                  <input type="text" class="form-control bg-light border-0 datetimepicker-input" placeholder="Fecha"
+                    data-target="#date1" data-toggle="datetimepicker" style="height: 55px" />
                 </div>
               </div>
               <div class="col-12 col-sm-6">
                 <div class="time" id="time1" data-target-input="nearest">
-                  <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-                    placeholder="Hora" data-target="#time1" data-toggle="datetimepicker"
-                    style="height: 55px" />
+                  <input type="text" class="form-control bg-light border-0 datetimepicker-input" placeholder="Hora"
+                    data-target="#time1" data-toggle="datetimepicker" style="height: 55px" />
                 </div>
               </div>
               <div class="col-12">
@@ -240,97 +314,7 @@
 </div>
 <!-- citas End -->
 
-<!-- enfermedades Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-  <div class="container">
-      <div class="row g-5 mb-5">
-          <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
-              <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
-                  <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/daño.jpeg') }}" style="object-fit: cover;">
-                  <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/sano.jpeg') }}" style="object-fit: cover;">
-              </div>
-          </div>
-          <div class="col-lg-7">
-              <div class="section-title mb-5">
-                  <h5 class="position-relative d-inline-block text-primary text-uppercase">Informate sobre</h5>
-                  <h1 class="display-5 mb-0">Enfermedades hepáticas</h1>
-              </div>
-              <div class="row g-5">
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-1.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Hepatitis C</h5>
-                      </div>
-                  </div>
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-2.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Hepatitis B</h5>
-                      </div>
-                  </div>
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.3s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-3.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Colangitis biliar primaria</h5>
-                      </div>
-                  </div>
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-4.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Enfermedad hepática por alcohol</h5>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="col-lg-7">
-              <div class="row g-5">
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-4.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Cirrosis</h5>
-                      </div>
-                  </div>
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-4.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Transplante hepático</h5>
-                      </div>
-                  </div>
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-4.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Cáncer de hígado</h5>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-5 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
-              <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
-                  <h3 class="text-white mb-3">Agendar una cita</h3>
-                  <p class="text-white mb-3">Ven e informate acerca de estas enfermedades y ayudanos a mantenerte saludable</p>
-                  <h2 class="text-white mb-0">55 1054 6591 </h2>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-<!-- enfermedades End -->
+
 
 <!-- Offer Start -->
 <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
