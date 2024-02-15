@@ -1,15 +1,15 @@
 /********** Template CSS **********/
 :root {
-    --primary: #1eb4f5;
+    --primary: #0f5e80;
     --primary-rgb: 57, 20, 55;
 
-    --secondary: #09476b;
+    --secondary: #225b7c;
     --secondary-rgb: 29, 62, 84;
 
-    --light: #4588da;
+    --light: #6495d1;
     --light-rgb: 255, 179, 212;
 
-    --dark: #050f66;
+    --dark: #040b48;
     --dark-rgb: 71, 21, 43;
 
 
@@ -340,8 +340,8 @@ h6,
   }
 
   /* Cambiando colores del top bar*/
-  .navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0 {
-    color: #0e0074; 
+  .navbar-dark {
+    background-color: #5c0f0f; /* Cambia #ff0000 por el color que desees */
   }
   
 
