@@ -1,15 +1,15 @@
 /********** Template CSS **********/
 :root {
-    --primary: #7a0c3c;
+    --primary: #1eb4f5;
     --primary-rgb: 57, 20, 55;
 
-    --secondary: #1D3E54;
+    --secondary: #09476b;
     --secondary-rgb: 29, 62, 84;
 
-    --light: #FFB3D4;
+    --light: #4588da;
     --light-rgb: 255, 179, 212;
 
-    --dark: #47152B;
+    --dark: #050f66;
     --dark-rgb: 71, 21, 43;
 
 
@@ -326,3 +326,21 @@ h6,
     justify-content: space-around;
     height: 100%; /* Asegura que el contenedor ocupe la altura máxima */
 }
+
+
+
+  
+
+  /*estilo de los contactos en el footer*/
+  .col-lg-3.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+  
+
+ 
+  
