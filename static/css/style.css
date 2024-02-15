@@ -339,7 +339,10 @@ h6,
     text-align: center;
   }
 
-  
+  /* Cambiando colores del top bar*/
+  .navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0 {
+    color: #0e0074; 
+  }
   
 
  
