@@ -326,11 +326,6 @@ h6,
     justify-content: space-around;
     height: 100%; /* Asegura que el contenedor ocupe la altura máxima */
 }
-
-
-
-  
-
   /*estilo de los contactos en el footer*/
   .col-lg-3.col-md-6 {
     display: flex;
@@ -338,12 +333,17 @@ h6,
     align-items: center;
     text-align: center;
   }
-
   /* Cambiando colores del top bar*/
   .navbar-dark {
-    background-color: #5c0f0f; /* Cambia #ff0000 por el color que desees */
+    background-color: #5c0f0f; 
   }
-  
 
- 
+   /*cambiando color de "enfermedades"*/
+  .bg-light {
+    background-color: #4682B4; 
+  }
+
+  .fondo-enfermedades {
+    background-color: #4682B4; /* Cambia #ff0000 por el color que desees */
+  }
   
