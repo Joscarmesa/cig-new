@@ -119,3 +119,36 @@
     
 })(jQuery);
 
+    // Menu desplegable en enfermedades
+    function mostrarInformacion(enfermedad) {
+        let contenido = "";
+        switch (enfermedad) {
+          case "dislipidemia":
+            contenido = "Información sobre dislipidemia.";
+            break;
+          case "hipertension":
+            contenido = "Información sobre hipertensión.";
+            break;
+          case "colangitis":
+            contenido = "Información sobre colangitis biliar primaria.";
+            break;
+          case "higado_graso":
+            contenido = "Información sobre hígado graso.";
+            break;
+          case "cirrosis":
+            contenido = "Información sobre cirrosis.";
+            break;
+          case "obesidad":
+            contenido = "Información sobre obesidad.";
+            break;
+          case "crohn":
+            contenido = "Información sobre enfermedad de Crohn.";
+            break;
+          // Agrega más casos para las demás enfermedades
+        }
+        document.getElementById("enfermedad-info-content").innerHTML = contenido;
+        document.getElementById("enfermedad-info").style.display = "block";
+      }
+      
+      
+

@@ -201,89 +201,83 @@
 <!-- About End -->
 
 <!-- enfermedades Start -->
+
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
   <div class="container">
     <div class="row g-5 mb-5">
-      <div
-        class="col-lg-5 wow zoomIn"
-        data-wow-delay="0.3s"
-        style="min-height: 400px"
-      >
-        <div
-          class="twentytwenty-container position-relative h-100 rounded overflow-hidden"
-        >
-          <img
-            class="position-absolute w-100 h-100"
-            src="{{ url_for('static', filename='img/daño.jpeg') }}"
-            style="object-fit: cover"
-          />
-          <img
-            class="position-absolute w-100 h-100"
-            src="{{ url_for('static', filename='img/sano.jpeg') }}"
-            style="object-fit: cover"
-          />
+      <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px">
+        <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
+          <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/daño.jpeg') }}" style="object-fit: cover" />
+          <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/sano.jpeg') }}" style="object-fit: cover" />
         </div>
       </div>
       <div class="col-lg-7">
         <div class="section-title mb-5">
-          <h5
-            class="position-relative d-inline-block text-primary text-uppercase"
-          >
-            Informate sobre
-          </h5>
+          <h5 class="position-relative d-inline-block text-primary text-uppercase">Informate sobre</h5>
           <h1 class="display-5 mb-0">Enfermedades hepáticas</h1>
         </div>
         <div class="row g-5">
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.6s"
-          >
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-1.jpg" alt="" />
             </div>
-            <div
-              class="position-relative bg-light rounded-bottom text-center p-4"
-            >
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
               <h5 class="m-0">Dislipidemia</h5>
+              <button onclick="mostrarInformacion('dislipidemia')">Ver más</button>
             </div>
           </div>
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.9s"
-          >
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-2.jpg" alt="" />
             </div>
-            <div
-              class="position-relative rounded-bottom text-center p-4 fondo-enfermedades"
-            >
+            <div class="position-relative rounded-bottom text-center p-4 fondo-enfermedades">
               <h5 class="m-0">Hipertensión</h5>
+              <button onclick="mostrarInformacion('hipertension')">Ver más</button>
             </div>
           </div>
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.3s"
-          >
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.3s">
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-3.jpg" alt="" />
             </div>
-            <div
-              class="position-relative rounded-bottom text-center p-4 fondo-enfermedades"
-            >
+            <div class="position-relative rounded-bottom text-center p-4 fondo-enfermedades">
               <h5 class="m-0">Colangitis biliar primaria</h5>
+              <button onclick="mostrarInformacion('colangitis')">Ver más</button>
             </div>
           </div>
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.6s"
-          >
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
             </div>
-            <div
-              class="position-relative bg-light rounded-bottom text-center p-4"
-            >
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
               <h5 class="m-0">Hígado graso</h5>
+              <button onclick="mostrarInformacion('higado_graso')">Ver más</button>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-5.jpg" alt="" />
+            </div>
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
+              <h5 class="m-0">Cirrosis</h5>
+              <button onclick="mostrarInformacion('cirrosis')">Ver más</button>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.3s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-6.jpg" alt="" />
+            </div>
+            <div class="position-relative rounded-bottom text-center p-4 fondo-enfermedades">
+              <h5 class="m-0">Obesidad</h5>
+              <button onclick="mostrarInformacion('obesidad')">Ver más</button>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-7.jpg" alt="" />
+            </div>
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
+              <h5 class="m-0">Enfermedad de Crohn</h5>
+              <button onclick="mostrarInformacion('crohn')">Ver más</button>
             </div>
           </div>
         </div>
@@ -292,62 +286,26 @@
     <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="col-lg-7">
         <div class="row g-5">
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.6s"
-          >
-            <div class="rounded-top overflow-hidden">
-              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
-            </div>
-            <div
-              class="position-relative rounded-bottom text-center p-4 fondo-enfermedades"
-            >
-              <h5 class="m-0">Cirrosis</h5>
-            </div>
-          </div>
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.6s"
-          >
-            <div class="rounded-top overflow-hidden">
-              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
-            </div>
-            <div
-              class="position-relative bg-light rounded-bottom text-center p-4"
-            >
-              <h5 class="m-0">Obesidad</h5>
-            </div>
-          </div>
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.6s"
-          >
-            <div class="rounded-top overflow-hidden">
-              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
-            </div>
-            <div
-              class="position-relative bg-light rounded-bottom text-center p-4"
-            >
-              <h5 class="m-0">Enfermedad de Crohn</h5>
-            </div>
-          </div>
+          <!-- Agrega más bloques como el anterior para las demás enfermedades -->
         </div>
       </div>
       <div class="col-lg-5 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
-        <div
-          class="position-relative fondo-metabolico rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4"
-        >
-          <h2 class="text-white mb-0">Síndrome Metabólico</h3>
-          <p class="text-white mb-3">
-            es un conjunto de afecciones que ocurren juntas y aumentan el riesgo
-            de:
-          </p>
+        <div class="position-relative fondo-metabolico rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
+          <h2 class="text-white mb-0">Síndrome Metabólico</h2>
+          <p class="text-white mb-3">es un conjunto de afecciones que ocurren juntas y aumentan el riesgo de:</p>
           <h4 class="text-white mb-3">enfermedades cardíacas, accidentes cerebrovasculares y diabetes tipo 2</h4>
         </div>
       </div>
     </div>
   </div>
 </div>
+<div id="enfermedad-info" class="enfermedad-info">
+  <div id="enfermedad-info-content"></div>
+</div>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+
 <!-- enfermedades End -->
 
 <!-- citas Start -->

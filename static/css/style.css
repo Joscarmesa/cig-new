@@ -337,6 +337,24 @@ h6,
   background-color: #4682b4;
   color: #fff;
 }
+
+.eventos-item:hover .eventos-text::after,
+.enfermedades-item:hover .fondo-enfermedades::after {
+  opacity: 1;
+}
+.enfermedades-item .fondo-enfermedades::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  border-radius: 100px / 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
 /*cambiando color de "Sindrome metabolico"*/
 .fondo-metabolico {
   background-color: #5c0f0f;
