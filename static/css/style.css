@@ -360,3 +360,28 @@ h6,
   background-color: #5c0f0f;
   color: #fff;
 }
+
+/*AGREGANDO ESTILO A ENFERMEDADES*/
+.enfermedades-item {
+    position: relative;
+}
+
+.enfermedad-info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.enfermedades-item:hover .enfermedad-info {
+    display: block;
+}
+
+.hamburger {
+    cursor: pointer;
+}
+

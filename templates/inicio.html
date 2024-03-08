@@ -201,83 +201,121 @@
 <!-- About End -->
 
 <!-- enfermedades Start -->
-
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
   <div class="container">
     <div class="row g-5 mb-5">
-      <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px">
-        <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
-          <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/daño.jpeg') }}" style="object-fit: cover" />
-          <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/sano.jpeg') }}" style="object-fit: cover" />
+      <div
+        class="col-lg-5 wow zoomIn"
+        data-wow-delay="0.3s"
+        style="min-height: 400px"
+      >
+        <div
+          class="twentytwenty-container position-relative h-100 rounded overflow-hidden"
+        >
+          <img
+            class="position-absolute w-100 h-100"
+            src="{{ url_for('static', filename='img/daño.jpeg') }}"
+            style="object-fit: cover"
+          />
+          <img
+            class="position-absolute w-100 h-100"
+            src="{{ url_for('static', filename='img/sano.jpeg') }}"
+            style="object-fit: cover"
+          />
         </div>
       </div>
       <div class="col-lg-7">
         <div class="section-title mb-5">
-          <h5 class="position-relative d-inline-block text-primary text-uppercase">Informate sobre</h5>
+          <h5
+            class="position-relative d-inline-block text-primary text-uppercase"
+          >
+            Informate sobre
+          </h5>
           <h1 class="display-5 mb-0">Enfermedades hepáticas</h1>
         </div>
         <div class="row g-5">
-          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+          <div
+            class="col-md-6 enfermedades-item wow zoomIn"
+            data-wow-delay="0.6s"
+          >
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-1.jpg" alt="" />
             </div>
-            <div class="position-relative bg-light rounded-bottom text-center p-4">
-              <h5 class="m-0">Dislipidemia</h5>
-              <button onclick="mostrarInformacion('dislipidemia')">Ver más</button>
+            <div
+              class="position-relative bg-light rounded-bottom text-center p-4"
+            >
+              <h5 class="m-0 hamburger">Hígado Graso</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                También conocida como esteatosis hepática, es una condición
+                donde se acumula grasa en el hígado, lo que puede llevar a
+                inflamación, fibrosis y eventualmente cirrosis hepática si no se
+                trata.
+              </p>
             </div>
           </div>
-          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
+          <div
+            class="col-md-6 enfermedades-item wow zoomIn"
+            data-wow-delay="0.9s"
+          >
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-2.jpg" alt="" />
             </div>
-            <div class="position-relative rounded-bottom text-center p-4 fondo-enfermedades">
-              <h5 class="m-0">Hipertensión</h5>
-              <button onclick="mostrarInformacion('hipertension')">Ver más</button>
+            <div
+              class="position-relative bg-light rounded-bottom text-center p-4"
+            >
+              <h5 class="m-0 hamburger">Obesidad</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                Es una condición médica caracterizada por un exceso de grasa
+                corporal que aumenta el riesgo de problemas de salud como
+                enfermedades cardíacas, diabetes tipo 2 y ciertos tipos de
+                cáncer.
+              </p>
             </div>
           </div>
-          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.3s">
+          <div
+            class="col-md-6 enfermedades-item wow zoomIn"
+            data-wow-delay="0.3s"
+          >
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-3.jpg" alt="" />
             </div>
-            <div class="position-relative rounded-bottom text-center p-4 fondo-enfermedades">
-              <h5 class="m-0">Colangitis biliar primaria</h5>
-              <button onclick="mostrarInformacion('colangitis')">Ver más</button>
+            <div
+              class="position-relative bg-light rounded-bottom text-center p-4"
+            >
+              <h5 class="m-0 hamburger">Hipertensión</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                Conocida comúnmente como presión arterial alta, es una condición
+                en la que la fuerza de la sangre contra las paredes de las
+                arterias es consistentemente demasiado alta, lo que puede dañar
+                los vasos sanguíneos y órganos como el corazón, los riñones y el
+                cerebro.
+              </p>
             </div>
           </div>
-          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+          <div
+            class="col-md-6 enfermedades-item wow zoomIn"
+            data-wow-delay="0.6s"
+          >
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
             </div>
-            <div class="position-relative bg-light rounded-bottom text-center p-4">
-              <h5 class="m-0">Hígado graso</h5>
-              <button onclick="mostrarInformacion('higado_graso')">Ver más</button>
+            <div
+              class="position-relative bg-light rounded-bottom text-center p-4"
+            >
+              <h5 class="m-0 hamburger">Dislipidemias</h5>
             </div>
-          </div>
-          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
-            <div class="rounded-top overflow-hidden">
-              <img class="img-fluid" src="img/enfermedades-5.jpg" alt="" />
-            </div>
-            <div class="position-relative bg-light rounded-bottom text-center p-4">
-              <h5 class="m-0">Cirrosis</h5>
-              <button onclick="mostrarInformacion('cirrosis')">Ver más</button>
-            </div>
-          </div>
-          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.3s">
-            <div class="rounded-top overflow-hidden">
-              <img class="img-fluid" src="img/enfermedades-6.jpg" alt="" />
-            </div>
-            <div class="position-relative rounded-bottom text-center p-4 fondo-enfermedades">
-              <h5 class="m-0">Obesidad</h5>
-              <button onclick="mostrarInformacion('obesidad')">Ver más</button>
-            </div>
-          </div>
-          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
-            <div class="rounded-top overflow-hidden">
-              <img class="img-fluid" src="img/enfermedades-7.jpg" alt="" />
-            </div>
-            <div class="position-relative bg-light rounded-bottom text-center p-4">
-              <h5 class="m-0">Enfermedad de Crohn</h5>
-              <button onclick="mostrarInformacion('crohn')">Ver más</button>
+            <div class="enfermedad-info">
+              <p>
+                Se refiere a un desequilibrio en los niveles de lípidos en la
+                sangre, incluyendo colesterol alto, triglicéridos altos o ambos,
+                lo que puede aumentar el riesgo de enfermedad cardiovascular.
+              </p>
             </div>
           </div>
         </div>
@@ -286,26 +324,89 @@
     <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="col-lg-7">
         <div class="row g-5">
-          <!-- Agrega más bloques como el anterior para las demás enfermedades -->
+          <div
+            class="col-md-6 enfermedades-item wow zoomIn"
+            data-wow-delay="0.6s"
+          >
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
+            </div>
+            <div
+              class="position-relative bg-light rounded-bottom text-center p-4"
+            >
+              <h5 class="m-0 hamburger">Problemas Cardiovasculares</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                Son un grupo de enfermedades que afectan el corazón y los vasos
+                sanguíneos, incluyendo enfermedades coronarias, arritmias,
+                enfermedades del músculo cardíaco (miocardiopatías) y
+                enfermedades de los vasos sanguíneos (enfermedades vasculares).
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 enfermedades-item wow zoomIn"
+            data-wow-delay="0.6s"
+          >
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
+            </div>
+            <div
+              class="position-relative bg-light rounded-bottom text-center p-4"
+            >
+              <h5 class="m-0 hamburger">Crohn</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                Es una enfermedad inflamatoria intestinal crónica que puede
+                afectar cualquier parte del tracto gastrointestinal, causando
+                síntomas como dolor abdominal, diarrea, fatiga y pérdida de
+                peso. Su causa exacta es desconocida, pero se cree que involucra
+                una respuesta inmunitaria anormal.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 enfermedades-item wow zoomIn"
+            data-wow-delay="0.6s"
+          >
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
+            </div>
+            <div
+              class="position-relative bg-light rounded-bottom text-center p-4"
+            >
+              <h5 class="m-0 hamburger">Sindrome Metabólico</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                El síndrome metabólico es un conjunto de condiciones que ocurren
+                juntas y aumentan el riesgo de enfermedad cardíaca, accidente
+                cerebrovascular y diabetes tipo 2. Estas condiciones incluyen:
+                Obesidad, dislipidemia, hipertensión y niveles altos de glucosa
+                en ayunas
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-lg-5 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
-        <div class="position-relative fondo-metabolico rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
-          <h2 class="text-white mb-0">Síndrome Metabólico</h2>
-          <p class="text-white mb-3">es un conjunto de afecciones que ocurren juntas y aumentan el riesgo de:</p>
-          <h4 class="text-white mb-3">enfermedades cardíacas, accidentes cerebrovasculares y diabetes tipo 2</h4>
+        <div
+          class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4"
+        >
+          <h3 class="text-white mb-3">Hígado Graso</h3>
+          <p class="text-white mb-3">
+            Se estima que el hígado graso no alcohólico (HGNA) afecta
+            aproximadamente al 30% de la población adulta en México. Es una de
+            las principales causas de enfermedad hepática crónica en el país.
+          </p>
+          <h2 class="text-white mb-0">¡ACERCATE A NOSOTROS!</h2>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div id="enfermedad-info" class="enfermedad-info">
-  <div id="enfermedad-info-content"></div>
-</div>
-<script src="{{ url_for('static', filename='js/main.js') }}"></script>
-
-
-
 <!-- enfermedades End -->
 
 <!-- citas Start -->
