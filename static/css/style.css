@@ -239,6 +239,7 @@ h6,
   opacity: 0;
   transition: 0.5s;
   z-index: -1;
+ 
 }
 
 .eventos-item:hover .eventos-text::after,
@@ -374,8 +375,8 @@ h6,
     width: 100%;
     color: white;
     padding: 1rem;
-    background-color: #4682b4;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #1464a5d5;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.575);
     z-index: 10;
 }
 
@@ -418,4 +419,23 @@ h6,
   padding: 20px;
   margin: 2rem;
 
+}
+
+/* ESTILO PARA NAVBAR*/
+
+.navbar-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-dark {
+background-color: #021e359d;
+}
+
+.dropdown-menu {
+  background-color: #040b48a9;
+
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #fa08449f;
 }

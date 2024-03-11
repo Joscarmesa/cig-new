@@ -1,20 +1,20 @@
 {% block main_content %}
 <!-- Carousel Start -->
-<div class="container-fluid p-0 id=carrusel">
-  <div id="header-carousel" class="carousel slide carousel-fade particle" data-bs-ride="carousel">
+<div class="container-fluid p-0" id="carrusel">
+    <div id="header-carousel" class="carousel slide carousel-fade particle" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="w-100" src="{{ url_for('static', filename='img/liver.jpeg') }}" alt="Image" />
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px">
             <h5 class="text-white text-uppercase mb-3 animated slideInDown">
-              Proteja su hígado de esta enfermedad
+              Proteje tu hígado de esta enfermedad
             </h5>
             <h1 class="display-1 text-white mb-md-4 animated zoomIn">
               Hígado Graso
             </h1>
-            <a href="citas.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Cita</a>
-            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contactenos</a>
+            <a href="#protocolos-de-investigacion" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita
+            </a>
           </div>
         </div>
       </div>
@@ -23,13 +23,13 @@
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px">
             <h5 class="text-white text-uppercase mb-3 animated slideInDown">
-              Acceda a una mejor calidad de vida
+              Accede a una mejor calidad de vida
             </h5>
             <h1 class="display-1 text-white mb-md-4 animated zoomIn">
-              Agende una valoración hepática
+              Agenda una valoración hepática
             </h1>
-            <a href="citas.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Cita</a>
-            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contactenos</a>
+            <a href="#protocolos-de-investigacion" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita
+            </a>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@
 <!-- Carousel End -->
 
 <!-- Banner Start -->
-<div class="container-fluid banner mb-5 id=banner">
+<div class="container-fluid banner mb-5" id="banner">
   <div class="container">
     <div class="row gx-0">
       <!-- Primera columna, ahora ocupa 6 de 12 unidades -->
@@ -98,7 +98,7 @@
 <!-- Banner End -->
 
 <!-- About Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s id=quienes-somos">
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="quienes-somos">
   <div class="container">
     <div class="row g-5">
       <div class="col-lg-7">
@@ -153,7 +153,7 @@
 <!-- About End -->
 
 <!-- enfermedades Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s id=enfermedades">
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="enfermedades">
   <div class="container">
     <div class="row g-5 mb-5">
       <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px">
@@ -174,7 +174,7 @@
         <div class="row g-5">
           <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
             <div class="rounded-top overflow-hidden">
-              <img class="img-fluid" src="img/enfermedades-1.jpg" alt="" />
+              <img class="img-fluid" src="img/enfermedades-1.jpg.webp" alt="" />
             </div>
             <div class="position-relative bg-light rounded-bottom text-center p-4">
               <h5 class="m-0 hamburger">Hígado Graso</h5>
@@ -190,7 +190,7 @@
           </div>
           <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
             <div class="rounded-top overflow-hidden">
-              <img class="img-fluid" src="img/enfermedades-2.jpg" alt="" />
+              <img class="img-fluid" src="enfermedades-1.jpg.webp" alt="" />
             </div>
             <div class="position-relative bg-light rounded-bottom text-center p-4">
               <h5 class="m-0 hamburger">Obesidad</h5>
@@ -312,7 +312,7 @@
 <!-- enfermedades End -->
 
 <!-- TRATAMIENTOS Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s id=tratamiento">
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="tratamiento">
   <div class="container">
     <div class="row g-5">
       <div class="col-lg-7">
@@ -338,7 +338,7 @@
       <div class="col-lg-5" style="min-height: 500px">
         <div class="position-relative h-100">
           <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-            src="{{ url_for('static', filename='img/pulgar.jpeg') }}" style="object-fit: cover" />
+            src="{{ url_for('static', filename='img/enfermedades-1.jpg.webp') }}" style="object-fit: cover" />
         </div>
       </div>
     </div>
@@ -348,7 +348,7 @@
 
 <!-- Higado Graso Tratamiento Start -->
 
-<div class="container py-5 wow fadeInUp id=menu-tratamiento">
+<div class="container py-5 wow fadeInUp" id="menu-tratamiento">
 
   <button class="toggle-treatments btn btn-primary py-2 px-4 ms-3">Mostrar Tratamientos</button>
   <div class="treatment-section" style="display: none;">
@@ -458,7 +458,7 @@
 
 
 <!-- citas Start -->
-<div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s id=protocolos-de-investigacion">
+<div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s" id="protocolos-de-investigacion">
   <div class="container">
     <div class="row gx-5">
       <div class="col-lg-6 py-5">
@@ -584,7 +584,7 @@
 <!-- citas End -->
 
 <!-- Offer Start -->
-<div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s id=compartir">
+<div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s" id="compartir">
   <div class="container py-5">
     <div class="row justify-content-center">
       <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">

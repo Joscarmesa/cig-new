@@ -256,3 +256,45 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 });
+
+// FUNCION PARA NAVBAR
+$(document).ready(function () {
+    var timer;
+    var lastScrollTop = 0; // Variable para almacenar la última posición de desplazamiento
+  
+    function showNavbar() {
+      $('.navbar').removeClass('navbar-hidden');
+      clearTimeout(timer);
+    }
+  
+    function hideNavbar() {
+      timer = setTimeout(function () {
+        $('.navbar').addClass('navbar-hidden');
+      }, 3000);
+    }
+  
+    // Mostrar la barra de navegación al pasar el ratón por la parte superior de la pantalla
+    $(window).mousemove(function (e) {
+      if (e.clientY <= 50) {
+        showNavbar();
+      }
+    });
+  
+    // Ocultar la barra de navegación si el usuario se desplaza hacia abajo y mostrarla si se desplaza hacia arriba
+    $(window).scroll(function () {
+      var currentScrollTop = $(this).scrollTop(); // Obtener la posición actual de desplazamiento
+  
+      if (currentScrollTop < lastScrollTop) {
+        // Si se desplaza hacia arriba
+        showNavbar();
+      } else {
+        // Si se desplaza hacia abajo
+        hideNavbar();
+      }
+  
+      lastScrollTop = currentScrollTop; // Actualizar la última posición de desplazamiento
+    });
+  
+    // Iniciar el temporizador para ocultar la barra de navegación
+    hideNavbar();
+  });
