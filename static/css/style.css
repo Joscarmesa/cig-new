@@ -411,3 +411,11 @@ h6,
   padding: 20px;
   margin: 2rem;
 }
+
+/* ESTILO PARA CUESTIONARIO QUE DETERMINA EL COSTO DEL FIBROSCAN*/
+
+.cuestionario {
+  padding: 20px;
+  margin: 2rem;
+
+}

@@ -205,3 +205,54 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+// AGREGANDO FUNCION AL CUESTIONARIO PARA DETERMINAR EL COSTO DEL FIBROSCAN (METODO DE CONTACTO)
+document.addEventListener("DOMContentLoaded", function() {
+    var contactoChecks = document.querySelectorAll('input[name="contacto"]');
+  
+    contactoChecks.forEach(function(check) {
+      check.addEventListener('change', function() {
+        var inputId = this.id + '-input';
+        var inputField = document.getElementById(inputId);
+  
+        if (this.checked) {
+          inputField.style.display = 'block';
+        } else {
+          inputField.style.display = 'none';
+          inputField.value = ''; // Limpiar el campo si se deselecciona
+        }
+  
+        // Asegurarse de que solo se selecciona una opción
+        contactoChecks.forEach(function(otherCheck) {
+          if (otherCheck !== check) {
+            otherCheck.checked = false;
+            document.getElementById(otherCheck.id + '-input').style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+// AGREGANDO FUNCION AL CUESTIONARIO PARA DETERMINAR EL COSTO DEL FIBROSCAN (MEDICO REFERIDO)
+
+document.addEventListener("DOMContentLoaded", function() {
+    var referidoSi = document.getElementById('referido_si');
+    var referidoNo = document.getElementById('referido_no');
+    var referidoNombre = document.getElementById('referido_nombre');
+  
+    referidoSi.addEventListener('change', function() {
+      if (referidoSi.checked) {
+        referidoNo.checked = false; // Desmarcar "No" si "Sí" está marcado
+        referidoNombre.style.display = 'block';
+      } else {
+        referidoNombre.style.display = 'none';
+        referidoNombre.value = ''; // Limpiar el campo si "Sí" no está marcado
+      }
+    });
+  
+    referidoNo.addEventListener('change', function() {
+      if (referidoNo.checked) {
+        referidoSi.checked = false; // Desmarcar "Sí" si "No" está marcado
+        referidoNombre.style.display = 'none';
+        referidoNombre.value = ''; // Limpiar el campo si "No" está marcado
+      }
+    });
+});

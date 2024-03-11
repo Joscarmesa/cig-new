@@ -1,21 +1,11 @@
 {% block main_content %}
 <!-- Carousel Start -->
 <div class="container-fluid p-0">
-  <div
-    id="header-carousel"
-    class="carousel slide carousel-fade particle"
-    data-bs-ride="carousel"
-  >
+  <div id="header-carousel" class="carousel slide carousel-fade particle" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img
-          class="w-100"
-          src="{{ url_for('static', filename='img/liver.jpeg') }}"
-          alt="Image"
-        />
-        <div
-          class="carousel-caption d-flex flex-column align-items-center justify-content-center"
-        >
+        <img class="w-100" src="{{ url_for('static', filename='img/liver.jpeg') }}" alt="Image" />
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px">
             <h5 class="text-white text-uppercase mb-3 animated slideInDown">
               Proteja su hígado de esta enfermedad
@@ -23,28 +13,14 @@
             <h1 class="display-1 text-white mb-md-4 animated zoomIn">
               Hígado Graso
             </h1>
-            <a
-              href="citas.html"
-              class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-              >Cita</a
-            >
-            <a
-              href=""
-              class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
-              >Contactenos</a
-            >
+            <a href="citas.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Cita</a>
+            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contactenos</a>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img
-          class="w-100"
-          src="{{ url_for('static', filename='img/doctors3.jpg') }}"
-          alt="Image"
-        />
-        <div
-          class="carousel-caption d-flex flex-column align-items-center justify-content-center"
-        >
+        <img class="w-100" src="{{ url_for('static', filename='img/doctors3.jpg') }}" alt="Image" />
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px">
             <h5 class="text-white text-uppercase mb-3 animated slideInDown">
               Acceda a una mejor calidad de vida
@@ -52,35 +28,17 @@
             <h1 class="display-1 text-white mb-md-4 animated zoomIn">
               Agende una valoración hepática
             </h1>
-            <a
-              href="citas.html"
-              class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-              >Cita</a
-            >
-            <a
-              href=""
-              class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
-              >Contactenos</a
-            >
+            <a href="citas.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Cita</a>
+            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contactenos</a>
           </div>
         </div>
       </div>
     </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#header-carousel"
-      data-bs-slide="prev"
-    >
+    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#header-carousel"
-      data-bs-slide="next"
-    >
+    <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -95,7 +53,7 @@
       <!-- Primera columna, ahora ocupa 6 de 12 unidades -->
       <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
         <div class="bg-primary d-flex flex-column p-5" style="height: 300px">
-          <h3 class="text-white mb-3">Horario de atención</h3>
+          <h3 class="text-white text-center mb-3">Atención telefónica y en línea</h3>
           <div class="d-flex justify-content-between text-white mb-3">
             <h6 class="text-white mb-0">Lunes a Viernes</h6>
             <p class="mb-0">9:00am - 10:00am</p>
@@ -145,9 +103,7 @@
     <div class="row g-5">
       <div class="col-lg-7">
         <div class="section-title mb-4">
-          <h5
-            class="position-relative d-inline-block text-primary text-uppercase"
-          >
+          <h5 class="position-relative d-inline-block text-primary text-uppercase">
             ¿Quienes somos?
           </h5>
           <h1 class="display-5 mb-0">
@@ -187,12 +143,8 @@
       </div>
       <div class="col-lg-5" style="min-height: 500px">
         <div class="position-relative h-100">
-          <img
-            class="position-absolute w-100 h-100 rounded wow zoomIn"
-            data-wow-delay="0.9s"
-            src="{{ url_for('static', filename='img/pulgar.jpeg') }}"
-            style="object-fit: cover"
-          />
+          <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
+            src="{{ url_for('static', filename='img/pulgar.jpeg') }}" style="object-fit: cover" />
         </div>
       </div>
     </div>
@@ -204,46 +156,27 @@
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
   <div class="container">
     <div class="row g-5 mb-5">
-      <div
-        class="col-lg-5 wow zoomIn"
-        data-wow-delay="0.3s"
-        style="min-height: 400px"
-      >
-        <div
-          class="twentytwenty-container position-relative h-100 rounded overflow-hidden"
-        >
-          <img
-            class="position-absolute w-100 h-100"
-            src="{{ url_for('static', filename='img/daño.jpeg') }}"
-            style="object-fit: cover"
-          />
-          <img
-            class="position-absolute w-100 h-100"
-            src="{{ url_for('static', filename='img/sano.jpeg') }}"
-            style="object-fit: cover"
-          />
+      <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px">
+        <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
+          <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/daño.jpeg') }}"
+            style="object-fit: cover" />
+          <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/sano.jpeg') }}"
+            style="object-fit: cover" />
         </div>
       </div>
       <div class="col-lg-7">
         <div class="section-title mb-5">
-          <h5
-            class="position-relative d-inline-block text-primary text-uppercase"
-          >
+          <h5 class="position-relative d-inline-block text-primary text-uppercase">
             Informate sobre
           </h5>
           <h1 class="display-5 mb-0">Tus padecimientos</h1>
         </div>
         <div class="row g-5">
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.6s"
-          >
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-1.jpg" alt="" />
             </div>
-            <div
-              class="position-relative bg-light rounded-bottom text-center p-4"
-            >
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
               <h5 class="m-0 hamburger">Hígado Graso</h5>
             </div>
             <div class="enfermedad-info">
@@ -255,16 +188,11 @@
               </p>
             </div>
           </div>
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.9s"
-          >
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-2.jpg" alt="" />
             </div>
-            <div
-              class="position-relative bg-light rounded-bottom text-center p-4"
-            >
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
               <h5 class="m-0 hamburger">Obesidad</h5>
             </div>
             <div class="enfermedad-info">
@@ -276,16 +204,11 @@
               </p>
             </div>
           </div>
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.3s"
-          >
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.3s">
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-3.jpg" alt="" />
             </div>
-            <div
-              class="position-relative bg-light rounded-bottom text-center p-4"
-            >
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
               <h5 class="m-0 hamburger">Hipertensión</h5>
             </div>
             <div class="enfermedad-info">
@@ -298,16 +221,11 @@
               </p>
             </div>
           </div>
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.6s"
-          >
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
             </div>
-            <div
-              class="position-relative bg-light rounded-bottom text-center p-4"
-            >
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
               <h5 class="m-0 hamburger">Dislipidemias</h5>
             </div>
             <div class="enfermedad-info">
@@ -324,16 +242,11 @@
     <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="col-lg-7">
         <div class="row g-5">
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.6s"
-          >
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
             </div>
-            <div
-              class="position-relative bg-light rounded-bottom text-center p-4"
-            >
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
               <h5 class="m-0 hamburger">Problemas Cardiovasculares</h5>
             </div>
             <div class="enfermedad-info">
@@ -345,16 +258,11 @@
               </p>
             </div>
           </div>
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.6s"
-          >
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
             </div>
-            <div
-              class="position-relative bg-light rounded-bottom text-center p-4"
-            >
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
               <h5 class="m-0 hamburger">Crohn</h5>
             </div>
             <div class="enfermedad-info">
@@ -367,16 +275,11 @@
               </p>
             </div>
           </div>
-          <div
-            class="col-md-6 enfermedades-item wow zoomIn"
-            data-wow-delay="0.6s"
-          >
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
             <div class="rounded-top overflow-hidden">
               <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
             </div>
-            <div
-              class="position-relative bg-light rounded-bottom text-center p-4"
-            >
+            <div class="position-relative bg-light rounded-bottom text-center p-4">
               <h5 class="m-0 hamburger">Sindrome Metabólico</h5>
             </div>
             <div class="enfermedad-info">
@@ -393,8 +296,7 @@
       </div>
       <div class="col-lg-5 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
         <div
-          class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-justify p-4"
-        >
+          class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-justify p-4">
           <h3 class="text-white mb-3">Hígado Graso</h3>
           <p class="text-white text-justify mb-3">
             Entendemos que el hígado graso es una condición que puede causar una
@@ -415,9 +317,7 @@
     <div class="row g-5">
       <div class="col-lg-7">
         <div class="section-title mb-4">
-          <h5
-            class="position-relative d-inline-block text-primary text-uppercase"
-          >
+          <h5 class="position-relative d-inline-block text-primary text-uppercase">
             ¿Qué opciones tengo?
           </h5>
           <h3 class="display-5 mb-0">
@@ -437,12 +337,8 @@
       </div>
       <div class="col-lg-5" style="min-height: 500px">
         <div class="position-relative h-100">
-          <img
-            class="position-absolute w-100 h-100 rounded wow zoomIn"
-            data-wow-delay="0.9s"
-            src="{{ url_for('static', filename='img/pulgar.jpeg') }}"
-            style="object-fit: cover"
-          />
+          <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
+            src="{{ url_for('static', filename='img/pulgar.jpeg') }}" style="object-fit: cover" />
         </div>
       </div>
     </div>
@@ -455,247 +351,264 @@
 <div class="container py-5 wow fadeInUp">
 
   <button class="toggle-treatments btn btn-primary py-2 px-4 ms-3">Mostrar Tratamientos</button>
-  <div class="treatment-section" style="display: none;"> 
+  <div class="treatment-section" style="display: none;">
 
-  <div class="treatment-menu wow fadeInUp">
-    <div class="treatment-hamburger">
-      <h3>Hígado Graso</h3>
-      <div class="treatment-item">
-        <p>
-          Cambios en el estilo de vida, como una dieta saludable y ejercicio
-          regular. En algunos casos, medicamentos para reducir el colesterol o
-          la diabetes.
-        </p>
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Hígado Graso</h3>
+        <div class="treatment-item">
+          <p>
+            Cambios en el estilo de vida, como una dieta saludable y ejercicio
+            regular. En algunos casos, medicamentos para reducir el colesterol o
+            la diabetes.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="treatment-menu wow fadeInUp">
-    <div class="treatment-hamburger">
-      <h3>Obesidad</h3>
-      <div class="treatment-item">
-        <p>
-          Programas de pérdida de peso, cambios en la dieta, actividad física y,
-          en algunos casos, cirugía bariátrica.
-        </p>
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Obesidad</h3>
+        <div class="treatment-item">
+          <p>
+            Programas de pérdida de peso, cambios en la dieta, actividad física y,
+            en algunos casos, cirugía bariátrica.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="treatment-menu wow fadeInUp">
-    <div class="treatment-hamburger">
-      <h3>Hipertensión</h3>
-      <div class="treatment-item">
-        <p>
-          Medicamentos antihipertensivos, cambios en el estilo de vida como
-          reducir la ingesta de sal y aumentar la actividad física.
-        </p>
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Hipertensión</h3>
+        <div class="treatment-item">
+          <p>
+            Medicamentos antihipertensivos, cambios en el estilo de vida como
+            reducir la ingesta de sal y aumentar la actividad física.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="treatment-menu wow fadeInUp">
-    <div class="treatment-hamburger">
-      <h3>Dislipidemia</h3>
-      <div class="treatment-item">
-        <p>
-          Medicamentos para reducir el colesterol, como las estatinas, junto
-          con cambios en la dieta y el ejercicio.
-        </p>
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Dislipidemia</h3>
+        <div class="treatment-item">
+          <p>
+            Medicamentos para reducir el colesterol, como las estatinas, junto
+            con cambios en la dieta y el ejercicio.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="treatment-menu wow fadeInUp">
-    <div class="treatment-hamburger">
-      <h3>Problemas Cardíacos</h3>
-      <div class="treatment-item">
-        <p>
-          Medicamentos, cirugía, o procedimientos como la angioplastia,
-          dependiendo de la condición específica.
-        </p>
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Problemas Cardíacos</h3>
+        <div class="treatment-item">
+          <p>
+            Medicamentos, cirugía, o procedimientos como la angioplastia,
+            dependiendo de la condición específica.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="treatment-menu wow fadeInUp">
-    <div class="treatment-hamburger">
-      <h3>Enfermedad de Crohn</h3>
-      <div class="treatment-item">
-        <p>
-          Medicamentos antiinflamatorios, inmunosupresores y, en algunos
-          casos, cirugía.
-        </p>
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Enfermedad de Crohn</h3>
+        <div class="treatment-item">
+          <p>
+            Medicamentos antiinflamatorios, inmunosupresores y, en algunos
+            casos, cirugía.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="treatment-menu wow fadeInUp">
-    <div class="treatment-hamburger">
-      <h3>Síndrome Metabólico</h3>
-      <div class="treatment-item">
-        <p>
-          Tratamiento de las condiciones individuales, como la hipertensión y
-          la diabetes, y cambios en el estilo de vida.
-        </p>
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Síndrome Metabólico</h3>
+        <div class="treatment-item">
+          <p>
+            Tratamiento de las condiciones individuales, como la hipertensión y
+            la diabetes, y cambios en el estilo de vida.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="treatment-menu wow fadeInUp">
-    <div class="treatment-hamburger">
-      <h3>Diabetes Mellitus Tipo 2</h3>
-      <div class="treatment-item">
-        <p>
-          Medicamentos para controlar el azúcar en la sangre, cambios en la
-          dieta y ejercicio.
-        </p>
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Diabetes Mellitus Tipo 2</h3>
+        <div class="treatment-item">
+          <p>
+            Medicamentos para controlar el azúcar en la sangre, cambios en la
+            dieta y ejercicio.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-</div>
+  </div>
 
 </div>
 
 <!-- Higado Graso Tratamiento End -->
 
 
-  <!-- citas Start -->
-  <div
-    class="container-fluid bg-primary bg-citas my-5 wow fadeInUp"
-    data-wow-delay="0.1s"
-  >
-    <div class="container">
-      <div class="row gx-5">
-        <div class="col-lg-6 py-5">
-          <div class="py-5">
-            <h2 class="display-5 text-white mb-4">
-              ¡Te invitamos a conocernos!
-            </h2>
-            <p class="text-white mb-0">
-              Si usted o un ser querido están lidiando con alguna de estas
-              enfermedades y están interesados en participar en nuestros
-              protocolos de investigación, por favor contáctenos. Estamos aquí
-              para brindarle la información y el apoyo que necesita para tomar
-              decisiones informadas sobre su salud.
-            </p>
-          </div>
+<!-- citas Start -->
+<div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container">
+    <div class="row gx-5">
+      <div class="col-lg-6 py-5">
+        <div class="py-5">
+          <h1 class="display-5 text-white mb-4">
+            Protocolos de Investigación
+          </h1>
+          <h3 class="display text-white">
+            ¡Una Excelente Opción de Tratamiento!
+          </h3>
+          <p class="text-white mb-0">
+            En CIG, creemos firmemente en la innovación y la investigación para encontrar tratamientos más efectivos y
+            personalizados. Nuestros protocolos de investigación médica son una excelente opción para aquellos que
+            buscan alternativas a los tratamientos convencionales. Al participar en nuestros estudios, los pacientes
+            tienen acceso a terapias de vanguardia y contribuyen al avance de la medicina.
+          </p>
         </div>
-        <div class="col-lg-6">
-          <div
-            class="citas-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
-            data-wow-delay="0.6s"
-          >
-            <h1 class="text-white mb-4">Agendar cita</h1>
-            <form>
-              <div class="row g-3">
-                <div class="col-12 col-sm-6">
-                  <select
-                    class="form-select bg-light border-0"
-                    style="height: 55px"
-                  >
-                    <option selected>Padecimiento</option>
-                    <option value="1">Hígado graso</option>
-                    <option value="2">Cirrosis</option>
-                    <option value="3">Colangitis biliar primaria</option>
-                  </select>
+      </div>
+      <div class="col-lg-6">
+        <div class="citas-form wow zoomIn cuestionario"
+          data-wow-delay="0.6s">
+          <h1 class="text-white text-center mb-4">Agendar cita</h1>
+          <form>
+            <div class="row g-3">
+              <!-- Pregunta 1: Selección de múltiples padecimientos -->
+              <div class="text-white">
+                <label>Seleccione sus padecimientos:</label>
+                <div class="form-check justify-content-right">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="higado_graso"
+                    value="Hígado graso">
+                  <label class="form-check-label" for="higado_graso">Hígado graso</label>
                 </div>
-                <div class="col-12 col-sm-6">
-                  <select
-                    class="form-select bg-light border-0"
-                    style="height: 55px"
-                  >
-                    <option selected>Selecione estudio</option>
-                    <option value="1">Fibroscan</option>
-                    <option value="2">Electrocardiograma</option>
-                  </select>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="obesidad" value="Obesidad">
+                  <label class="form-check-label" for="obesidad">Obesidad</label>
                 </div>
-                <div class="col-12 col-sm-6">
-                  <input
-                    type="text"
-                    class="form-control bg-light border-0"
-                    placeholder="Tu nombre"
-                    style="height: 55px"
-                  />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="hipertension"
+                    value="Hipertensión">
+                  <label class="form-check-label" for="hipertension">Hipertensión</label>
                 </div>
-                <div class="col-12 col-sm-6">
-                  <input
-                    type="email"
-                    class="form-control bg-light border-0"
-                    placeholder="Tu correo"
-                    style="height: 55px"
-                  />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="dislipidemias"
+                    value="Dislipidemias">
+                  <label class="form-check-label" for="dislipidemias">Dislipidemias</label>
                 </div>
-                <div class="col-12 col-sm-6">
-                  <div class="date" id="date1" data-target-input="nearest">
-                    <input
-                      type="text"
-                      class="form-control bg-light border-0 datetimepicker-input"
-                      placeholder="Fecha"
-                      data-target="#date1"
-                      data-toggle="datetimepicker"
-                      style="height: 55px"
-                    />
-                  </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="problemas_cardiovasculares"
+                    value="Problemas Cardiovasculares">
+                  <label class="form-check-label" for="problemas_cardiovasculares">Problemas Cardiovasculares</label>
                 </div>
-                <div class="col-12 col-sm-6">
-                  <div class="time" id="time1" data-target-input="nearest">
-                    <input
-                      type="text"
-                      class="form-control bg-light border-0 datetimepicker-input"
-                      placeholder="Hora"
-                      data-target="#time1"
-                      data-toggle="datetimepicker"
-                      style="height: 55px"
-                    />
-                  </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="crohn" value="Crohn">
+                  <label class="form-check-label" for="crohn">Crohn</label>
                 </div>
-                <div class="col-12">
-                  <button class="btn btn-dark w-100 py-3" type="submit">
-                    Make citas
-                  </button>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="sindrome_metabolico"
+                    value="Síndrome Metabólico">
+                  <label class="form-check-label" for="sindrome_metabolico">Síndrome Metabólico</label>
                 </div>
               </div>
-            </form>
-          </div>
+
+
+              <!-- Pregunta 2: Escribir si algún médico lo refirió y anotar su nombre -->
+<div class="text-white">
+  <label>¿Fue referido por un médico?</label>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="referido" id="referido_si" value="Si">
+    <label class="form-check-label" for="referido_si">Sí</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="referido" id="referido_no" value="No">
+    <label class="form-check-label" for="referido_no">No</label>
+  </div>
+  <input type="text" class="form-control bg-light border-0 referido-input" id="referido_nombre" placeholder="Nombre del médico que lo refirió" style="display: none; height: 55px;">
+</div>
+
+
+              <!-- Pregunta 3: Interés en participar en un protocolo de investigación -->
+              <div class="text-white">
+                <label>¿Está interesado en participar en un protocolo de investigación?</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="investigacion" id="si" value="si">
+                  <label class="form-check-label" for="si">Sí</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="investigacion" id="no" value="no">
+                  <label class="form-check-label" for="no">No</label>
+                </div>
+              </div>
+
+<!-- Pregunta 4: Método de contacto -->
+<div class="col-12 col-sm-6 text-white">
+  <label>Método de contacto preferido (obligatorio):</label>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="contacto" id="telefono" value="Telefono">
+    <label class="form-check-label" for="telefono">Llamada telefónica</label>
+    <input type="text" class="form-control bg-light border-0 contacto-input" id="telefono-input" placeholder="Tu número telefónico" style="display: none; height: 55px;">
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="contacto" id="whatsapp" value="Whatsapp">
+    <label class="form-check-label" for="whatsapp">WhatsApp</label>
+    <input type="text" class="form-control bg-light border-0 contacto-input" id="whatsapp-input" placeholder="Tu número de WhatsApp" style="display: none; height: 55px;">
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="contacto" id="correo" value="Correo electronico">
+    <label class="form-check-label" for="correo">Correo electrónico</label>
+    <input type="email" class="form-control bg-light border-0 contacto-input" id="correo-input" placeholder="Tu correo electrónico" style="display: none; height: 55px;">
+  </div>
+</div>
+
+
+              <!-- Botón para enviar el formulario -->
+              <div class="col-12">
+                <button class="btn btn-dark w-100 py-3" type="submit">Enviar</button>
+              </div>
+            </div>
+          </form>
+
         </div>
       </div>
     </div>
   </div>
-  <!-- citas End -->
+</div>
+<!-- citas End -->
 
-  <!-- Offer Start -->
-  <div
-    class="container-fluid bg-offer my-5 py-5 wow fadeInUp"
-    data-wow-delay="0.1s"
-  >
-    <div class="container py-5">
-      <div class="row justify-content-center">
-        <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
-          <div class="offer-text text-center rounded p-5">
-            <h1 class="display-5 text-white">
-              Realiza una valoración con nosotros
-            </h1>
-            <p class="text-white mb-4">
-              Es completamente gratis y te acompañamos todo el tiempo, <br />
-              estaras completamente informado acerca de tu progreso y <br />
-              te guiaremos sobre todo el proceso. <br />
-            </p>
-            <a href="{{ url_for('citas') }}" class="btn btn-dark py-3 px-5 me-3"
-              >Agende una cita</a
-            >
-            <a
-              href="{{ url_for('especialistas') }}"
-              class="btn btn-light py-3 px-5"
-              >Especialistas</a
-            >
-          </div>
+<!-- Offer Start -->
+<div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
+        <div class="offer-text rounded p-5">
+          <h2 class="display-5 text-white text-center">
+            ¡Comparte esta Página!
+          </h2>
+          <p class="text-white text-justify mb-4">
+            Si tú o un ser querido están lidiando con alguna de estas
+            enfermedades y están interesados en participar en nuestros
+            protocolos de investigación, por favor contáctanos y comparte esta información. Estamos aquí
+            para brindarte la información y el apoyo que necesitas para tomar
+            decisiones informadas sobre su salud.
+          </p>
+          <a href="{{ url_for('citas') }}" class="btn btn-dark py-3 px-5 me-3">Agende una cita</a>
+          <a href="{{ url_for('especialistas') }}" class="btn btn-light py-3 px-5">Especialistas</a>
         </div>
       </div>
     </div>
   </div>
-  <!-- Offer End -->
+</div>
+<!-- Offer End -->
 
-  {% endblock %}
+{% endblock %}
 </div>
