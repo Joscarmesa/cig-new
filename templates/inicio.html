@@ -231,7 +231,7 @@
           >
             Informate sobre
           </h5>
-          <h1 class="display-5 mb-0">Enfermedades hepáticas</h1>
+          <h1 class="display-5 mb-0">Tus padecimientos</h1>
         </div>
         <div class="row g-5">
           <div
@@ -393,15 +393,15 @@
       </div>
       <div class="col-lg-5 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
         <div
-          class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4"
+          class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-justify p-4"
         >
           <h3 class="text-white mb-3">Hígado Graso</h3>
-          <p class="text-white mb-3">
-            Se estima que el hígado graso no alcohólico (HGNA) afecta
-            aproximadamente al 30% de la población adulta en México. Es una de
-            las principales causas de enfermedad hepática crónica en el país.
+          <p class="text-white text-justify mb-3">
+            Entendemos que el hígado graso es una condición que puede causar una
+            serie de enfermedades concomitantes, afectando significativamente la
+            calidad de vida de las personas. Por ello, nos enfocamos en estudiar
+            y tratar los padecimientos que desencadena esta enfermedad.
           </p>
-          <h2 class="text-white mb-0">¡ACERCATE A NOSOTROS!</h2>
         </div>
       </div>
     </div>
@@ -409,136 +409,293 @@
 </div>
 <!-- enfermedades End -->
 
-<!-- citas Start -->
-<div
-  class="container-fluid bg-primary bg-citas my-5 wow fadeInUp"
-  data-wow-delay="0.1s"
->
+<!-- TRATAMIENTOS Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
   <div class="container">
-    <div class="row gx-5">
-      <div class="col-lg-6 py-5">
-        <div class="py-5">
-          <h1 class="display-5 text-white mb-4">¡Te invitamos a conocernos!</h1>
-          <p class="text-white mb-0">
-            Realizamos novedosos estudios en conjunto con las farmacéuticas más
-            prestigiosas del mundo. El objetivo es ofrecer una alternativa a los
-            padecimientos hepáticos más comunes.
-          </p>
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <div class="section-title mb-4">
+          <h5
+            class="position-relative d-inline-block text-primary text-uppercase"
+          >
+            ¿Qué opciones tengo?
+          </h5>
+          <h3 class="display-5 mb-0">
+            Tratamientos para Enfermedades Relacionadas con el Hígado y el
+            Metabolismo
+          </h3>
         </div>
+        <h4 class="text-body fst-italic mb-4">
+          En el Centro de Investigación y Gastroenterología, comprendemos la
+          importancia de un tratamiento eficaz para las enfermedades
+          relacionadas con el hígado y el metabolismo.
+        </h4>
+        <p class="mb-4">
+          A continuación, te presentamos algunas opciones de tratamiento
+          convencionales para estas condiciones:
+        </p>
       </div>
-      <div class="col-lg-6">
-        <div
-          class="citas-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
-          data-wow-delay="0.6s"
-        >
-          <h1 class="text-white mb-4">Agendar cita</h1>
-          <form>
-            <div class="row g-3">
-              <div class="col-12 col-sm-6">
-                <select
-                  class="form-select bg-light border-0"
-                  style="height: 55px"
-                >
-                  <option selected>Padecimiento</option>
-                  <option value="1">Hígado graso</option>
-                  <option value="2">Cirrosis</option>
-                  <option value="3">Colangitis biliar primaria</option>
-                </select>
-              </div>
-              <div class="col-12 col-sm-6">
-                <select
-                  class="form-select bg-light border-0"
-                  style="height: 55px"
-                >
-                  <option selected>Selecione estudio</option>
-                  <option value="1">Fibroscan</option>
-                  <option value="2">Electrocardiograma</option>
-                </select>
-              </div>
-              <div class="col-12 col-sm-6">
-                <input
-                  type="text"
-                  class="form-control bg-light border-0"
-                  placeholder="Tu nombre"
-                  style="height: 55px"
-                />
-              </div>
-              <div class="col-12 col-sm-6">
-                <input
-                  type="email"
-                  class="form-control bg-light border-0"
-                  placeholder="Tu correo"
-                  style="height: 55px"
-                />
-              </div>
-              <div class="col-12 col-sm-6">
-                <div class="date" id="date1" data-target-input="nearest">
-                  <input
-                    type="text"
-                    class="form-control bg-light border-0 datetimepicker-input"
-                    placeholder="Fecha"
-                    data-target="#date1"
-                    data-toggle="datetimepicker"
-                    style="height: 55px"
-                  />
-                </div>
-              </div>
-              <div class="col-12 col-sm-6">
-                <div class="time" id="time1" data-target-input="nearest">
-                  <input
-                    type="text"
-                    class="form-control bg-light border-0 datetimepicker-input"
-                    placeholder="Hora"
-                    data-target="#time1"
-                    data-toggle="datetimepicker"
-                    style="height: 55px"
-                  />
-                </div>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-dark w-100 py-3" type="submit">
-                  Make citas
-                </button>
-              </div>
-            </div>
-          </form>
+      <div class="col-lg-5" style="min-height: 500px">
+        <div class="position-relative h-100">
+          <img
+            class="position-absolute w-100 h-100 rounded wow zoomIn"
+            data-wow-delay="0.9s"
+            src="{{ url_for('static', filename='img/pulgar.jpeg') }}"
+            style="object-fit: cover"
+          />
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- citas End -->
+<!-- TRATAMIENTOS End -->
 
-<!-- Offer Start -->
-<div
-  class="container-fluid bg-offer my-5 py-5 wow fadeInUp"
-  data-wow-delay="0.1s"
->
-  <div class="container py-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
-        <div class="offer-text text-center rounded p-5">
-          <h1 class="display-5 text-white">
-            Realiza una valoración con nosotros
-          </h1>
-          <p class="text-white mb-4">
-            Es completamente gratis y te acompañamos todo el tiempo, <br />
-            estaras completamente informado acerca de tu progreso y <br />
-            te guiaremos sobre todo el proceso. <br />
-          </p>
-          <a href="{{ url_for('citas') }}" class="btn btn-dark py-3 px-5 me-3"
-            >Agende una cita</a
+<!-- Higado Graso Tratamiento Start -->
+
+<div class="container py-5 wow fadeInUp">
+
+  <button class="toggle-treatments btn btn-primary py-2 px-4 ms-3">Mostrar Tratamientos</button>
+  <div class="treatment-section" style="display: none;"> 
+
+  <div class="treatment-menu wow fadeInUp">
+    <div class="treatment-hamburger">
+      <h3>Hígado Graso</h3>
+      <div class="treatment-item">
+        <p>
+          Cambios en el estilo de vida, como una dieta saludable y ejercicio
+          regular. En algunos casos, medicamentos para reducir el colesterol o
+          la diabetes.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="treatment-menu wow fadeInUp">
+    <div class="treatment-hamburger">
+      <h3>Obesidad</h3>
+      <div class="treatment-item">
+        <p>
+          Programas de pérdida de peso, cambios en la dieta, actividad física y,
+          en algunos casos, cirugía bariátrica.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="treatment-menu wow fadeInUp">
+    <div class="treatment-hamburger">
+      <h3>Hipertensión</h3>
+      <div class="treatment-item">
+        <p>
+          Medicamentos antihipertensivos, cambios en el estilo de vida como
+          reducir la ingesta de sal y aumentar la actividad física.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="treatment-menu wow fadeInUp">
+    <div class="treatment-hamburger">
+      <h3>Dislipidemia</h3>
+      <div class="treatment-item">
+        <p>
+          Medicamentos para reducir el colesterol, como las estatinas, junto
+          con cambios en la dieta y el ejercicio.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="treatment-menu wow fadeInUp">
+    <div class="treatment-hamburger">
+      <h3>Problemas Cardíacos</h3>
+      <div class="treatment-item">
+        <p>
+          Medicamentos, cirugía, o procedimientos como la angioplastia,
+          dependiendo de la condición específica.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="treatment-menu wow fadeInUp">
+    <div class="treatment-hamburger">
+      <h3>Enfermedad de Crohn</h3>
+      <div class="treatment-item">
+        <p>
+          Medicamentos antiinflamatorios, inmunosupresores y, en algunos
+          casos, cirugía.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="treatment-menu wow fadeInUp">
+    <div class="treatment-hamburger">
+      <h3>Síndrome Metabólico</h3>
+      <div class="treatment-item">
+        <p>
+          Tratamiento de las condiciones individuales, como la hipertensión y
+          la diabetes, y cambios en el estilo de vida.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="treatment-menu wow fadeInUp">
+    <div class="treatment-hamburger">
+      <h3>Diabetes Mellitus Tipo 2</h3>
+      <div class="treatment-item">
+        <p>
+          Medicamentos para controlar el azúcar en la sangre, cambios en la
+          dieta y ejercicio.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<!-- Higado Graso Tratamiento End -->
+
+
+  <!-- citas Start -->
+  <div
+    class="container-fluid bg-primary bg-citas my-5 wow fadeInUp"
+    data-wow-delay="0.1s"
+  >
+    <div class="container">
+      <div class="row gx-5">
+        <div class="col-lg-6 py-5">
+          <div class="py-5">
+            <h2 class="display-5 text-white mb-4">
+              ¡Te invitamos a conocernos!
+            </h2>
+            <p class="text-white mb-0">
+              Si usted o un ser querido están lidiando con alguna de estas
+              enfermedades y están interesados en participar en nuestros
+              protocolos de investigación, por favor contáctenos. Estamos aquí
+              para brindarle la información y el apoyo que necesita para tomar
+              decisiones informadas sobre su salud.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div
+            class="citas-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
+            data-wow-delay="0.6s"
           >
-          <a
-            href="{{ url_for('especialistas') }}"
-            class="btn btn-light py-3 px-5"
-            >Especialistas</a
-          >
+            <h1 class="text-white mb-4">Agendar cita</h1>
+            <form>
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <select
+                    class="form-select bg-light border-0"
+                    style="height: 55px"
+                  >
+                    <option selected>Padecimiento</option>
+                    <option value="1">Hígado graso</option>
+                    <option value="2">Cirrosis</option>
+                    <option value="3">Colangitis biliar primaria</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <select
+                    class="form-select bg-light border-0"
+                    style="height: 55px"
+                  >
+                    <option selected>Selecione estudio</option>
+                    <option value="1">Fibroscan</option>
+                    <option value="2">Electrocardiograma</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control bg-light border-0"
+                    placeholder="Tu nombre"
+                    style="height: 55px"
+                  />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input
+                    type="email"
+                    class="form-control bg-light border-0"
+                    placeholder="Tu correo"
+                    style="height: 55px"
+                  />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="date" id="date1" data-target-input="nearest">
+                    <input
+                      type="text"
+                      class="form-control bg-light border-0 datetimepicker-input"
+                      placeholder="Fecha"
+                      data-target="#date1"
+                      data-toggle="datetimepicker"
+                      style="height: 55px"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="time" id="time1" data-target-input="nearest">
+                    <input
+                      type="text"
+                      class="form-control bg-light border-0 datetimepicker-input"
+                      placeholder="Hora"
+                      data-target="#time1"
+                      data-toggle="datetimepicker"
+                      style="height: 55px"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-dark w-100 py-3" type="submit">
+                    Make citas
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- Offer End -->
+  <!-- citas End -->
 
-{% endblock %}
+  <!-- Offer Start -->
+  <div
+    class="container-fluid bg-offer my-5 py-5 wow fadeInUp"
+    data-wow-delay="0.1s"
+  >
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
+          <div class="offer-text text-center rounded p-5">
+            <h1 class="display-5 text-white">
+              Realiza una valoración con nosotros
+            </h1>
+            <p class="text-white mb-4">
+              Es completamente gratis y te acompañamos todo el tiempo, <br />
+              estaras completamente informado acerca de tu progreso y <br />
+              te guiaremos sobre todo el proceso. <br />
+            </p>
+            <a href="{{ url_for('citas') }}" class="btn btn-dark py-3 px-5 me-3"
+              >Agende una cita</a
+            >
+            <a
+              href="{{ url_for('especialistas') }}"
+              class="btn btn-light py-3 px-5"
+              >Especialistas</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Offer End -->
+
+  {% endblock %}
+</div>

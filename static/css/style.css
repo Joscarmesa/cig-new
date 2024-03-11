@@ -350,7 +350,7 @@ h6,
   left: 15px;
   right: 15px;
   border-radius: 100px / 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.815);
   opacity: 0;
   transition: 0.5s;
   z-index: -1;
@@ -372,16 +372,42 @@ h6,
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #f8f9fa;
+    color: white;
+    padding: 1rem;
+    background-color: #4682b4;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
 
-.enfermedades-item:hover .enfermedad-info {
-    display: block;
-}
-
 .hamburger {
     cursor: pointer;
+    
+} 
+
+/* Estilo para la seccion de tratamientos*/
+.treatment-menu {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.treatment-item h3 {
+  color: #4682b4;
+}
+.treatment-item p {
+  text-align: justify;
+  margin: 10px 0;
+  display: none;
+}
+.treatment-hamburger {
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: #021e35;
+  font-size: 24px;
 }
 
+/* Estilo para BOTON OCULTAR-MOSTRAR tratamientos*/
+.toggle-treatments {
+  padding: 20px;
+  margin: 2rem;
+}
