@@ -1,6 +1,6 @@
 {% block main_content %}
 <!-- Carousel Start -->
-<div class="container-fluid p-0">
+<div class="container-fluid p-0 id=carrusel">
   <div id="header-carousel" class="carousel slide carousel-fade particle" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -47,7 +47,7 @@
 <!-- Carousel End -->
 
 <!-- Banner Start -->
-<div class="container-fluid banner mb-5">
+<div class="container-fluid banner mb-5 id=banner">
   <div class="container">
     <div class="row gx-0">
       <!-- Primera columna, ahora ocupa 6 de 12 unidades -->
@@ -98,7 +98,7 @@
 <!-- Banner End -->
 
 <!-- About Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s id=quienes-somos">
   <div class="container">
     <div class="row g-5">
       <div class="col-lg-7">
@@ -153,7 +153,7 @@
 <!-- About End -->
 
 <!-- enfermedades Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s id=enfermedades">
   <div class="container">
     <div class="row g-5 mb-5">
       <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px">
@@ -312,7 +312,7 @@
 <!-- enfermedades End -->
 
 <!-- TRATAMIENTOS Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s id=tratamiento">
   <div class="container">
     <div class="row g-5">
       <div class="col-lg-7">
@@ -348,7 +348,7 @@
 
 <!-- Higado Graso Tratamiento Start -->
 
-<div class="container py-5 wow fadeInUp">
+<div class="container py-5 wow fadeInUp id=menu-tratamiento">
 
   <button class="toggle-treatments btn btn-primary py-2 px-4 ms-3">Mostrar Tratamientos</button>
   <div class="treatment-section" style="display: none;">
@@ -458,15 +458,15 @@
 
 
 <!-- citas Start -->
-<div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s id=protocolos-de-investigacion">
   <div class="container">
     <div class="row gx-5">
       <div class="col-lg-6 py-5">
         <div class="py-5">
-          <h1 class="display-5 text-white mb-4">
+          <h1 class="display-2 text-white mb-4">
             Protocolos de Investigación
           </h1>
-          <h3 class="display text-white">
+          <h3 class="display text-white mb-4">
             ¡Una Excelente Opción de Tratamiento!
           </h3>
           <p class="text-white mb-0">
@@ -480,12 +480,12 @@
       <div class="col-lg-6">
         <div class="citas-form wow zoomIn cuestionario"
           data-wow-delay="0.6s">
-          <h1 class="text-white text-center mb-4">Agendar cita</h1>
+          <h1 class="text-white text-center mb-4">Solicitar cita</h1>
           <form>
             <div class="row g-3">
               <!-- Pregunta 1: Selección de múltiples padecimientos -->
               <div class="text-white">
-                <label>Seleccione sus padecimientos:</label>
+                <label><h3 class="display text-white">Seleccione sus padecimientos:</h3></label>
                 <div class="form-check justify-content-right">
                   <input class="form-check-input" type="checkbox" name="padecimientos[]" id="higado_graso"
                     value="Hígado graso">
@@ -524,7 +524,7 @@
 
               <!-- Pregunta 2: Escribir si algún médico lo refirió y anotar su nombre -->
 <div class="text-white">
-  <label>¿Fue referido por un médico?</label>
+  <label><h3 class="display text-white">¿Fue referido por un médico?</h3></label>
   <div class="form-check">
     <input class="form-check-input" type="checkbox" name="referido" id="referido_si" value="Si">
     <label class="form-check-label" for="referido_si">Sí</label>
@@ -539,7 +539,7 @@
 
               <!-- Pregunta 3: Interés en participar en un protocolo de investigación -->
               <div class="text-white">
-                <label>¿Está interesado en participar en un protocolo de investigación?</label>
+                <label><h3 class="display text-white">¿Está interesado en participar en un protocolo de investigación?</h3></label>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="investigacion" id="si" value="si">
                   <label class="form-check-label" for="si">Sí</label>
@@ -551,8 +551,8 @@
               </div>
 
 <!-- Pregunta 4: Método de contacto -->
-<div class="col-12 col-sm-6 text-white">
-  <label>Método de contacto preferido (obligatorio):</label>
+<div class="text-white">
+  <label><h3 class="display text-white">Método de contacto preferido (obligatorio)</h3></label>
   <div class="form-check">
     <input class="form-check-input" type="checkbox" name="contacto" id="telefono" value="Telefono">
     <label class="form-check-label" for="telefono">Llamada telefónica</label>
@@ -569,8 +569,6 @@
     <input type="email" class="form-control bg-light border-0 contacto-input" id="correo-input" placeholder="Tu correo electrónico" style="display: none; height: 55px;">
   </div>
 </div>
-
-
               <!-- Botón para enviar el formulario -->
               <div class="col-12">
                 <button class="btn btn-dark w-100 py-3" type="submit">Enviar</button>
@@ -586,7 +584,7 @@
 <!-- citas End -->
 
 <!-- Offer Start -->
-<div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s id=compartir">
   <div class="container py-5">
     <div class="row justify-content-center">
       <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
@@ -601,8 +599,21 @@
             para brindarte la información y el apoyo que necesitas para tomar
             decisiones informadas sobre su salud.
           </p>
-          <a href="{{ url_for('citas') }}" class="btn btn-dark py-3 px-5 me-3">Agende una cita</a>
-          <a href="{{ url_for('especialistas') }}" class="btn btn-light py-3 px-5">Especialistas</a>
+
+          <div class="row justify-content-center text-center">
+            <h3 class="text-white mb-4">Compartir en:</h3>
+           
+              <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                  class="fab fa-twitter fw-normal"></i></a>
+              <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                  class="fab fa-facebook-f fw-normal"></i></a>
+              <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                  class="fab fa-whatsapp fw-normal"></i></a>
+              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i
+                  class="fab fa-instagram fw-normal"></i></a>
+            </div>
+
+
         </div>
       </div>
     </div>
