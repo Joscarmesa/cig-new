@@ -356,15 +356,19 @@ h6,
   transition: 0.5s;
   z-index: -1;
 }
-/*cambiando color de "Sindrome metabolico"*/
-.fondo-metabolico {
-  background-color: #5c0f0f;
-  color: #fff;
-}
 
 /*AGREGANDO ESTILO A ENFERMEDADES*/
 .enfermedades-item {
     position: relative;
+}
+.color-padecimiento{
+  background-color: #1f2e70;
+  color: #fff
+}
+
+.color-padecimiento:hover{
+  background-color: rgba(161, 22, 34, 0.85);
+  color:#ffffff
 }
 
 .enfermedad-info {
@@ -375,7 +379,7 @@ h6,
     width: 100%;
     color: white;
     padding: 1rem;
-    background-color: #1464a5d5;
+    background-color: #0a3f6be5;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.575);
     z-index: 10;
 }
