@@ -114,33 +114,43 @@
 // Agregando funcion a la parte de enfermedades
 
 document.addEventListener("DOMContentLoaded", function () {
-  var enfermedadesItems = document.querySelectorAll(".enfermedades-item");
-
-  enfermedadesItems.forEach(function (item) {
-    item.addEventListener("click", function () {
-      var infoBox = this.querySelector(".enfermedad-info");
-
-      // Alternar la visualización de la caja de información
-      if (infoBox.style.display === "block") {
-        infoBox.style.display = "none";
-      } else {
-        infoBox.style.display = "block";
-
-        // Ajustar la posición si es necesario
-        var rect = infoBox.getBoundingClientRect();
-        var windowHeight = window.innerHeight;
-
-        if (rect.bottom > windowHeight) {
-          infoBox.style.top = "auto";
-          infoBox.style.bottom = "100%";
-        } else {
-          infoBox.style.top = "100%";
-          infoBox.style.bottom = "auto";
+    var enfermedadesItems = document.querySelectorAll(".enfermedades-item");
+    var currentOpenInfoBox = null;
+  
+    enfermedadesItems.forEach(function (item) {
+      item.addEventListener("click", function () {
+        var infoBox = this.querySelector(".enfermedad-info");
+  
+        // Cerrar la caja de información actualmente abierta si existe
+        if (currentOpenInfoBox && currentOpenInfoBox !== infoBox) {
+          currentOpenInfoBox.style.display = "none";
         }
-      }
+  
+        // Alternar la visualización de la caja de información
+        if (infoBox.style.display === "block") {
+          infoBox.style.display = "none";
+        } else {
+          infoBox.style.display = "block";
+  
+          // Ajustar la posición si es necesario
+          var rect = infoBox.getBoundingClientRect();
+          var windowHeight = window.innerHeight;
+  
+          if (rect.bottom > windowHeight) {
+            infoBox.style.top = "auto";
+            infoBox.style.bottom = "100%";
+          } else {
+            infoBox.style.top = "100%";
+            infoBox.style.bottom = "auto";
+          }
+  
+          // Actualizar la caja de información actualmente abierta
+          currentOpenInfoBox = infoBox;
+        }
+      });
     });
   });
-});
+   
 
 // Agregando funcion a la parte de enfermedades para moviles
 document.addEventListener("DOMContentLoaded", function () {
