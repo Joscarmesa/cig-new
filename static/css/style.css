@@ -1,16 +1,16 @@
 /********** Template CSS **********/
 :root {
-  --primary: #0f5e80;
-  --primary-rgb: 57, 20, 55;
+  --primary: #60c8b3;
+  --primary-rgb: 39, 157, 159;
 
-  --secondary: #225b7c;
-  --secondary-rgb: 29, 62, 84;
+  --secondary: #6EA1D4;
+  --secondary-rgb: 110, 161, 212;
 
-  --light: #6495d1;
-  --light-rgb: 255, 179, 212;
+  --light: #FFBE98;
+  --light-rgb: 255, 190, 152;
 
-  --dark: #040b48;
-  --dark-rgb: 71, 21, 43;
+  --dark: #1b5091;
+  --dark-rgb: 27, 80, 145;
 }
 
 h1,
@@ -362,12 +362,12 @@ h6,
     position: relative;
 }
 .color-padecimiento{
-  background-color: #1f2e70;
+  background-color: #1B5091;
   color: #fff
 }
 
 .color-padecimiento:hover{
-  background-color: rgba(161, 22, 34, 0.85);
+  background-color: rgba(110, 161, 212);
   color:#ffffff
 }
 
