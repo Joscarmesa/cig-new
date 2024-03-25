@@ -184,7 +184,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-
 // AGREGANDO FUNCION AL CUESTIONARIO PARA DETERMINAR EL COSTO DEL FIBROSCAN (METODO DE CONTACTO)
 document.addEventListener("DOMContentLoaded", function() {
     var contactoChecks = document.querySelectorAll('input[name="contacto"]');
