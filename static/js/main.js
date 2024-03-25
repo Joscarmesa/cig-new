@@ -152,38 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
    
 
-// Agregando funcion a la parte de enfermedades para moviles
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.innerWidth <= 768) {
-    // Asumiendo que 768px es el límite para dispositivos móviles
-    var enfermedadesItems = document.querySelectorAll(".enfermedades-item");
 
-    enfermedadesItems.forEach(function (item) {
-      item.addEventListener("click", function () {
-        var infoBox = this.querySelector(".enfermedad-info");
-
-        // Alternar la visualización de la caja de información
-        if (infoBox.style.display === "block") {
-          infoBox.style.display = "none";
-        } else {
-          infoBox.style.display = "block";
-
-          // Ajustar la posición si es necesario
-          var rect = infoBox.getBoundingClientRect();
-          var windowHeight = window.innerHeight;
-
-          if (rect.bottom > windowHeight) {
-            infoBox.style.top = "auto";
-            infoBox.style.bottom = "100%";
-          } else {
-            infoBox.style.top = "100%";
-            infoBox.style.bottom = "auto";
-          }
-        }
-      });
-    });
-  }
-});
 
 // AGREGANDO FUNCION A TRATAMIENTOS
 document.addEventListener("DOMContentLoaded", function() {
@@ -215,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
 // AGREGANDO FUNCION AL CUESTIONARIO PARA DETERMINAR EL COSTO DEL FIBROSCAN (METODO DE CONTACTO)
 document.addEventListener("DOMContentLoaded", function() {
     var contactoChecks = document.querySelectorAll('input[name="contacto"]');
@@ -308,3 +278,15 @@ $(document).ready(function () {
     // Iniciar el temporizador para ocultar la barra de navegación
     hideNavbar();
   });
+
+// Asegúrate de que la barra de navegación esté visible al cambiar el tamaño de la ventana
+$(window).resize(function() {
+  if ($(window).width() <= 768) {
+    showNavbar(); // Mostrar la barra de navegación en dispositivos móviles
+  }
+});
+
+// Mostrar la barra de navegación si el ancho de la ventana es <= 768px
+if ($(window).width() <= 768) {
+  showNavbar();
+};

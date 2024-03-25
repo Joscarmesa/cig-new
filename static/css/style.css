@@ -110,31 +110,6 @@ h6,
   transform: skew(40deg);
 }
 
-.navbar-light .navbar-nav .nav-link {
-  font-family: "Jost", sans-serif;
-  padding: 35px 15px;
-  font-size: 18px;
-  color: var(--dark);
-  outline: none;
-  transition: 0.5s;
-}
-
-.sticky-top.navbar-light .navbar-nav .nav-link {
-  padding: 20px 15px;
-}
-
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-  color: var(--primary);
-}
-
-@media (max-width: 991.98px) {
-  .navbar-light .navbar-nav .nav-link,
-  .sticky-top.navbar-light .navbar-nav .nav-link {
-    padding: 10px 0;
-  }
-}
-
 .carousel-caption {
   top: 0;
   left: 0;
@@ -442,4 +417,45 @@ background-color: #021e359d;
 }
 .navbar .dropdown-menu .dropdown-item:hover {
   background-color: #fa08449f;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Jost", sans-serif;
+  padding: 35px 15px;
+  font-size: 18px;
+  color: var(--dark);
+  outline: none;
+  transition: 0.5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+  padding: 20px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link,
+  .sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+}
+
+/* Ajustando logo de CIG */
+.navbar-brand img {
+  max-height: 2em; 
+  width: auto;
+  height: auto;
+}
+
+/* Ajustando margen de los botones en dispositivos moviles*/
+
+@media (max-width: 991.98px) {
+  .btn-secondary{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
 }
