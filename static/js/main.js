@@ -184,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
 // AGREGANDO FUNCION AL CUESTIONARIO PARA DETERMINAR EL COSTO DEL FIBROSCAN (METODO DE CONTACTO)
 document.addEventListener("DOMContentLoaded", function() {
     var contactoChecks = document.querySelectorAll('input[name="contacto"]');
@@ -235,6 +236,41 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 });
+
+// Implementando funcion para determinar la sede 
+  var sedeRomaNorte = document.getElementById('roma_norte');
+  var sedeUniversidad = document.getElementById('universidad');
+
+  sedeRomaNorte.addEventListener('change', function() {
+      if (sedeRomaNorte.checked) {
+          sedeUniversidad.checked = false; // Desmarcar "Universidad" si "Roma Norte" está marcado
+      }
+  });
+
+  sedeUniversidad.addEventListener('change', function() {
+      if (sedeUniversidad.checked) {
+          sedeRomaNorte.checked = false; // Desmarcar "Roma Norte" si "Universidad" está marcado
+      }
+  });
+
+  // ¿Está interesado en participar en un protocolo de investigación?
+  var participarSi = document.getElementById('participar_si');
+  var participarNo = document.getElementById('participar_no');
+
+  participarSi.addEventListener('change', function() {
+      if (participarSi.checked) {
+          participarNo.checked = false; // Desmarcar "No" si "Sí" está marcado
+      }
+  });
+
+  participarNo.addEventListener('change', function() {
+      if (participarNo.checked) {
+          participarSi.checked = false; // Desmarcar "Sí" si "No" está marcado
+      }
+  });
+
+
+//FIN DEL CUESTIONARIO
 
 // FUNCION PARA NAVBAR
 $(document).ready(function () {
