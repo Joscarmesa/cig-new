@@ -1,22 +1,21 @@
-
 {% block main_content %}
 <!-- Carousel Start -->
-<div class="container-fluid p-0">
+<div class="container-fluid p-0" id="carrusel">
   <div id="header-carousel" class="carousel slide carousel-fade particle" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="w-100" src="{{ url_for('static', filename='img/liver.jpeg') }}" alt="Image" />
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-
           <div class="p-3" style="max-width: 900px">
             <h5 class="text-white text-uppercase mb-3 animated slideInDown">
-              Proteja su hígado de esta enfermedad
+              Protege tu hígado de esta enfermedad
             </h5>
             <h1 class="display-1 text-white mb-md-4 animated zoomIn">
               Hígado Graso
             </h1>
-            <a href="citas.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Cita</a>
-            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contactenos</a>
+            <a href="#protocolos-de-investigacion"
+              class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita
+            </a>
           </div>
         </div>
       </div>
@@ -25,13 +24,14 @@
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px">
             <h5 class="text-white text-uppercase mb-3 animated slideInDown">
-              Acceda a una mejor calidad de vida
+              Accede a una mejor calidad de vida
             </h5>
             <h1 class="display-1 text-white mb-md-4 animated zoomIn">
-              Agende una valoración hepática
+              Agenda una valoración hepática
             </h1>
-            <a href="citas.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Cita</a>
-            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contactenos</a>
+            <a href="#protocolos-de-investigacion"
+              class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita
+            </a>
           </div>
         </div>
       </div>
@@ -49,44 +49,31 @@
 <!-- Carousel End -->
 
 <!-- Banner Start -->
-<div class="container-fluid banner mb-5">
+<div class="container-fluid banner mb-5" id="banner">
   <div class="container">
     <div class="row gx-0">
-      <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+      <!-- Primera columna, ahora ocupa 6 de 12 unidades -->
+      <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
         <div class="bg-primary d-flex flex-column p-5" style="height: 300px">
-          <h3 class="text-white mb-3">Horario de atención</h3>
+          <h3 class="text-white text-center display-7 mb-4">Atención telefónica y en línea</h3>
           <div class="d-flex justify-content-between text-white mb-3">
             <h6 class="text-white mb-0">Lunes a Viernes</h6>
-            <p class="mb-0">9:00am - 10:00am</p>
+            <p class="mb-0">08:00am - 07:30pm</p>
           </div>
           <div class="d-flex justify-content-between text-white mb-3">
             <h6 class="text-white mb-0">Sabado</h6>
-            <p class="mb-0">Cerrado</p>
+            <p class="mb-0">10:00am - 3:30pm</p>
           </div>
           <div class="d-flex justify-content-between text-white mb-3">
             <h6 class="text-white mb-0">Domingo</h6>
             <p class="mb-0">Cerrado</p>
           </div>
-          <a class="btn btn-light" href="">Agendar cita</a>
         </div>
       </div>
-      <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-        <div class="bg-dark d-flex flex-column p-5" style="height: 300px">
-          <h3 class="text-white mb-3">Seleccione una fecha</h3>
-          <div class="date mb-3" id="date" data-target-input="nearest">
-            <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-              placeholder="Fecha de su cita" data-target="#date" data-toggle="datetimepicker" style="height: 40px" />
-          </div>
-          <select class="form-select bg-light border-0 mb-3" style="height: 40px">
-            <option selected>Seleccione su estudio</option>
-            <option value="1">Fibroscan</option>
-          </select>
-          <a class="btn btn-light" href="">Agendar</a>
-        </div>
-      </div>
-      <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+      <!-- Segunda columna, también ocupa 6 de 12 unidades -->
+      <div class="col-lg-6 wow zoomIn" data-wow-delay="0.6s">
         <div class="bg-secondary d-flex flex-column p-5" style="height: 300px">
-          <h3 class="text-white mb-3">Información de contacto</h3>
+          <h3 class="text-white text-center mb-4">Información de contacto</h3>
           <div class="contact-info mb-3">
             <div class="d-flex justify-content-between">
               <span class="text-white">Sucursal Durango:</span>
@@ -98,69 +85,77 @@
             </div>
             <div class="d-flex justify-content-between">
               <span class="text-white">Sucursal Universidad:</span>
-              <span class="text-white"> 559-314-4340</span>
+              <span class="text-white">559-314-4340</span>
             </div>
             <div class="d-flex justify-content-between">
               <span class="text-white">WhatsApp:</span>
               <span class="text-white">564-407-1939</span>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-</div>
-<!-- Banner Start -->
-
+<!-- Banner End -->
 
 <!-- About Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="quienes-somos">
   <div class="container">
     <div class="row g-5">
       <div class="col-lg-7">
         <div class="section-title mb-4">
           <h5 class="position-relative d-inline-block text-primary text-uppercase">
-            ¿Quienes somos?
+            ¿Quiénes somos?
           </h5>
           <h1 class="display-5 mb-0">
             Centro de investigación y gastroenterología
           </h1>
         </div>
         <h4 class="text-body fst-italic mb-4">
-          Somos el primer centro de investigación interesado en crear
-                    conciencia y atender a las personas.
+          Somos el primer centro de investigación interesado en crear conciencia
+          y atender a las personas afectadas por enfermedades como hígado graso, obesidad, riñon, dislipidemias, etc.
         </h4>
         <p class="mb-4">
-          Nuestro centro de investigación ofrece un servicio a la altura de las mejores instituciones a nivel
-          internacional
+          Nuestro centro de investigación ofrece un servicio a la altura de las
+          mejores instituciones a nivel internacional.
         </p>
-        <div class="row g-3">
-          <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
-            <h5 class="mb-3">
-              <i class="fa fa-check-circle text-primary me-3"></i>Alta especialidad
-            </h5>
-            <h5 class="mb-3">
-              <i class="fa fa-check-circle text-primary me-3"></i>Detección temprana
-            </h5>
-          </div>
-          <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
-            <h5 class="mb-3">
-              <i class="fa fa-check-circle text-primary me-3"></i>Asesoramiento nutricional
-            </h5>
-            <h5 class="mb-3">
-              <i class="fa fa-check-circle text-primary me-3"></i>Asesoramiento psicológico
-            </h5>
-          </div>
+        <div class="mb-4">
+
+
+
+          <h5 class="position-relative d-inline-block text-primary text-uppercase"><i
+              class="fa fa-check-circle text-primary me-3"></i>Alta especialidad</h5>
+          <ul>
+            <li class="mb-1">Dra. Laura Ladrón de Guevara, Investigadora Principal y Directora General, M. en C., cédula
+              3938572, Especialidad en Gastroenterología, con certificación en Endoscopía, cédula 6075307, Médico
+              Cirujano, cédula 2206645.</li>
+            <li>Dra. Graciela Torres, Sub Investigadora, Especialidad en Gastroenterología, con certificación en
+              Endoscopía, cédula 3816066, Médico Cirujano, cédula 2561170.</li>
+          </ul>
         </div>
-        <a href="citas.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">Agendar
-          cita</a>
+        <div class="mb-4">
+          <h5 class="position-relative d-inline-block text-primary text-uppercase"><i
+              class="fa fa-check-circle text-primary me-3"></i>Detección temprana</h5>
+          <ul>
+            <li class="mb-1">Dr. Jim Palmar, Médico General, Subdirector de Servicios Clínicos, Médico Cirujano, cédula
+              12398213.</li>
+            <li>Dra. Marcela Castillo, Médico General, Subdirector de Servicio Clínicos, Médico Cirujano, cédula
+              09146589.</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="position-relative d-inline-block text-primary text-uppercase"><i
+              class="fa fa-check-circle text-primary me-3"></i>Asesoramiento nutricional</h5>
+          <ul>
+            <li>L. N. Laura Sarmiento, Coordinadora de Estudios Clínicos, Licenciada en Nutrición, cédula 8948191.</li>
+          </ul>
+        </div>
       </div>
       <div class="col-lg-5" style="min-height: 500px">
         <div class="position-relative h-100">
-          <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{{ url_for('static', filename='img/pulgar.jpeg') }}"
-            style="object-fit: cover" />
+          <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
+            src="{{ url_for('static', filename='img/pulgar.jpeg') }}" style="object-fit: cover" />
         </div>
       </div>
     </div>
@@ -168,71 +163,495 @@
 </div>
 <!-- About End -->
 
+
+<!-- enfermedades Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="enfermedades">
+  <div class="container">
+    <div class="row g-5 mb-5">
+      <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px">
+        <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
+          <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/daño.jpeg') }}"
+            style="object-fit: cover" />
+          <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/sano.jpeg') }}"
+            style="object-fit: cover" />
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="section-title mb-5">
+          <h5 class="position-relative d-inline-block text-primary text-uppercase">
+            Informate sobre
+          </h5>
+          <h1 class="display-5 mb-0">Tus padecimientos</h1>
+        </div>
+        <div class="row g-5">
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-1.jpg.webp" alt="" />
+            </div>
+            <div class="position-relative color-padecimiento rounded-bottom text-center p-4">
+              <h5 class="m-0 hamburger">Hígado Graso</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                También conocida como esteatosis hepática, es una condición
+                donde se acumula grasa en el hígado, lo que puede llevar a
+                inflamación, fibrosis y eventualmente cirrosis hepática si no se
+                trata.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="enfermedades-1.jpg.webp" alt="" />
+            </div>
+            <div class="position-relative color-padecimiento rounded-bottom text-center p-4">
+              <h5 class="m-0 hamburger">Obesidad</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                Es una condición médica caracterizada por un exceso de grasa
+                corporal que aumenta el riesgo de problemas de salud como
+                enfermedades cardíacas, diabetes tipo 2 y ciertos tipos de
+                cáncer.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.3s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-3.jpg" alt="" />
+            </div>
+            <div class="position-relative color-padecimiento rounded-bottom text-center p-4">
+              <h5 class="m-0 hamburger">Hipertensión</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                Conocida comúnmente como presión arterial alta, es una condición
+                en la que la fuerza de la sangre contra las paredes de las
+                arterias es consistentemente demasiado alta, lo que puede dañar
+                los vasos sanguíneos y órganos como el corazón, los riñones y el
+                cerebro.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
+            </div>
+            <div class="position-relative color-padecimiento rounded-bottom text-center p-4">
+              <h5 class="m-0 hamburger">Dislipidemias</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                Se refiere a un desequilibrio en los niveles de lípidos en la
+                sangre, incluyendo colesterol alto, triglicéridos altos o ambos,
+                lo que puede aumentar el riesgo de enfermedad cardiovascular.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="col-lg-7">
+        <div class="row g-5">
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
+            </div>
+            <div class="position-relative color-padecimiento rounded-bottom text-center p-4">
+              <h5 class="m-0 hamburger">Problemas Cardiovasculares</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                Son un grupo de enfermedades que afectan el corazón y los vasos
+                sanguíneos, incluyendo enfermedades coronarias, arritmias,
+                enfermedades del músculo cardíaco (miocardiopatías) y
+                enfermedades de los vasos sanguíneos (enfermedades vasculares).
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
+            </div>
+            <div class="position-relative color-padecimiento rounded-bottom text-center p-4">
+              <h5 class="m-0 hamburger">Crohn</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                Es una enfermedad inflamatoria intestinal crónica que puede
+                afectar cualquier parte del tracto gastrointestinal, causando
+                síntomas como dolor abdominal, diarrea, fatiga y pérdida de
+                peso. Su causa exacta es desconocida, pero se cree que involucra
+                una respuesta inmunitaria anormal.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
+            </div>
+            <div class="position-relative color-padecimiento rounded-bottom text-center p-4">
+              <h5 class="m-0 hamburger">Síndrome Metabólico</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                El síndrome metabólico es un conjunto de condiciones que ocurren
+                juntas y aumentan el riesgo de enfermedad cardíaca, accidente
+                cerebrovascular y diabetes tipo 2. Estas condiciones incluyen:
+                Obesidad, dislipidemia, hipertensión y niveles altos de glucosa
+                en ayunas
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
+            <div class="rounded-top overflow-hidden">
+              <img class="img-fluid" src="img/enfermedades-4.jpg" alt="" />
+            </div>
+            <div class="position-relative color-padecimiento rounded-bottom text-center p-4">
+              <h5 class="m-0 hamburger">Colangitis Biliar Primaria</h5>
+            </div>
+            <div class="enfermedad-info">
+              <p>
+                También llamada (CBP) es una enfermedad crónica del hígado en la que los conductos
+                biliares se inflaman y se dañan progresivamente. Lo que eventualmente puede causar
+                cirrosis y fallo hepático debido a la acumulación de sustancias tóxicas en el hígado.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-5 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
+        <div
+          class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-justify p-4">
+          <h3 class="text-white mb-3">Hígado Graso</h3>
+          <p class="text-white text-justify mb-3">
+            Entendemos que el hígado graso es una condición que puede causar una
+            serie de enfermedades concomitantes, afectando significativamente la
+            calidad de vida de las personas. Por ello, nos enfocamos en estudiar
+            y tratar los padecimientos que desencadena esta enfermedad.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- enfermedades End -->
+
+<!-- TRATAMIENTOS Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="tratamiento">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <div class="section-title mb-4">
+          <h5 class="position-relative d-inline-block text-primary text-uppercase">
+            ¿Qué opciones tengo?
+          </h5>
+          <h3 class="display-5 mb-0">
+            Tratamientos para Enfermedades Relacionadas con el Hígado y el
+            Metabolismo
+          </h3>
+        </div>
+        <h4 class="text-body fst-italic mb-4">
+          En el Centro de Investigación y Gastroenterología, comprendemos la
+          importancia de un tratamiento eficaz para las enfermedades
+          relacionadas con el hígado y el metabolismo.
+        </h4>
+        <p class="mb-4">
+          A continuación, te presentamos algunas opciones de tratamiento
+          convencionales para estas condiciones:
+        </p>
+      </div>
+      <div class="col-lg-5" style="min-height: 500px">
+        <div class="position-relative h-100">
+          <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
+            src="{{ url_for('static', filename='img/enfermedades-1.jpg.webp') }}" style="object-fit: cover" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- TRATAMIENTOS End -->
+
+<!-- Higado Graso Tratamiento Start -->
+
+<div class="container py-5 wow fadeInUp" id="menu-tratamiento">
+
+  <button class="toggle-treatments btn btn-primary py-2 px-4 ms-3">Mostrar Tratamientos</button>
+  <div class="treatment-section" style="display: none;">
+
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Hígado Graso</h3>
+        <div class="treatment-item">
+          <p>
+            Cambios en el estilo de vida, como una dieta saludable y ejercicio
+            regular. En algunos casos, medicamentos para reducir el colesterol o
+            la diabetes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Obesidad</h3>
+        <div class="treatment-item">
+          <p>
+            Programas de pérdida de peso, cambios en la dieta, actividad física y,
+            en algunos casos, cirugía bariátrica.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Hipertensión</h3>
+        <div class="treatment-item">
+          <p>
+            Medicamentos antihipertensivos, cambios en el estilo de vida como
+            reducir la ingesta de sal y aumentar la actividad física.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Dislipidemia</h3>
+        <div class="treatment-item">
+          <p>
+            Medicamentos para reducir el colesterol, como las estatinas, junto
+            con cambios en la dieta y el ejercicio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Problemas Cardíacos</h3>
+        <div class="treatment-item">
+          <p>
+            Medicamentos, cirugía, o procedimientos como la angioplastia,
+            dependiendo de la condición específica.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Enfermedad de Crohn</h3>
+        <div class="treatment-item">
+          <p>
+            Medicamentos antiinflamatorios, inmunosupresores y, en algunos
+            casos, cirugía.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Síndrome Metabólico</h3>
+        <div class="treatment-item">
+          <p>
+            Tratamiento de las condiciones individuales, como la hipertensión y
+            la diabetes, y cambios en el estilo de vida.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Diabetes Mellitus Tipo 2</h3>
+        <div class="treatment-item">
+          <p>
+            Medicamentos para controlar el azúcar en la sangre, cambios en la
+            dieta y ejercicio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="treatment-menu wow fadeInUp">
+      <div class="treatment-hamburger">
+        <h3>Colangitis Biliar Primaria</h3>
+        <div class="treatment-item">
+          <p>
+            El tratamiento se enfoca en aliviar los síntomas, retrasar la progresión de la enfermedad y prevenir
+            complicaciones.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Higado Graso Tratamiento End -->
+
+
 <!-- citas Start -->
-<div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s"
+  id="protocolos-de-investigacion">
   <div class="container">
     <div class="row gx-5">
       <div class="col-lg-6 py-5">
         <div class="py-5">
-          <h1 class="display-5 text-white mb-4">
-            ¡Te invitamos a conocernos!
+          <h1 class="display-2 text-white mb-4">
+            Protocolos de Investigación
           </h1>
+          <h3 class="display text-white mb-4">
+            ¡Una Excelente Opción!
+          </h3>
+          <p class="text-white mb-4">
+            En CIG, creemos firmemente en la innovación y la investigación para encontrar tratamientos más efectivos y
+            personalizados. Nuestros protocolos de investigación médica son una excelente opción para aquellos que
+            buscan alternativas a los tratamientos convencionales. Al participar en nuestros estudios, los pacientes
+            tienen acceso a terapias de vanguardia y contribuyen al avance de la medicina.
+          </p>
           <p class="text-white mb-0">
-            Realizamos novedosos estudios en conjunto con las farmacéuticas más prestigiosas del mundo. El objetivo es
-            ofrecer una alternativa a los padecimientos hepáticos más comunes.
+            Es importante recopilar información sobre factores de riesgo cardiovascular como parte de la historia
+            clínica integral de los pacientes, dado que estos pueden influir en el desarrollo y manejo de condiciones
+            gastrointestinales y metabólicas, como el hígado graso. <strong class="text-white">Sin embargo, el Centro de
+              Investigación y Gastroenterología no ofrece tratamiento directo para enfermedades
+              cardiovasculares.</strong>
           </p>
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="citas-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
-          data-wow-delay="0.6s">
-          <h1 class="text-white mb-4">Agendar cita</h1>
+        <div class="citas-form wow zoomIn cuestionario" data-wow-delay="0.6s">
+          <h1 class="text-white text-center mb-4">Solicitar cita</h1>
           <form>
             <div class="row g-3">
-              <div class="col-12 col-sm-6">
-                <select class="form-select bg-light border-0" style="height: 55px">
-                  <option selected>Padecimiento</option>
-                  <option value="1">Hígado graso</option>
-                  <option value="2">Cirrosis</option>
-                  <option value="3">Colangitis biliar primaria</option>
-                </select>
-              </div>
-              <div class="col-12 col-sm-6">
-                <select class="form-select bg-light border-0" style="height: 55px">
-                  <option selected>Selecione estudio</option>
-                  <option value="1">Fibroscan</option>
-                  <option value="2">Electrocardiograma</option>
-                </select>
-              </div>
-              <div class="col-12 col-sm-6">
-                <input type="text" class="form-control bg-light border-0" placeholder="Tu nombre"
-                  style="height: 55px" />
-              </div>
-              <div class="col-12 col-sm-6">
-                <input type="email" class="form-control bg-light border-0" placeholder="Tu correo"
-                  style="height: 55px" />
-              </div>
-              <div class="col-12 col-sm-6">
-                <div class="date" id="date1" data-target-input="nearest">
-                  <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-                    placeholder="Fecha" data-target="#date1" data-toggle="datetimepicker"
-                    style="height: 55px" />
+              <!-- Pregunta 1: Selección de múltiples padecimientos -->
+              <div class="text-white">
+                <label>
+                  <h3 class="display text-white">Seleccione sus factores de riesgo:</h3>
+                </label>
+                <div class="form-check justify-content-right">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="higado_graso"
+                    value="Hígado graso">
+                  <label class="form-check-label" for="higado_graso">Hígado graso</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="obesidad" value="Obesidad">
+                  <label class="form-check-label" for="obesidad">Obesidad</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="hipertension"
+                    value="Hipertensión">
+                  <label class="form-check-label" for="hipertension">Hipertensión</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="dislipidemias"
+                    value="Dislipidemias">
+                  <label class="form-check-label" for="dislipidemias">Dislipidemias</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="problemas_cardiovasculares"
+                    value="Problemas Cardiovasculares">
+                  <label class="form-check-label" for="problemas_cardiovasculares">Problemas Cardiovasculares</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="crohn" value="Crohn">
+                  <label class="form-check-label" for="crohn">Crohn</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="sindrome_metabolico"
+                    value="Síndrome Metabólico">
+                  <label class="form-check-label" for="sindrome_metabolico">Síndrome Metabólico</label>
                 </div>
               </div>
-              <div class="col-12 col-sm-6">
-                <div class="time" id="time1" data-target-input="nearest">
-                  <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-                    placeholder="Hora" data-target="#time1" data-toggle="datetimepicker"
-                    style="height: 55px" />
+
+
+              <!-- Pregunta 2: Escribir si algún médico lo refirió y anotar su nombre -->
+              <div class="text-white">
+                <label>
+                  <h3 class="display text-white">¿Fue referido por un médico?</h3>
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="referido" id="referido_si" value="Si">
+                  <label class="form-check-label" for="referido_si">Sí</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="referido" id="referido_no" value="No">
+                  <label class="form-check-label" for="referido_no">No</label>
+                </div>
+                <input type="text" class="form-control bg-light border-0 referido-input" id="referido_nombre"
+                  placeholder="Nombre del médico que lo refirió" style="display: none; height: 55px;">
+              </div>
+
+              <!-- Pregunta 3: Seleccionar Sede -->
+              <div class="text-white">
+                <label>
+                  <h3 class="display text-white">Seleccione su sede</h3>
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sede" id="roma_norte" value="roma_norte">
+                  <label class="form-check-label" for="roma_norte">Roma Norte</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sede" id="universidad" value="universidad">
+                  <label class="form-check-label" for="universidad">Universidad</label>
                 </div>
               </div>
+
+              <!-- Pregunta 4: Interés en participar en un protocolo de investigación -->
+              <div class="text-white">
+                <label>
+                  <h3 class="display text-white">¿Está interesado en participar en un protocolo de investigación?</h3>
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="participar" id="participar_si" value="si">
+                  <label class="form-check-label" for="participar_si">Sí</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="participar" id="participar_no" value="no">
+                  <label class="form-check-label" for="participar_no">No</label>
+                </div>
+              </div>
+
+              <!-- Pregunta 5: Método de contacto -->
+              <div class="text-white">
+                <label>
+                  <h3 class="display text-white">Método de contacto preferido (obligatorio)</h3>
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="contacto" id="telefono" value="Telefono">
+                  <label class="form-check-label" for="telefono">Llamada telefónica</label>
+                  <input type="text" class="form-control bg-light border-0 contacto-input" id="telefono-input"
+                    placeholder="Tu número telefónico" style="display: none; height: 55px;">
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="contacto" id="whatsapp" value="Whatsapp">
+                  <label class="form-check-label" for="whatsapp">WhatsApp</label>
+                  <input type="text" class="form-control bg-light border-0 contacto-input" id="whatsapp-input"
+                    placeholder="Tu número de WhatsApp" style="display: none; height: 55px;">
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="contacto" id="correo"
+                    value="Correo electronico">
+                  <label class="form-check-label" for="correo">Correo electrónico</label>
+                  <input type="email" class="form-control bg-light border-0 contacto-input" id="correo-input"
+                    placeholder="Tu correo electrónico" style="display: none; height: 55px;">
+                </div>
+              </div>
+              <!-- Botón para enviar el formulario -->
               <div class="col-12">
-                <button class="btn btn-dark w-100 py-3" type="submit">
-                  Make citas
-                </button>
+                <button class="btn btn-dark w-100 py-3" type="submit">Enviar</button>
               </div>
             </div>
           </form>
+
         </div>
       </div>
     </div>
@@ -240,114 +659,33 @@
 </div>
 <!-- citas End -->
 
-<!-- enfermedades Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-  <div class="container">
-      <div class="row g-5 mb-5">
-          <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
-              <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
-                  <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/daño.jpeg') }}" style="object-fit: cover;">
-                  <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/sano.jpeg') }}" style="object-fit: cover;">
-              </div>
-          </div>
-          <div class="col-lg-7">
-              <div class="section-title mb-5">
-                  <h5 class="position-relative d-inline-block text-primary text-uppercase">Informate sobre</h5>
-                  <h1 class="display-5 mb-0">Enfermedades hepáticas</h1>
-              </div>
-              <div class="row g-5">
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-1.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Hepatitis C</h5>
-                      </div>
-                  </div>
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-2.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Hepatitis B</h5>
-                      </div>
-                  </div>
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.3s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-3.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Colangitis biliar primaria</h5>
-                      </div>
-                  </div>
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-4.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Enfermedad hepática por alcohol</h5>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="col-lg-7">
-              <div class="row g-5">
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-4.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Cirrosis</h5>
-                      </div>
-                  </div>
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-4.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Transplante hepático</h5>
-                      </div>
-                  </div>
-                  <div class="col-md-6 enfermedades-item wow zoomIn" data-wow-delay="0.6s">
-                      <div class="rounded-top overflow-hidden">
-                          <img class="img-fluid" src="img/enfermedades-4.jpg" alt="">
-                      </div>
-                      <div class="position-relative bg-light rounded-bottom text-center p-4">
-                          <h5 class="m-0">Cáncer de hígado</h5>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-5 enfermedades-item wow zoomIn" data-wow-delay="0.9s">
-              <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
-                  <h3 class="text-white mb-3">Agendar una cita</h3>
-                  <p class="text-white mb-3">Ven e informate acerca de estas enfermedades y ayudanos a mantenerte saludable</p>
-                  <h2 class="text-white mb-0">55 1054 6591 </h2>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-<!-- enfermedades End -->
-
 <!-- Offer Start -->
-<div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s" id="compartir">
   <div class="container py-5">
     <div class="row justify-content-center">
       <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
-        <div class="offer-text text-center rounded p-5">
-          <h1 class="display-5 text-white">
-            Realiza una valoración con nosotros
-          </h1>
-          <p class="text-white mb-4">
-            Es completamente gratis y te acompañamos todo el tiempo, <br>
-            estaras completamente informado acerca de tu progreso y <br>
-            te guiaremos sobre todo el proceso. <br>
+        <div class="offer-text rounded p-5">
+          <h2 class="display-5 text-white text-center">
+            ¡Síguenos y comparte!
+          </h2>
+          <p class="text-white text-justify mb-4">
+            Si tú o un ser querido están lidiando con alguna de estas
+            enfermedades y están interesados en participar en nuestros
+            protocolos de investigación, para contribuir con la ciencia para el tratamiento de enfermedades que afectan
+            a nuestra sociedad, por favor contáctenos. Les brindaremos la información necesaria para que conozcan la
+            enfermedad y las posibles opciones de tratamiento para que tomen decisiones informadas sobre su salud.
           </p>
-          <a href="{{ url_for('citas') }}" class="btn btn-dark py-3 px-5 me-3">Agende una cita</a>
-          <a href="{{ url_for('especialistas') }}" class="btn btn-light py-3 px-5">Especialistas</a>
+          <div class="row justify-content-center text-center">
+            <h3 class="text-white mb-4">Compartir en:</h3>
+            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                class="fab fa-twitter fw-normal"></i></a>
+            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                class="fab fa-facebook-f fw-normal"></i></a>
+            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                class="fab fa-whatsapp fw-normal"></i></a>
+            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i
+                class="fab fa-instagram fw-normal"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -356,3 +694,4 @@
 <!-- Offer End -->
 
 {% endblock %}
+</div>

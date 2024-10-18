@@ -32,3 +32,7 @@ def register_routes(app):
     @app.route('/ensayos')
     def ensayos():
         return render_template('ensayos.html')
+    
+    @app.route('/inicio')
+    def inicio():
+        return render_template('inicio.html')
