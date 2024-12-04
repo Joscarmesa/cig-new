@@ -66,6 +66,19 @@
 
   {% include 'partials/footer.html' %}
 
+
+  <!-- Mensajes flash para correo -->
+  {% with messages = get_flashed_messages(with_categories=True) %}
+  {% if messages %}
+      <div>
+          {% for category, message in messages %}
+              <div class="alert alert-{{ category }}">{{ message }}</div>
+          {% endfor %}
+      </div>
+  {% endif %}
+{% endwith %}
+  <!-- Mensajes flash para correo End-->
+
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
