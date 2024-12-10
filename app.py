@@ -26,7 +26,6 @@ mail = Mail(app)
 register_routes(app, mail)  # Pasamos `mail` para usarlo en las rutas
 
 if __name__ == '__main__':
-    app.run(debug=True)
     # Detecta el puerto del entorno (importante para Google Cloud Run)
     port = int(os.getenv("PORT", 8080))
     app.run(host='0.0.0.0', port=port)

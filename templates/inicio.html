@@ -1,4 +1,17 @@
 {% block main_content %}
+
+<!-- Mensajes flash para correo -->
+{% with messages = get_flashed_messages(with_categories=True) %}
+{% if messages %}
+    <div>
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>
+        {% endfor %}
+    </div>
+{% endif %}
+{% endwith %}
+<!-- Mensajes flash para correo End-->
+
 <!-- Carousel Start -->
 <div class="container-fluid p-0" id="carrusel">
   <div id="header-carousel" class="carousel slide carousel-fade particle" data-bs-ride="carousel">
@@ -527,6 +540,8 @@
           </p>
         </div>
       </div>
+
+      <!-- Inicio del formulario -->
       <div class="col-lg-6">
         <div class="citas-form wow zoomIn cuestionario" data-wow-delay="0.6s">
           <h1 class="text-white text-center mb-4">Solicitar cita</h1>
@@ -646,12 +661,19 @@
                     name="correo" placeholder="Tu correo electrónico" style="display: none; height: 55px;">
                 </div>
               </div>
+
               <!-- Botón para enviar el formulario -->
               <div class="col-12">
-                <button class="btn btn-dark w-100 py-3" type="submit">Enviar</button>
+                <button class="btn btn-dark w-100 py-3" type="submit" id="submit-button" aria-label="Enviar formulario">
+                  Solicitar Cita
+                </button>
               </div>
+
             </div>
           </form>
+
+          <!-- Contenedor para mostrar mensajes flash dinámicamente -->
+          <div id="flash-messages"></div>
 
         </div>
       </div>

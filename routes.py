@@ -1,4 +1,4 @@
-from flask import render_template, request, flash, redirect
+from flask import render_template, request, flash, redirect, url_for
 from flask_mail import Message
 import logging
 
@@ -41,6 +41,7 @@ def register_routes(app, mail):
 
     @app.route('/solicitar-cita', methods=['POST'])
     def solicitar_cita():
+        # Recopila datos del formulario
         padecimientos = request.form.getlist('padecimientos[]')
         referido = request.form.get('referido')
         referido_nombre = request.form.get('referido_nombre', '')
@@ -53,8 +54,8 @@ def register_routes(app, mail):
 
         # Validación de campos obligatorios
         if not sede or not metodo_contacto:
-            flash('Por favor, completa todos los campos obligatorios.', 'warning')
-            return redirect('/')
+            flash('Por favor, selecciona una sede y un método de contacto.', 'warning')
+            return redirect(url_for('index'))
 
         # Crear el correo
         subject = "Nueva solicitud de cita"
@@ -70,28 +71,14 @@ def register_routes(app, mail):
         WhatsApp: {whatsapp}
         Correo: {correo}
         """
-        # Opción para HTML
-        msg.html = f"""
-        <h3>Nueva solicitud de cita</h3>
-        <ul>
-            <li><strong>Padecimientos:</strong> {', '.join(padecimientos)}</li>
-            <li><strong>Referido:</strong> {referido} ({referido_nombre})</li>
-            <li><strong>Sede seleccionada:</strong> {sede}</li>
-            <li><strong>Interés en participar:</strong> {participar}</li>
-            <li><strong>Método de contacto preferido:</strong> {metodo_contacto}</li>
-            <li><strong>Teléfono:</strong> {telefono}</li>
-            <li><strong>WhatsApp:</strong> {whatsapp}</li>
-            <li><strong>Correo:</strong> {correo}</li>
-        </ul>
-        """
-
+    
         # Enviar el correo
         try:
             mail.send(msg)
             logging.info('Correo enviado correctamente.')
-            flash('Solicitud enviada correctamente.', 'success')
+            flash('Tu solicitud de cita se ha enviado correctamente. Te contactaremos pronto.', 'success')
         except Exception as e:
             logging.error(f'Error al enviar el correo: {e}')
-            flash(f'Error al enviar la solicitud: {str(e)}', 'danger')
+            flash('Hubo un error al enviar tu solicitud. Inténtalo nuevamente más tarde.', 'danger')
 
         return redirect('/')

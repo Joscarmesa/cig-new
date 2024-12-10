@@ -187,90 +187,139 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // AGREGANDO FUNCION AL CUESTIONARIO PARA DETERMINAR EL COSTO DEL FIBROSCAN (METODO DE CONTACTO)
 document.addEventListener("DOMContentLoaded", function() {
-    var contactoChecks = document.querySelectorAll('input[name="contacto"]');
-  
-    contactoChecks.forEach(function(check) {
+  // Método de contacto
+  var contactoChecks = document.querySelectorAll('input[name="contacto"]');
+  contactoChecks.forEach(function(check) {
       check.addEventListener('change', function() {
-        var inputId = this.id + '-input';
-        var inputField = document.getElementById(inputId);
-  
-        if (this.checked) {
-          inputField.style.display = 'block';
-        } else {
-          inputField.style.display = 'none';
-          inputField.value = ''; // Limpiar el campo si se deselecciona
-        }
-  
-        // Asegurarse de que solo se selecciona una opción
-        contactoChecks.forEach(function(otherCheck) {
-          if (otherCheck !== check) {
-            otherCheck.checked = false;
-            document.getElementById(otherCheck.id + '-input').style.display = 'none';
+          var inputId = this.id + '-input';
+          var inputField = document.getElementById(inputId);
+
+          if (this.checked) {
+              inputField.style.display = 'block';
+          } else {
+              inputField.style.display = 'none';
+              inputField.value = ''; // Limpiar el campo si se deselecciona
           }
-        });
+
+          // Asegurarse de que solo se selecciona una opción
+          contactoChecks.forEach(function(otherCheck) {
+              if (otherCheck !== check) {
+                  otherCheck.checked = false;
+                  var otherInputField = document.getElementById(otherCheck.id + '-input');
+                  if (otherInputField) {
+                      otherInputField.style.display = 'none';
+                      otherInputField.value = ''; // Limpiar el campo
+                  }
+              }
+          });
       });
-    });
   });
-// AGREGANDO FUNCION AL CUESTIONARIO PARA DETERMINAR EL COSTO DEL FIBROSCAN (MEDICO REFERIDO)
 
-document.addEventListener("DOMContentLoaded", function() {
-    var referidoSi = document.getElementById('referido_si');
-    var referidoNo = document.getElementById('referido_no');
-    var referidoNombre = document.getElementById('referido_nombre');
-  
-    referidoSi.addEventListener('change', function() {
-      if (referidoSi.checked) {
-        referidoNo.checked = false; // Desmarcar "No" si "Sí" está marcado
-        referidoNombre.style.display = 'block';
-      } else {
-        referidoNombre.style.display = 'none';
-        referidoNombre.value = ''; // Limpiar el campo si "Sí" no está marcado
-      }
-    });
-  
-    referidoNo.addEventListener('change', function() {
-      if (referidoNo.checked) {
-        referidoSi.checked = false; // Desmarcar "Sí" si "No" está marcado
-        referidoNombre.style.display = 'none';
-        referidoNombre.value = ''; // Limpiar el campo si "No" está marcado
-      }
-    });
-});
+  // Médico referido
+  var referidoSi = document.getElementById('referido_si');
+  var referidoNo = document.getElementById('referido_no');
+  var referidoNombre = document.getElementById('referido_nombre');
 
-// Implementando funcion para determinar la sede 
+  if (referidoSi && referidoNo && referidoNombre) {
+      referidoSi.addEventListener('change', function() {
+          if (referidoSi.checked) {
+              referidoNo.checked = false; // Desmarcar "No" si "Sí" está marcado
+              referidoNombre.style.display = 'block';
+          } else {
+              referidoNombre.style.display = 'none';
+              referidoNombre.value = ''; // Limpiar el campo si "Sí" no está marcado
+          }
+      });
+
+      referidoNo.addEventListener('change', function() {
+          if (referidoNo.checked) {
+              referidoSi.checked = false; // Desmarcar "Sí" si "No" está marcado
+              referidoNombre.style.display = 'none';
+              referidoNombre.value = ''; // Limpiar el campo si "No" está marcado
+          }
+      });
+  }
+
+  // Sede
   var sedeRomaNorte = document.getElementById('roma_norte');
   var sedeUniversidad = document.getElementById('universidad');
 
-  sedeRomaNorte.addEventListener('change', function() {
-      if (sedeRomaNorte.checked) {
-          sedeUniversidad.checked = false; // Desmarcar "Universidad" si "Roma Norte" está marcado
-      }
-  });
+  if (sedeRomaNorte && sedeUniversidad) {
+      sedeRomaNorte.addEventListener('change', function() {
+          if (sedeRomaNorte.checked) {
+              sedeUniversidad.checked = false; // Desmarcar "Universidad" si "Roma Norte" está marcado
+          }
+      });
 
-  sedeUniversidad.addEventListener('change', function() {
-      if (sedeUniversidad.checked) {
-          sedeRomaNorte.checked = false; // Desmarcar "Roma Norte" si "Universidad" está marcado
-      }
-  });
+      sedeUniversidad.addEventListener('change', function() {
+          if (sedeUniversidad.checked) {
+              sedeRomaNorte.checked = false; // Desmarcar "Roma Norte" si "Universidad" está marcado
+          }
+      });
+  }
 
-  // ¿Está interesado en participar en un protocolo de investigación?
+  // Participación en protocolo de investigación
   var participarSi = document.getElementById('participar_si');
   var participarNo = document.getElementById('participar_no');
 
-  participarSi.addEventListener('change', function() {
-      if (participarSi.checked) {
-          participarNo.checked = false; // Desmarcar "No" si "Sí" está marcado
-      }
-  });
+  if (participarSi && participarNo) {
+      participarSi.addEventListener('change', function() {
+          if (participarSi.checked) {
+              participarNo.checked = false; // Desmarcar "No" si "Sí" está marcado
+          }
+      });
 
-  participarNo.addEventListener('change', function() {
-      if (participarNo.checked) {
-          participarSi.checked = false; // Desmarcar "Sí" si "No" está marcado
-      }
-  });
+      participarNo.addEventListener('change', function() {
+          if (participarNo.checked) {
+              participarSi.checked = false; // Desmarcar "Sí" si "No" está marcado
+          }
+      });
+  }
+});
 
+// Implementando funcion para mensajes flash
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById('form-cita');
+  const flashMessages = document.getElementById('flash-messages');
+
+  // Manejar el envío del formulario
+  form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Previene el refresco de la página
+
+      const formData = new FormData(form); // Recopila los datos del formulario
+
+      fetch('/solicitar-cita', {
+          method: 'POST',
+          body: formData
+      })
+      .then(response => response.json()) // Suponiendo que el servidor devuelve JSON
+      .then(data => {
+          // Limpiar mensajes previos
+          flashMessages.innerHTML = '';
+
+          // Mostrar el mensaje flash
+          const alertDiv = document.createElement('div');
+          alertDiv.className = `alert alert-${data.success ? 'success' : 'danger'}`;
+          alertDiv.textContent = data.message;
+          flashMessages.appendChild(alertDiv);
+
+          // Si es exitoso, puedes limpiar el formulario
+          if (data.success) {
+              form.reset();
+          }
+      })
+      .catch(error => {
+          console.error('Error al enviar el formulario:', error);
+          flashMessages.innerHTML = `
+              <div class="alert alert-danger">Error al procesar la solicitud.</div>
+          `;
+      });
+  });
+});
 
 //FIN DEL CUESTIONARIO
+
+
 
 // FUNCION PARA NAVBAR
 $(document).ready(function () {
