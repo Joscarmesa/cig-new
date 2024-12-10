@@ -1,6 +1,10 @@
 from flask import Flask
 from routes import register_routes
+from flask_sitemap import Sitemap
 import os
+
+# Inicialización de Flask-Sitemap
+ext = Sitemap()
 
 # Importando flask mail y variables de entorno
 from flask_mail import Mail

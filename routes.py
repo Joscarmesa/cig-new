@@ -5,35 +5,39 @@ import logging
 def register_routes(app, mail):
     @app.route('/')
     def index():
-        return render_template('index.html')
+        return render_template('index.html', canonical_url="https://higadograso.mx/")
+
+    @app.route('/blog')
+    def blog():
+        return render_template('blog.html', canonical_url="https://higadograso.mx/blog")
 
     @app.route('/citas')
     def citas():
-        return render_template('citas.html')
+        return render_template('citas.html', canonical_url="https://higadograso.mx/citas")
 
     @app.route('/contact')
     def contact():
-        return render_template('contact.html')
+        return render_template('contact.html', canonical_url="https://higadograso.mx/contact")
 
     @app.route('/enfermedades')
     def enfermedades():
-        return render_template('enfermedades.html')
+        return render_template('enfermedades.html', canonical_url="https://higadograso.mx/enfermedades")
 
     @app.route('/eventos')
     def eventos():
-        return render_template('eventos.html')
+        return render_template('eventos.html', canonical_url="https://higadograso.mx/eventos")
 
     @app.route('/especialistas')
     def especialistas():
-        return render_template('especialistas.html')
+        return render_template('especialistas.html', canonical_url="https://higadograso.mx/especialistas")
 
     @app.route('/manifiesto')
     def manifiesto():
-        return render_template('manifiesto.html')
+        return render_template('manifiesto.html', canonical_url="https://higadograso.mx/manifiesto")
 
     @app.route('/ensayos')
     def ensayos():
-        return render_template('ensayos.html')
+        return render_template('ensayos.html', canonical_url="https://higadograso.mx/ensayos")
 
     @app.route('/inicio', methods=['GET', 'POST'])
     def inicio():
