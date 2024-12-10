@@ -56,7 +56,7 @@ def register_routes(app, mail):
         if not sede or not metodo_contacto:
             flash('Por favor, selecciona una sede y un método de contacto.', 'warning')
             return redirect(url_for('index'))
-
+        
         # Crear el correo
         subject = "Nueva solicitud de cita"
         msg = Message(subject, sender=app.config['MAIL_USERNAME'], recipients=['cigcitas@gmail.com'])

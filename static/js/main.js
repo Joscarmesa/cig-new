@@ -185,137 +185,152 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
 // AGREGANDO FUNCION AL CUESTIONARIO PARA DETERMINAR EL COSTO DEL FIBROSCAN (METODO DE CONTACTO)
-document.addEventListener("DOMContentLoaded", function() {
-  // Método de contacto
-  var contactoChecks = document.querySelectorAll('input[name="contacto"]');
-  contactoChecks.forEach(function(check) {
-      check.addEventListener('change', function() {
-          var inputId = this.id + '-input';
-          var inputField = document.getElementById(inputId);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Variables generales
+  const form = document.getElementById("form-cita");
+  const contactoChecks = document.querySelectorAll('input[name="contacto"]');
+  const referidoSi = document.getElementById("referido_si");
+  const referidoNo = document.getElementById("referido_no");
+  const referidoNombre = document.getElementById("referido_nombre");
+  const flashMessages = document.getElementById("flash-messages");
+
+  // Mostrar/ocultar campos según el método de contacto seleccionado
+  contactoChecks.forEach(function (check) {
+      check.addEventListener("change", function () {
+          const inputId = this.id + "-input";
+          const inputField = document.getElementById(inputId);
 
           if (this.checked) {
-              inputField.style.display = 'block';
+              inputField.style.display = "block";
+              inputField.required = true; // Hace el campo obligatorio
           } else {
-              inputField.style.display = 'none';
-              inputField.value = ''; // Limpiar el campo si se deselecciona
+              inputField.style.display = "none";
+              inputField.required = false; // Quita la obligación del campo
+              inputField.value = ""; // Limpia el valor si se deselecciona
           }
 
-          // Asegurarse de que solo se selecciona una opción
-          contactoChecks.forEach(function(otherCheck) {
+          // Asegurarse de que solo un método esté seleccionado
+          contactoChecks.forEach(function (otherCheck) {
               if (otherCheck !== check) {
                   otherCheck.checked = false;
-                  var otherInputField = document.getElementById(otherCheck.id + '-input');
+                  const otherInputField = document.getElementById(otherCheck.id + "-input");
                   if (otherInputField) {
-                      otherInputField.style.display = 'none';
-                      otherInputField.value = ''; // Limpiar el campo
+                      otherInputField.style.display = "none";
+                      otherInputField.required = false;
+                      otherInputField.value = ""; // Limpia el campo
                   }
               }
           });
       });
   });
 
-  // Médico referido
-  var referidoSi = document.getElementById('referido_si');
-  var referidoNo = document.getElementById('referido_no');
-  var referidoNombre = document.getElementById('referido_nombre');
-
+  // Manejar mostrar/ocultar campo de "Referido por médico"
   if (referidoSi && referidoNo && referidoNombre) {
-      referidoSi.addEventListener('change', function() {
+      referidoSi.addEventListener("change", function () {
           if (referidoSi.checked) {
-              referidoNo.checked = false; // Desmarcar "No" si "Sí" está marcado
-              referidoNombre.style.display = 'block';
-          } else {
-              referidoNombre.style.display = 'none';
-              referidoNombre.value = ''; // Limpiar el campo si "Sí" no está marcado
+              referidoNo.checked = false; // Desmarcar "No"
+              referidoNombre.style.display = "block";
+              referidoNombre.required = true; // Hace el campo obligatorio
           }
       });
 
-      referidoNo.addEventListener('change', function() {
+      referidoNo.addEventListener("change", function () {
           if (referidoNo.checked) {
-              referidoSi.checked = false; // Desmarcar "Sí" si "No" está marcado
-              referidoNombre.style.display = 'none';
-              referidoNombre.value = ''; // Limpiar el campo si "No" está marcado
+              referidoSi.checked = false; // Desmarcar "Sí"
+              referidoNombre.style.display = "none";
+              referidoNombre.required = false; // Quita la obligación
+              referidoNombre.value = ""; // Limpia el campo
           }
       });
   }
 
-  // Sede
-  var sedeRomaNorte = document.getElementById('roma_norte');
-  var sedeUniversidad = document.getElementById('universidad');
+  // Validar formulario antes del envío
+  form.addEventListener("submit", function (event) {
+      let isValid = true;
 
-  if (sedeRomaNorte && sedeUniversidad) {
-      sedeRomaNorte.addEventListener('change', function() {
-          if (sedeRomaNorte.checked) {
-              sedeUniversidad.checked = false; // Desmarcar "Universidad" si "Roma Norte" está marcado
+      // Validar que al menos un método de contacto esté seleccionado y su campo no esté vacío
+      const contactoSeleccionado = Array.from(contactoChecks).some(function (check) {
+          const inputField = document.getElementById(check.id + "-input");
+          if (check.checked) {
+              if (inputField && inputField.value.trim() === "") {
+                  alert(`Por favor, completa el campo para ${check.value}`);
+                  inputField.focus();
+                  isValid = false;
+              }
+              return true;
           }
+          return false;
       });
 
-      sedeUniversidad.addEventListener('change', function() {
-          if (sedeUniversidad.checked) {
-              sedeRomaNorte.checked = false; // Desmarcar "Roma Norte" si "Universidad" está marcado
-          }
-      });
-  }
+      if (!contactoSeleccionado) {
+          alert("Por favor, selecciona al menos un método de contacto y completa el campo correspondiente.");
+          isValid = false;
+      }
 
-  // Participación en protocolo de investigación
-  var participarSi = document.getElementById('participar_si');
-  var participarNo = document.getElementById('participar_no');
+      // Validar que el nombre del médico esté lleno si fue referido
+      if (referidoSi && referidoSi.checked && referidoNombre.value.trim() === "") {
+          alert("Por favor, completa el campo del nombre del médico que te refirió.");
+          referidoNombre.focus();
+          isValid = false;
+      }
 
-  if (participarSi && participarNo) {
-      participarSi.addEventListener('change', function() {
-          if (participarSi.checked) {
-              participarNo.checked = false; // Desmarcar "No" si "Sí" está marcado
-          }
-      });
+      // Si hay alguna validación fallida, detener el envío
+      if (!isValid) {
+          event.preventDefault();
+          return;
+      }
 
-      participarNo.addEventListener('change', function() {
-          if (participarNo.checked) {
-              participarSi.checked = false; // Desmarcar "Sí" si "No" está marcado
-          }
-      });
-  }
-});
-
-// Implementando funcion para mensajes flash
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById('form-cita');
-  const flashMessages = document.getElementById('flash-messages');
-
-  // Manejar el envío del formulario
-  form.addEventListener('submit', function (event) {
+      // Enviar formulario con fetch para manejar mensajes flash
       event.preventDefault(); // Previene el refresco de la página
+      const formData = new FormData(form);
 
-      const formData = new FormData(form); // Recopila los datos del formulario
-
-      fetch('/solicitar-cita', {
-          method: 'POST',
-          body: formData
+      fetch("/solicitar-cita", {
+          method: "POST",
+          body: formData,
       })
-      .then(response => response.json()) // Suponiendo que el servidor devuelve JSON
-      .then(data => {
-          // Limpiar mensajes previos
-          flashMessages.innerHTML = '';
+          .then((response) => response.json()) // Suponiendo que el servidor devuelve JSON
+          .then((data) => {
+              // Limpiar mensajes previos
+              flashMessages.innerHTML = "";
 
-          // Mostrar el mensaje flash
-          const alertDiv = document.createElement('div');
-          alertDiv.className = `alert alert-${data.success ? 'success' : 'danger'}`;
-          alertDiv.textContent = data.message;
-          flashMessages.appendChild(alertDiv);
+              // Mostrar el mensaje flash
+              const alertDiv = document.createElement("div");
+              alertDiv.className = `alert alert-${data.success ? "success" : "danger"}`;
+              alertDiv.textContent = data.message;
+              flashMessages.appendChild(alertDiv);
 
-          // Si es exitoso, puedes limpiar el formulario
-          if (data.success) {
-              form.reset();
-          }
-      })
-      .catch(error => {
-          console.error('Error al enviar el formulario:', error);
-          flashMessages.innerHTML = `
-              <div class="alert alert-danger">Error al procesar la solicitud.</div>
-          `;
-      });
+              // Si es exitoso, limpiar el formulario
+              if (data.success) {
+                  form.reset();
+
+                  // Ocultar y limpiar campos de contacto
+                  contactoChecks.forEach(function (check) {
+                      const inputField = document.getElementById(check.id + "-input");
+                      if (inputField) {
+                          inputField.style.display = "none";
+                          inputField.value = "";
+                      }
+                  });
+
+                  // Ocultar y limpiar campo de referido
+                  referidoNombre.style.display = "none";
+                  referidoNombre.value = "";
+              }
+          })
+          .catch((error) => {
+              console.error("Error al enviar el formulario:", error);
+              flashMessages.innerHTML = `
+                  <div class="alert alert-danger">Error al procesar la solicitud.</div>
+              `;
+          });
   });
 });
+
+
 
 //FIN DEL CUESTIONARIO
 
