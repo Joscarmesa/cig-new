@@ -82,3 +82,11 @@ def register_routes(app, mail):
             flash('Hubo un error al enviar tu solicitud. Inténtalo nuevamente más tarde.', 'danger')
 
         return redirect('/')
+
+
+
+ # Implementando blog
+
+    @app.route('/blog/vapes-tabaco')
+    def blog_vapes_tabaco():
+        return render_template('blog_content/blog/vapes_tabaco.html', canonical_url="https://higadograso.mx/blog/vapes-tabaco")
