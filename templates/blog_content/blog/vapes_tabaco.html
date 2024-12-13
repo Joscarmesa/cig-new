@@ -14,43 +14,51 @@
         <div class="bg-light p-4 rounded shadow">
           <!-- Introducción -->
           <div class="bg-secondary text-white p-3 rounded mb-4 wow fadeIn" data-wow-delay="0.2s">
-            <div class="text-center mb-3">
-              <img class="img-fluid rounded" style="max-width: 100%; height: auto;" src="{{ url_for('static', filename='img/vapesxheart.webp') }}" alt="Impacto del Tabaco y Vapeo">
+            <div class="row">
+              <div class="col-12 text-center mb-3">
+                <img class="img-fluid rounded" style="max-width: 100%; height: auto;" src="{{ url_for('static', filename='img/vapesxheart.webp') }}" alt="Impacto del Tabaco y Vapeo">
+              </div>
+              <div class="col-12">
+                <p class="mb-0 text-justify">
+                  El consumo de vapes y tabaco es una de las principales causas de enfermedades respiratorias, pero sus efectos no se limitan solo a los pulmones. Tanto el tabaco como los vapes pueden tener un impacto negativo significativo en otros órganos vitales, como el hígado y el corazón. Aunque el tabaco es conocido por sus efectos adversos a largo plazo, los vapes, aunque se consideran menos dañinos en algunos aspectos, no están exentos de riesgos.
+                </p>
+              </div>
             </div>
-            <p class="mb-0 text-justify">
-              El consumo de vapes y tabaco es una de las principales causas de enfermedades respiratorias, pero sus efectos no se limitan solo a los pulmones. Tanto el tabaco como los vapes pueden tener un impacto negativo significativo en otros órganos vitales, como el hígado y el corazón. Aunque el tabaco es conocido por sus efectos adversos a largo plazo, los vapes, aunque se consideran menos dañinos en algunos aspectos, no están exentos de riesgos.
-            </p>
           </div>
           
           <!-- Impacto del Tabaco -->
           <h3 class="text-primary wow fadeIn" data-wow-delay="0.3s">El Impacto del Tabaco en el Hígado y el Corazón</h3>
           
           <!-- Efectos en el Hígado -->
-          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn d-flex align-items-center" data-wow-delay="0.4s">
-            <div class="flex-shrink-0 me-3" style="width: 8rem;">
-              <img class="img-fluid rounded" src="{{ url_for('static', filename='img/liverxvape.webp') }}" alt="Impacto en el Hígado">
-            </div>
-            <div>
-              <h4 class="mt-4">1. Efectos en el Hígado:</h4>
-              <ul>
-                <li>Aumento de la inflamación hepática: El fumar tabaco puede desencadenar una respuesta inflamatoria en el hígado, favoreciendo el desarrollo de hígado graso no alcohólico (NAFLD) y otras enfermedades hepáticas.</li>
-                <li>Riesgo elevado de fibrosis hepática: Las sustancias químicas del tabaco pueden acelerar la fibrosis, progresando a cirrosis hepática y aumentando el riesgo de cáncer de hígado.</li>
-              </ul>
+          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.4s">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img class="img-fluid rounded" src="{{ url_for('static', filename='img/liverxvape.webp') }}" alt="Impacto en el Hígado">
+              </div>
+              <div class="col-md-8">
+                <h4 class="mt-4">1. Efectos en el Hígado:</h4>
+                <ul>
+                  <li>Aumento de la inflamación hepática: El fumar tabaco puede desencadenar una respuesta inflamatoria en el hígado, favoreciendo el desarrollo de hígado graso no alcohólico (NAFLD) y otras enfermedades hepáticas.</li>
+                  <li>Riesgo elevado de fibrosis hepática: Las sustancias químicas del tabaco pueden acelerar la fibrosis, progresando a cirrosis hepática y aumentando el riesgo de cáncer de hígado.</li>
+                </ul>
+              </div>
             </div>
           </div>
           
           <!-- Efectos en el Corazón -->
-          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn d-flex align-items-center" data-wow-delay="0.5s">
-            <div class="flex-shrink-0 me-3" style="width: 8rem;">
-              <img class="img-fluid rounded" src="{{ url_for('static', filename='img/bigheartxvape.webp') }}" alt="Impacto en el Corazón">
-            </div>
-            <div>
-              <h4>2. Efectos en el Corazón:</h4>
-              <ul>
-                <li>Aumento del riesgo de aterosclerosis: El tabaco daña las paredes arteriales, favoreciendo la acumulación de placa y aumentando el riesgo de infartos y accidentes cerebrovasculares.</li>
-                <li>Incremento de la presión arterial: El tabaco puede elevar la presión arterial, aumentando el estrés en el corazón.</li>
-                <li>Disminución del oxígeno en la sangre: El humo del tabaco reduce el oxígeno disponible, obligando al corazón a trabajar más duro.</li>
-              </ul>
+          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.5s">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img class="img-fluid rounded" src="{{ url_for('static', filename='img/bigheartxvape.webp') }}" alt="Impacto en el Corazón">
+              </div>
+              <div class="col-md-8">
+                <h4>2. Efectos en el Corazón:</h4>
+                <ul>
+                  <li>Aumento del riesgo de aterosclerosis: El tabaco daña las paredes arteriales, favoreciendo la acumulación de placa y aumentando el riesgo de infartos y accidentes cerebrovasculares.</li>
+                  <li>Incremento de la presión arterial: El tabaco puede elevar la presión arterial, aumentando el estrés en el corazón.</li>
+                  <li>Disminución del oxígeno en la sangre: El humo del tabaco reduce el oxígeno disponible, obligando al corazón a trabajar más duro.</li>
+                </ul>
+              </div>
             </div>
           </div>
           
@@ -58,31 +66,35 @@
           <h3 class="text-primary wow fadeIn" data-wow-delay="0.6s">El Impacto de los Vapeadores Electrónicos en el Hígado y el Corazón</h3>
           
           <!-- Efectos en el Hígado -->
-          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn d-flex align-items-center" data-wow-delay="0.7s">
-            <div class="flex-shrink-0 me-3" style="width: 8rem;">
-              <img class="img-fluid rounded" src="{{ url_for('static', filename='img/liverxvape.webp') }}" alt="Impacto en el Hígado por Vapeadores">
-            </div>
-            <div>
-              <h4 class="mt-4">1. Efectos en el Hígado:</h4>
-              <ul>
-                <li>Toxicidad hepática: Los compuestos de los vapes pueden contribuir al estrés oxidativo e inflamación, aumentando el riesgo de enfermedades hepáticas.</li>
-                <li>Interferencia con el metabolismo de fármacos: La nicotina en los vapes puede alterar cómo el hígado metaboliza medicamentos.</li>
-              </ul>
+          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.7s">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img class="img-fluid rounded" src="{{ url_for('static', filename='img/liverxvape.webp') }}" alt="Impacto en el Hígado por Vapeadores">
+              </div>
+              <div class="col-md-8">
+                <h4 class="mt-4">1. Efectos en el Hígado:</h4>
+                <ul>
+                  <li>Toxicidad hepática: Los compuestos de los vapes pueden contribuir al estrés oxidativo e inflamación, aumentando el riesgo de enfermedades hepáticas.</li>
+                  <li>Interferencia con el metabolismo de fármacos: La nicotina en los vapes puede alterar cómo el hígado metaboliza medicamentos.</li>
+                </ul>
+              </div>
             </div>
           </div>
           
           <!-- Efectos en el Corazón -->
-          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn d-flex align-items-center" data-wow-delay="0.8s">
-            <div class="flex-shrink-0 me-3" style="width: 8rem;">
-              <img class="img-fluid rounded" src="{{ url_for('static', filename='img/bigheartxvape.webp') }}" alt="Impacto Cardiovascular por Vapeadores">
-            </div>
-            <div>
-              <h4>2. Efectos en el Corazón:</h4>
-              <ul>
-                <li>Aumento de la frecuencia cardíaca: La nicotina puede incrementar la frecuencia cardíaca y la presión arterial.</li>
-                <li>Inflamación vascular: Los vapes pueden aumentar la inflamación de los vasos sanguíneos, contribuyendo a la aterosclerosis.</li>
-                <li>Daño a las células endoteliales: Los químicos en los aerosoles de vapes pueden dañar las células endoteliales, aumentando el riesgo de coágulos sanguíneos.</li>
-              </ul>
+          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.8s">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img class="img-fluid rounded" src="{{ url_for('static', filename='img/bigheartxvape.webp') }}" alt="Impacto Cardiovascular por Vapeadores">
+              </div>
+              <div class="col-md-8">
+                <h4>2. Efectos en el Corazón:</h4>
+                <ul>
+                  <li>Aumento de la frecuencia cardíaca: La nicotina puede incrementar la frecuencia cardíaca y la presión arterial.</li>
+                  <li>Inflamación vascular: Los vapes pueden aumentar la inflamación de los vasos sanguíneos, contribuyendo a la aterosclerosis.</li>
+                  <li>Daño a las células endoteliales: Los químicos en los aerosoles de vapes pueden dañar las células endoteliales, aumentando el riesgo de coágulos sanguíneos.</li>
+                </ul>
+              </div>
             </div>
           </div>
           
@@ -107,8 +119,5 @@
   </div>
 </div>
 <!-- Blog End -->
-
-  
-  
   
   {% endblock %}
