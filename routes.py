@@ -38,6 +38,12 @@ def register_routes(app, mail):
     @app.route('/ensayos')
     def ensayos():
         return render_template('ensayos.html', canonical_url="https://higadograso.mx/ensayos")
+    
+    # ***Entradas del blog***
+    @app.route('/blog/vapes-tabaco')
+    def blog_vapes_tabaco():
+        return render_template('blog_content/blog/vapes_tabaco.html', canonical_url="https://higadograso.mx/blog/vapes-tabaco")
+    # ***Entradas del blog***
 
     @app.route('/inicio', methods=['GET', 'POST'])
     def inicio():

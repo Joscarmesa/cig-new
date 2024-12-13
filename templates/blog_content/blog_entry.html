@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}{{ entry_title }}{% endblock %}
+{% block main_content %}
+<article>
+    <h1>{{ entry_title }}</h1>
+    <p class="date">Publicado el {{ entry_date }}</p>
+    <img src="{{ url_for('static', filename=entry_image) }}" alt="{{ entry_title }}">
+    <div class="content">
+        {{ entry_content | safe }}
+    </div>
+</article>
+{% endblock %}

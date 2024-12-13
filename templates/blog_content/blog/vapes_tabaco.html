@@ -1,0 +1,114 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-vapeo-tabaco">
+  <div class="container">
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">¿Cómo Afecta el Consumo de Vapeadores Electrónicos y Tabaco al Hígado y al Corazón?</h1>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-12">
+        <div class="bg-light p-4 rounded shadow">
+          <!-- Introducción -->
+          <div class="bg-secondary text-white p-3 rounded mb-4 wow fadeIn" data-wow-delay="0.2s">
+            <div class="text-center mb-3">
+              <img class="img-fluid rounded" style="max-width: 100%; height: auto;" src="{{ url_for('static', filename='img/vapesxheart.webp') }}" alt="Impacto del Tabaco y Vapeo">
+            </div>
+            <p class="mb-0 text-justify">
+              El consumo de vapes y tabaco es una de las principales causas de enfermedades respiratorias, pero sus efectos no se limitan solo a los pulmones. Tanto el tabaco como los vapes pueden tener un impacto negativo significativo en otros órganos vitales, como el hígado y el corazón. Aunque el tabaco es conocido por sus efectos adversos a largo plazo, los vapes, aunque se consideran menos dañinos en algunos aspectos, no están exentos de riesgos.
+            </p>
+          </div>
+          
+          <!-- Impacto del Tabaco -->
+          <h3 class="text-primary wow fadeIn" data-wow-delay="0.3s">El Impacto del Tabaco en el Hígado y el Corazón</h3>
+          
+          <!-- Efectos en el Hígado -->
+          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn d-flex align-items-center" data-wow-delay="0.4s">
+            <div class="flex-shrink-0 me-3" style="width: 8rem;">
+              <img class="img-fluid rounded" src="{{ url_for('static', filename='img/liverxvape.webp') }}" alt="Impacto en el Hígado">
+            </div>
+            <div>
+              <h4 class="mt-4">1. Efectos en el Hígado:</h4>
+              <ul>
+                <li>Aumento de la inflamación hepática: El fumar tabaco puede desencadenar una respuesta inflamatoria en el hígado, favoreciendo el desarrollo de hígado graso no alcohólico (NAFLD) y otras enfermedades hepáticas.</li>
+                <li>Riesgo elevado de fibrosis hepática: Las sustancias químicas del tabaco pueden acelerar la fibrosis, progresando a cirrosis hepática y aumentando el riesgo de cáncer de hígado.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Efectos en el Corazón -->
+          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn d-flex align-items-center" data-wow-delay="0.5s">
+            <div class="flex-shrink-0 me-3" style="width: 8rem;">
+              <img class="img-fluid rounded" src="{{ url_for('static', filename='img/bigheartxvape.webp') }}" alt="Impacto en el Corazón">
+            </div>
+            <div>
+              <h4>2. Efectos en el Corazón:</h4>
+              <ul>
+                <li>Aumento del riesgo de aterosclerosis: El tabaco daña las paredes arteriales, favoreciendo la acumulación de placa y aumentando el riesgo de infartos y accidentes cerebrovasculares.</li>
+                <li>Incremento de la presión arterial: El tabaco puede elevar la presión arterial, aumentando el estrés en el corazón.</li>
+                <li>Disminución del oxígeno en la sangre: El humo del tabaco reduce el oxígeno disponible, obligando al corazón a trabajar más duro.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Impacto de los Vapeadores -->
+          <h3 class="text-primary wow fadeIn" data-wow-delay="0.6s">El Impacto de los Vapeadores Electrónicos en el Hígado y el Corazón</h3>
+          
+          <!-- Efectos en el Hígado -->
+          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn d-flex align-items-center" data-wow-delay="0.7s">
+            <div class="flex-shrink-0 me-3" style="width: 8rem;">
+              <img class="img-fluid rounded" src="{{ url_for('static', filename='img/liverxvape.webp') }}" alt="Impacto en el Hígado por Vapeadores">
+            </div>
+            <div>
+              <h4 class="mt-4">1. Efectos en el Hígado:</h4>
+              <ul>
+                <li>Toxicidad hepática: Los compuestos de los vapes pueden contribuir al estrés oxidativo e inflamación, aumentando el riesgo de enfermedades hepáticas.</li>
+                <li>Interferencia con el metabolismo de fármacos: La nicotina en los vapes puede alterar cómo el hígado metaboliza medicamentos.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Efectos en el Corazón -->
+          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn d-flex align-items-center" data-wow-delay="0.8s">
+            <div class="flex-shrink-0 me-3" style="width: 8rem;">
+              <img class="img-fluid rounded" src="{{ url_for('static', filename='img/bigheartxvape.webp') }}" alt="Impacto Cardiovascular por Vapeadores">
+            </div>
+            <div>
+              <h4>2. Efectos en el Corazón:</h4>
+              <ul>
+                <li>Aumento de la frecuencia cardíaca: La nicotina puede incrementar la frecuencia cardíaca y la presión arterial.</li>
+                <li>Inflamación vascular: Los vapes pueden aumentar la inflamación de los vasos sanguíneos, contribuyendo a la aterosclerosis.</li>
+                <li>Daño a las células endoteliales: Los químicos en los aerosoles de vapes pueden dañar las células endoteliales, aumentando el riesgo de coágulos sanguíneos.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Comparativa Vapes vs Tabaco -->
+          <div class="bg-secondary text-white p-3 rounded mb-4 wow fadeIn" data-wow-delay="0.9s">
+            <h3 class="text-white">¿Vapes vs. Tabaco? ¿Es Menos Dañino?</h3>
+            <p class="mb-0 text-justify">
+              Aunque el vapeo se considera menos perjudicial que fumar cigarrillos tradicionales en términos de exposición a ciertas sustancias tóxicas, los efectos a largo plazo aún no se comprenden completamente. Ambos afectan el hígado y el corazón, aumentando el riesgo de enfermedades crónicas.
+            </p>
+          </div>
+          
+          <!-- Conclusión -->
+          <div class="bg-primary text-white p-3 rounded wow fadeIn" data-wow-delay="1.0s">
+            <h4 class="text-white">Conclusión:</h4>
+            <p class="mb-0 text-justify">
+              Tanto el tabaco como los vapes representan un riesgo significativo para la salud hepática y cardiovascular. La opción más segura es evitar el consumo de cualquier forma de tabaco o vapeo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Blog End -->
+
+  
+  
+  
+  {% endblock %}

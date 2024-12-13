@@ -2,66 +2,188 @@
 
 {% block main_content %}
 
-    <!-- citas Start -->
-    <div class="container-fluid bg-primary  mb-5 wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 90px;">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-6 py-5">
-                    <div class="py-5">
-                        <h1 class="display-5 text-white mb-4">We Are A Certified and Award Winning Dental Clinic You Can Trust</h1>
-                        <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="citas-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
-                        <h1 class="text-white mb-4">Make citas</h1>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Select A enfermedades</option>
-                                        <option value="1">enfermedades 1</option>
-                                        <option value="2">enfermedades 2</option>
-                                        <option value="3">enfermedades 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Select Doctor</option>
-                                        <option value="1">Doctor 1</option>
-                                        <option value="2">Doctor 2</option>
-                                        <option value="3">Doctor 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control bg-light border-0 datetimepicker-input"
-                                            placeholder="citas Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="time" id="time1" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control bg-light border-0 datetimepicker-input"
-                                            placeholder="citas Time" data-target="#time1" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Make citas</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <!-- Mensajes flash para correo -->
+{% with messages = get_flashed_messages(with_categories=True) %}
+{% if messages %}
+    <div>
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>
+        {% endfor %}
     </div>
+{% endif %}
+{% endwith %}
+<!-- Mensajes flash para correo End-->
+    
+<!-- citas Start -->
+<div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s"
+  id="protocolos-de-investigacion">
+  <div class="container">
+    <div class="row gx-5">
+      <div class="col-lg-6 py-5">
+        <div class="py-5">
+          <h1 class="display-2 text-white mb-4">
+            Protocolos de Investigación
+          </h1>
+          <h3 class="display text-white mb-4">
+            ¡Una Excelente Opción!
+          </h3>
+          <p class="text-white mb-4">
+            En CIG, creemos firmemente en la innovación y la investigación para encontrar tratamientos más efectivos y
+            personalizados. Nuestros protocolos de investigación médica son una excelente opción para aquellos que
+            buscan alternativas a los tratamientos convencionales. Al participar en nuestros estudios, los pacientes
+            tienen acceso a terapias de vanguardia y contribuyen al avance de la medicina.
+          </p>
+          <p class="text-white mb-0">
+            Es importante recopilar información sobre factores de riesgo cardiovascular como parte de la historia
+            clínica integral de los pacientes, dado que estos pueden influir en el desarrollo y manejo de condiciones
+            gastrointestinales y metabólicas, como el hígado graso. <strong class="text-white">Sin embargo, el Centro de
+              Investigación y Gastroenterología no ofrece tratamiento directo para enfermedades
+              cardiovasculares.</strong>
+          </p>
+        </div>
+      </div>
+
+      <!-- Inicio del formulario -->
+      <div class="col-lg-6">
+        <div class="citas-form wow zoomIn cuestionario" data-wow-delay="0.6s">
+          <h1 class="text-white text-center mb-4">Solicitar cita</h1>
+          <form method="POST" action="/solicitar-cita">
+            <div class="row g-3">
+              <!-- Pregunta 1: Selección de múltiples padecimientos -->
+              <div class="text-white">
+                <label>
+                  <h3 class="display text-white">Seleccione sus factores de riesgo:</h3>
+                </label>
+                <div class="form-check justify-content-right">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="higado_graso"
+                    value="Hígado graso">
+                  <label class="form-check-label" for="higado_graso">Hígado graso</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="obesidad" value="Obesidad">
+                  <label class="form-check-label" for="obesidad">Obesidad</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="hipertension"
+                    value="Hipertensión">
+                  <label class="form-check-label" for="hipertension">Hipertensión</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="dislipidemias"
+                    value="Dislipidemias">
+                  <label class="form-check-label" for="dislipidemias">Dislipidemias</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="problemas_cardiovasculares"
+                    value="Problemas Cardiovasculares">
+                  <label class="form-check-label" for="problemas_cardiovasculares">Problemas Cardiovasculares</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="crohn" value="Crohn">
+                  <label class="form-check-label" for="crohn">Crohn</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="sindrome_metabolico"
+                    value="Síndrome Metabólico">
+                  <label class="form-check-label" for="sindrome_metabolico">Síndrome Metabólico</label>
+                </div>
+              </div>
+
+
+              <!-- Pregunta 2: Escribir si algún médico lo refirió y anotar su nombre -->
+              <div class="text-white">
+                <label>
+                  <h3 class="display text-white">¿Fue referido por un médico?</h3>
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="referido" id="referido_si" value="Si">
+                  <label class="form-check-label" for="referido_si">Sí</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="referido" id="referido_no" value="No">
+                  <label class="form-check-label" for="referido_no">No</label>
+                </div>
+                <input type="text" class="form-control bg-light border-0 referido-input" id="referido_nombre"
+                  name="referido_nombre" placeholder="Nombre del médico que lo refirió"
+                  style="display: none; height: 55px;">
+              </div>
+
+              <!-- Pregunta 3: Seleccionar Sede -->
+              <div class="text-white">
+                <label>
+                  <h3 class="display text-white">Seleccione su sede</h3>
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sede" id="roma_norte" value="roma_norte">
+                  <label class="form-check-label" for="roma_norte">Roma Norte</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sede" id="universidad" value="universidad">
+                  <label class="form-check-label" for="universidad">Universidad</label>
+                </div>
+              </div>
+
+              <!-- Pregunta 4: Interés en participar en un protocolo de investigación -->
+              <div class="text-white">
+                <label>
+                  <h3 class="display text-white">¿Está interesado en participar en un protocolo de investigación?</h3>
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="participar" id="participar_si" value="si">
+                  <label class="form-check-label" for="participar_si">Sí</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="participar" id="participar_no" value="no">
+                  <label class="form-check-label" for="participar_no">No</label>
+                </div>
+              </div>
+
+              <!-- Pregunta 5: Método de contacto -->
+              <div class="text-white">
+                <label>
+                  <h3 class="display text-white">Método de contacto preferido (obligatorio)</h3>
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="contacto" id="telefono" value="Telefono">
+                  <label class="form-check-label" for="telefono">Llamada telefónica</label>
+                  <input type="text" class="form-control bg-light border-0 contacto-input" id="telefono-input"
+                    name="telefono" placeholder="Tu número telefónico" style="display: none; height: 55px;">
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="contacto" id="whatsapp" value="Whatsapp">
+                  <label class="form-check-label" for="whatsapp">WhatsApp</label>
+                  <input type="text" class="form-control bg-light border-0 contacto-input" id="whatsapp-input"
+                    name="whatsapp" placeholder="Tu número de WhatsApp" style="display: none; height: 55px;">
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="contacto" id="correo"
+                    value="Correo electronico">
+                  <label class="form-check-label" for="correo">Correo electrónico</label>
+                  <input type="email" class="form-control bg-light border-0 contacto-input" id="correo-input"
+                    name="correo" placeholder="Tu correo electrónico" style="display: none; height: 55px;">
+                </div>
+              </div>
+
+              <!-- Botón para enviar el formulario -->
+              <div class="col-12">
+                <button class="btn btn-dark w-100 py-3" type="submit" id="submit-button" aria-label="Enviar formulario">
+                  Solicitar Cita
+                </button>
+              </div>
+
+            </div>
+          </form>
+
+          <!-- Contenedor para mostrar mensajes flash dinámicamente -->
+          <div id="flash-messages"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- citas End -->
+
     <!-- citas End -->
 {% endblock %}
