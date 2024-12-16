@@ -2,19 +2,20 @@
 <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1">
   <div class="container">
     <div class="bg-primary p-5">
-      <form class="mx-auto" style="max-width: 600px">
+      <form class="mx-auto" style="max-width: 600px" method="POST" action="/subscribe">
         <p class="text-white justify-content mb-4">Suscríbete a nuestro blog, conoce actualizaciones de las enfermedades, novedades de
           tratamientos y entérate de nuestros eventos y actividades.</p>
 
         <div class="input-group">
-          <input type="text" class="form-control border-white p-3" placeholder="Tu correo" />
-          <button class="btn btn-dark px-4">Suscribirse</button>
+          <input type="email" name="email" class="form-control border-white p-3" placeholder="Tu correo" required />
+          <button type="submit" class="btn btn-dark px-4">Suscribirse</button>
         </div>
       </form>
     </div>
   </div>
 </div>
 <!-- Newsletter End -->
+
 
 <!-- Footer Start -->
 <div class="container-fluid bg-dark text-light pt-5 wow fadeInUp" data-wow-delay="0.3s">

@@ -2,7 +2,8 @@ from flask import render_template, request, flash, redirect, url_for
 from flask_mail import Message
 import logging
 
-def register_routes(app, mail):
+def register_routes(app, mail, db):
+    # Rutas existentes
     @app.route('/')
     def index():
         return render_template('index.html', canonical_url="https://higadograso.mx/")
@@ -39,16 +40,16 @@ def register_routes(app, mail):
     def ensayos():
         return render_template('ensayos.html', canonical_url="https://higadograso.mx/ensayos")
     
-    # ***Entradas del blog***
+    # Entradas del blog
     @app.route('/blog/vapes-tabaco')
     def blog_vapes_tabaco():
         return render_template('blog_content/blog/vapes_tabaco.html', canonical_url="https://higadograso.mx/blog/vapes-tabaco")
-    # ***Entradas del blog***
 
     @app.route('/inicio', methods=['GET', 'POST'])
     def inicio():
         return render_template('inicio.html')
 
+    # Ruta para solicitud de citas
     @app.route('/solicitar-cita', methods=['POST'])
     def solicitar_cita():
         # Recopila datos del formulario
@@ -92,3 +93,43 @@ def register_routes(app, mail):
             flash('Hubo un error al enviar tu solicitud. Inténtalo nuevamente más tarde.', 'danger')
 
         return redirect('/')
+
+    # --- Rutas del newsletter ---
+    @app.route('/subscribe', methods=['POST'])
+    def subscribe():
+        # Obtener el correo del formulario
+        email = request.form.get('email')
+
+        if not email:
+            flash('Por favor, ingresa un correo válido.', 'warning')
+            return redirect('/')
+
+        # Verificar si ya existe el correo en Firestore
+        subscribers_ref = db.collection('subscribers')
+        existing_subscriber = subscribers_ref.where('email', '==', email).get()
+
+        if existing_subscriber:
+            flash('Ya estás suscrito al newsletter.', 'info')
+        else:
+            # Agregar el correo a Firestore
+            try:
+                subscribers_ref.add({'email': email})
+                flash('¡Te has suscrito al newsletter exitosamente!', 'success')
+            except Exception as e:
+                logging.error(f'Error al guardar el correo en Firestore: {e}')
+                flash('Hubo un error al procesar tu suscripción. Inténtalo más tarde.', 'danger')
+
+        return redirect('/')
+
+    @app.route('/subscribers', methods=['GET'])
+    def list_subscribers():
+        # Ruta opcional para listar suscriptores (puede ser solo para admin)
+        try:
+            subscribers = db.collection('subscribers').stream()
+            subscriber_list = [sub.to_dict() for sub in subscribers]
+            return render_template('subscribers.html', subscribers=subscriber_list)
+        except Exception as e:
+            logging.error(f'Error al listar suscriptores: {e}')
+            flash('No se pudieron recuperar los suscriptores.', 'danger')
+            return redirect('/')
+  
