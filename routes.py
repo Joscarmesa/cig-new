@@ -44,6 +44,12 @@ def register_routes(app, mail, db):
     @app.route('/blog/vapes-tabaco')
     def blog_vapes_tabaco():
         return render_template('blog_content/blog/vapes_tabaco.html', canonical_url="https://higadograso.mx/blog/vapes-tabaco")
+    
+    @app.route('/blog/evitar_remedios_caseros')
+    def evitar_remedios_caseros():
+        return render_template('blog_content/blog/evitar_remedios_caseros.html', canonical_url="https://higadograso.mx/blog/evitar_remedios_caseros")
+    
+    # Entradas del blog END
 
     @app.route('/inicio', methods=['GET', 'POST'])
     def inicio():

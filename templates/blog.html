@@ -1,31 +1,24 @@
 {% extends 'index.html' %} {% block main_content %}
 
-<!-- eventos Start -->
+<!-- Blog Start -->
 <div class="container-fluid py-5">
   <div class="container">
     <div class="row g-5">
       <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
         <div class="section-title bg-light rounded h-100 p-5">
-          <h5
-            class="position-relative d-inline-block text-primary text-uppercase"
-          >
+          <h5 class="position-relative d-inline-block text-primary text-uppercase">
             Unete a
           </h5>
           <h1 class="display-6 mb-4">Nuestro Blog</h1>
-          <a href="{{ url_for('citas') }}" class="btn btn-primary py-3 px-5"
-            >Agendar cita</a
-          >
+          <a href="{{ url_for('citas') }}" class="btn btn-primary py-3 px-5">Agendar cita</a>
         </div>
       </div>
 
+      <!-- TARJETAS PARA BLOG -->
       <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
         <div class="eventos-item">
           <div class="card" style="width: 18rem">
-            <img
-              src="{{ url_for('static', filename='img/bigheartxvape.webp') }}"
-              class="card-img-top"
-              alt="..."
-            />
+            <img src="{{ url_for('static', filename='img/bigheartxvape.webp') }}" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">
                 ¿Cómo Afecta el Consumo de Vapeadores Electrónicos y Tabaco al
@@ -36,15 +29,32 @@
                 efectos adversos a largo plazo, los vapes, aunque se consideran
                 menos dañinos en algunos aspectos, no están exentos de riesgos.
               </p>
-              <a
-                href="{{ url_for('blog_vapes_tabaco') }}"
-                class="btn btn-primary"
-                >Leer articulo</a
-              >
+              <a href="{{ url_for('blog_vapes_tabaco') }}" class="btn btn-primary">Leer articulo</a>
             </div>
           </div>
         </div>
       </div>
+      <!-- TARJETAS PARA BLOG END -->
+
+      <!-- TARJETAS PARA BLOG -->
+      <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+        <div class="eventos-item">
+          <div class="card" style="width: 18rem">
+            <img src="{{ url_for('static', filename='img/curcuma.webp') }}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                ¿Por Qué Evitar los Remedios Caseros para el Hígado Graso?
+              </h5>
+              <p class="card-text">
+                Aunque las hierbas y productos naturales pueden tener beneficios para la salud en algunos
+                casos, no todos los remedios caseros son adecuados para tratar afecciones graves.
+              </p>
+              <a href="{{ url_for('evitar_remedios_caseros') }}" class="btn btn-primary">Leer articulo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TARJETAS PARA BLOG END -->
 
       <!-- PLANTILLAS PARA FUTURAS ENTRADAS DE BLOG 
 

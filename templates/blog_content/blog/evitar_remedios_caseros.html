@@ -1,0 +1,96 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-remedios-higado">
+  <div class="container">
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">¿Por Qué Evitar los Remedios Caseros para el Hígado Graso?</h1>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-12">
+        <div class="bg-light p-4 rounded shadow">
+          <!-- Introducción -->
+          <div class="bg-secondary text-white p-3 rounded mb-4 wow fadeIn" data-wow-delay="0.2s">
+            <div class="row">
+              <div class="col-12 text-center mb-3">
+                <img class="img-fluid rounded" style="width: 100%; height: 25rem; object-fit: cover;" src="{{ url_for('static', filename='img/liverxremedios.webp') }}" alt="Hígado Graso">
+              </div>
+              <div class="col-12">
+                <p class="mb-0 text-justify">
+                  El hígado graso, o esteatosis hepática, es una condición en la que se acumula grasa en las células del hígado, lo que puede llevar a inflamación, fibrosis y, en algunos casos, cirrosis. Si bien existen numerosos remedios caseros que circulan por internet y entre la gente para tratar esta enfermedad, es importante cuestionar su efectividad y, más aún, los riesgos que pueden implicar.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Riesgo de los Remedios Caseros -->
+          <h3 class="text-primary wow fadeIn" data-wow-delay="0.3s">El Riesgo de los Remedios Caseros</h3>
+          <p class="wow fadeIn" data-wow-delay="0.4s">
+            Aunque las hierbas y productos naturales pueden tener beneficios para la salud en algunos casos, no todos los remedios caseros son adecuados para tratar afecciones graves como el hígado graso. Muchos carecen de base científica y pueden implicar riesgos significativos.
+          </p>
+
+          <!-- Jugos de Limón y Vinagre -->
+          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn text-center" data-wow-delay="0.5s">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <img class="img-fluid rounded" style="max-width: 15rem; height: auto; margin: 0 auto;" src="{{ url_for('static', filename='img/jugolimon.webp') }}" alt="Jugos de Limón">
+              </div>
+              <div class="col-md-8 text-start">
+                <h4>1. Jugos de Limón y Vinagre de Manzana</h4>
+                <p>Se sugiere como "detox" para limpiar el hígado, pero no existen pruebas científicas que respalden que estos ingredientes puedan reducir la grasa hepática de manera efectiva.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cúrcuma -->
+          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn text-center" data-wow-delay="0.6s">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <img class="img-fluid rounded" style="max-width: 15rem; height: auto; margin: 0 auto;" src="{{ url_for('static', filename='img/curcuma.webp') }}" alt="Cúrcuma">
+              </div>
+              <div class="col-md-8 text-start">
+                <h4>2. Cúrcuma</h4>
+                <p>Aunque tiene propiedades antiinflamatorias, el consumo excesivo puede ser contraproducente si no se administra correctamente o en dosis no recomendadas.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Suplementos Herbales -->
+          <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn text-center" data-wow-delay="0.7s">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <img class="img-fluid rounded" style="max-width: 15rem; height: auto; margin: 0 auto;" src="{{ url_for('static', filename='img/herbalesuplementos.webp') }}" alt="Suplementos Herbales">
+              </div>
+              <div class="col-md-8 text-start">
+                <h4>3. Suplementos de Hierbas</h4>
+                <p>Hierbas como el cardo mariano y diente de león pueden tener propiedades antioxidantes, pero no existe suficiente evidencia para recomendarlas como tratamiento para el hígado graso.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Riesgos Asociados -->
+          <h3 class="text-primary wow fadeIn" data-wow-delay="0.8s">Riesgos Asociados con los Remedios Caseros</h3>
+          <ul class="wow fadeIn" data-wow-delay="0.9s">
+            <li><strong>Interacciones con medicamentos:</strong> Algunos remedios herbales pueden interferir con medicamentos recetados.</li>
+            <li><strong>Toxicidad:</strong> El uso indiscriminado puede ser tóxico para el hígado, agravando la condición.</li>
+            <li><strong>Retraso en el diagnóstico:</strong> Usar remedios caseros sin consultar a un médico puede retrasar el tratamiento adecuado.</li>
+          </ul>
+
+          <!-- Conclusión -->
+          <div class="bg-primary text-white p-3 rounded wow fadeIn" data-wow-delay="1.0s">
+            <h4 class="text-white">Conclusión:</h4>
+            <p class="mb-0 text-justify">
+              El tratamiento del hígado graso debe ser supervisado por un médico especializado. Evita remedios caseros no probados y enfócate en cambios saludables en tu estilo de vida, como una dieta balanceada y ejercicio regular.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Blog End -->
+{% endblock %}

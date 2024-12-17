@@ -3,11 +3,11 @@
 <!-- Mensajes flash para correo -->
 {% with messages = get_flashed_messages(with_categories=True) %}
 {% if messages %}
-    <div>
-        {% for category, message in messages %}
-            <div class="alert alert-{{ category }}">{{ message }}</div>
-        {% endfor %}
-    </div>
+<div>
+  {% for category, message in messages %}
+  <div class="alert alert-{{ category }}">{{ message }}</div>
+  {% endfor %}
+</div>
 {% endif %}
 {% endwith %}
 <!-- Mensajes flash para correo End-->
@@ -151,8 +151,7 @@
           <h5 class="position-relative d-inline-block text-primary text-uppercase"><i
               class="fa fa-check-circle text-primary me-3"></i>Detección temprana</h5>
           <ul>
-            <li class="mb-1">Dr. Jim Palmar, Médico General, Subdirector de Servicios Clínicos, Médico Cirujano, cédula
-              12398213.</li>
+            <li class="mb-1">Vanessa Giselle García Rubio, Médico Cirujano, cédula 12284649</li>
             <li>Dra. Marcela Castillo, Médico General, Subdirector de Servicio Clínicos, Médico Cirujano, cédula
               09146589.</li>
           </ul>
@@ -161,7 +160,7 @@
           <h5 class="position-relative d-inline-block text-primary text-uppercase"><i
               class="fa fa-check-circle text-primary me-3"></i>Asesoramiento nutricional</h5>
           <ul>
-            <li>L. N. Laura Sarmiento, Coordinadora de Estudios Clínicos, Licenciada en Nutrición, cédula 8948191.</li>
+            <li>L.N. Tania Ilka, Coordinadora de Estudios Clínicos, Licenciada en Nutrición, cédula 10104659.</li>
           </ul>
         </div>
       </div>
