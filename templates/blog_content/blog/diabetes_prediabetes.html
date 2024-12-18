@@ -1,0 +1,95 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-diabetes-navidad">
+  <div class="container">
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Diabetes y Prediabetes: Consejos para una Alimentación Saludable Durante las Festividades Navideñas</h1>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-12">
+        <div class="bg-light p-4 rounded shadow">
+          <!-- Introducción -->
+          <div class="bg-secondary text-white p-3 rounded mb-4 wow fadeIn" data-wow-delay="0.2s">
+            <div class="row">
+              <div class="col-12 text-center mb-3">
+                <img class="img-fluid rounded" style="width: 100%; height: 25rem; object-fit: cover;" src="{{ url_for('static', filename='img/essenceofChristmas.webp') }}" alt="Navidad y Diabetes">
+              </div>
+              <div class="col-12">
+                <p class="mb-0 text-justify">
+                  La Navidad es una época llena de alegría, reuniones familiares y, sobre todo, comida deliciosa. Sin embargo, para las personas con diabetes o prediabetes, este periodo puede ser todo un desafío, ya que los platillos típicos suelen estar cargados de carbohidratos, azúcares y grasas poco saludables. Aun así, disfrutar de las festividades sin descuidar tu salud es posible con un poco de planificación y atención.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desafíos de Navidad -->
+          <div class="row align-items-center mb-4 wow fadeIn" data-wow-delay="0.3s">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid rounded" style="max-width: 15rem; height: auto;" src="{{ url_for('static', filename='img/glucometerplate.webp') }}" alt="Reto de la Navidad">
+            </div>
+            <div class="col-md-8">
+              <h3 class="text-primary">¿Por qué la Navidad puede ser un reto para quienes tienen diabetes o prediabetes?</h3>
+              <p class="mb-1">Los platillos y bebidas tradicionales navideñas, como tamales, ponche, rompope y postres, pueden desestabilizar los niveles de glucosa debido a su alto contenido de azúcares y carbohidratos simples.</p>
+              <p class="mb-1">Por ejemplo, un solo vaso de ponche azucarado puede contener hasta 20 gramos de azúcar, equivalente a casi cinco cucharaditas, lo que puede provocar picos de glucosa.</p>
+            </div>
+          </div>
+
+          <!-- Consecuencias -->
+          <div class="row align-items-center mb-4 wow fadeIn" data-wow-delay="0.4s">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid rounded" style="max-width: 15rem; height: auto;" src="{{ url_for('static', filename='img/healthdishes.webp') }}" alt="Consecuencias de la mala alimentación">
+            </div>
+            <div class="col-md-8">
+              <h3 class="text-primary">Consecuencias de descuidar la alimentación durante las fiestas</h3>
+              <p class="mb-1"><strong>Hiperglucemia:</strong> Puede causar cansancio, confusión y complicaciones graves si no se controla.</p>
+              <p class="mb-1"><strong>Aumento de peso:</strong> El exceso de calorías puede dificultar el control de la diabetes.</p>
+              <p class="mb-1"><strong>Desequilibrio metabólico:</strong> Requiere ajustes médicos no planificados y podría llevar a hospitalizaciones.</p>
+            </div>
+          </div>
+
+          <!-- Consejos -->
+          <div class="row align-items-center mb-4 wow fadeIn" data-wow-delay="0.5s">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid rounded" style="max-width: 15rem; height: auto;" src="{{ url_for('static', filename='img/healthdishes.webp') }}" alt="Plato Saludable">
+            </div>
+            <div class="col-md-8">
+              <h3 class="text-primary">Consejos para disfrutar las fiestas sin riesgos</h3>
+              <p class="mb-1"><strong>Planea tus comidas:</strong> Come algo ligero y saludable antes de asistir a reuniones.</p>
+              <p class="mb-1"><strong>Modera las porciones:</strong> Usa platos pequeños y prioriza proteínas magras y verduras.</p>
+              <p class="mb-1"><strong>Elige opciones saludables:</strong> Busca recetas con menos azúcar o preparaciones al horno.</p>
+              <p class="mb-1"><strong>Cuidado con las bebidas:</strong> Prefiere agua o infusiones sin azúcar y limita el alcohol.</p>
+              <p class="mb-1"><strong>Mantente activo:</strong> Camina después de comer para mantener niveles de glucosa estables.</p>
+            </div>
+          </div>
+
+          <!-- Balance y disfrute -->
+          <div class="row align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid rounded" style="max-width: 15rem; height: auto;" src="{{ url_for('static', filename='img/conceptofdiabetesandprediabetes.webp') }}" alt="Equilibrio en Navidad">
+            </div>
+            <div class="col-md-8">
+              <h3 class="text-primary">¿Cómo equilibrar el disfrute y el cuidado de la salud?</h3>
+              <p class="mb-1">Si tienes prediabetes, aprovecha las fiestas para reforzar hábitos saludables. Si ya tienes diabetes, permite que la comida sea parte de la celebración, pero no el enfoque principal.</p>
+              <p class="mb-1">Consulta siempre con tu médico o nutriólogo para recibir orientación personalizada.</p>
+            </div>
+          </div>
+
+          <!-- Conclusión -->
+          <div class="bg-primary text-white p-3 rounded wow fadeIn" data-wow-delay="0.7s">
+            <h4 class="text-white">¡Feliz Navidad saludable!</h4>
+            <p class="mb-0 text-justify">
+              Con un poco de esfuerzo y planificación, puedes disfrutar de las festividades mientras mantienes tu salud bajo control. ¡Felices fiestas!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Blog End -->
+{% endblock %}

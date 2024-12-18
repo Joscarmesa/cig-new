@@ -49,6 +49,10 @@ def register_routes(app, mail, db):
     def evitar_remedios_caseros():
         return render_template('blog_content/blog/evitar_remedios_caseros.html', canonical_url="https://higadograso.mx/blog/evitar_remedios_caseros")
     
+    @app.route('/blog/diabetes_prediabetes')
+    def diabetes_prediabetes():
+        return render_template('blog_content/blog/diabetes_prediabetes.html', canonical_url="https://higadograso.mx/blog/diabetes_prediabetes")
+    
     # Entradas del blog END
 
     @app.route('/inicio', methods=['GET', 'POST'])
