@@ -53,7 +53,11 @@ def register_routes(app, mail, db):
     def diabetes_prediabetes():
         return render_template('blog_content/blog/diabetes_prediabetes.html', canonical_url="https://higadograso.mx/blog/diabetes_prediabetes")
     
-    # Entradas del blog END
+    @app.route('/blog/enfermedades_respiratorias')
+    def enfermedades_respiratorias():
+        return render_template('blog_content/blog/enfermedades_respiratorias.html', canonical_url="https://higadograso.mx/blog/enfermedades_respiratorias")
+
+    # Entradas del blog END  
 
     @app.route('/inicio', methods=['GET', 'POST'])
     def inicio():
