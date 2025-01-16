@@ -1,0 +1,56 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-ecv-geoespacial">
+  <div class="container">
+    <!-- Título -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Enfermedades Cardiovasculares: Predicción de Tendencias Futuras en la Mortalidad</h1>
+    </div>
+
+    <!-- Imagen Principal -->
+    <div class="row mb-5 text-center">
+      <img class="img-fluid rounded shadow" style="max-width: 100%; height: 20rem; object-fit: cover; object-position: top;" src="{{ url_for('static', filename='img/heart_stadistics.jpg') }}" alt="Estadísticas Cardiovasculares">
+    </div>
+
+    <!-- Primera Sección de Texto -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <p class="mb-0 text-justify">
+        Las enfermedades cardiovasculares (ECV) siguen siendo la principal causa de muerte a nivel mundial, a pesar de los avances significativos en medicina, prevención y tratamiento. Con el aumento de la población global y el cambio de los patrones de salud pública, la predicción de las tendencias futuras en la mortalidad por ECV y sus factores de riesgo se vuelve cada vez más crucial para los responsables de las políticas de salud. Este tipo de estudio geoespacial te permite proyectar cómo podrían evolucionar las tasas de mortalidad y los factores de riesgo asociados a lo largo del tiempo, desde 2025 hasta 2050, lo que puede ser vital para la toma de decisiones informadas sobre la atención sanitaria y los recursos disponibles.
+      </p>
+    </div>
+
+    <!-- Segunda Sección de Texto -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+      <h3 class="text-primary">El Contexto de las Enfermedades Cardiovasculares en el Mundo</h3>
+      <p class="mb-1 text-justify">Las enfermedades cardiovasculares incluyen una variedad de trastornos del corazón y los vasos sanguíneos, tales como infartos, accidentes cerebrovasculares (ACV), insuficiencia cardíaca y enfermedades arteriales. A nivel mundial, se estima que las ECV causan alrededor de 17,9 millones de muertes al año, lo que representa un 32% de todas las muertes globales, según la Organización Mundial de la Salud (OMS).</p>
+      <p class="mb-1 text-justify">A pesar de los esfuerzos por mejorar la salud cardiovascular mediante la reducción de factores de riesgo como el tabaquismo, la hipertensión y la diabetes, los índices de mortalidad siguen siendo elevados, especialmente en países de ingresos bajos y medios. Esto subraya la importancia de prevenir las tendencias futuras para adaptar las estrategias de salud pública y atención sanitaria a las necesidades cambiantes de las poblaciones.</p>
+    </div>
+
+<!-- Imagen Intermedia -->
+<div class="row mb-5 text-center">
+  <img class="img-fluid rounded shadow" style="max-width: 100%; height: 20rem; object-fit: cover; object-position: top;" src="{{ url_for('static', filename='img/heart_stadistics02.jpg') }}" alt="Proyecciones Geoespaciales">
+</div>
+
+    <!-- Tercera Sección de Texto -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.6s">
+      <h3 class="text-primary">¿Qué es la Predicción Geoespacial y por qué es Importante para las ECV?</h3>
+      <p class="mb-1 text-justify">La predicción geoespacial se refiere a la utilización de datos geográficos y temporales para proyectar cómo se desarrollarán ciertos eventos o condiciones en el futuro. En el caso de las enfermedades cardiovasculares, los modelos geoespaciales te ayudan a entender cómo los factores de riesgo, como la obesidad, la hipertensión, el sedentarismo y la dieta, se distribuyen a lo largo de diferentes regiones y cómo podrían cambiar en las próximas décadas.</p>
+      <p class="mb-1 text-justify">Al proyectar estas tendencias, los responsables de las políticas de salud pueden identificar áreas geográficas de alto riesgo y diseñar intervenciones específicas que aborden las necesidades locales, optimizando los recursos y mejorando la prevención y el tratamiento de las ECV.</p>
+    </div>
+
+    <!-- Referencias -->
+    <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.8s">
+      <h4 class="text-white">Referencias:</h4>
+      <ul>
+        <li class="mb-1">Estudio de la carga mundial de enfermedades. (2020). "Enfermedades cardiovasculares y factores de riesgo: proyecciones para 2025 y 2050". The Lancet.</li>
+        <li class="mb-1">Organización Mundial de la Salud (OMS). (2022). "Enfermedades cardiovasculares: hoja informativa". Recuperado de: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Blog End -->
+{% endblock %}

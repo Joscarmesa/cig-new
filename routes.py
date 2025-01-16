@@ -57,6 +57,10 @@ def register_routes(app, mail, db):
     def enfermedades_respiratorias():
         return render_template('blog_content/blog/enfermedades_respiratorias.html', canonical_url="https://higadograso.mx/blog/enfermedades_respiratorias")
 
+    @app.route('/blog/tendencias_futuras_en_la_mortalidad')
+    def tendencias_futuras_en_la_mortalidad():
+        return render_template('blog_content/blog/tendencias_futuras_en_la_mortalidad.html', canonical_url="https://higadograso.mx/blog/tendencias_futuras_en_la_mortalidad")
+
     # Entradas del blog END  
 
     @app.route('/inicio', methods=['GET', 'POST'])
