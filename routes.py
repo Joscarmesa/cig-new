@@ -1,6 +1,13 @@
-from flask import render_template, request, flash, redirect, url_for
+from flask import request, jsonify, redirect, url_for, flash, render_template, session
 from flask_mail import Message
 import logging
+
+def validate_contact_method(metodo_contacto, telefono, whatsapp, correo):
+    if metodo_contacto == "Correo electronico" and not correo:
+        return 'Por favor, proporciona un correo electrónico válido.'
+    if metodo_contacto in ["Telefono", "Whatsapp"] and not (telefono or whatsapp):
+        return f'Por favor, proporciona un número de {metodo_contacto.lower()}.'
+    return None
 
 def register_routes(app, mail, db):
     # Rutas existentes
@@ -63,73 +70,79 @@ def register_routes(app, mail, db):
 
     # Entradas del blog END  
 
-    @app.route('/inicio', methods=['GET', 'POST'])
-    def inicio():
-        return render_template('inicio.html')
-
-    # Ruta para solicitud de citas
     @app.route('/solicitar-cita', methods=['POST'])
     def solicitar_cita():
-        # Recopila datos del formulario
-        padecimientos = request.form.getlist('padecimientos[]')
-        referido = request.form.get('referido')
-        referido_nombre = request.form.get('referido_nombre', '')
-        sede = request.form.get('sede')
-        participar = request.form.get('participar')
-        metodo_contacto = request.form.get('contacto')
-        telefono = request.form.get('telefono', '')
-        whatsapp = request.form.get('whatsapp', '')
-        correo = request.form.get('correo', '')
-
-        # Validación de campos obligatorios
-        if not sede or not metodo_contacto:
-            flash('Por favor, selecciona una sede y un método de contacto.', 'warning')
-            return redirect(url_for('index'))
-        
-        # Crear el correo
-        subject = "Nueva solicitud de cita"
-        msg = Message(subject, sender=app.config['MAIL_USERNAME'], recipients=['cigcitas@gmail.com'])
-        msg.body = f"""
-        Nueva solicitud de cita:
-        Padecimientos: {', '.join(padecimientos)}
-        Referido: {referido} ({referido_nombre})
-        Sede seleccionada: {sede}
-        Interés en participar: {participar}
-        Método de contacto preferido: {metodo_contacto}
-        Teléfono: {telefono}
-        WhatsApp: {whatsapp}
-        Correo: {correo}
-        """
-    
-        # Enviar el correo
         try:
+            # Recopila datos del formulario
+            padecimientos = request.form.getlist('padecimientos[]')
+            referido = request.form.get('referido')
+            referido_nombre = request.form.get('referido_nombre', '').strip()
+            sede = request.form.get('sede')
+            participar = request.form.get('participar')
+            metodo_contacto = request.form.get('contacto')
+            telefono = request.form.get('telefono', '').strip()
+            whatsapp = request.form.get('whatsapp', '').strip()
+            correo = request.form.get('correo', '').strip()
+
+            # Validaciones
+            if not sede or not metodo_contacto:
+                message = 'Por favor, selecciona una sede y un método de contacto.'
+                if request.is_json:
+                    return jsonify(success=False, message=message), 400
+                flash(message, 'warning')
+                return redirect(url_for('index'))
+
+            validation_error = validate_contact_method(metodo_contacto, telefono, whatsapp, correo)
+            if validation_error:
+                if request.is_json:
+                    return jsonify(success=False, message=validation_error), 400
+                flash(validation_error, 'warning')
+                return redirect(url_for('index'))
+
+            # Crear el correo
+            subject = "Nueva solicitud de cita"
+            msg = Message(subject, sender=app.config['MAIL_USERNAME'], recipients=['cigcitas@gmail.com'])
+            msg.body = f"""
+            Nueva solicitud de cita:
+            Padecimientos: {', '.join(padecimientos)}
+            Referido: {referido} ({referido_nombre})
+            Sede seleccionada: {sede}
+            Interés en participar: {participar}
+            Método de contacto preferido: {metodo_contacto}
+            Teléfono: {telefono}
+            WhatsApp: {whatsapp}
+            Correo: {correo}
+            """
             mail.send(msg)
             logging.info('Correo enviado correctamente.')
-            flash('Tu solicitud de cita se ha enviado correctamente. Te contactaremos pronto.', 'success')
+
+            success_message = 'Tu solicitud de cita se ha enviado correctamente. Te contactaremos pronto.'
+            if request.is_json:
+                return jsonify(success=True, message=success_message), 200
+            flash(success_message, 'success')
+            return redirect(url_for('index'))
+
         except Exception as e:
-            logging.error(f'Error al enviar el correo: {e}')
-            flash('Hubo un error al enviar tu solicitud. Inténtalo nuevamente más tarde.', 'danger')
-
-        return redirect('/')
-
-    # --- Rutas del newsletter ---
-    @app.route('/subscribe', methods=['POST'])
-    def subscribe():
-        # Obtener el correo del formulario
-        email = request.form.get('email')
-
-        if not email:
-            flash('Por favor, ingresa un correo válido.', 'warning')
+            logging.error(f'Error al enviar el formulario: {e}')
+            error_message = 'Hubo un error al procesar tu solicitud. Inténtalo nuevamente más tarde.'
+            if request.is_json:
+                return jsonify(success=False, message=error_message), 500
+            flash(error_message, 'danger')
             return redirect('/')
 
-        # Verificar si ya existe el correo en Firestore
+    @app.route('/subscribe', methods=['POST'])
+    def subscribe():
+        email = request.form.get('email')
+        if not email:
+            flash('Por favor, ingresa un correo válido.', 'warning')
+            return redirect(url_for('index'))
+
         subscribers_ref = db.collection('subscribers')
         existing_subscriber = subscribers_ref.where('email', '==', email).get()
 
-        if existing_subscriber:
+        if len(existing_subscriber) > 0:
             flash('Ya estás suscrito al newsletter.', 'info')
         else:
-            # Agregar el correo a Firestore
             try:
                 subscribers_ref.add({'email': email})
                 flash('¡Te has suscrito al newsletter exitosamente!', 'success')
@@ -137,11 +150,10 @@ def register_routes(app, mail, db):
                 logging.error(f'Error al guardar el correo en Firestore: {e}')
                 flash('Hubo un error al procesar tu suscripción. Inténtalo más tarde.', 'danger')
 
-        return redirect('/')
+        return redirect(url_for('index'))
 
     @app.route('/subscribers', methods=['GET'])
     def list_subscribers():
-        # Ruta opcional para listar suscriptores (puede ser solo para admin)
         try:
             subscribers = db.collection('subscribers').stream()
             subscriber_list = [sub.to_dict() for sub in subscribers]
@@ -149,5 +161,4 @@ def register_routes(app, mail, db):
         except Exception as e:
             logging.error(f'Error al listar suscriptores: {e}')
             flash('No se pudieron recuperar los suscriptores.', 'danger')
-            return redirect('/')
-  
+            return redirect(url_for('index'))

@@ -3,28 +3,14 @@ from routes import register_routes
 from flask_sitemap import Sitemap
 import os
 import logging
-
-# Importar la configuración de Firestore
-from firestore_config import get_firestore_client
-
-# Inicialización de Flask-Sitemap
-ext = Sitemap()
-
-# Importando Flask-Mail y variables de entorno
+from flask_wtf import CSRFProtect
 from flask_mail import Mail
 from dotenv import load_dotenv
+from flask_wtf.csrf import generate_csrf  # Importa generate_csrf directamente desde flask_wtf.csrf
+
 
 # Cargar variables de entorno
 load_dotenv()
-
-# Configurar logging para producción
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s]: %(message)s",
-    handlers=[
-        logging.StreamHandler()
-    ]
-)
 
 # Inicializar la aplicación Flask
 app = Flask(__name__)
@@ -38,6 +24,24 @@ app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')  # Desde variables de e
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')  # Desde variables de entorno
 app.secret_key = os.getenv('SECRET_KEY')  # Cargado desde variables de entorno
 
+# Configurar logging para producción
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s]: %(message)s",
+    handlers=[
+        logging.StreamHandler()
+    ]
+)
+
+# Inicializa CSRFProtect
+csrf = CSRFProtect()
+csrf.init_app(app)  # Protege toda tu aplicación con CSRF
+
+# Inyecta el token CSRF en todas las plantillas
+@app.context_processor
+def inject_csrf_token():
+    return dict(csrf_token=generate_csrf())  # Usa la función importada
+
 # Verificación de configuración de Flask-Mail
 if not app.config['MAIL_USERNAME'] or not app.config['MAIL_PASSWORD']:
     logging.error("Las credenciales de correo no están configuradas. Verifica tu archivo .env.")
@@ -47,12 +51,17 @@ if not app.config['MAIL_USERNAME'] or not app.config['MAIL_PASSWORD']:
 mail = Mail(app)
 
 # Inicialización del cliente de Firestore
+from firestore_config import get_firestore_client
 try:
     db = get_firestore_client()
     logging.info("Firestore inicializado correctamente.")
 except Exception as e:
     logging.error(f"Error al inicializar Firestore: {e}")
     raise
+
+# Inicialización de Flask-Sitemap
+ext = Sitemap()
+ext.init_app(app)
 
 # Registra las rutas desde el archivo routes.py
 register_routes(app, mail, db)

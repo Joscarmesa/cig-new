@@ -142,7 +142,8 @@
             <li class="mb-1">Dra. Laura Ladrón de Guevara, Investigadora Principal y Directora General, M. en C., cédula
               3938572, Especialidad en Gastroenterología, con certificación en Endoscopía, cédula 6075307, Médico
               Cirujano, cédula 2206645.</li>
-            <li class="mb-1">Dra. Graciela Torres, Sub Investigadora, Especialidad en Gastroenterología, con certificación en
+            <li class="mb-1">Dra. Graciela Torres, Sub Investigadora, Especialidad en Gastroenterología, con
+              certificación en
               Endoscopía, cédula 3816066, Médico Cirujano, cédula 2561170.</li>
           </ul>
         </div>
@@ -151,9 +152,11 @@
           <h5 class="position-relative d-inline-block text-primary text-uppercase"><i
               class="fa fa-check-circle text-primary me-3"></i>Detección temprana</h5>
           <ul>
-            <li class="mb-1">Dra. Vanessa Giselle García Rubio, Médico Cirujano, cédula profesional 12284649, Sede Roma</li>
+            <li class="mb-1">Dra. Vanessa Giselle García Rubio, Médico Cirujano, cédula profesional 12284649, Sede Roma
+            </li>
             <li class="mb-1">Dr. Óscar Martínez Barocio, Médico Cirujano, cédula profesional 12823969, Sede Roma</li>
-            <li class="mb-1">Dra. Marce Castillo Medina, Médico Cirujano, cédula profesional 09146589, Sede Universidad</li>
+            <li class="mb-1">Dra. Marce Castillo Medina, Médico Cirujano, cédula profesional 09146589, Sede Universidad
+            </li>
           </ul>
         </div>
 
@@ -513,30 +516,23 @@
 
 
 <!-- citas Start -->
-<div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s"
-  id="protocolos-de-investigacion">
+<div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s" id="protocolos-de-investigacion">
   <div class="container">
     <div class="row gx-5">
       <div class="col-lg-6 py-5">
         <div class="py-5">
-          <h1 class="display-2 text-white mb-4">
-            Protocolos de Investigación
-          </h1>
-          <h3 class="display text-white mb-4">
-            ¡Una Excelente Opción!
-          </h3>
+          <h1 class="display-2 text-white mb-4">Protocolos de Investigación</h1>
+          <h3 class="display text-white mb-4">¡Una Excelente Opción!</h3>
           <p class="text-white mb-4">
-            En CIG, creemos firmemente en la innovación y la investigación para encontrar tratamientos más efectivos y
-            personalizados. Nuestros protocolos de investigación médica son una excelente opción para aquellos que
-            buscan alternativas a los tratamientos convencionales. Al participar en nuestros estudios, los pacientes
-            tienen acceso a terapias de vanguardia y contribuyen al avance de la medicina.
+            En CIG, creemos firmemente en la innovación y la investigación para encontrar tratamientos más efectivos y personalizados.
+            Nuestros protocolos de investigación médica son una excelente opción para aquellos que buscan alternativas a los tratamientos
+            convencionales. Al participar en nuestros estudios, los pacientes tienen acceso a terapias de vanguardia y contribuyen al avance
+            de la medicina.
           </p>
           <p class="text-white mb-0">
-            Es importante recopilar información sobre factores de riesgo cardiovascular como parte de la historia
-            clínica integral de los pacientes, dado que estos pueden influir en el desarrollo y manejo de condiciones
-            gastrointestinales y metabólicas, como el hígado graso. <strong class="text-white">Sin embargo, el Centro de
-              Investigación y Gastroenterología no ofrece tratamiento directo para enfermedades
-              cardiovasculares.</strong>
+            Es importante recopilar información sobre factores de riesgo cardiovascular como parte de la historia clínica integral de los pacientes,
+            dado que estos pueden influir en el desarrollo y manejo de condiciones gastrointestinales y metabólicas, como el hígado graso.
+            <strong class="text-white">Sin embargo, el Centro de Investigación y Gastroenterología no ofrece tratamiento directo para enfermedades cardiovasculares.</strong>
           </p>
         </div>
       </div>
@@ -546,6 +542,9 @@
         <div class="citas-form wow zoomIn cuestionario" data-wow-delay="0.6s">
           <h1 class="text-white text-center mb-4">Solicitar cita</h1>
           <form method="POST" action="/solicitar-cita">
+
+            <!-- Token CSRF para protección -->
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">            
             <div class="row g-3">
               <!-- Pregunta 1: Selección de múltiples padecimientos -->
               <div class="text-white">
@@ -553,8 +552,7 @@
                   <h3 class="display text-white">Seleccione sus factores de riesgo:</h3>
                 </label>
                 <div class="form-check justify-content-right">
-                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="higado_graso"
-                    value="Hígado graso">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="higado_graso" value="Hígado graso">
                   <label class="form-check-label" for="higado_graso">Hígado graso</label>
                 </div>
                 <div class="form-check">
@@ -562,18 +560,15 @@
                   <label class="form-check-label" for="obesidad">Obesidad</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="hipertension"
-                    value="Hipertensión">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="hipertension" value="Hipertensión">
                   <label class="form-check-label" for="hipertension">Hipertensión</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="dislipidemias"
-                    value="Dislipidemias">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="dislipidemias" value="Dislipidemias">
                   <label class="form-check-label" for="dislipidemias">Dislipidemias</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="problemas_cardiovasculares"
-                    value="Problemas Cardiovasculares">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="problemas_cardiovasculares" value="Problemas Cardiovasculares">
                   <label class="form-check-label" for="problemas_cardiovasculares">Problemas Cardiovasculares</label>
                 </div>
                 <div class="form-check">
@@ -581,57 +576,55 @@
                   <label class="form-check-label" for="crohn">Crohn</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="sindrome_metabolico"
-                    value="Síndrome Metabólico">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="sindrome_metabolico" value="Síndrome Metabólico">
                   <label class="form-check-label" for="sindrome_metabolico">Síndrome Metabólico</label>
                 </div>
               </div>
 
-
-              <!-- Pregunta 2: Escribir si algún médico lo refirió y anotar su nombre -->
+              <!-- Pregunta 2: Referido por un médico -->
               <div class="text-white">
                 <label>
                   <h3 class="display text-white">¿Fue referido por un médico?</h3>
                 </label>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="referido" id="referido_si" value="Si">
+                  <input class="form-check-input" type="radio" name="referido" id="referido_si" value="Si">
                   <label class="form-check-label" for="referido_si">Sí</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="referido" id="referido_no" value="No">
+                  <input class="form-check-input" type="radio" name="referido" id="referido_no" value="No">
                   <label class="form-check-label" for="referido_no">No</label>
                 </div>
+                <!-- Campo para ingresar el nombre del médico -->
                 <input type="text" class="form-control bg-light border-0 referido-input" id="referido_nombre"
-                  name="referido_nombre" placeholder="Nombre del médico que lo refirió"
-                  style="display: none; height: 55px;">
+                  name="referido_nombre" placeholder="Nombre del médico que lo refirió" style="display: none; height: 55px;" maxlength="100">
               </div>
 
-              <!-- Pregunta 3: Seleccionar Sede -->
+              <!-- Pregunta 3: Seleccionar sede -->
               <div class="text-white">
                 <label>
                   <h3 class="display text-white">Seleccione su sede</h3>
                 </label>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="sede" id="roma_norte" value="roma_norte">
+                  <input class="form-check-input" type="radio" name="sede" id="roma_norte" value="roma_norte" required>
                   <label class="form-check-label" for="roma_norte">Roma Norte</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="sede" id="universidad" value="universidad">
+                  <input class="form-check-input" type="radio" name="sede" id="universidad" value="universidad" required>
                   <label class="form-check-label" for="universidad">Universidad</label>
                 </div>
               </div>
 
-              <!-- Pregunta 4: Interés en participar en un protocolo de investigación -->
+              <!-- Pregunta 4: Participar en protocolo -->
               <div class="text-white">
                 <label>
                   <h3 class="display text-white">¿Está interesado en participar en un protocolo de investigación?</h3>
                 </label>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="participar" id="participar_si" value="si">
+                  <input class="form-check-input" type="radio" name="participar" id="participar_si" value="si" required>
                   <label class="form-check-label" for="participar_si">Sí</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="participar" id="participar_no" value="no">
+                  <input class="form-check-input" type="radio" name="participar" id="participar_no" value="no" required>
                   <label class="form-check-label" for="participar_no">No</label>
                 </div>
               </div>
@@ -642,23 +635,22 @@
                   <h3 class="display text-white">Método de contacto preferido (obligatorio)</h3>
                 </label>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="contacto" id="telefono" value="Telefono">
+                  <input class="form-check-input" type="radio" name="contacto" id="telefono" value="Telefono" required>
                   <label class="form-check-label" for="telefono">Llamada telefónica</label>
-                  <input type="text" class="form-control bg-light border-0 contacto-input" id="telefono-input"
-                    name="telefono" placeholder="Tu número telefónico" style="display: none; height: 55px;">
+                  <input type="text" class="form-control bg-light border-0 contacto-input" id="telefono-input" name="telefono"
+                    placeholder="Tu número telefónico" style="display: none; height: 55px;" pattern="\d{10}" maxlength="10">
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="contacto" id="whatsapp" value="Whatsapp">
+                  <input class="form-check-input" type="radio" name="contacto" id="whatsapp" value="Whatsapp" required>
                   <label class="form-check-label" for="whatsapp">WhatsApp</label>
-                  <input type="text" class="form-control bg-light border-0 contacto-input" id="whatsapp-input"
-                    name="whatsapp" placeholder="Tu número de WhatsApp" style="display: none; height: 55px;">
+                  <input type="text" class="form-control bg-light border-0 contacto-input" id="whatsapp-input" name="whatsapp"
+                    placeholder="Tu número de WhatsApp" style="display: none; height: 55px;" pattern="\d{10}" maxlength="10">
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="contacto" id="correo"
-                    value="Correo electronico">
+                  <input class="form-check-input" type="radio" name="contacto" id="correo" value="Correo electronico" required>
                   <label class="form-check-label" for="correo">Correo electrónico</label>
-                  <input type="email" class="form-control bg-light border-0 contacto-input" id="correo-input"
-                    name="correo" placeholder="Tu correo electrónico" style="display: none; height: 55px;">
+                  <input type="email" class="form-control bg-light border-0 contacto-input" id="correo-input" name="correo"
+                    placeholder="Tu correo electrónico" style="display: none; height: 55px;" maxlength="100">
                 </div>
               </div>
 
@@ -681,6 +673,7 @@
   </div>
 </div>
 <!-- citas End -->
+
 
 <!-- Offer Start -->
 <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s" id="compartir">

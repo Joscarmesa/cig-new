@@ -190,7 +190,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Variables generales
   const form = document.getElementById("form-cita");
   const contactoChecks = document.querySelectorAll('input[name="contacto"]');
   const referidoSi = document.getElementById("referido_si");
@@ -206,11 +205,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
           if (this.checked) {
               inputField.style.display = "block";
-              inputField.required = true; // Hace el campo obligatorio
+              inputField.required = true;
           } else {
               inputField.style.display = "none";
-              inputField.required = false; // Quita la obligación del campo
-              inputField.value = ""; // Limpia el valor si se deselecciona
+              inputField.required = false;
+              inputField.value = "";
           }
 
           // Asegurarse de que solo un método esté seleccionado
@@ -221,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   if (otherInputField) {
                       otherInputField.style.display = "none";
                       otherInputField.required = false;
-                      otherInputField.value = ""; // Limpia el campo
+                      otherInputField.value = "";
                   }
               }
           });
@@ -232,18 +231,18 @@ document.addEventListener("DOMContentLoaded", function () {
   if (referidoSi && referidoNo && referidoNombre) {
       referidoSi.addEventListener("change", function () {
           if (referidoSi.checked) {
-              referidoNo.checked = false; // Desmarcar "No"
+              referidoNo.checked = false;
               referidoNombre.style.display = "block";
-              referidoNombre.required = true; // Hace el campo obligatorio
+              referidoNombre.required = true;
           }
       });
 
       referidoNo.addEventListener("change", function () {
           if (referidoNo.checked) {
-              referidoSi.checked = false; // Desmarcar "Sí"
+              referidoSi.checked = false;
               referidoNombre.style.display = "none";
-              referidoNombre.required = false; // Quita la obligación
-              referidoNombre.value = ""; // Limpia el campo
+              referidoNombre.required = false;
+              referidoNombre.value = "";
           }
       });
   }
@@ -271,43 +270,40 @@ document.addEventListener("DOMContentLoaded", function () {
           isValid = false;
       }
 
-      // Validar que el nombre del médico esté lleno si fue referido
       if (referidoSi && referidoSi.checked && referidoNombre.value.trim() === "") {
           alert("Por favor, completa el campo del nombre del médico que te refirió.");
           referidoNombre.focus();
           isValid = false;
       }
 
-      // Si hay alguna validación fallida, detener el envío
       if (!isValid) {
           event.preventDefault();
           return;
       }
 
-      // Enviar formulario con fetch para manejar mensajes flash
-      event.preventDefault(); // Previene el refresco de la página
+      // Enviar formulario con fetch
+      event.preventDefault();
       const formData = new FormData(form);
+      const csrfToken = document.querySelector('input[name="csrf_token"]').value;
 
       fetch("/solicitar-cita", {
           method: "POST",
+          headers: {
+              "X-CSRFToken": csrfToken, // Agrega el token CSRF en el encabezado
+          },
           body: formData,
       })
-          .then((response) => response.json()) // Suponiendo que el servidor devuelve JSON
+          .then((response) => response.json())
           .then((data) => {
-              // Limpiar mensajes previos
               flashMessages.innerHTML = "";
 
-              // Mostrar el mensaje flash
               const alertDiv = document.createElement("div");
               alertDiv.className = `alert alert-${data.success ? "success" : "danger"}`;
               alertDiv.textContent = data.message;
               flashMessages.appendChild(alertDiv);
 
-              // Si es exitoso, limpiar el formulario
               if (data.success) {
                   form.reset();
-
-                  // Ocultar y limpiar campos de contacto
                   contactoChecks.forEach(function (check) {
                       const inputField = document.getElementById(check.id + "-input");
                       if (inputField) {
@@ -315,8 +311,6 @@ document.addEventListener("DOMContentLoaded", function () {
                           inputField.value = "";
                       }
                   });
-
-                  // Ocultar y limpiar campo de referido
                   referidoNombre.style.display = "none";
                   referidoNombre.value = "";
               }
@@ -329,6 +323,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
   });
 });
+
 
 
 
