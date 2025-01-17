@@ -1,16 +1,20 @@
 from flask import request, jsonify, redirect, url_for, flash, render_template, session
 from flask_mail import Message
 import logging
+from blog_routes import blog_bp  # Cambia el import relativo por absoluto
 
 def validate_contact_method(metodo_contacto, telefono, whatsapp, correo):
     if metodo_contacto == "Correo electronico" and not correo:
         return 'Por favor, proporciona un correo electrónico válido.'
     if metodo_contacto in ["Telefono", "Whatsapp"] and not (telefono or whatsapp):
-        return f'Por favor, proporciona un número de {metodo_contacto.lower()}.'
+        return f'Por favor, proporciona un número de {metodo_contacto.lower()}.' 
     return None
 
 def register_routes(app, mail, db):
-    # Rutas existentes
+    # Registrar el Blueprint del blog
+    app.register_blueprint(blog_bp)
+
+    # Rutas principales
     @app.route('/')
     def index():
         return render_template('index.html', canonical_url="https://higadograso.mx/")
@@ -46,29 +50,6 @@ def register_routes(app, mail, db):
     @app.route('/ensayos')
     def ensayos():
         return render_template('ensayos.html', canonical_url="https://higadograso.mx/ensayos")
-    
-    # Entradas del blog
-    @app.route('/blog/vapes-tabaco')
-    def blog_vapes_tabaco():
-        return render_template('blog_content/blog/vapes_tabaco.html', canonical_url="https://higadograso.mx/blog/vapes-tabaco")
-    
-    @app.route('/blog/evitar_remedios_caseros')
-    def evitar_remedios_caseros():
-        return render_template('blog_content/blog/evitar_remedios_caseros.html', canonical_url="https://higadograso.mx/blog/evitar_remedios_caseros")
-    
-    @app.route('/blog/diabetes_prediabetes')
-    def diabetes_prediabetes():
-        return render_template('blog_content/blog/diabetes_prediabetes.html', canonical_url="https://higadograso.mx/blog/diabetes_prediabetes")
-    
-    @app.route('/blog/enfermedades_respiratorias')
-    def enfermedades_respiratorias():
-        return render_template('blog_content/blog/enfermedades_respiratorias.html', canonical_url="https://higadograso.mx/blog/enfermedades_respiratorias")
-
-    @app.route('/blog/tendencias_futuras_en_la_mortalidad')
-    def tendencias_futuras_en_la_mortalidad():
-        return render_template('blog_content/blog/tendencias_futuras_en_la_mortalidad.html', canonical_url="https://higadograso.mx/blog/tendencias_futuras_en_la_mortalidad")
-
-    # Entradas del blog END  
 
     @app.route('/solicitar-cita', methods=['POST'])
     def solicitar_cita():
