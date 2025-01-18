@@ -7,7 +7,7 @@
       <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
         <div class="section-title bg-light rounded h-100 p-5">
           <h5 class="position-relative d-inline-block text-primary text-uppercase">
-            Unete a
+            Únete a
           </h5>
           <h1 class="display-6 mb-4">Nuestro Blog</h1>
           <a href="{{ url_for('citas') }}" class="btn btn-primary py-3 px-5">Agendar cita</a>
@@ -25,11 +25,9 @@
                 Hígado y al Corazón?
               </h5>
               <p class="card-text">
-                Aunque el tabaco es conocido por sus
-                efectos adversos a largo plazo, los vapes, aunque se consideran
-                menos dañinos en algunos aspectos, no están exentos de riesgos.
+                Aunque el tabaco es conocido por sus efectos adversos a largo plazo, los vapes, aunque se consideran menos dañinos en algunos aspectos, no están exentos de riesgos.
               </p>
-              <a href="{{ url_for('blog_vapes_tabaco') }}" class="btn btn-primary">Leer articulo</a>
+              <a href="{{ url_for('blog.blog_vapes_tabaco') }}" class="btn btn-primary">Leer artículo</a>
             </div>
           </div>
         </div>
@@ -46,10 +44,9 @@
                 ¿Por Qué Evitar los Remedios Caseros para el Hígado Graso?
               </h5>
               <p class="card-text">
-                Aunque las hierbas y productos naturales pueden tener beneficios para la salud en algunos
-                casos, no todos los remedios caseros son adecuados para tratar afecciones graves.
+                Aunque las hierbas y productos naturales pueden tener beneficios para la salud en algunos casos, no todos los remedios caseros son adecuados para tratar afecciones graves.
               </p>
-              <a href="{{ url_for('evitar_remedios_caseros') }}" class="btn btn-primary">Leer articulo</a>
+              <a href="{{ url_for('blog.evitar_remedios_caseros') }}" class="btn btn-primary">Leer artículo</a>
             </div>
           </div>
         </div>
@@ -67,10 +64,9 @@
                 Diabetes y Prediabetes
               </h5>
               <p class="card-text">
-                Consejos para una Alimentación Saludable
-                Durante las Festividades Navideñas
+                Consejos para una Alimentación Saludable Durante las Festividades Navideñas
               </p>
-              <a href="{{ url_for('diabetes_prediabetes') }}" class="btn btn-primary">Leer articulo</a>
+              <a href="{{ url_for('blog.diabetes_prediabetes') }}" class="btn btn-primary">Leer artículo</a>
             </div>
           </div>
         </div>
@@ -89,34 +85,28 @@
                 Personas con Obesidad
               </h5>
               <p class="card-text">
-                Las enfermedades respiratorias, tanto agudas como crónicas, son una causa importante de
-                morbilidad en la población mundial, y su relación con otras enfermedades del organismo, como
-                el hígado graso y la obesidad, puede tener consecuencias graves para la salud.
+                Las enfermedades respiratorias, tanto agudas como crónicas, son una causa importante de morbilidad en la población mundial, y su relación con otras enfermedades del organismo, como el hígado graso y la obesidad, puede tener consecuencias graves para la salud.
               </p>
-              <a href="{{ url_for('enfermedades_respiratorias') }}" class="btn btn-primary">Leer articulo</a>
+              <a href="{{ url_for('blog.enfermedades_respiratorias') }}" class="btn btn-primary">Leer artículo</a>
             </div>
           </div>
         </div>
       </div>
       <!-- TARJETAS PARA BLOG END -->
 
-
       <!-- TARJETAS PARA BLOG -->
       <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
         <div class="eventos-item">
           <div class="card" style="width: 18rem">
-            <img src="{{ url_for('static', filename='img/heart_stadistics.jpg') }}"
-              class="card-img-top" alt="..." />
+            <img src="{{ url_for('static', filename='img/heart_stadistics.jpg') }}" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">
                 Predicción de Tendencias Futuras en la Mortalidad
               </h5>
               <p class="card-text">
-                Con el aumento de la población global y el cambio de los patrones de salud pública, la predicción de las
-                tendencias futuras en la mortalidad por ECV y sus factores de riesgo se vuelve cada vez más crucial para
-                los responsables de las políticas de salud.
+                Con el aumento de la población global y el cambio de los patrones de salud pública, la predicción de las tendencias futuras en la mortalidad por ECV y sus factores de riesgo se vuelve cada vez más crucial para los responsables de las políticas de salud.
               </p>
-              <a href="{{ url_for('tendencias_futuras_en_la_mortalidad') }}" class="btn btn-primary">Leer articulo</a>
+              <a href="{{ url_for('blog.tendencias_futuras_en_la_mortalidad') }}" class="btn btn-primary">Leer artículo</a>
             </div>
           </div>
         </div>
