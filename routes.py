@@ -50,6 +50,17 @@ def register_routes(app, mail, db):
     @app.route('/ensayos')
     def ensayos():
         return render_template('ensayos.html', canonical_url="https://higadograso.mx/ensayos")
+    
+
+    # RUTAS PARA LA CARRERA / TERMINOS Y CONDICIONES
+
+    @app.route('/carreracaminata')
+    def carreracaminata():
+        return render_template('carreracaminata.html', canonical_url="https://higadograso.mx/carreracaminata")
+
+    @app.route('/terminosycondiciones')
+    def terminosycondiciones():
+        return render_template('terminosycondiciones.html', canonical_url="https://higadograso.mx/terminosycondiciones")
 
     @app.route('/solicitar-cita', methods=['POST'])
     def solicitar_cita():

@@ -21,16 +21,21 @@
                     <div class="card" style="width: 18rem;">
                         <img src="{{ url_for('static', filename='img/citas.jpeg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Caminata-Carrera 4k
+                                DIA MUNDIAL DE LA OBESIDAD
+                            </h5>
+                            <p class="card-text">El Centro de Investigación y Gastroenterología convoca al público en
+                                general a participar en la Caminata-Carrera 4K: en conmemoración del Día Mundial de la
+                                Obesidad.</p>                               
+                            <a href="{{ url_for('carreracaminata') }}" class="btn btn-primary">Consulta las bases</a>
                         </div>
                     </div>
 
                 </div>
             </div>
             <!-- tarjeta de eventos end-->
+
+            <!-- tarjeta de eventos 
 
             <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                 <div class="eventos-item">
@@ -92,5 +97,5 @@
         </div>
     </div>
 </div>
-<!-- eventos End -->
-{% endblock %}
+   eventos End -->
+            {% endblock %}
