@@ -23,3 +23,7 @@ def enfermedades_respiratorias():
 @blog_bp.route('/blog/tendencias_futuras_en_la_mortalidad')
 def tendencias_futuras_en_la_mortalidad():
     return render_template('blog_content/blog/tendencias_futuras_en_la_mortalidad.html', canonical_url="https://higadograso.mx/blog/tendencias_futuras_en_la_mortalidad")
+
+@blog_bp.route('/blog/salud_mental_higado')
+def salud_mental_higado():
+    return render_template('blog_content/blog/salud_mental_higado.html', canonical_url="https://higadograso.mx/blog/salud_mental_higado")

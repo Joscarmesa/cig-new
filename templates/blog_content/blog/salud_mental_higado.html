@@ -1,0 +1,99 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-salud-mental-higado">
+    <div class="container">
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">¿Sabías que el hígado y la salud mental se relacionan?</h1>
+        </div>
+
+        <!-- Imagen Principal -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" style="max-width: 100%; height: 20rem; object-fit: cover;"
+                src="{{ url_for('static', filename='img/eba98193-ef8d-4aeb-8e3d-e6fc0a1a7d79_2.webp') }}"
+                alt="Conexión entre el cerebro y el hígado">
+        </div>
+
+        <!-- Primera Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <p class="mb-0 text-justify">
+                ¿Sabías que la salud mental y el hígado están profundamente conectados? Aunque pueda parecer que uno
+                afecta exclusivamente a la mente y el otro al cuerpo, la realidad es que las emociones, el estrés y los
+                trastornos psicológicos tienen un impacto directo en el funcionamiento de este órgano vital. En este
+                artículo exploraremos cómo la salud mental influye en el hígado y cómo las enfermedades hepáticas
+                pueden, a su vez, afectar tu bienestar emocional.
+            </p>
+        </div>
+
+        <!-- Segunda Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+            <h3 class="text-primary">El Hígado: Más Allá de su Papel Metabólico</h3>
+            <p class="mb-1 text-justify">
+                El hígado es un órgano esencial para desintoxicar el cuerpo, procesar nutrientes y regular funciones
+                metabólicas. Sin embargo, su conexión con el cerebro y las emociones no siempre es evidente. A través
+                del eje intestino-cerebro-hígado, las señales provenientes del sistema nervioso central pueden alterar
+                la función hepática, demostrando que el estrés y la salud emocional tienen un alcance mucho mayor del
+                que imaginas.
+            </p>
+            <p class="mb-1 text-justify">
+                El estrés crónico es uno de los mayores enemigos del hígado. Cuando vives en un estado de alerta
+                constante, el cuerpo libera cortisol, una hormona que, en exceso, puede desencadenar inflamación y
+                resistencia a la insulina. Estas alteraciones pueden contribuir al desarrollo de condiciones como el
+                hígado graso no alcohólico (HGNA), una enfermedad que afecta a millones de personas en el mundo.
+            </p>
+        </div>
+
+         <!-- Imagen Intermedia -->
+         <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" style="max-width: 100%; height: 20rem; object-fit: cover;"
+                src="{{ url_for('static', filename='img/4833f670-c1e0-407f-9c41-6adc97dc1102_1.webp') }}"
+                alt="Impacto del estrés en el hígado">
+        </div>
+
+        <!-- Tercera Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.6s">
+            <h3 class="text-primary">Cuidar de tu Mente y tu Hígado</h3>
+            <p class="mb-1 text-justify">
+                La relación entre el hígado y la salud mental es un círculo interconectado. Para mantener ambos en
+                equilibrio, considera las siguientes recomendaciones:
+            </p>
+            <ul>
+                <li class="mb-1 text-justify"><strong>Controla el Estrés:</strong> Prácticas como la meditación, el yoga
+                    y el ejercicio regular, pueden ayudarte a reducir los niveles de estrés y proteger tu salud
+                    hepática.</li>
+                <li class="mb-1 text-justify"><strong>Cuida tu Alimentación:</strong> Una dieta rica en frutas,
+                    verduras, grasas saludables y proteínas magras no solo beneficia a tu hígado, sino que también
+                    mejora tu bienestar mental.</li>
+                <li class="mb-1 text-justify"><strong>Busca Apoyo Psicológico:</strong> Si sientes que el estrés, la
+                    ansiedad o la depresión están afectando tu calidad de vida, no dudes en buscar ayuda profesional.
+                </li>
+                <li class="mb-1 text-justify"><strong>Evita Toxinas:</strong> Limita el consumo de alcohol y otros
+                    productos que puedan sobrecargar tu hígado.</li>
+            </ul>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.8s">
+            <h4 class="text-white">Referencias:</h4>
+            <ul>
+                <li class="mb-1">García-Tsao, G., Lim, J. K., & Lustig, Y. (2021). "The Impact of Stress on Liver
+                    Health". Journal of Hepatology Research and Practice, 63(4), 254–261. Disponible en: <a
+                        class="text-white" href="https://www.journalofhepatology.org"
+                        target="_blank">https://www.journalofhepatology.org</a></li>
+                <li class="mb-1">Rehm, J., Samokhvalov, A. V., & Shield, K. D. (2020). "Alcohol and Its Role in Liver
+                    Diseases: A Mental Health Perspective". World Journal of Hepatology, 12(9), 481–493. Disponible en:
+                    <a class="text-white" href="https://www.wjgnet.com" target="_blank">https://www.wjgnet.com</a></li>
+                <li class="mb-1">Kiecolt-Glaser, J. K., McGuire, L., Robles, T. F., & Glaser, R. (2022). "Psychological
+                    Stress and Disease". Annual Review of Clinical Psychology, 18(1), 1–27. DOI: <a class="text-white"
+                        href="https://doi.org/10.1146/annurev-clinpsy-072320-090403"
+                        target="_blank">10.1146/annurev-clinpsy-072320-090403</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+{% endblock %}
