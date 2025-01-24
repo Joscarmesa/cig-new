@@ -16,50 +16,57 @@
 <div class="container-fluid p-0" id="carrusel">
   <div id="header-carousel" class="carousel slide carousel-fade particle" data-bs-ride="carousel">
     <div class="carousel-inner">
+      <!-- Carousel item carrera -->
       <div class="carousel-item active">
-        <img class="w-100" src="{{ url_for('static', filename='img/liver.jpeg') }}" alt="Image" />
+        <img class="w-100" src="{{ url_for('static', filename='img/CarreraDiaMundialObesidad.webp') }}" alt="Carrera Día Mundial contra la Obesidad" />
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+          <div class="p-3" style="max-width: 900px">
+            <a href="{{ url_for('carreracaminata') }}" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Registro</a>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel item carrera END -->
+
+      <!-- Carousel item hígado graso -->
+      <div class="carousel-item">
+        <img class="w-100" src="{{ url_for('static', filename='img/liver.jpeg') }}" alt="Protege tu hígado de la enfermedad de hígado graso" />
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px">
             <h5 class="text-white text-uppercase mb-3 animated slideInDown">
               Protege tu hígado de esta enfermedad
             </h5>
-            <h1 class="display-1 text-white mb-md-4 animated zoomIn">
-              Hígado Graso
-            </h1>
-            <a href="#protocolos-de-investigacion"
-              class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita
-            </a>
+            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Hígado Graso</h1>
+            <a href="#protocolos-de-investigacion" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita</a>
           </div>
         </div>
       </div>
+
+      <!-- Carousel item valoración hepática -->
       <div class="carousel-item">
-        <img class="w-100" src="{{ url_for('static', filename='img/doctors3.jpg') }}" alt="Image" />
+        <img class="w-100" src="{{ url_for('static', filename='img/doctors3.jpg') }}" alt="Agenda una valoración hepática con nuestro equipo" />
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px">
             <h5 class="text-white text-uppercase mb-3 animated slideInDown">
               Accede a una mejor calidad de vida
             </h5>
-            <h1 class="display-1 text-white mb-md-4 animated zoomIn">
-              Agenda una valoración hepática
-            </h1>
-            <a href="#protocolos-de-investigacion"
-              class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita
-            </a>
+            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Agenda una valoración hepática</h1>
+            <a href="#protocolos-de-investigacion" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita</a>
           </div>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+
+    <!-- Controles del carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev" aria-label="Previous slide">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next" aria-label="Next slide">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
     </button>
   </div>
 </div>
 <!-- Carousel End -->
+
 
 <!-- Banner Start -->
 <div class="container-fluid banner mb-5" id="banner">
@@ -516,7 +523,8 @@
 
 
 <!-- citas Start -->
-<div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s" id="protocolos-de-investigacion">
+<div class="container-fluid bg-primary bg-citas my-5 wow fadeInUp" data-wow-delay="0.1s"
+  id="protocolos-de-investigacion">
   <div class="container">
     <div class="row gx-5">
       <div class="col-lg-6 py-5">
@@ -524,15 +532,21 @@
           <h1 class="display-2 text-white mb-4">Protocolos de Investigación</h1>
           <h3 class="display text-white mb-4">¡Una Excelente Opción!</h3>
           <p class="text-white mb-4">
-            En CIG, creemos firmemente en la innovación y la investigación para encontrar tratamientos más efectivos y personalizados.
-            Nuestros protocolos de investigación médica son una excelente opción para aquellos que buscan alternativas a los tratamientos
-            convencionales. Al participar en nuestros estudios, los pacientes tienen acceso a terapias de vanguardia y contribuyen al avance
+            En CIG, creemos firmemente en la innovación y la investigación para encontrar tratamientos más efectivos y
+            personalizados.
+            Nuestros protocolos de investigación médica son una excelente opción para aquellos que buscan alternativas a
+            los tratamientos
+            convencionales. Al participar en nuestros estudios, los pacientes tienen acceso a terapias de vanguardia y
+            contribuyen al avance
             de la medicina.
           </p>
           <p class="text-white mb-0">
-            Es importante recopilar información sobre factores de riesgo cardiovascular como parte de la historia clínica integral de los pacientes,
-            dado que estos pueden influir en el desarrollo y manejo de condiciones gastrointestinales y metabólicas, como el hígado graso.
-            <strong class="text-white">Sin embargo, el Centro de Investigación y Gastroenterología no ofrece tratamiento directo para enfermedades cardiovasculares.</strong>
+            Es importante recopilar información sobre factores de riesgo cardiovascular como parte de la historia
+            clínica integral de los pacientes,
+            dado que estos pueden influir en el desarrollo y manejo de condiciones gastrointestinales y metabólicas,
+            como el hígado graso.
+            <strong class="text-white">Sin embargo, el Centro de Investigación y Gastroenterología no ofrece tratamiento
+              directo para enfermedades cardiovasculares.</strong>
           </p>
         </div>
       </div>
@@ -544,7 +558,7 @@
           <form method="POST" action="/solicitar-cita">
 
             <!-- Token CSRF para protección -->
-            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">            
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
             <div class="row g-3">
               <!-- Pregunta 1: Selección de múltiples padecimientos -->
               <div class="text-white">
@@ -552,7 +566,8 @@
                   <h3 class="display text-white">Seleccione sus factores de riesgo:</h3>
                 </label>
                 <div class="form-check justify-content-right">
-                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="higado_graso" value="Hígado graso">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="higado_graso"
+                    value="Hígado graso">
                   <label class="form-check-label" for="higado_graso">Hígado graso</label>
                 </div>
                 <div class="form-check">
@@ -560,15 +575,18 @@
                   <label class="form-check-label" for="obesidad">Obesidad</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="hipertension" value="Hipertensión">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="hipertension"
+                    value="Hipertensión">
                   <label class="form-check-label" for="hipertension">Hipertensión</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="dislipidemias" value="Dislipidemias">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="dislipidemias"
+                    value="Dislipidemias">
                   <label class="form-check-label" for="dislipidemias">Dislipidemias</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="problemas_cardiovasculares" value="Problemas Cardiovasculares">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="problemas_cardiovasculares"
+                    value="Problemas Cardiovasculares">
                   <label class="form-check-label" for="problemas_cardiovasculares">Problemas Cardiovasculares</label>
                 </div>
                 <div class="form-check">
@@ -576,7 +594,8 @@
                   <label class="form-check-label" for="crohn">Crohn</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="sindrome_metabolico" value="Síndrome Metabólico">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="sindrome_metabolico"
+                    value="Síndrome Metabólico">
                   <label class="form-check-label" for="sindrome_metabolico">Síndrome Metabólico</label>
                 </div>
               </div>
@@ -596,7 +615,8 @@
                 </div>
                 <!-- Campo para ingresar el nombre del médico -->
                 <input type="text" class="form-control bg-light border-0 referido-input" id="referido_nombre"
-                  name="referido_nombre" placeholder="Nombre del médico que lo refirió" style="display: none; height: 55px;" maxlength="100">
+                  name="referido_nombre" placeholder="Nombre del médico que lo refirió"
+                  style="display: none; height: 55px;" maxlength="100">
               </div>
 
               <!-- Pregunta 3: Seleccionar sede -->
@@ -609,7 +629,8 @@
                   <label class="form-check-label" for="roma_norte">Roma Norte</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="sede" id="universidad" value="universidad" required>
+                  <input class="form-check-input" type="radio" name="sede" id="universidad" value="universidad"
+                    required>
                   <label class="form-check-label" for="universidad">Universidad</label>
                 </div>
               </div>
@@ -637,20 +658,24 @@
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="contacto" id="telefono" value="Telefono" required>
                   <label class="form-check-label" for="telefono">Llamada telefónica</label>
-                  <input type="text" class="form-control bg-light border-0 contacto-input" id="telefono-input" name="telefono"
-                    placeholder="Tu número telefónico" style="display: none; height: 55px;" pattern="\d{10}" maxlength="10">
+                  <input type="text" class="form-control bg-light border-0 contacto-input" id="telefono-input"
+                    name="telefono" placeholder="Tu número telefónico" style="display: none; height: 55px;"
+                    pattern="\d{10}" maxlength="10">
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="contacto" id="whatsapp" value="Whatsapp" required>
                   <label class="form-check-label" for="whatsapp">WhatsApp</label>
-                  <input type="text" class="form-control bg-light border-0 contacto-input" id="whatsapp-input" name="whatsapp"
-                    placeholder="Tu número de WhatsApp" style="display: none; height: 55px;" pattern="\d{10}" maxlength="10">
+                  <input type="text" class="form-control bg-light border-0 contacto-input" id="whatsapp-input"
+                    name="whatsapp" placeholder="Tu número de WhatsApp" style="display: none; height: 55px;"
+                    pattern="\d{10}" maxlength="10">
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="contacto" id="correo" value="Correo electronico" required>
+                  <input class="form-check-input" type="radio" name="contacto" id="correo" value="Correo electronico"
+                    required>
                   <label class="form-check-label" for="correo">Correo electrónico</label>
-                  <input type="email" class="form-control bg-light border-0 contacto-input" id="correo-input" name="correo"
-                    placeholder="Tu correo electrónico" style="display: none; height: 55px;" maxlength="100">
+                  <input type="email" class="form-control bg-light border-0 contacto-input" id="correo-input"
+                    name="correo" placeholder="Tu correo electrónico" style="display: none; height: 55px;"
+                    maxlength="100">
                 </div>
               </div>
 
