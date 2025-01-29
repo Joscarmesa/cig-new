@@ -1,0 +1,83 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-microplasticos">
+    <div class="container">
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Microplásticos y su Impacto en el Hígado: Un Riesgo Silencioso para la Salud
+                Humana</h1>
+        </div>
+
+        <!-- Imagen Principal -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: top;"
+                src="{{ url_for('static', filename='img/microP1.webp') }}" alt="Microplásticos y el Hígado">
+        </div>
+
+        <!-- Primera Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <p class="mb-0 text-justify">
+                Los microplásticos son pequeñas partículas de plástico que miden menos de 5 milímetros y que se
+                encuentran en el aire, el agua y los alimentos. Aunque su presencia en el medio ambiente ha sido
+                ampliamente documentada, su impacto en la salud humana es aún un área de estudio emergente.
+                Investigaciones recientes han comenzado a examinar cómo la exposición a los microplásticos podría
+                afectar órganos internos, en particular el hígado, uno de los principales órganos encargados de
+                desintoxicar el cuerpo.
+            </p>
+        </div>
+
+        <!-- Segunda Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+            <h3 class="text-primary">El Hígado y su Función en la Desintoxicación</h3>
+            <p class="mb-1 text-justify">El hígado es uno de los órganos más importantes en el cuerpo humano debido a su
+                función en la desintoxicación. Filtra y procesa las toxinas y productos de desecho, ayudando en su
+                eliminación a través de la bilis o la orina. Sin embargo, esta función lo hace especialmente vulnerable
+                a contaminantes externos como los microplásticos, que pueden alterar su funcionamiento a largo plazo.
+            </p>
+            <p class="mb-1 text-justify">Estudios han encontrado que los microplásticos pueden causar inflamación,
+                estrés oxidativo y acumulación de sustancias tóxicas en el hígado, aumentando el riesgo de enfermedades
+                hepáticas crónicas como la esteatosis hepática (hígado graso), fibrosis y cirrosis.</p>
+        </div>
+
+        <!-- Imagen Intermedia -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: top;"
+                src="{{ url_for('static', filename='img/microP2-1.webp') }}"
+                alt="Impacto de Microplásticos en el Cuerpo Humano">
+        </div>
+
+        <!-- Tercera Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.6s">
+            <h3 class="text-primary">Cómo Reducir la Exposición a los Microplásticos</h3>
+            <p class="mb-1 text-justify">Aunque la exposición a los microplásticos es difícil de evitar completamente,
+                puedes tomar medidas para reducir tu riesgo:</p>
+            <ul>
+                <li class="mb-1">Reducir el uso de plásticos de un solo uso y optar por alternativas reutilizables.</li>
+                <li class="mb-1">Evitar productos cosméticos con microperlas de plástico.</li>
+                <li class="mb-1">Filtrar el agua potable con sistemas avanzados de filtración.</li>
+                <li class="mb-1">Reducir el consumo de productos procesados y envasados.</li>
+                <li class="mb-1">Informarte y promover la investigación sobre los efectos de los microplásticos en la
+                    salud.</li>
+            </ul>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.8s">
+            <h4 class="text-white">Referencias:</h4>
+            <ul>
+                <li class="mb-1">Wright, SL y Kelly, FJ (2020). "Plástico y salud humana: ¿un problema microeconómico?"
+                    Environmental Science and Technology.</li>
+                <li class="mb-1">Sharma, S., y Chatterjee, S. (2021). "Microplásticos en el entorno humano: una revisión
+                    de la toxicidad y las vías de propagación". Science of the Total Environment.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+{% endblock %}

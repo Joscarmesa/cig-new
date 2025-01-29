@@ -27,3 +27,7 @@ def tendencias_futuras_en_la_mortalidad():
 @blog_bp.route('/blog/salud_mental_higado')
 def salud_mental_higado():
     return render_template('blog_content/blog/salud_mental_higado.html', canonical_url="https://higadograso.mx/blog/salud_mental_higado")
+
+@blog_bp.route('/blog/microplasticos_impacto_higado')
+def microplasticos_impacto_higado():
+    return render_template('blog_content/blog/microplasticos_impacto_higado.html', canonical_url="https://higadograso.mx/blog/microplasticos_impacto_higado")        
