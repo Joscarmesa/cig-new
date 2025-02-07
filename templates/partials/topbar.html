@@ -1,59 +1,32 @@
 <!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg navbar-dark shadow-sm px-5 py-3 py-lg-0">
-  <a href="{{ url_for('index') }}" class="navbar-brand p-0">
-    <h1 class="m-0 text-primary">
-      <i class="">
-        <img src="{{ url_for('static', filename='img/LogoNombre.png') }}" alt="Logo" width="100%" height="100em" />
-      </i>
-    </h1>
-  </a>
-  <div class="ms-auto">
-    <button class="navbar-toggler ms-auto mb-1 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm px-3 py-2">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    <a href="{{ url_for('index') }}" class="navbar-brand p-0 d-flex align-items-center">
+      <img src="{{ url_for('static', filename='img/LogoNombre.png') }}" alt="Logo" height="50" class="me-2" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <div class="navbar-nav ms-auto text-end">
         <div class="nav-item dropdown">
-          <a href="#" class="btn btn-secondary py-2 px-4 ms-auto mb-1 mt-1 nav-link dropdown-toggle"
-            data-bs-toggle="dropdown">Menú principal</a>
+          <a href="#" class="btn btn-secondary py-2 px-4 nav-link dropdown-toggle" data-bs-toggle="dropdown">Menú principal</a>
           <div class="dropdown-menu m-0">
             <a href="{{ url_for('index') }}#banner" class="text-white dropdown-item">Horarios de Atención</a>
             <a href="{{ url_for('index') }}#quienes-somos" class="text-white dropdown-item">Quiénes Somos</a>
             <a href="{{ url_for('index') }}#enfermedades" class="text-white dropdown-item">Enfermedades</a>
             <a href="{{ url_for('index') }}#tratamiento" class="text-white dropdown-item">Tratamientos</a>
-            <a href="{{ url_for('index') }}#protocolos-de-investigacion" class="text-white dropdown-item">Protocolos de
-              Investigación</a>
-            <a href="{{ url_for('index') }}#compartir" class="text-white dropdown-item">Compartir esta pagina</a>
-
+            <a href="{{ url_for('index') }}#protocolos-de-investigacion" class="text-white dropdown-item">Protocolos de Investigación</a>
+            <a href="{{ url_for('index') }}#compartir" class="text-white dropdown-item">Compartir esta página</a>
             <a href="{{ url_for('eventos') }}" class="text-white dropdown-item">Eventos</a>
             <a href="{{ url_for('especialistas') }}" class="text-white dropdown-item">Especialistas</a>
             <a href="{{ url_for('contact') }}" class="text-white dropdown-item">Contacto</a>
             <a href="{{ url_for('blog') }}" class="text-white dropdown-item">Blog</a>
           </div>
         </div>
-        <a href="{{ url_for('index') }}#protocolos-de-investigacion" class="btn btn-primary py-2 px-4 ms-3 mb-1 mt-1">Solicitar Cita</a>
+        <a href="{{ url_for('index') }}#protocolos-de-investigacion" class="btn btn-primary py-2 px-4 ms-3">Solicitar Cita</a>
       </div>
     </div>
   </div>
 </nav>
 <!-- Navbar End -->
-
-<!-- Full Screen Search Start -->
-<div class="modal fade" id="searchModal" tabindex="-1">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content" style="background: rgba(0, 8, 80, 0.7)">
-      <div class="modal-header border-0">
-        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body d-flex align-items-center justify-content-center">
-        <div class="input-group" style="max-width: 600px">
-          <input type="text" class="form-control border-primary p-3" placeholder="Type search keyword" />
-          <button class="btn btn-primary px-4">
-            <i class="bi bi-search"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Full Screen Search End -->
