@@ -55,14 +55,34 @@ except Exception as e:
     logging.error(f"Error al inicializar Firestore: {e}")
     raise
 
-# Inicialización de Flask-Sitemap
-ext = Sitemap(app)
-
 # Configuración para proxy inverso
 app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_port=1, x_prefix=1)
 
 # Registra rutas
 register_routes(app, mail=Mail(app), db=db)
+
+# Inicializa la extensión Sitemap
+sitemap = Sitemap(app)
+
+# Agregar URLs manualmente si no se están detectando automáticamente
+def generate_sitemap():
+    # Rutas definidas en routes.py
+    sitemap.add_url('/blog', changefreq='monthly', priority=0.8)
+    sitemap.add_url('/citas', changefreq='monthly', priority=0.8)
+    sitemap.add_url('/contact', changefreq='monthly', priority=0.8)
+    sitemap.add_url('/enfermedades', changefreq='monthly', priority=0.8)
+    sitemap.add_url('/eventos', changefreq='monthly', priority=0.8)
+    sitemap.add_url('/especialistas', changefreq='monthly', priority=0.8)
+    sitemap.add_url('/manifiesto', changefreq='monthly', priority=0.8)
+    sitemap.add_url('/ensayos', changefreq='monthly', priority=0.8)
+    sitemap.add_url('/carreracaminata', changefreq='monthly', priority=0.8)
+    sitemap.add_url('/terminosycondiciones', changefreq='monthly', priority=0.8)
+
+#ruta al mapa del sitio
+@app.route('/sitemap.xml')
+def sitemap_xml():
+    return sitemap.generate()
+
 
 # Manejadores de errores
 @app.errorhandler(404)
@@ -79,3 +99,4 @@ if __name__ == '__main__':
     debug_mode = os.getenv("FLASK_ENV") == "development"
     logging.info(f"Servidor iniciado en el puerto {port} (debug={debug_mode}).")
     app.run(host='0.0.0.0', port=port, debug=debug_mode)
+

@@ -31,3 +31,7 @@ def salud_mental_higado():
 @blog_bp.route('/blog/microplasticos_impacto_higado')
 def microplasticos_impacto_higado():
     return render_template('blog_content/blog/microplasticos_impacto_higado.html', canonical_url="https://higadograso.mx/blog/microplasticos_impacto_higado")        
+
+@blog_bp.route('/blog/control_azucar_glucosa_sangre')
+def control_azucar_glucosa_sangre():
+    return render_template('blog_content/blog/control_azucar_glucosa_sangre.html', canonical_url="https://higadograso.mx/blog/control_azucar_glucosa_sangre")        
