@@ -35,3 +35,8 @@ def microplasticos_impacto_higado():
 @blog_bp.route('/blog/control_azucar_glucosa_sangre')
 def control_azucar_glucosa_sangre():
     return render_template('blog_content/blog/control_azucar_glucosa_sangre.html', canonical_url="https://higadograso.mx/blog/control_azucar_glucosa_sangre")        
+
+@blog_bp.route('/blog/obesidad_relacion_higado_graso')
+def obesidad_relacion_higado_graso():
+    return render_template('blog_content/blog/obesidad_relacion_higado_graso.html', canonical_url="https://higadograso.mx/blog/obesidad_relacion_higado_graso")        
+

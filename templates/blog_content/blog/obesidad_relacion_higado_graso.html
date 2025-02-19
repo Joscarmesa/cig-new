@@ -1,0 +1,76 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-higado-graso">
+    <div class="container">
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Obesidad y su Relación con el Hígado Graso: Un Problema Silencioso</h1>
+        </div>
+
+        <!-- Imagen Principal -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: top;"
+                src="{{ url_for('static', filename='img/BLOGFEB_2_1webp.webp') }}" alt="Obesidad e Hígado Graso">
+        </div>
+
+        <!-- Primera Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <p class="mb-0 text-justify">
+                La obesidad es uno de los principales desafíos de salud pública en el mundo actual, afectando a más del 39% de la población adulta global según datos de la Organización Mundial de la Salud (OMS). Este problema no solo repercute en la calidad de vida y la autoestima, sino que también está relacionado con múltiples enfermedades crónicas, siendo una de las más preocupantes la enfermedad del hígado graso no alcohólico (EHGNA).
+            </p>
+        </div>
+
+        <!-- Segunda Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+            <h3 class="text-primary">¿Qué es el Hígado Graso No Alcohólico?</h3>
+            <p class="mb-1 text-justify">El hígado graso no alcohólico es una afección en la que se acumula grasa en las células del hígado en personas que no consumen grandes cantidades de alcohol. Puede ser inofensiva en algunos casos, pero en otros puede desencadenar inflamación y daño hepático que pueden derivar en condiciones más graves como la esteatohepatitis no alcohólica (EHNA), fibrosis hepática y cirrosis.</p>
+        </div>
+
+        <!-- Imagen Intermedia -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: top;"
+                src="{{ url_for('static', filename='img/BLOGFEB_2_2.webp') }}" alt="Hígado Graso vs. Hígado Sano">
+        </div>
+
+        <!-- Tercera Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.6s">
+            <h3 class="text-primary">Factores de Riesgo y Prevención</h3>
+            <ul>
+                <li><strong>Exceso de ácidos grasos libres:</strong> En personas con obesidad, el tejido adiposo libera una mayor cantidad de ácidos grasos que se acumulan en el hígado.</li>
+                <li><strong>Resistencia a la insulina:</strong> Común en la obesidad, impide que las células utilicen correctamente la glucosa, favoreciendo la acumulación de grasa en el hígado.</li>
+                <li><strong>Inflamación sistémica:</strong> La obesidad genera un estado inflamatorio crónico que exacerba el daño celular hepático.</li>
+                <li><strong>Alteración hormonal:</strong> Hormonas como la leptina y la adiponectina están desequilibradas en personas con obesidad, favoreciendo la enfermedad.</li>
+            </ul>
+        </div>
+
+        <!-- Consejos para un Hígado Saludable -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.7s">
+            <h3 class="text-primary">Consejos para Prevenir y Manejar el Hígado Graso</h3>
+            <ul>
+                <li><strong>Adopta una dieta equilibrada:</strong> Opta por alimentos ricos en fibra, antioxidantes y grasas saludables como en la dieta mediterránea.</li>
+                <li><strong>Realiza actividad física:</strong> Ejercicios como caminar, nadar o yoga pueden reducir la grasa hepática.</li>
+                <li><strong>Controla el peso corporal:</strong> Perder entre el 5% y 10% del peso corporal puede mejorar la salud hepática.</li>
+                <li><strong>Modera el consumo de ultraprocesados:</strong> Evita productos ricos en azúcares añadidos y grasas trans.</li>
+                <li><strong>Consulta a un médico:</strong> Un diagnóstico temprano es clave para evitar complicaciones mayores.</li>
+            </ul>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.8s">
+            <h4 class="text-white">Referencias:</h4>
+            <ul>
+                <li>Chalasani, N., Younossi, Z., Lavine, JE, et al. (2022). Diagnóstico y tratamiento de la enfermedad del hígado graso no alcohólico. Hepatología, 67(1), 328-357.</li>
+                <li>Rinella, ME (2021). Enfermedad del hígado graso no alcohólico: una revisión sistemática. JAMA, 320(23), 2464-2476.</li>
+                <li>López-Muñoz, R., & Ramírez-Cervantes, KL (2023). Impacto de la obesidad en la progresión del hígado graso no alcohólico. Revista Mexicana de Gastroenterología, 38(2), 125-136.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+{% endblock %}
