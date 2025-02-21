@@ -1,0 +1,76 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-glucosa">
+    <div class="container">
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">El Control del Azúcar en Sangre: Perspectivas y Estrategias para la Regulación Glucémica en la Salud</h1>
+        </div>
+
+        <!-- Imagen Principal -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" loading="lazy"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: top;"
+                src="{{ url_for('static', filename='img/BLOGFEB_4.webp') }}" alt="Control de azúcar en sangre">
+        </div>
+
+        <!-- Primera Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <p class="mb-0 text-justify">
+                El azúcar en sangre, o glucosa, es una fuente de energía esencial para el cuerpo, pero sus niveles deben mantenerse en un rango saludable para prevenir problemas de salud a corto y largo plazo. La regulación de la glucosa se basa en dos pilares fundamentales: un estilo de vida saludable y, cuando sea necesario, el uso de tratamientos farmacológicos. Este artículo explora cómo estos enfoques pueden trabajar en conjunto para optimizar la salud glucémica.
+            </p>
+        </div>
+
+        <!-- Segunda Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+            <h3 class="text-primary">Estilo de Vida y su Impacto en la Regulación Glucémica</h3>
+            <ul>
+                <li><strong>Alimentación equilibrada:</strong> Prioriza alimentos ricos en fibra como frutas, verduras y cereales integrales. Limita el consumo de azúcares refinados y alimentos procesados.</li>
+                <li><strong>Ejercicio físico regular:</strong> Mejora la sensibilidad a la insulina y ayuda a mantener niveles de glucosa estables.</li>
+                <li><strong>Manejo del estrés:</strong> El estrés crónico puede elevar la glucosa en sangre. Practica meditación, respiración profunda o yoga.</li>
+                <li><strong>Calidad del Sueño:</strong> Dormir entre 7 y 9 horas diarias regula las hormonas que afectan la glucosa, como la insulina y el cortisol.</li>
+            </ul>
+        </div>
+
+        <!-- Imagen Intermedia -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" loading="lazy"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: top;"
+                src="{{ url_for('static', filename='img/BLOGFEB_5.webp') }}" alt="Estrategias para la regulación glucémica">
+        </div>
+
+        <!-- Tercera Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.6s">
+            <h3 class="text-primary">Tratamientos Farmacológicos: Una Herramienta Complementaria</h3>
+            <ul>
+                <li><strong>Medicamentos Orales:</strong> Biguanidas como la metformina reducen la producción de glucosa en el hígado.</li>
+                <li><strong>Terapias Inyectables:</strong> Insulina y agonistas de GLP-1 mejoran la regulación glucémica y ayudan a controlar el peso.</li>
+                <li><strong>Terapias Combinadas:</strong> Algunos pacientes requieren una combinación de medicamentos para lograr un mejor control de la glucosa.</li>
+            </ul>
+        </div>
+
+        <!-- Cuarta Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.7s">
+            <h3 class="text-primary">El Enfoque Integral: Estilo de Vida + Medicación</h3>
+            <ul>
+                <li><strong>Prevención Proactiva:</strong> Las personas con prediabetes pueden revertir su condición con hábitos saludables.</li>
+                <li><strong>Adaptación Personalizada:</strong> El tratamiento debe ajustarse según factores individuales como edad y peso.</li>
+                <li><strong>Monitorización Continua:</strong> Glucómetros y dispositivos de monitoreo ayudan a identificar patrones y ajustar estrategias.</li>
+            </ul>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.8s">
+            <h4 class="text-white">Referencias:</h4>
+            <ul>
+                <li>Asociación Estadounidense de Diabetes (2023). Estándares de atención médica para la diabetes—2023.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+{% endblock %}
