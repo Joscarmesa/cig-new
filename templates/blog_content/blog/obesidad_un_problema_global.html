@@ -1,0 +1,82 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-obesidad">
+    <div class="container">
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Obesidad: Un Problema Global con Impacto en la Salud</h1>
+        </div>
+
+        <!-- Imagen Principal -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" loading="lazy"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: top;"
+                src="{{ url_for('static', filename='img/BLOGMAR3.webp') }}" alt="Obesidad y salud">
+        </div>
+
+        <!-- Primera Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <p class="mb-0 text-justify">
+                La obesidad es una de las principales problemáticas de salud pública a nivel mundial. Se trata de una enfermedad crónica caracterizada por el exceso de grasa corporal, que aumenta el riesgo de desarrollar diversas condiciones médicas, incluyendo enfermedades cardiovasculares, diabetes tipo 2, hipertensión y ciertos tipos de cáncer. Su prevalencia ha ido en aumento en las últimas décadas, impulsada por factores como el sedentarismo, una dieta alta en alimentos ultraprocesados y un entorno que favorece el consumo excesivo de calorías.
+            </p>
+        </div>
+
+        <!-- Segunda Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+            <h3 class="text-primary">Causas de la Obesidad</h3>
+            <ul>
+                <li><strong>Dieta poco saludable:</strong> Alto consumo de alimentos ultraprocesados, bebidas azucaradas y grasas saturadas.</li>
+                <li><strong>Sedentarismo:</strong> Falta de actividad física, lo que reduce el gasto calórico diario.</li>
+                <li><strong>Factores genéticos:</strong> Algunas personas tienen predisposición a acumular grasa con mayor facilidad.</li>
+                <li><strong>Alteraciones hormonales:</strong> Problemas como hipotiroidismo o resistencia a la insulina pueden favorecer el aumento de peso.</li>
+                <li><strong>Factores psicológicos:</strong> Ansiedad, depresión y estrés pueden contribuir a la alimentación emocional y al sobrepeso.</li>
+            </ul>
+        </div>
+
+        <!-- Imagen Intermedia -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" loading="lazy"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: top;"
+                src="{{ url_for('static', filename='img/BLOGMAR4.webp') }}" alt="Impacto de la obesidad">
+        </div>
+
+        <!-- Tercera Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.6s">
+            <h3 class="text-primary">Impacto de la Obesidad en la Salud</h3>
+            <ul>
+                <li><strong>Enfermedades cardiovasculares:</strong> Hipertensión, infartos y accidentes cerebrovasculares.</li>
+                <li><strong>Diabetes tipo 2:</strong> La resistencia a la insulina es común en personas con obesidad.</li>
+                <li><strong>Problemas osteoarticulares:</strong> Afectación de las articulaciones debido al exceso de peso, aumentando el riesgo de artrosis.</li>
+                <li><strong>Ciertos tipos de cáncer:</strong> Mama, colon, endometrio y esófago, entre otros.</li>
+                <li><strong>Problemas psicológicos:</strong> Ansiedad, depresión y baja autoestima, que pueden afectar la calidad de vida.</li>
+            </ul>
+        </div>
+
+        <!-- Cuarta Sección de Texto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.7s">
+            <h3 class="text-primary">Tratamiento de la Obesidad</h3>
+            <ul>
+                <li><strong>Modificación de hábitos alimentarios:</strong> Reducción del consumo de calorías, priorizando alimentos frescos, ricos en fibra y proteínas magras.</li>
+                <li><strong>Ejercicio regular:</strong> Se recomienda al menos 150 minutos de actividad física moderada a la semana.</li>
+                <li><strong>Terapia conductual:</strong> Para abordar la relación con la comida y fomentar hábitos saludables.</li>
+                <li><strong>Medicación o cirugía bariátrica:</strong> En casos severos, bajo supervisión médica.</li>
+            </ul>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.8s">
+            <h4 class="text-white">Referencias:</h4>
+            <ul>
+                <li>Organización Mundial de la Salud. (2023). Obesidad y sobrepeso. Recuperado de https://www.who.int</li>
+                <li>Bray, GA, et al. (2017). La ciencia del manejo de la obesidad: una declaración científica de la Endocrine Society.</li>
+                <li>GBD 2017 Obesity Collaborators. (2018). Efectos del sobrepeso y la obesidad en la salud en 195 países a lo largo de 25 años.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+{% endblock %}

@@ -43,3 +43,7 @@ def obesidad_relacion_higado_graso():
 @blog_bp.route('/blog/control_azucar_glucosa_sangre_perspectivas_estrategias')
 def control_azucar_glucosa_sangre_perspectivas_estrategias():
     return render_template('blog_content/blog/control_azucar_glucosa_sangre_perspectivas_estrategias.html', canonical_url="https://higadograso.mx/blog/control_azucar_glucosa_sangre_perspectivas_estrategias")        
+
+@blog_bp.route('/blog/obesidad_un_problema_global')
+def obesidad_un_problema_global():
+    return render_template('blog_content/blog/obesidad_un_problema_global.html', canonical_url="https://higadograso.mx/blog/obesidad_un_problema_global")        
