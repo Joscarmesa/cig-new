@@ -47,3 +47,7 @@ def control_azucar_glucosa_sangre_perspectivas_estrategias():
 @blog_bp.route('/blog/obesidad_un_problema_global')
 def obesidad_un_problema_global():
     return render_template('blog_content/blog/obesidad_un_problema_global.html', canonical_url="https://higadograso.mx/blog/obesidad_un_problema_global")        
+
+@blog_bp.route('/blog/medicos_familia_prevencion_manejo_enfermedades')
+def medicos_familia_prevencion_manejo_enfermedades():
+    return render_template('blog_content/blog/medicos_familia_prevencion_manejo_enfermedades.html', canonical_url="https://higadograso.mx/blog/medicos_familia_prevencion_manejo_enfermedades")        
