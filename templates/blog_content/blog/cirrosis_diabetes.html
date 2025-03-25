@@ -1,0 +1,101 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-cirrosis-diabetes">
+    <div class="container">
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Cirrosis y Diabetes: Una Relación de Alto Riesgo</h1>
+        </div>
+
+        <!-- Imagen Principal -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                loading="lazy"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: top;"
+                src="{{ url_for('static', filename='img/BLOGMAR7.webp') }}"
+                alt="Relación entre cirrosis y diabetes">
+        </div>
+
+        <!-- Primera Sección -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <p class="mb-0 text-justify">
+                La cirrosis y la diabetes tipo 2 son dos enfermedades crónicas que pueden interactuar de manera peligrosa en el organismo. La diabetes no solo aumenta el riesgo de desarrollar enfermedad hepática, sino que también puede acelerar la progresión de la cirrosis y complicar su tratamiento. A su vez, la cirrosis puede alterar la regulación de la glucosa en el cuerpo, dificultando el control de la diabetes. Esta relación bidireccional representa un gran desafío médico.
+            </p>
+        </div>
+
+        <!-- Segunda Sección -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h3 class="text-primary">¿Qué es la cirrosis y cómo se desarrolla?</h3>
+            <p class="mb-0 text-justify">
+                La cirrosis es la etapa avanzada de diversas enfermedades hepáticas crónicas. Se caracteriza por una fibrosis progresiva en el hígado, donde el tejido sano es reemplazado por cicatrices. Estas cicatrices impiden su correcto funcionamiento, afectando procesos vitales como la desintoxicación, la producción de proteínas y la regulación del metabolismo de la glucosa.
+            </p>
+            <ul>
+                <li>Consumo excesivo de alcohol</li>
+                <li>Hepatitis B y C crónicas</li>
+                <li>Hígado graso no alcohólico</li>
+                <li>Hepatitis autoinmune</li>
+                <li>Enfermedades metabólicas como hemocromatosis</li>
+            </ul>
+        </div>
+
+        <!-- Imagen Intermedia -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                loading="lazy"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: top;"
+                src="{{ url_for('static', filename='img/BLOGMAR8.webp') }}"
+                alt="Complicaciones hepáticas por diabetes">
+        </div>
+
+        <!-- Tercera Sección -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+            <h3 class="text-primary">¿Cómo afecta la diabetes al hígado?</h3>
+            <p class="mb-1 text-justify">Las personas con diabetes tipo 2 tienen un mayor riesgo de desarrollar enfermedad hepática, incluso sin otros factores como alcoholismo o hepatitis. Esto se debe a la resistencia a la insulina, inflamación crónica y acumulación de grasa hepática.</p>
+            <ul>
+                <li>Aumento de la inflamación hepática</li>
+                <li>Estrés oxidativo que daña células hepáticas</li>
+                <li>Desregulación de la producción de glucosa hepática</li>
+            </ul>
+        </div>
+
+        <!-- Cuarta Sección -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.5s">
+            <h3 class="text-primary">Complicaciones en pacientes con cirrosis y diabetes</h3>
+            <ul>
+                <li>Progresión acelerada de la cirrosis</li>
+                <li>Mayor riesgo de carcinoma hepatocelular</li>
+                <li>Dificultades en el control glucémico</li>
+                <li>Mayor vulnerabilidad a infecciones</li>
+            </ul>
+        </div>
+
+        <!-- Quinta Sección -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.6s">
+            <h3 class="text-primary">Manejo y tratamiento</h3>
+            <ul>
+                <li>Control estricto de la glucosa</li>
+                <li>Alimentación rica en fibra y baja en carbohidratos simples</li>
+                <li>Actividad física moderada</li>
+                <li>Uso cuidadoso de medicamentos, evitando hipoglucemiantes de alto riesgo</li>
+                <li>Monitoreo médico frecuente</li>
+            </ul>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.7s">
+            <h4 class="text-white">Referencias:</h4>
+            <ul>
+                <li>García-Compeán, D., et al. (2016). Revista de Hepatología Clínica y Experimental, 6(4), 223-230.</li>
+                <li>Bril, F., & Cusi, K. (2017). Clinical Liver Disease, 21(4), 667-685.</li>
+                <li>Organización Mundial de la Salud. (2023). Diabetes y enfermedades hepáticas.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
+{% endblock %}

@@ -51,3 +51,9 @@ def obesidad_un_problema_global():
 @blog_bp.route('/blog/medicos_familia_prevencion_manejo_enfermedades')
 def medicos_familia_prevencion_manejo_enfermedades():
     return render_template('blog_content/blog/medicos_familia_prevencion_manejo_enfermedades.html', canonical_url="https://higadograso.mx/blog/medicos_familia_prevencion_manejo_enfermedades")        
+
+@blog_bp.route('/blog/cirrosis_diabetes')
+def cirrosis_diabetes():
+    return render_template('blog_content/blog/cirrosis_diabetes.html', canonical_url="https://higadograso.mx/blog/medicos_familia_prevencion_manejo_enfermedades")        
+
+
