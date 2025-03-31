@@ -1,0 +1,107 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-higado-graso-cirrosis">
+    <div class="container">
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Cirrosis y Hígado Graso: Un Camino Silencioso hacia el Daño Hepático</h1>
+        </div>
+
+        <!-- Imagen Principal -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" loading="lazy"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                src="{{ url_for('static', filename='img/BLOGMAR1.webp') }}" alt="Progresión del hígado hacia cirrosis">
+        </div>
+
+        <!-- Introducción -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <p class="mb-0 text-justify">
+                La enfermedad del hígado graso no alcohólico (EHGNA) es una de las principales causas de cirrosis a
+                nivel mundial. Se estima que cerca del 25% de la población global tiene algún grado de hígado graso, y
+                de estos, entre un 10-20% desarrollará fibrosis avanzada y cirrosis si no se toman medidas preventivas.
+            </p>
+        </div>
+
+        <!-- Evolución del Hígado Graso -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h3 class="text-primary">¿Cómo evoluciona el hígado graso hacia la cirrosis?</h3>
+            <p>El hígado graso no alcohólico tiene distintas etapas de progresión:</p>
+            <ul>
+                <li><strong>Esteatosis hepática:</strong> Acumulación de grasa en el hígado sin inflamación
+                    significativa.</li>
+                <li><strong>Esteatohepatitis no alcohólica (EHNA):</strong> Inflamación y daño celular que pueden
+                    generar fibrosis hepática.</li>
+                <li><strong>Fibrosis avanzada:</strong> Formación de tejido cicatricial que altera la estructura del
+                    hígado.</li>
+                <li><strong>Cirrosis hepática:</strong> Etapa final donde el daño es irreversible y el hígado pierde su
+                    función.</li>
+            </ul>
+        </div>
+
+        <!-- Imagen Intermedia -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" loading="lazy"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                src="{{ url_for('static', filename='img/BLOGMAR2.webp') }}" alt="Médico revisando hígado dañado">
+        </div>
+
+        <!-- Factores de Riesgo -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+            <h3 class="text-primary">Factores de riesgo de progresión a cirrosis</h3>
+            <ul>
+                <li>Obesidad y sobrepeso</li>
+                <li>Diabetes tipo 2 y resistencia a la insulina</li>
+                <li>Síndrome metabólico</li>
+                <li>Hipertensión y dislipidemia</li>
+                <li>Dieta alta en ultraprocesados y grasas saturadas</li>
+                <li>Sedentarismo</li>
+            </ul>
+        </div>
+
+        <!-- Complicaciones -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.5s">
+            <h3 class="text-primary">Complicaciones asociadas a cirrosis por hígado graso</h3>
+            <ul>
+                <li>Mayor riesgo de insuficiencia hepática</li>
+                <li>Aumento del riesgo de cáncer de hígado</li>
+                <li>Mayor riesgo cardiovascular</li>
+                <li>Dificultades metabólicas (resistencia a la insulina, hipoglucemia)</li>
+            </ul>
+        </div>
+
+        <!-- Tratamiento -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.6s">
+            <h3 class="text-primary">Manejo y tratamiento</h3>
+            <ul>
+                <li><strong>Pérdida de peso:</strong> Una reducción del 7-10% del peso corporal puede mejorar la función
+                    hepática y reducir la inflamación.</li>
+                <li><strong>Dieta mediterránea:</strong> Rica en grasas saludables, fibra y antioxidantes, favorece la
+                    salud hepática.</li>
+                <li><strong>Ejercicio regular:</strong> Ayuda a reducir la acumulación de grasa en el hígado y mejora la
+                    sensibilidad a la insulina.</li>
+                <li><strong>Evitar alcohol y fármacos hepatotóxicos:</strong> Para prevenir un daño adicional al hígado.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.7s">
+            <h4 class="text-white">Referencias:</h4>
+            <ul>
+                <li>Younossi, ZM, et al. (2018). Carga mundial de NAFLD y NASH: tendencias, predicciones, factores de
+                    riesgo y prevención. <i>Nature Reviews Gastroenterology & Hepatology</i>, 15(1), 11-20.</li>
+                <li>Chalasani, N., et al. (2018). Diagnóstico y tratamiento de la enfermedad del hígado graso no
+                    alcohólico. <i>Hepatología</i>, 67(1), 328-357.</li>
+                <li>OMS. (2023). Hígado graso no alcohólico y cirrosis. Recuperado de https://www.who.int</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
+{% endblock %}
