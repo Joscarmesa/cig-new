@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-  --primary: #25cacc;
-  --primary-rgb: 37, 202, 204;
+  --primary: #0392b4;
+  --primary-rgb: 3, 146, 180;
 
   --secondary: #2a91cb;
   --secondary-rgb: 42, 145, 203;
@@ -12,6 +12,8 @@
   --dark: #006495;
   --dark-rgb: 0, 100, 149;
 }
+
+
 
 
 h1,
@@ -182,8 +184,13 @@ h6,
 }
 
 .bg-citas {
-  background: linear-gradient(rgba(62, 9, 9, 0.85), rgba(9, 30, 62, 0.85)),
-    url(../img/doctors.jpeg) center center no-repeat;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--dark-rgb), 0.8),
+    rgba(var(--primary-rgb), 0.8)
+  ),
+      url(../img/doctors.jpeg) center center no-repeat;
   background-size: cover;
 }
 
