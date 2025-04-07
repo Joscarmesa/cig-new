@@ -498,3 +498,26 @@ background-color: #021e35d4;
 }
 
 /* FIN Contenedor principal de los mensajes flash FIN*/
+
+/* BOTONES WHATSAPP*/
+
+:root {
+  --primary: #25cacc;
+  --primary-rgb: 37, 202, 204;
+
+  --secondary: #2a91cb;
+  --secondary-rgb: 42, 145, 203;
+}
+
+.btn-whatsapp-custom {
+  background-color: var(--secondary);
+  border: none;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp-custom:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+/* BOTONES WHATSAPP FIN*/
