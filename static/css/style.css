@@ -1,17 +1,18 @@
 /********** Template CSS **********/
 :root {
-  --primary: #60c8b3;
-  --primary-rgb: 39, 157, 159;
+  --primary: #25cacc;
+  --primary-rgb: 37, 202, 204;
 
-  --secondary: #6EA1D4;
-  --secondary-rgb: 110, 161, 212;
+  --secondary: #2a91cb;
+  --secondary-rgb: 42, 145, 203;
 
-  --light: #FFBE98;
-  --light-rgb: 255, 190, 152;
+  --light: #b4eaf4;
+  --light-rgb: 180, 234, 244;
 
-  --dark: #1b5091;
-  --dark-rgb: 27, 80, 145;
+  --dark: #006495;
+  --dark-rgb: 0, 100, 149;
 }
+
 
 h1,
 h2,
@@ -408,7 +409,7 @@ h6,
 }
 
 .navbar-dark {
-background-color: #021e359d;
+background-color: #021e35d4;
 }
 
 .dropdown-menu {
