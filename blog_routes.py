@@ -60,4 +60,7 @@ def cirrosis_diabetes():
 def cirrosis_higadograso():
     return render_template('blog_content/blog/cirrosis_higadograso.html', canonical_url="https://higadograso.mx/blog/cirrosis_higadograso")        
 
+@blog_bp.route('/blog/nuevo_logo')
+def nuevo_logo():
+    return render_template('blog_content/blog/nuevo_logo.html', canonical_url="https://higadograso.mx/blog/nuevo_logo")        
 

@@ -1,0 +1,102 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-nuevo-logo">
+    <div class="container">
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Un Cambio que Representa Nuestra Esencia</h1>
+        </div>
+
+       <!-- Comparativa de Logos -->
+<div class="row justify-content-center mb-5 text-center">
+    <!-- Logo Anterior -->
+    <div class="col-md-6 mb-3 d-flex justify-content-center">
+        <div class="bg-primary d-inline-block rounded p-2">
+            <h6 class="text-white mb-2">Logo Anterior</h6>
+            <img class="img-fluid rounded shadow" loading="lazy"
+                 src="{{ url_for('static', filename='img/logo.webp') }}" alt="Logo anterior del CIG"
+                 style="max-height: 180px;">
+        </div>
+    </div>
+
+    <!-- Nuevo Logo -->
+    <div class="col-md-6 mb-3 d-flex justify-content-center">
+        <div class="bg-white d-inline-block rounded p-2 shadow">
+            <h6 class="text-dark mb-2">Nuevo Logo</h6>
+            <img class="img-fluid rounded" loading="lazy"
+                 src="{{ url_for('static', filename='img/logo_CIG_def.jpg') }}" alt="Nuevo logo del CIG"
+                 style="max-height: 180px;">
+        </div>
+    </div>
+</div>
+
+        <!-- Texto de introducción -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <p class="mb-0 text-justify">
+                Nuestro logo es más que una imagen; es la representación visual de nuestra identidad, nuestros valores y
+                nuestra misión. A medida que hemos crecido y evolucionado, sentimos la necesidad de actualizar nuestra
+                identidad visual para reflejar mejor quiénes somos hoy y hacia dónde nos dirigimos.
+            </p>
+        </div>
+
+        <!-- ¿Por qué cambiar? -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h3 class="text-primary">¿Por Qué Cambiar?</h3>
+            <p>El cambio no es solo estético; es una declaración de nuestro compromiso con la innovación y la mejora
+                continua. Con este rediseño, buscamos:</p>
+            <ul>
+                <li><strong>Reflejar nuestra evolución:</strong> Nos hemos adaptado a nuevos desafíos y nuestra imagen
+                    debía comunicar ese progreso.</li>
+                <li><strong>Reforzar nuestra identidad:</strong> Buscamos un logo que hablara de nuestra esencia,
+                    nuestros valores y nuestra promesa hacia nuestros clientes.</li>
+                <li><strong>Modernizar nuestra presencia:</strong> La simplicidad, claridad y versatilidad aseguran que
+                    el logo funcione en todas las plataformas.</li>
+            </ul>
+        </div>
+
+        <!-- Elementos clave del diseño -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+            <h3 class="text-primary">Los Elementos Clave del Nuevo Diseño</h3>
+            <ul>
+                <li><strong>Colores renovados:</strong> Inspirados en tendencias de color actuales para transmitir
+                    energía, confianza y cercanía.</li>
+                <li><strong>Tipografía moderna:</strong> Limpia y legible, refuerza la claridad y profesionalismo.</li>
+                <li><strong>Simplicidad con impacto:</strong> Un diseño limpio que destaca sin perder identidad.</li>
+                <li><strong>Estilo "síl":</strong> Un balance entre sofisticación y accesibilidad para un logo elegante
+                    y memorable.</li>
+            </ul>
+        </div>
+
+        <!-- Imagen destacada nueva identidad -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" loading="lazy"
+                src="{{ url_for('static', filename='img/Logo_Nombre_colores (2).webp') }}"
+                alt="Nuevo logotipo del Centro de Investigación y Gastroenterología"
+                style="max-width: 100%; height: auto;">
+        </div>
+
+        <!-- Lo que permanece intacto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.5s">
+            <h3 class="text-primary">Lo Que Permanece Intacto</h3>
+            <p>Si bien estamos renovando nuestra imagen, nuestros valores, nuestro compromiso con la excelencia y la
+                pasión por lo que hacemos siguen siendo los mismos. Este nuevo logo es solo un reflejo de nuestro
+                crecimiento y nuestra determinación por seguir ofreciendo lo mejor.</p>
+        </div>
+
+        <!-- Agradecimiento final -->
+        <div class="bg-secondary text-white p-4 rounded shadow wow fadeIn" data-wow-delay="0.6s">
+            <h4 class="text-white">Gracias por Ser Parte de Esta Transformación</h4>
+            <p>Estamos emocionados por esta nueva etapa y queremos agradecer a nuestros clientes, socios y equipo por
+                acompañarnos en este viaje. Esperamos que este cambio nos acerque aún más y fortalezca la conexión que
+                hemos construido juntos.</p>
+            <h5 class="text-white mt-4">Bienvenidos a una nueva era con nosotros. ¡El futuro nos espera!</h5>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
+{% endblock %}
