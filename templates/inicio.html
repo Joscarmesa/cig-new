@@ -11,50 +11,75 @@
 {% endif %}
 {% endwith %}
 <!-- Mensajes flash para correo End-->
-
+ 
 <!-- Carousel Start -->
 <div class="container-fluid p-0" id="carrusel">
   <div id="header-carousel" class="carousel slide carousel-fade particle" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <!-- Carousel item hígado graso -->
+
+      <!-- Carousel item: Hígado graso -->
       <div class="carousel-item active">
-        <img class="w-100" src="{{ url_for('static', filename='img/liver.jpeg') }}" alt="Protege tu hígado de la enfermedad de hígado graso" />
+        <img class="w-100" src="{{ url_for('static', filename='img/liver.jpeg') }}"
+          alt="Protege tu hígado de la enfermedad de hígado graso" />
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px">
             <h5 class="text-white text-uppercase mb-3 animated slideInDown">
               Protege tu hígado de esta enfermedad
             </h5>
             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Hígado Graso</h1>
-            <a href="#protocolos-de-investigacion" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita</a>
+            <a href="#protocolos-de-investigacion"
+              class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita</a>
           </div>
         </div>
       </div>
 
-      <!-- Carousel item valoración hepática -->
+      <!-- Carousel item: Valoración hepática -->
       <div class="carousel-item">
-        <img class="w-100" src="{{ url_for('static', filename='img/doctors3.jpg') }}" alt="Agenda una valoración hepática con nuestro equipo" />
+        <img class="w-100" src="{{ url_for('static', filename='img/doctors3.jpg') }}"
+          alt="Agenda una valoración hepática con nuestro equipo" />
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px">
             <h5 class="text-white text-uppercase mb-3 animated slideInDown">
               Accede a una mejor calidad de vida
             </h5>
             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Agenda una valoración hepática</h1>
-            <a href="#protocolos-de-investigacion" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita</a>
+            <a href="#protocolos-de-investigacion"
+              class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita</a>
           </div>
         </div>
       </div>
+
+      <!-- Carousel item: Fibroscan -->
+      <div class="carousel-item">
+        <img class="w-100" src="{{ url_for('static', filename='img/BLOGABR1.webp') }}"
+          alt="Agenda un fibroscan gratis con nuestro equipo" />
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+          <div class="p-3" style="max-width: 900px">
+            <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+              Una Oportunidad para Cuidar tu Hígado
+            </h5>
+            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Detección Temprana de Enfermedades Hepáticas</h1>
+            <a href="#protocolos-de-investigacion"
+              class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Solicita tu Cita</a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- Controles del carrusel -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev" aria-label="Previous slide">
+    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev"
+      aria-label="Previous slide">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next" aria-label="Next slide">
+    <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next"
+      aria-label="Next slide">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </button>
   </div>
 </div>
 <!-- Carousel End -->
+
 
 
 
@@ -113,20 +138,19 @@
 <div class="container my-5">
   <div class="row text-center">
     <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
-    <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos para ayudarte!</p>
-    
+    <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos para
+      ayudarte!</p>
+
     <div class="col-md-6 mb-3">
       <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
-         target="_blank"
-         class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+        target="_blank" class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
         <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
       </a>
     </div>
-    
+
     <div class="col-md-6 mb-3">
       <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
-         target="_blank"
-         class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+        target="_blank" class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
         <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
       </a>
     </div>
@@ -196,8 +220,14 @@
       <div class="col-lg-5" style="min-height: 500px">
         <div class="position-relative h-100">
           <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-            src="{{ url_for('static', filename='img/LNnutricion.png') }}" style="object-fit: cover" />
+            src="{{ url_for('static', filename='img/LNnutricion.png') }}"
+            style="object-position: top; object-fit: cover" />
         </div>
+
+
+
+
+
       </div>
     </div>
   </div>

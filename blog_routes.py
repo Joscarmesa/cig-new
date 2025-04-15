@@ -62,5 +62,8 @@ def cirrosis_higadograso():
 
 @blog_bp.route('/blog/nuevo_logo')
 def nuevo_logo():
-    return render_template('blog_content/blog/nuevo_logo.html', canonical_url="https://higadograso.mx/blog/nuevo_logo")        
+    return render_template('blog_content/blog/nuevo_logo.html', canonical_url="https://higadograso.mx/blog/nuevo_logo") 
 
+@blog_bp.route('/blog/fibroscan_gratis_cdmx')
+def fibroscan_gratis_cdmx():
+    return render_template('blog_content/blog/fibroscan_gratis_cdmx.html', canonical_url="https://higadograso.mx/blog/fibroscan_gratis_cdmx")       
