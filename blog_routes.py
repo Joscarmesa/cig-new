@@ -67,3 +67,7 @@ def nuevo_logo():
 @blog_bp.route('/blog/fibroscan_gratis_cdmx')
 def fibroscan_gratis_cdmx():
     return render_template('blog_content/blog/fibroscan_gratis_cdmx.html', canonical_url="https://higadograso.mx/blog/fibroscan_gratis_cdmx")       
+
+@blog_bp.route('/blog/higado_graso_sintomas_tratamiento')
+def higado_graso_sintomas_tratamiento():
+    return render_template('blog_content/blog/higado_graso_sintomas_tratamiento.html', canonical_url="https://higadograso.mx/blog/higado_graso_sintomas_tratamiento")       
