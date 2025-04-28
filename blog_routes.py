@@ -71,3 +71,10 @@ def fibroscan_gratis_cdmx():
 @blog_bp.route('/blog/higado_graso_sintomas_tratamiento')
 def higado_graso_sintomas_tratamiento():
     return render_template('blog_content/blog/higado_graso_sintomas_tratamiento.html', canonical_url="https://higadograso.mx/blog/higado_graso_sintomas_tratamiento")       
+
+@blog_bp.route('/blog/abril_mes_de_conciencia_salud_hepatica_diabetes')
+def abril_mes_de_conciencia_salud_hepatica_diabetes():
+    return render_template('blog_content/blog/abril_mes_de_conciencia_salud_hepatica_diabetes.html', canonical_url="https://higadograso.mx/blog/abril_mes_de_conciencia_salud_hepatica_diabetes")       
+
+
+
