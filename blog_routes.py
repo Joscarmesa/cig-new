@@ -71,3 +71,7 @@ def fibroscan_gratis_cdmx():
 @blog_bp.route('/blog/higado_graso_sintomas_tratamiento')
 def higado_graso_sintomas_tratamiento():
     return render_template('blog_content/blog/higado_graso_sintomas_tratamiento.html', canonical_url="https://higadograso.mx/blog/higado_graso_sintomas_tratamiento")       
+
+@blog_bp.route('/blog/estatinas_control_colesterol')
+def estatinas_control_colesterol():
+    return render_template('blog_content/blog/estatinas_control_colesterol.html', canonical_url="https://higadograso.mx/blog/estatinas_control_colesterol")       
