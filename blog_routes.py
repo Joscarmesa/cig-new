@@ -76,9 +76,6 @@ def higado_graso_sintomas_tratamiento():
 def abril_mes_de_conciencia_salud_hepatica_diabetes():
     return render_template('blog_content/blog/abril_mes_de_conciencia_salud_hepatica_diabetes.html', canonical_url="https://higadograso.mx/blog/abril_mes_de_conciencia_salud_hepatica_diabetes")       
 
-
-
-
 @blog_bp.route('/blog/estatinas_control_colesterol')
 def estatinas_control_colesterol():
     return render_template('blog_content/blog/estatinas_control_colesterol.html', canonical_url="https://higadograso.mx/blog/estatinas_control_colesterol")       
