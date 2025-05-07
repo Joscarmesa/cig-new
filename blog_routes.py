@@ -79,3 +79,8 @@ def abril_mes_de_conciencia_salud_hepatica_diabetes():
 @blog_bp.route('/blog/estatinas_control_colesterol')
 def estatinas_control_colesterol():
     return render_template('blog_content/blog/estatinas_control_colesterol.html', canonical_url="https://higadograso.mx/blog/estatinas_control_colesterol")       
+
+@blog_bp.route('/blog/enfermedad_crohn')
+def enfermedad_crohn():
+    return render_template('blog_content/blog/enfermedad_crohn.html', canonical_url="https://higadograso.mx/blog/enfermedad_crohn")       
+

@@ -1,0 +1,152 @@
+{# =========================  Crohn Blog Post  ========================= #}
+{% extends 'index.html' %}
+
+{# ----------  HEAD (mejora SEO) ---------- #}
+{% block head %}
+    <title>Enfermedad de Crohn | CIG Centro de Investigación y Gastroenterología</title>
+    <meta name="description"
+          content="Conoce las causas, síntomas, diagnóstico y tratamiento de la enfermedad de Crohn. Descubre el protocolo clínico activo en CIG para pacientes con EII en CDMX.">
+    {{ super() }}   {# mantiene los elementos head del template base #}
+{% endblock %}
+
+{# ----------  CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-crohn">
+  <div class="container">
+
+    <!-- Título -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Enfermedad de Crohn: Entendiendo una Condición Crónica del Intestino</h1>
+    </div>
+
+    <!-- Intro -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <p class="mb-0 text-justify">
+        La enfermedad de Crohn es un tipo de <strong>enfermedad inflamatoria intestinal (EII)</strong> que provoca inflamación
+        crónica en cualquier parte del tracto digestivo, aunque suele afectar con más frecuencia al íleon y al colon.
+        Comprender sus causas, síntomas y opciones terapéuticas permite un mejor manejo y una mejor calidad de vida.
+      </p>
+    </div>
+
+    <!-- Imagen 1 -->
+    <div class="row mb-5 text-center">
+      <img class="img-fluid rounded shadow"
+           style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+           src="{{ url_for('static', filename='img/BLOGMAY3.webp') }}"
+           alt="Representación gráfica de intestino inflamado por enfermedad de Crohn"
+           loading="lazy">
+    </div>
+
+    <!-- Causas -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="text-primary h3">¿Qué causa la enfermedad de Crohn?</h2>
+      <p class="mb-2">Aunque la causa exacta sigue sin conocerse, se han identificado factores que influyen en su aparición:</p>
+      <ul class="mb-0">
+        <li><strong>Genética:</strong> mayor prevalencia si existe antecedente familiar.</li>
+        <li><strong>Sistema inmunológico:</strong> respuesta inmune anormal frente a la flora intestinal.</li>
+        <li><strong>Factores ambientales:</strong> tabaco, estrés y ciertos alimentos pueden desencadenar brotes.</li>
+      </ul>
+    </div>
+
+    <!-- Síntomas -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+      <h2 class="text-primary h3">Principales síntomas</h2>
+      <p class="mb-2">Los síntomas suelen presentarse en brotes y varían entre pacientes:</p>
+      <ul class="mb-0">
+        <li>Dolor abdominal recurrente</li>
+        <li>Diarrea persistente (a veces con sangre)</li>
+        <li>Cansancio o fatiga crónica</li>
+        <li>Pérdida de peso involuntaria</li>
+        <li>Fiebre</li>
+        <li>Sensación urgente de defecar</li>
+      </ul>
+    </div>
+
+    <!-- Imagen 2 -->
+    <div class="row mb-5 text-center">
+      <img class="img-fluid rounded shadow"
+           style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+           src="{{ url_for('static', filename='img/BLOGMAY4.webp') }}"
+           alt="Médica explicando inflamación intestinal causada por Crohn"
+           loading="lazy">
+    </div>
+
+    <!-- Diagnóstico -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.5s">
+      <h2 class="text-primary h3">Diagnóstico</h2>
+      <p class="mb-2">El diagnóstico combina varias pruebas:</p>
+      <ul class="mb-0">
+        <li>Análisis de sangre y heces</li>
+        <li>Endoscopia o colonoscopia</li>
+        <li>Estudios por imagen (tomografía, resonancia magnética)</li>
+        <li>Evaluación clínica por un gastroenterólogo</li>
+      </ul>
+    </div>
+
+    <!-- Tratamiento -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.6s">
+      <h2 class="text-primary h3">Tratamiento: control y calidad de vida</h2>
+      <p class="mb-2">Aunque no existe cura, los síntomas pueden controlarse con:</p>
+      <ul>
+        <li>Medicamentos antiinflamatorios (aminosalicilatos)</li>
+        <li>Corticoesteroides para brotes agudos</li>
+        <li>Inmunosupresores</li>
+        <li>Terapias biológicas (inhibidores de TNF)</li>
+        <li>Antibióticos si hay infección</li>
+        <li>Cirugía en casos complicados</li>
+      </ul>
+      <p class="mb-0">Además, se recomienda apoyo nutricional, evitar el tabaco y acompañamiento psicológico.</p>
+    </div>
+
+    <!-- Protocolo CIG -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.7s">
+      <h2 class="text-primary h3">Protocolo activo en CIG para pacientes con Crohn</h2>
+      <p class="mb-0">
+        En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> disponemos de un protocolo clínico que brinda acceso a tratamientos innovadores para la enfermedad de Crohn, bajo supervisión de especialistas y estándares éticos rigurosos.
+        <br>¿Te interesa participar? <strong>Contáctanos y agenda tu valoración médica.</strong>
+      </p>
+    </div>
+
+    <!-- WhatsApp CTA -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+        <p class="mb-4">Da clic en uno de los botones y envíanos un mensaje directo por WhatsApp. ¡Estamos para ayudarte!</p>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20Crohn%20en%20sucursal%20Durango."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event', 'click_whatsapp', {event_category:'contacto', event_label:'crohn_durango'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+          </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20Crohn%20en%20sucursal%20Universidad."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event', 'click_whatsapp', {event_category:'contacto', event_label:'crohn_universidad'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Referencias -->
+    <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.8s">
+      <h3 class="text-white h4">Referencias</h3>
+      <ul class="mb-0">
+        <li>Merck Manual. (2023). <em>Crohn Disease - Inflammatory Bowel Diseases (IBD)</em>. Disponible en <a href="https://www.msdmanuals.com/home/digestive-disorders/inflammatory-bowel-diseases-ibd/crohn-disease" target="_blank" class="text-white text-decoration-underline">msdmanuals.com</a></li>
+        <li>Rubin, D. T. et al. (2019). <em>ACG clinical guideline: ulcerative colitis in adults</em>. <strong>The American Journal of Gastroenterology</strong>, 114(3), 384–413.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+<!-- Blog End -->
+
+{% endblock %}
