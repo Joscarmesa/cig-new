@@ -84,3 +84,7 @@ def estatinas_control_colesterol():
 def enfermedad_crohn():
     return render_template('blog_content/blog/enfermedad_crohn.html', canonical_url="https://higadograso.mx/blog/enfermedad_crohn")       
 
+@blog_bp.route('/blog/hipertension_infarto')
+def hipertension_infarto():
+    return render_template('blog_content/blog/hipertension_infarto.html', canonical_url="https://higadograso.mx/blog/hipertension_infarto")       
+

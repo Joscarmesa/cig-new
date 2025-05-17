@@ -1,0 +1,168 @@
+{# =================== Hipertensión e Infarto =================== #}
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Hipertensión e Infarto | CIG Centro de Investigación y Gastroenterología</title>
+<meta name="description"
+    content="Descubre cómo la hipertensión arterial aumenta el riesgo de infarto al miocardio, cuáles son las señales de alerta y qué medidas puedes tomar para proteger tu corazón.">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-hipertension">
+    <div class="container">
+
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Hipertensión e Infarto: La Alianza Silenciosa que Debemos Combatir</h1>
+        </div>
+
+        <!-- INTRO -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <p class="mb-0 text-justify">
+                La <strong>hipertensión arterial</strong>, o presión alta, es una de las condiciones más comunes y
+                peligrosas
+                para el sistema cardiovascular. Su naturaleza silenciosa hace que muchas personas la desconozcan hasta
+                que se
+                presenta un evento grave como un <strong>infarto al miocardio</strong>. Conoce cómo se relacionan, las
+                señales de alerta
+                y las mejores estrategias para cuidar tu corazón.
+            </p>
+        </div>
+
+        <!-- Imagen principal (reemplazar nombre de archivo si es necesario) -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                src="{{ url_for('static', filename='img/BLOGMAY5.webp') }}"
+                alt="Concepto de hipertensión arterial y daño cardiovascular" loading="lazy">
+        </div>
+
+        <!-- ¿Qué es la hipertensión? -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="text-primary h3">¿Qué es exactamente la hipertensión?</h2>
+            <p>La presión arterial es la fuerza que ejerce la sangre contra las paredes de las arterias.
+                Cuando se mantiene por encima de <strong>130/80 mm Hg</strong> de forma sostenida, hablamos de
+                hipertensión.
+                Este exceso de presión obliga al corazón a trabajar más y, con el tiempo, daña órganos vitales como
+                el corazón, riñones, cerebro y ojos.</p>
+        </div>
+
+        <!-- Infarto -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow FadeIn" data-wow-delay="0.4s">
+            <h2 class="text-primary h3">Infarto al miocardio: cuando el corazón se queda sin oxígeno</h2>
+            <p>Un infarto ocurre cuando una arteria coronaria se bloquea, impidiendo que el oxígeno llegue
+                al músculo cardíaco. La hipertensión favorece este bloqueo al dañar la pared arterial
+                y facilitar la acumulación de placa (aterosclerosis) y la formación de coágulos.</p>
+        </div>
+
+        <!-- Factores de riesgo compartidos -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.45s">
+            <h2 class="text-primary h3">¿Por qué es tan común esta combinación?</h2>
+            <p>Ambas afecciones comparten factores de riesgo:</p>
+            <ul class="mb-0">
+                <li>Dieta alta en sodio y grasas saturadas</li>
+                <li>Falta de actividad física</li>
+                <li>Estrés crónico</li>
+                <li>Tabaquismo</li>
+                <li>Consumo excesivo de alcohol</li>
+                <li>Antecedentes familiares</li>
+            </ul>
+        </div>
+
+        <!-- Imagen secundaria -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                src="{{ url_for('static', filename='img/BLOGMAY6.webp') }}"
+                alt="Daño arterial y riesgo de infarto por hipertensión" loading="lazy">
+        </div>
+
+        <!-- Señales de alerta -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.5s">
+            <h2 class="text-primary h3">Señales de alerta que no debes ignorar</h2>
+            <p>Aunque la hipertensión suele ser asintomática, consulta a tu médico si presentas:</p>
+            <ul class="mb-0">
+                <li>Dolor de cabeza frecuente</li>
+                <li>Mareos o visión borrosa</li>
+                <li>Palpitaciones</li>
+                <li>Dolor en el pecho</li>
+                <li>Fatiga excesiva</li>
+            </ul>
+        </div>
+
+        <!-- Prevención -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.55s">
+            <h2 class="text-primary h3">¿Qué puedes hacer para proteger tu corazón?</h2>
+            <ul>
+                <li><strong>Revisa tu presión arterial</strong> regularmente, incluso si te sientes bien.</li>
+                <li><strong>Alimentación saludable:</strong> frutas, verduras y bajo sodio.</li>
+                <li><strong>Ejercicio:</strong> al menos 150 min de actividad aeróbica semanal.</li>
+                <li><strong>Controla tu peso</strong> y niveles de colesterol.</li>
+                <li><strong>Evita fumar</strong> y limita el alcohol.</li>
+                <li><strong>Sigue el tratamiento</strong> indicado por tu médico si ya tienes hipertensión.</li>
+            </ul>
+        </div>
+
+        <!-- Conclusión -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.6s">
+            <p class="mb-0">
+                La hipertensión y el infarto no son inevitables. Adoptar hábitos saludables y realizar revisiones
+                periódicas
+                reduce significativamente el riesgo. <strong>Invertir en tu salud cardiovascular es un compromiso diario
+                    que
+                    te regala años de bienestar.</strong>
+            </p>
+        </div>
+
+        <!-- WhatsApp CTA -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?
+                </h3>
+                <p class="mb-4">Envía un WhatsApp y agenda tu valoración con nuestros especialistas.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20una%20valoraci%C3%B3n%20cardiovascular%20en%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event', 'click_whatsapp', {event_category:'contacto', event_label:'hipertension_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20una%20valoraci%C3%B3n%20cardiovascular%20en%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event', 'click_whatsapp', {event_category:'contacto', event_label:'hipertension_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.65s">
+            <h3 class="text-white h4">Referencias</h3>
+            <ul class="mb-0">
+                <li>Whelton, P. K., et al. (2018). <em>Guía ACC/AHA de 2017 para la prevención, detección, evaluación y
+                        tratamiento de la hipertensión arterial en adultos</em>. <strong>Hypertension</strong>, 71(6),
+                    e13–e115.</li>
+                <li>Organización Mundial de la Salud. (2023). <em>Hipertensión</em>. Disponible en <a
+                        href="https://www.who.int/news-room/fact-sheets/detail" target="_blank"
+                        class="text-white text-decoration-underline">who.int</a></li>
+                <li>American Heart Association. (2024). <em>Heart &amp; Stroke Topics</em>. Disponible en <a
+                        href="https://www.heart.org/en/health-topics" target="_blank"
+                        class="text-white text-decoration-underline">heart.org</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
