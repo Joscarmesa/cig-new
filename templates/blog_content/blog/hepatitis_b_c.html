@@ -1,0 +1,173 @@
+{# =================== Hepatitis B y C =================== #}
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Hepatitis B y C: El Enemigo Silencioso del Hígado | CIG</title>
+<meta name="description"
+    content="Conoce cómo las hepatitis virales B y C dañan silenciosamente el hígado, las cifras de la OMS, los avances terapéuticos y las claves para prevenirlas y detectarlas a tiempo.">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-hepatitis">
+    <div class="container">
+
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Hepatitis B y C: El Enemigo Silencioso del Hígado</h1>
+        </div>
+
+        <!-- Intro -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <p class="mb-0 text-justify">
+                Las <strong>hepatitis virales B y C</strong> son infecciones que atacan directamente al hígado y pueden
+                permanecer <em>silenciosas</em> durante años. Si no se detectan y tratan a tiempo evolucionan a
+                enfermedades crónicas potencialmente mortales como cirrosis o cáncer de hígado.
+            </p>
+        </div>
+
+        <!-- Imagen principal -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                src="{{ url_for('static', filename='img/BLOGMAY7.webp') }}"
+                alt="Virus de la hepatitis atacando el hígado" loading="lazy">
+        </div>
+
+        <!-- ¿Qué son la hepatitis B y C? -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="text-primary h3">¿Qué son la hepatitis B y C?</h2>
+
+            <h3 class="h5 mt-3">Hepatitis B (VHB)</h3>
+            <p>Se transmite por contacto con <strong>sangre, semen u otros fluidos corporales</strong> infectados
+                y también de madre a hijo durante el parto. Puede ser aguda o volverse crónica, elevando el
+                riesgo de daño hepático a largo plazo.</p>
+
+            <h3 class="h5 mt-3">Hepatitis C (VHC)</h3>
+            <p>Su principal vía de contagio es el <strong>contacto con sangre contaminada</strong>. Es frecuente en
+                personas que compartieron jeringas o recibieron transfusiones antes de los 90. En un 80 %
+                de los casos se vuelve crónica si no se trata.</p>
+        </div>
+
+        <!-- Por qué son peligrosas -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="text-primary h3">¿Por qué son tan peligrosas?</h2>
+            <p>No presentan síntomas durante décadas. Mientras tanto el hígado sufre daño progresivo que
+                conduce a:</p>
+            <ul>
+                <li><strong>Fibrosis hepática</strong> – cicatrización del tejido.</li>
+                <li><strong>Cirrosis</strong> – daño irreversible que compromete la función hepática.</li>
+                <li><strong>Cáncer de hígado</strong>.</li>
+                <li><strong>Fallo hepático</strong>.</li>
+            </ul>
+        </div>
+
+        <!-- Imagen secundaria -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                src="{{ url_for('static', filename='img/BLOGMAY8.webp') }}"
+                alt="Daño progresivo del hígado por hepatitis crónica" loading="lazy">
+        </div>
+
+        <!-- Cifras -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.35s">
+            <h2 class="text-primary h3">La amenaza en números</h2>
+            <p>Según la Organización Mundial de la Salud (OMS):</p>
+            <ul>
+                <li><strong>296 millones</strong> viven con hepatitis B crónica.</li>
+                <li><strong>58 millones</strong> tienen hepatitis C crónica.</li>
+                <li><strong>1.1 millones</strong> mueren cada año por complicaciones asociadas.</li>
+            </ul>
+        </div>
+
+        <!-- Avances terapéuticos -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+            <h2 class="text-primary h3">Avances en el tratamiento</h2>
+            <ul>
+                <li><strong>Hepatitis C:</strong> antivirales de acción directa curan &gt; 95 % de los casos en 8-12
+                    semanas.</li>
+                <li><strong>Hepatitis B:</strong> antivirales potentes controlan la replicación viral y frenan la
+                    progresión.</li>
+                <li>Se investigan <em>combinaciones antivirales + antifibróticos</em> para revertir el daño hepático.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Cirrosis -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.45s">
+            <h2 class="text-primary h3">Hepatitis crónica y cirrosis: el punto de no retorno</h2>
+            <p>La hepatitis B y C son responsables de casi la mitad de los casos de cirrosis y cáncer de
+                hígado en el mundo. Detectarlas y tratarlas a tiempo evita llegar a esta etapa irreversible.</p>
+        </div>
+
+        <!-- Prevención -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.5s">
+            <h2 class="text-primary h3">Prevención y detección temprana</h2>
+            <ul>
+                <li><strong>Vacuna contra hepatitis B</strong>: segura y efectiva.</li>
+                <li><strong>Pruebas de detección</strong> para personas en riesgo (transfusiones pre-1990, usuarios de
+                    drogas IV, parejas múltiples, familiares de infectados).</li>
+                <li>Uso de <strong>preservativo</strong>.</li>
+                <li>No compartir agujas ni instrumentos punzocortantes.</li>
+                <li>Controles médicos periódicos si ya existe diagnóstico.</li>
+            </ul>
+        </div>
+
+        <!-- Conclusión -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.55s">
+            <p class="mb-0">
+                Las hepatitis B y C matan en silencio. Vacunarse, hacerse pruebas y acceder a los
+                tratamientos modernos puede salvar tu vida. <strong>Rompe el silencio, comparte la información y
+                    cuida tu hígado.</strong>
+            </p>
+        </div>
+
+        <!-- WhatsApp CTA -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?
+                </h3>
+                <p class="mb-4">Escríbenos por WhatsApp y agenda tu valoración en CIG.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20informes%20sobre%20pruebas%20de%20hepatitis%20en%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'hepatitis_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20informes%20sobre%20pruebas%20de%20hepatitis%20en%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'hepatitis_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.6s">
+            <h3 class="text-white h4">Referencias</h3>
+            <ul class="mb-0">
+                <li>Organización Mundial de la Salud. (2023). <em>Hepatitis B y C</em>. Disponible en <a
+                        href="https://www.who.int/news-room/fact-sheets/detail/hepatitis-b" target="_blank"
+                        class="text-white text-decoration-underline">who.int</a></li>
+                <li>American Liver Foundation. (2024). <em>Understanding Hepatitis and Liver Disease</em>. Disponible en
+                    <a href="https://liverfoundation.org" target="_blank"
+                        class="text-white text-decoration-underline">liverfoundation.org</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

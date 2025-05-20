@@ -88,3 +88,7 @@ def enfermedad_crohn():
 def hipertension_infarto():
     return render_template('blog_content/blog/hipertension_infarto.html', canonical_url="https://higadograso.mx/blog/hipertension_infarto")       
 
+@blog_bp.route('/blog/hepatitis_b_c')
+def hepatitis_b_c():
+    return render_template('blog_content/blog/hepatitis_b_c.html', canonical_url="https://higadograso.mx/blog/hepatitis_b_c")       
+
