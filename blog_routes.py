@@ -92,3 +92,7 @@ def hipertension_infarto():
 def enfermedad_renal_cronica():
     return render_template('blog_content/blog/enfermedad_renal_cronica.html', canonical_url="https://higadograso.mx/blog/enfermedad_renal_cronica")       
 
+@blog_bp.route('/blog/hepatitis_b_c')
+def hepatitis_b_c():
+    return render_template('blog_content/blog/hepatitis_b_c.html', canonical_url="https://higadograso.mx/blog/hepatitis_b_c")       
+
