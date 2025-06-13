@@ -96,3 +96,7 @@ def enfermedad_renal_cronica():
 def hepatitis_b_c():
     return render_template('blog_content/blog/hepatitis_b_c.html', canonical_url="https://higadograso.mx/blog/hepatitis_b_c")       
 
+@blog_bp.route('/blog/dia_mundial_higado_graso')
+def dia_mundial_higado_graso():
+    return render_template('blog_content/blog/dia_mundial_higado_graso.html', canonical_url="https://higadograso.mx/blog/dia_mundial_higado_graso")       
+
