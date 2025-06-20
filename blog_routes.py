@@ -100,3 +100,9 @@ def hepatitis_b_c():
 def dia_mundial_higado_graso():
     return render_template('blog_content/blog/dia_mundial_higado_graso.html', canonical_url="https://higadograso.mx/blog/dia_mundial_higado_graso")       
 
+@blog_bp.route('/blog/cirrosis_compensada_descompensada')
+def cirrosis_compensada_descompensada():
+    return render_template('blog_content/blog/cirrosis_compensada_descompensada.html', canonical_url="https://higadograso.mx/blog/cirrosis_compensada_descompensada")       
+
+
+

@@ -1,0 +1,150 @@
+{# =============== Cirrosis Compensada vs. Descompensada =============== #}
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+  <title>Cirrosis compensada y descompensada | Diferencias, síntomas y tratamiento — CIG</title>
+  <meta name="description"
+        content="Descubre la diferencia entre cirrosis compensada y descompensada, sus síntomas y complicaciones, así como los protocolos clínicos disponibles en el Centro de Investigación y Gastroenterología.">
+  {{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-cirrosis-tipos">
+  <div class="container">
+
+    <!-- Título -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Cirrosis compensada vs. descompensada: ¿cuál es la diferencia?</h1>
+    </div>
+
+    <!-- Introducción -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <p class="mb-0 text-justify">
+        La <strong>cirrosis hepática</strong> es una enfermedad crónica y progresiva donde el hígado forma cicatrices (fibrosis) que
+        comprometen su función. Conocer si se trata de <em>cirrosis compensada</em> o <em>descompensada</em> es clave para
+        determinar el pronóstico y el tipo de tratamiento.
+      </p>
+    </div>
+
+    <!-- Imagen principal -->
+    <div class="row mb-5 text-center">
+      <img class="img-fluid rounded shadow"
+           style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+           src="{{ url_for('static', filename='img/BLOGJUN6.webp') }}"
+           alt="Representación gráfica de un hígado con cicatrices cubierto por curitas"
+           loading="lazy">
+    </div>
+
+    <!-- Cirrosis compensada -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.25s">
+      <h2 class="text-primary h3">🟢 Cirrosis compensada: el hígado aún mantiene su función</h2>
+      <ul>
+        <li>Daño hepático presente sin síntomas claros.</li>
+        <li>Se detecta por pruebas de sangre o imagen.</li>
+        <li>No hay complicaciones clínicas visibles (ascitis, hemorragias, etc.).</li>
+      </ul>
+      <p class="mb-0">
+        <strong>⚠️ Importante:</strong> aunque el paciente se sienta bien, el hígado ya está lesionado. El objetivo del
+        tratamiento es retrasar la progresión y evitar complicaciones.
+      </p>
+    </div>
+
+    <!-- Cirrosis descompensada -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="text-primary h3">🔴 Cirrosis descompensada: cuando aparecen las complicaciones</h2>
+      <p>El hígado pierde su capacidad de funcionar y surgen problemas graves:</p>
+      <ul>
+        <li>Ascitis (líquido en el abdomen)</li>
+        <li>Hemorragias digestivas por várices esofágicas</li>
+        <li>Ictericia (piel y ojos amarillos)</li>
+        <li>Encefalopatía hepática (confusión, cambios de conducta)</li>
+      </ul>
+      <p class="mb-0">
+        Con frecuencia requiere hospitalizaciones, tratamientos complejos y valoración para <strong>trasplante hepático</strong>.
+      </p>
+    </div>
+
+    <!-- Imagen secundaria -->
+    <div class="row mb-5 text-center">
+      <img class="img-fluid rounded shadow"
+           style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+           src="{{ url_for('static', filename='img/BLOGJUN5.webp') }}"
+           alt="Paciente mayor con dolor abdominal y representación de cirrosis descompensada"
+           loading="lazy">
+    </div>
+
+    <!-- Importancia detección -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.35s">
+      <h2 class="text-primary h3">❗¿Por qué es crucial diagnosticar la cirrosis temprano?</h2>
+      <p>La detección oportuna permite:</p>
+      <ul>
+        <li>Modificar hábitos que aceleran el daño (alcohol, alimentación).</li>
+        <li>Tratar causas subyacentes (hepatitis, hígado graso).</li>
+        <li>Establecer un seguimiento estrecho con el especialista.</li>
+        <li>Mejorar la calidad de vida y el pronóstico a largo plazo.</li>
+      </ul>
+    </div>
+
+    <!-- Quién debe tratar -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+      <h2 class="text-primary h3">👩‍⚕️ ¿Quién debe tratar la cirrosis?</h2>
+      <p>El manejo debe estar a cargo de un <strong>médico internista, gastroenterólogo o hepatólogo</strong>, quienes
+         realizarán la evaluación integral y seguimiento continuo.</p>
+    </div>
+
+    <!-- Protocolos CIG -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.45s">
+      <h2 class="text-primary h3">🧪 Protocolos clínicos activos en CIG</h2>
+      <p>
+        En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> contamos con estudios para personas con cirrosis,
+        hígado graso, hepatitis y síndrome metabólico. Estos protocolos brindan acceso a terapias innovadoras bajo la
+        supervisión de especialistas y con los más altos estándares éticos.
+      </p>
+      <p class="mb-0"><strong>👉 Interesado?</strong> Agenda una valoración médica sin compromiso.</p>
+    </div>
+
+    <!-- CTA WhatsApp -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <h3 class="mb-4">¿Necesitas orientación sobre tu salud hepática?</h3>
+        <p class="mb-4">Envíanos un mensaje por WhatsApp y agenda tu cita.</p>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525565430983?text=Hola%2C%20quisiera%20informes%20sobre%20evaluación%20de%20cirrosis%20en%20Durango."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'cirrosis_durango'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+          </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525644071939?text=Hola%2C%20quisiera%20informes%20sobre%20evaluación%20de%20cirrosis%20en%20Universidad."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'cirrosis_universidad'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Referencias -->
+    <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.5s">
+      <h3 class="text-white h4">Referencias</h3>
+      <ul class="mb-0">
+        <li>EASL. (2018). <em>Management of patients with decompensated cirrhosis</em>. J Hepatol 69(2), 406-460.</li>
+        <li>García-Tsao, G., & Lim, J. K. (2009). Recomendaciones AASLD para cirrosis y hipertensión portal. <em>Hepatology</em>, 49(1), 208-217.</li>
+        <li>Tapper, E. B., & Lok, A. (2017). <em>Management of cirrhosis: A practical guide</em>. BMJ 358, j3348.</li>
+        <li>NIDDK. (2021). <em>Cirrhosis</em>. https://www.niddk.nih.gov/health-information/liver-disease/cirrhosis</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
