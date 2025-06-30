@@ -104,5 +104,8 @@ def dia_mundial_higado_graso():
 def cirrosis_compensada_descompensada():
     return render_template('blog_content/blog/cirrosis_compensada_descompensada.html', canonical_url="https://higadograso.mx/blog/cirrosis_compensada_descompensada")       
 
+@blog_bp.route('/blog/higado_graso_10_preguntas')
+def higado_graso_10_preguntas():
+    return render_template('blog_content/blog/higado_graso_10_preguntas.html', canonical_url="https://higadograso.mx/blog/higado_graso_10_preguntas")       
 
 
