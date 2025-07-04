@@ -108,4 +108,9 @@ def cirrosis_compensada_descompensada():
 def higado_graso_10_preguntas():
     return render_template('blog_content/blog/higado_graso_10_preguntas.html', canonical_url="https://higadograso.mx/blog/higado_graso_10_preguntas")       
 
+@blog_bp.route('/blog/crohn_vs_cuci_diferencias_clave')
+def crohn_vs_cuci_diferencias_clave():
+    return render_template('blog_content/blog/crohn_vs_cuci_diferencias_clave.html', canonical_url="https://higadograso.mx/blog/crohn_vs_cuci_diferencias_clave")       
+
+
 
