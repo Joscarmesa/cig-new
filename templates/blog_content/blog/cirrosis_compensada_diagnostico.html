@@ -1,0 +1,138 @@
+{# =============== Cirrosis compensada: ¿Qué hacer si tengo el diagnóstico? =============== #}
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Cirrosis compensada: ¿Qué hacer si tengo el diagnóstico? — CIG</title>
+<meta name="description"
+    content="La cirrosis compensada es una fase silenciosa, pero crítica, de la enfermedad hepática. Conoce qué significa, acciones clave para manejarla y los tratamientos disponibles.">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-cirrosis-compensada">
+    <div class="container">
+
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Cirrosis compensada: ¿Qué hacer si tengo el diagnóstico? 🩺</h1>
+        </div>
+
+        <!-- Introducción -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.15s">
+            <p>La <strong>cirrosis compensada</strong> es una fase silenciosa, pero crítica, de la enfermedad hepática
+                crónica.
+                Aunque el hígado presenta cicatrices (fibrosis significativa), aún logra cumplir sus funciones básicas.
+                Detectarla a tiempo <em>permite frenar la progresión</em> y evitar complicaciones mayores.</p>
+
+            <h2 class="h5 mt-3">¿Qué significa tener cirrosis compensada?</h2>
+            <p>Implica que el hígado está dañado, pero el organismo no presenta síntomas graves (ascitis, sangrados o
+                encefalopatía).
+                Con los cuidados adecuados es posible mantener una vida relativamente normal.</p>
+        </div>
+
+        <!-- Imagen principal -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                src="{{ url_for('static', filename='img/BLOGJUL3.webp') }}"
+                alt="Pacientes dejando de consumir alcohol y comida chatarra para cuidar su hígado" loading="lazy">
+        </div>
+
+        <!-- Acciones clave -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="text-primary h3 mb-4">Acciones clave para el manejo</h2>
+
+            <h3 class="h5">🍺 Abstinencia total de alcohol</h3>
+            <p>Dejar de beber es <strong>fundamental</strong> para evitar que el daño hepático avance.</p>
+
+            <h3 class="h5">🔬 Monitoreo médico regular</h3>
+            <p>Incluye ultrasonido, <em>FibroScan</em>, análisis de sangre y endoscopia para detectar várices
+                esofágicas.</p>
+
+            <h3 class="h5">⚖️ Control de enfermedades asociadas</h3>
+            <p>Obesidad, diabetes, hipertensión o hepatitis viral deben tratarse de forma integral.</p>
+
+            <h3 class="h5">🥗 Alimentación balanceada</h3>
+            <p>Reducir sal, grasas saturadas y ultraprocesados. Preferir frutas, verduras y proteína magra.</p>
+
+            <h3 class="h5">🏃‍♂️ Actividad física moderada</h3>
+            <p>Al menos 150&nbsp;min/semana de ejercicio aeróbico mejora la circulación y la salud hepática.</p>
+        </div>
+
+        <!-- Tratamiento -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.22s">
+            <h2 class="text-primary h3 mb-4">Tratamientos disponibles</h2>
+            <ul class="mb-0">
+                <li><strong>Antivirales</strong> si la causa es hepatitis&nbsp;B o&nbsp;C.</li>
+                <li><strong>Ácido obeticólico</strong> o protocolos de investigación para cirrosis por hígado graso no
+                    alcohólico.</li>
+                <li><strong>Lactulosa y rifaximina</strong> para prevenir encefalopatía hepática.</li>
+            </ul>
+        </div>
+
+        <!-- Imagen secundaria -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                src="{{ url_for('static', filename='img/BLOGJUL4.webp') }}"
+                alt="Profesional realizando ultrasonido hepático a un paciente con cirrosis compensada" loading="lazy">
+        </div>
+
+        <!-- Protocolos CIG -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="text-primary h3">🧪 Protocolos clínicos activos en CIG</h2>
+            <p>En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> ofrecemos seguimientos
+                especializados y
+                acceso a terapias innovadoras que pueden mejorar tu calidad de vida.</p>
+            <p class="mb-0"><strong>📍 Agenda tu cita en CIG Roma</strong> para evaluar todas las opciones disponibles.
+            </p>
+        </div>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas orientación personalizada?</h3>
+                <p class="mb-4">Envíanos un WhatsApp y con gusto te atenderemos.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20tengo%20dudas%20sobre%20cirrosis%20compensada%20(Durango)."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'cirrosiscompensada_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20tengo%20dudas%20sobre%20cirrosis%20compensada%20(Universidad)."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'cirrosiscompensada_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.3s">
+            <h3 class="text-white h4">Referencias</h3>
+            <ul class="mb-0">
+                <li>European Association for the Study of the Liver (EASL). (2018). Clinical Practice Guidelines for the
+                    management of patients with decompensated cirrhosis. <em>Journal of Hepatology</em>, 69(2), 406-460.
+                </li>
+                <li>Tapper, E.&nbsp;B., &amp; Lok, A.&nbsp;S.&nbsp;F. (2017). Management of cirrhosis: a practical
+                    overview.
+                    <em>The American Journal of Medicine</em>, 130(6), 563-571.
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

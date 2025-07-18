@@ -112,5 +112,8 @@ def higado_graso_10_preguntas():
 def crohn_vs_cuci_diferencias_clave():
     return render_template('blog_content/blog/crohn_vs_cuci_diferencias_clave.html', canonical_url="https://higadograso.mx/blog/crohn_vs_cuci_diferencias_clave")       
 
+@blog_bp.route('/blog/cirrosis_compensada_diagnostico')
+def cirrosis_compensada_diagnostico():
+    return render_template('blog_content/blog/cirrosis_compensada_diagnostico.html', canonical_url="https://higadograso.mx/blog/cirrosis_compensada_diagnostico")       
 
 
