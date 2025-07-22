@@ -116,4 +116,6 @@ def crohn_vs_cuci_diferencias_clave():
 def cirrosis_compensada_diagnostico():
     return render_template('blog_content/blog/cirrosis_compensada_diagnostico.html', canonical_url="https://higadograso.mx/blog/cirrosis_compensada_diagnostico")       
 
-
+@blog_bp.route('/blog/pbc_mujeres')
+def pbc_mujeres():
+    return render_template('blog_content/blog/pbc_mujeres.html', canonical_url="https://higadograso.mx/blog/pbc_mujeres")       
