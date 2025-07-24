@@ -119,3 +119,7 @@ def cirrosis_compensada_diagnostico():
 @blog_bp.route('/blog/pbc_mujeres')
 def pbc_mujeres():
     return render_template('blog_content/blog/pbc_mujeres.html', canonical_url="https://higadograso.mx/blog/pbc_mujeres")       
+
+@blog_bp.route('/blog/ensayos_clinicos_enfemedades_hepaticas')
+def ensayos_clinicos_enfemedades_hepaticas():
+    return render_template('blog_content/blog/ensayos_clinicos_enfemedades_hepaticas.html', canonical_url="https://higadograso.mx/blog/ensayos_clinicos_enfemedades_hepaticas")       

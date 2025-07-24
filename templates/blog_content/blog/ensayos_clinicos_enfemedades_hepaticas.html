@@ -1,0 +1,129 @@
+{# =============  Ensayos clínicos: hacia nuevos tratamientos hepáticos  ============= #}
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+  <title>Ensayos clínicos que podrían transformar las enfermedades hepáticas — CIG</title>
+  <meta name="description"
+        content="Descubre cómo los ensayos clínicos fase 3 con GLP-1, FGF-21 y otros fármacos prometen cambiar el manejo del hígado graso, la hepatitis crónica y la cirrosis. Conoce los protocolos activos del Centro de Investigación y Gastroenterología (CIG).">
+  {{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-ensayos-hepaticos">
+  <div class="container">
+
+    <!-- Título -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Ensayos clínicos que podrían transformar el tratamiento de enfermedades hepáticas graves</h1>
+    </div>
+
+    <!-- Intro -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.15s">
+      <p>El <strong>hígado graso, la hepatitis crónica y la cirrosis avanzada</strong> continúan representando un reto para la salud pública. 
+         Sin embargo, la investigación clínica avanza rápidamente por medio de los <em>ensayos clínicos</em>, estudios rigurosos que
+         evalúan terapias con potencial para cambiar el manejo de miles de pacientes.</p>
+    </div>
+
+    <!-- Imagen principal -->
+    <div class="row mb-5 text-center">
+      <img class="img-fluid rounded shadow"
+           style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+           src="{{ url_for('static', filename='img/BLOGJUL7.webp') }}"
+           alt="Investigadora analizando nuevas moléculas para enfermedades hepáticas"
+           loading="lazy">
+    </div>
+
+    <!-- ¿Qué son los ensayos clínicos? -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.17s">
+      <h2 class="text-primary h3 mb-3">¿Qué son los ensayos clínicos?</h2>
+      <p>Son investigaciones en las que se prueban <strong>nuevos fármacos o combinaciones de terapias</strong> bajo supervisión médica
+         estricta y en varias fases. La <strong>fase 3</strong> es decisiva porque:</p>
+      <ul>
+        <li>Confirma <strong>eficacia</strong> en grupos grandes de pacientes.</li>
+        <li>Monitorea <strong>efectos secundarios</strong> poco frecuentes.</li>
+        <li>Compara con tratamientos estándar actuales.</li>
+        <li>Reúne la evidencia necesaria para una <strong>aprobación regulatoria</strong>.</li>
+      </ul>
+      <p class="mb-0">Muchas moléculas hepatológicas ya están en fase 3, lo que indica que demostraron seguridad en fases previas
+         y podrían aprobarse en los próximos años.</p>
+    </div>
+
+    <!-- Terapias en Fase 3 -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.19s">
+      <h2 class="text-primary h3 mb-3">Ejemplos de terapias en fase 3</h2>
+      <ul>
+        <li><strong>Agonistas GLP-1</strong> (<em>semaglutida, survodutida</em>): mejoran metabolismo y reducen inflamación hepática.</li>
+        <li><strong>FGF-21</strong> (<em>efruxifermina, pegozafermina</em>): optimizan sensibilidad a la insulina y perfil lipídico.</li>
+        <li><strong>Inhibidores de PCSK9 / LDL-C</strong> (<em>MK-0616</em>): disminuyen colesterol LDL y potencialmente el daño hepático asociado a dislipidemias.</li>
+      </ul>
+    </div>
+
+    <!-- Imagen secundaria -->
+    <div class="row mb-5 text-center">
+      <img class="img-fluid rounded shadow"
+           style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+           src="{{ url_for('static', filename='img/BLOGJUL8.webp') }}"
+           alt="Paciente recibiendo atención durante un ensayo clínico fase 3 en CIG"
+           loading="lazy">
+    </div>
+
+    <!-- Importancia de participar -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.21s">
+      <h2 class="text-primary h3 mb-3">¿Por qué es importante participar?</h2>
+      <p>Sumarse a un ensayo clínico ofrece:</p>
+      <ul>
+        <li>Acceso <strong>anticipado</strong> a terapias innovadoras.</li>
+        <li>Atención médica y <strong>monitoreo especializado</strong> sin costo.</li>
+        <li>Contribuir al avance científico que beneficiará a otros pacientes.</li>
+      </ul>
+      <p class="mb-0">La participación es voluntaria y requiere <strong>consentimiento informado</strong>. Todos los protocolos siguen
+         lineamientos nacionales e internacionales para garantizar seguridad y bienestar.</p>
+    </div>
+
+    <!-- CTA protocolos -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.23s">
+      <h2 class="text-primary h3">🧪 Protocolos activos en CIG</h2>
+      <p>En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> contamos con ensayos clínicos para hígado graso,
+         fibrosis, cirrosis y más. Si deseas saber si eres candidato, agenda una valoración sin compromiso:</p>
+     
+         <!-- WhatsApp CTA -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Tienes dudas? ¡Envíanos un WhatsApp!</h3>
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quisiera%20información%20sobre%20EII%20en%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'crohncuci_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+                    </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quisiera%20información%20sobre%20EII%20en%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'crohncuci_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Referencias -->
+    <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.25s">
+      <h3 class="text-white h4">Referencias</h3>
+      <ul class="mb-0">
+        <li>National Institutes of Health (2024). <em>NIH Clinical Research Trials and You – Basics</em>.</li>
+        <li>Friedman, S.&nbsp;L. <em>et&nbsp;al.</em> (2018). Mechanisms of NAFLD development and therapeutic strategies. <em>Nature Medicine</em>, 24(7), 908-922.</li>
+        <li>Ratziu, V., Goodman, Z., Sanyal, A. (2015). Current efforts and trends in the treatment of NASH. <em>Journal of Hepatology</em>, 62(1), S65-S75.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
