@@ -123,3 +123,7 @@ def pbc_mujeres():
 @blog_bp.route('/blog/ensayos_clinicos_enfemedades_hepaticas')
 def ensayos_clinicos_enfemedades_hepaticas():
     return render_template('blog_content/blog/ensayos_clinicos_enfemedades_hepaticas.html', canonical_url="https://higadograso.mx/blog/ensayos_clinicos_enfemedades_hepaticas")       
+
+@blog_bp.route('/blog/señales_cuci')
+def señales_cuci():
+    return render_template('blog_content/blog/señales_cuci.html', canonical_url="https://higadograso.mx/blog/señales_cuci")       

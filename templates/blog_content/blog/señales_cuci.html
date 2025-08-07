@@ -1,0 +1,143 @@
+{# ================== 5 señales de que podrías tener CUCI (Colitis Ulcerosa Crónica Idiopática) ================== #}
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+  <title>5 señales de CUCI (Colitis Ulcerosa): síntomas, diagnóstico y tratamiento | CIG</title>
+  <meta name="description"
+        content="¿Diarrea con sangre, cólicos y urgencia para evacuar? Conoce 5 señales clave de la colitis ulcerosa (CUCI), quiénes están en riesgo y opciones de tratamiento. Atención especializada en CIG.">
+  {{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-cuci-senales">
+  <div class="container">
+
+    <!-- Título -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">5 señales de que podrías tener CUCI (Colitis Ulcerosa Crónica Idiopática)</h1>
+    </div>
+
+    <!-- Intro -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.15s">
+      <p class="mb-0 text-justify">
+        La <strong>CUCI</strong> es una <em>enfermedad inflamatoria intestinal</em> que afecta el colon y el recto. Sus síntomas pueden confundirse con otros
+        problemas digestivos, por lo que <strong>identificarla a tiempo</strong> es fundamental para evitar complicaciones como sangrado severo,
+        pérdida de peso, anemia o incluso necesidad de cirugía.
+      </p>
+    </div>
+
+    <!-- Imagen principal -->
+    <div class="row mb-5 text-center">
+      <img class="img-fluid rounded shadow"
+           style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+           src="{{ url_for('static', filename='img/BLOGAGO1.webp') }}"
+           alt="Ilustración del colon mostrando inflamación típica de CUCI"
+           loading="lazy">
+    </div>
+
+    <!-- 5 señales -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.18s">
+      <h2 class="text-primary h3 mb-4">Estas son 5 señales que podrían indicar CUCI</h2>
+
+      <h3 class="h5">1) Diarrea persistente con sangre</h3>
+      <p>Puede presentarse varias veces al día con <strong>sangre o moco</strong>, reflejando inflamación activa del colon. Requiere valoración pronta.</p>
+
+      <h3 class="h5 mt-3">2) Dolor abdominal tipo cólico</h3>
+      <p>Generalmente en la parte baja del abdomen; aparece en <em>oleadas</em> y puede empeorar después de comer o antes de evacuar.</p>
+
+      <h3 class="h5 mt-3">3) Urgencia para ir al baño</h3>
+      <p>Sensación urgente e inaplazable para evacuar; en ocasiones se acompaña de <strong>incontinencia fecal</strong>.</p>
+
+      <h3 class="h5 mt-3">4) Fatiga o debilidad inexplicable</h3>
+      <p>La inflamación crónica y la pérdida de sangre/nutrientes producen cansancio constante y disminución del rendimiento.</p>
+
+      <h3 class="h5 mt-3">5) Pérdida de peso involuntaria</h3>
+      <p>Bajar de peso sin proponértelo —sobre todo junto a otros síntomas digestivos— es una señal de alerta para acudir al médico.</p>
+    </div>
+
+    <!-- Imagen secundaria -->
+    <div class="row mb-5 text-center">
+      <img class="img-fluid rounded shadow"
+           style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+           src="{{ url_for('static', filename='img/BLOGAGO2.webp') }}"
+           alt="Paciente consultando con gastroenterólogo por síntomas de CUCI"
+           loading="lazy">
+    </div>
+
+    <!-- Quiénes deben estar alerta -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="text-primary h3 mb-3">¿Quiénes deben estar más alerta?</h2>
+      <ul>
+        <li class="mb-1">Personas entre <strong>15 y 35 años</strong>, etapa de inicio más frecuente.</li>
+        <li class="mb-1">Quienes tienen <strong>antecedentes familiares</strong> de EII.</li>
+        <li class="mb-1">Pacientes con <strong>otras enfermedades autoinmunes</strong>.</li>
+      </ul>
+    </div>
+
+    <!-- Tratamiento -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.22s">
+      <h2 class="text-primary h3 mb-3">Opciones de tratamiento</h2>
+      <p>El manejo suele incluir cambios en la dieta y tratamiento médico escalonado:</p>
+      <ul>
+        <li class="mb-1"><strong>Antiinflamatorios</strong> (p. ej., aminosalicilatos).</li>
+        <li class="mb-1"><strong>Esteroides</strong> para controlar brotes.</li>
+        <li class="mb-1"><strong>Inmunomoduladores</strong> o <strong>biológicos</strong> en casos moderados a severos o refractarios.</li>
+        <li class="mb-1"><strong>Cirugía</strong> en situaciones complicadas o cuando falla el tratamiento médico.</li>
+      </ul>
+      <p class="mb-0"><em>El plan debe ser personalizado por tu gastroenterólogo.</em></p>
+    </div>
+
+    <!-- Atención CIG -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.24s">
+      <h2 class="text-primary h3 mb-3">Atención especializada en CIG</h2>
+      <p>
+        En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> ofrecemos diagnóstico oportuno, terapias innovadoras y
+        <strong>protocolos de investigación activos</strong> para CUCI con seguimiento personalizado.
+      </p>
+      <p class="mb-0"><strong>¡Tu salud intestinal sí importa!</strong> Consulta a tu médico y conoce nuestras opciones.</p>
+    </div>
+
+    <!-- CTA WhatsApp -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <h3 class="mb-4">¿Necesitas orientación sobre CUCI?</h3>
+        <p class="mb-4">Escríbenos por WhatsApp y agenda una valoración con nuestros especialistas.</p>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525565430983?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20CUCI%20y%20agendar%20en%20Sucursal%20Durango."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'cuci_durango'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+          </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525644071939?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20CUCI%20y%20agendar%20en%20Sucursal%20Universidad."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'cuci_universidad'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Referencias -->
+    <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.26s">
+      <h3 class="text-white h4">Referencias</h3>
+      <ul class="mb-0">
+        <li class="mb-1">National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). (2023). <em>Ulcerative Colitis</em>. https://www.niddk.nih.gov</li>
+        <li class="mb-1">Mayo Clinic. (2024). <em>Ulcerative Colitis</em>. https://www.mayoclinic.org/diseases-conditions/ulcerative-colitis</li>
+        <li class="mb-1">Ungaro, R., Mehandru, S., Allen, P. B., Peyrin-Biroulet, L., & Colombel, J. F. (2017). <em>Ulcerative colitis</em>. <strong>The Lancet</strong>, 389(10080), 1756–1770. https://doi.org/10.1016/S0140-6736(16)32126-2</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
