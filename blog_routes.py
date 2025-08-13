@@ -127,3 +127,7 @@ def ensayos_clinicos_enfemedades_hepaticas():
 @blog_bp.route('/blog/señales_cuci')
 def señales_cuci():
     return render_template('blog_content/blog/señales_cuci.html', canonical_url="https://higadograso.mx/blog/señales_cuci")       
+
+@blog_bp.route('/blog/checklist_preconsulta')
+def checklist_preconsulta():
+    return render_template('blog_content/blog/checklist_preconsulta.html', canonical_url="https://higadograso.mx/blog/checklist_preconsulta")       
