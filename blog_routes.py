@@ -131,3 +131,10 @@ def señales_cuci():
 @blog_bp.route('/blog/checklist_preconsulta')
 def checklist_preconsulta():
     return render_template('blog_content/blog/checklist_preconsulta.html', canonical_url="https://higadograso.mx/blog/checklist_preconsulta")       
+
+@blog_bp.route('/blog/señales_cbp')
+def señales_cbp():
+    return render_template('blog_content/blog/señales_cbp.html', canonical_url="https://higadograso.mx/blog/señales_cbp")       
+
+
+

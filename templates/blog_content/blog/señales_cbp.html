@@ -1,0 +1,140 @@
+{# ================== 5 señales de que podrías tener CBP (Colangitis Biliar Primaria) ================== #}
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+  <title>5 señales de que podrías tener CBP (Colangitis Biliar Primaria) — CIG</title>
+  <meta name="description"
+        content="Fatiga, prurito, hiperpigmentación, ictericia y ojo/boca seca: 5 señales de CBP. Conoce quiénes están en riesgo, cómo atenderte y protocolos activos en CIG.">
+  {{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-cbp-5-senales">
+  <div class="container">
+
+    <!-- Título -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">5 señales de que podrías tener CBP (Colangitis Biliar Primaria)</h1>
+    </div>
+
+    <!-- Introducción -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.15s">
+      <p class="mb-0 text-justify">
+        La <strong>Colangitis Biliar Primaria (CBP)</strong> es una enfermedad autoinmune crónica que afecta principalmente a mujeres y puede pasar desapercibida durante años. 
+        Aunque es poco frecuente, <strong>detectarla a tiempo</strong> es clave para frenar su progresión y mejorar la calidad de vida. 
+        A continuación, cinco señales de alerta que conviene conocer.
+      </p>
+    </div>
+
+    <!-- Imagen principal -->
+    <div class="row mb-5 text-center">
+      <img class="img-fluid rounded shadow"
+           style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+           src="{{ url_for('static', filename='img/BLOGAGO5.webp') }}"
+           alt="Señales y síntomas de colangitis biliar primaria en mujeres"
+           loading="lazy">
+    </div>
+
+    <!-- Señales -->
+    <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.18s">
+      <h2 class="text-primary h3 mb-4">Señales que podrían alertarte</h2>
+
+      <h3 class="h5 mb-2">1) Cansancio extremo (fatiga)</h3>
+      <p class="mb-3">Uno de los síntomas más comunes. Puede presentarse incluso si duermes bien o no realizas gran esfuerzo. Es una <strong>fatiga persistente</strong> que impacta la vida diaria.</p>
+
+      <h3 class="h5 mb-2">2) Picazón constante en la piel (prurito)</h3>
+      <p class="mb-3">El prurito <strong>sin causa aparente</strong> puede ser señal de problemas hepáticos. En CBP suele aparecer antes de que el hígado muestre daño severo.</p>
+
+      <h3 class="h5 mb-2">3) Cambios en el color de la piel (hiperpigmentación)</h3>
+      <p class="mb-3">Oscurecimiento de zonas de la piel, incluso sin exposición solar marcada. Es menos conocido, pero relevante.</p>
+
+      <h3 class="h5 mb-2">4) Ictericia (piel y ojos amarillos) 🟡</h3>
+      <p class="mb-3">Cuando el hígado no elimina bien la bilirrubina, aparece coloración amarilla en piel, ojos y mucosas. Suele indicar <strong>daño avanzado</strong>.</p>
+
+      <h3 class="h5 mb-2">5) Sequedad en ojos o boca (síntomas tipo Sjögren)</h3>
+      <p class="mb-0">La CBP puede asociarse con otras enfermedades autoinmunes como <strong>síndrome de Sjögren</strong>, con molestias por resequedad ocular y bucal.</p>
+    </div>
+
+    <!-- Riesgo -->
+    <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="text-primary h3 mb-3">⚠️ ¿Quiénes están en mayor riesgo?</h2>
+      <ul class="mb-0">
+        <li class="mb-1"><strong>Mujeres entre 30 y 60 años</strong> (más del 90% de los casos).</li>
+        <li class="mb-1">Antecedentes familiares de <strong>enfermedades autoinmunes</strong>.</li>
+        <li class="mb-1">Personas con <strong>tiroiditis autoinmune, lupus, artritis reumatoide</strong> u otras condiciones afines.</li>
+      </ul>
+    </div>
+
+    <!-- Diagnóstico y tratamiento + Imagen secundaria -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.22s">
+      <h2 class="text-primary h3 mb-3">Diagnóstico y tratamiento</h2>
+      <p class="mb-3 text-justify">
+        El diagnóstico suele incluir <strong>fosfatasa alcalina elevada</strong>, <strong>anticuerpos anti-mitocondriales (AMA)</strong>, pruebas de función hepática y estudios de imagen. 
+        El <strong>tratamiento de elección</strong> es el <em>ácido ursodesoxicólico</em>. En casos refractarios, se utiliza <em>ácido obeticólico</em> o se valora 
+        participación en <strong>protocolos clínicos</strong>.
+      </p>
+
+      <div class="row mt-3">
+        <div class="col-12 text-center">
+          <img class="img-fluid rounded shadow"
+               style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+               src="{{ url_for('static', filename='img/BLOGAGO6.webp') }}"
+               alt="Pruebas de laboratorio y opciones de tratamiento para CBP"
+               loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- Atención CIG -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.24s">
+      <h2 class="text-primary h3 mb-3">Atención especializada en CIG</h2>
+      <p class="mb-0 text-justify">
+        En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> desarrollamos <strong>protocolos de investigación para CBP</strong> en nuestras sedes Roma y Universidad. 
+        Si presentas síntomas, consulta a tu médico y considera una valoración con nosotros para confirmar diagnóstico, iniciar tratamiento oportuno y mejorar tu calidad de vida.
+      </p>
+    </div>
+
+    <!-- CTA WhatsApp -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <h3 class="mb-4">¿Necesitas orientación o quieres agendar valoración?</h3>
+        <p class="mb-4">Envíanos un WhatsApp y con gusto te ayudamos.</p>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20valoraci%C3%B3n%20por%20sospecha%20de%20CBP%20en%20Sucursal%20Durango."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'cbp_durango'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+          </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20valoraci%C3%B3n%20por%20sospecha%20de%20CBP%20en%20Sucursal%20Universidad."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'cbp_universidad'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Referencias -->
+    <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.26s">
+      <h3 class="text-white h4">Referencias</h3>
+      <ul class="mb-0">
+        <li class="mb-1">Mayo Clinic. (2023). <em>Primary biliary cholangitis (PBC)</em>. https://www.mayoclinic.org/diseases-conditions/primary-biliary-cholangitis</li>
+        <li class="mb-1">EASL. (2017). <em>Clinical Practice Guidelines: The diagnosis and management of patients with primary biliary cholangitis</em>. <em>Journal of Hepatology</em>, 67(1), 145–172. https://doi.org/10.1016/j.jhep.2017.03.022</li>
+        <li class="mb-1">American Liver Foundation. (2024). <em>Primary Biliary Cholangitis</em>. https://liverfoundation.org</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
