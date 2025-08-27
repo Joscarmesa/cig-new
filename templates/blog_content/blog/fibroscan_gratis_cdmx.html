@@ -1,9 +1,11 @@
 {% extends 'index.html' %}
 
 {% block meta %}
-    <title>FibroScan Gratis en CDMX | Detección Temprana de Enfermedades Hepáticas</title>
-    <meta name="description" content="Descubre cómo acceder a un estudio FibroScan gratuito en CDMX para evaluar la salud de tu hígado. Ideal para personas con hígado graso, diabetes o hepatitis.">
-    <meta name="keywords" content="FibroScan CDMX, hígado graso, detección temprana, estudio hepático gratuito, enfermedades del hígado, cirrosis, diabetes, hepatología">
+<title>FibroScan Gratis en CDMX | Detección Temprana de Enfermedades Hepáticas</title>
+<meta name="description"
+    content="Descubre cómo acceder a un estudio FibroScan gratuito en CDMX para evaluar la salud de tu hígado. Ideal para personas con hígado graso, diabetes o hepatitis.">
+<meta name="keywords"
+    content="FibroScan CDMX, hígado graso, detección temprana, estudio hepático gratuito, enfermedades del hígado, cirrosis, diabetes, hepatología">
 {% endblock %}
 
 {% block main_content %}
@@ -20,16 +22,19 @@
 
         <!-- Imagen Principal -->
         <div class="row mb-5 text-center">
-            <img class="img-fluid rounded shadow" loading="lazy"
-                src="{{ url_for('static', filename='img/BLOGABR1.webp') }}"
-                alt="FibroScan gratis en CDMX - diagnóstico del hígado"
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGABR1.webp') }}"
+                alt="FibroScan gratis en CDMX - diagnóstico del hígado" fetchpriority="high"
                 style="max-width: 100%; height: auto; object-fit: cover;">
         </div>
+
 
         <!-- Introducción -->
         <div class="bg-light p-4 rounded shadow mb-5">
             <p class="mb-0 text-justify">
-                El hígado es un órgano vital que participa en funciones clave como la digestión, el metabolismo y la desintoxicación. Muchas enfermedades hepáticas pueden progresar silenciosamente durante años. El FibroScan es una herramienta moderna que permite detectar daño hepático sin necesidad de procedimientos invasivos. Si vives en CDMX y te interesa cuidar tu salud, esta guía es para ti.
+                El hígado es un órgano vital que participa en funciones clave como la digestión, el metabolismo y la
+                desintoxicación. Muchas enfermedades hepáticas pueden progresar silenciosamente durante años. El
+                FibroScan es una herramienta moderna que permite detectar daño hepático sin necesidad de procedimientos
+                invasivos. Si vives en CDMX y te interesa cuidar tu salud, esta guía es para ti.
             </p>
         </div>
 
@@ -38,10 +43,12 @@
             <h2 class="text-primary h4">¿Qué es el FibroScan y para qué sirve?</h2>
             <p>El FibroScan es un estudio que utiliza ultrasonido para medir la rigidez y grasa del hígado. Evalúa:</p>
             <ul>
-                <li><strong>Fibrosis hepática:</strong> Daño por inflamación crónica que endurece el tejido hepático.</li>
+                <li><strong>Fibrosis hepática:</strong> Daño por inflamación crónica que endurece el tejido hepático.
+                </li>
                 <li><strong>Esteatosis hepática:</strong> Acumulación de grasa en el hígado.</li>
             </ul>
-            <p>A diferencia de una biopsia, el FibroScan es rápido, no invasivo, indoloro y entrega resultados inmediatos.</p>
+            <p>A diferencia de una biopsia, el FibroScan es rápido, no invasivo, indoloro y entrega resultados
+                inmediatos.</p>
         </div>
 
         <!-- ¿Quién debe hacerse el estudio? -->
@@ -62,8 +69,10 @@
         <div class="bg-light p-4 rounded shadow mb-5">
             <h2 class="text-primary h4">¿Dónde hacerte un FibroScan gratuito en CDMX?</h2>
             <ul>
-                <li><strong>Centro de Investigación y Gastroenterología (CIG):</strong> Ofrece campañas gratuitas o a bajo costo.</li>
-                <li><strong>Hospitales públicos:</strong> Como el Instituto Nacional de Nutrición y el Hospital General de México.</li>
+                <li><strong>Centro de Investigación y Gastroenterología (CIG):</strong> Ofrece campañas gratuitas o a
+                    bajo costo.</li>
+                <li><strong>Hospitales públicos:</strong> Como el Instituto Nacional de Nutrición y el Hospital General
+                    de México.</li>
                 <li><strong>Fundaciones:</strong> Como FundHepa y la Asociación Mexicana de Hepatología.</li>
                 <li><strong>Clínicas universitarias:</strong> Enmarcadas en proyectos de investigación.</li>
             </ul>
@@ -80,15 +89,19 @@
         <!-- Importancia -->
         <div class="bg-light p-4 rounded shadow mb-5">
             <h2 class="text-primary h4">Importancia de la detección temprana</h2>
-            <p>Las enfermedades hepáticas pueden pasar desapercibidas hasta que el daño es severo. Con un FibroScan, puedes detectar a tiempo problemas que podrían derivar en cirrosis o incluso cáncer hepático. No esperes a tener síntomas. Si tienes factores de riesgo, realiza tu estudio cuanto antes.</p>
+            <p>Las enfermedades hepáticas pueden pasar desapercibidas hasta que el daño es severo. Con un FibroScan,
+                puedes detectar a tiempo problemas que podrían derivar en cirrosis o incluso cáncer hepático. No esperes
+                a tener síntomas. Si tienes factores de riesgo, realiza tu estudio cuanto antes.</p>
         </div>
 
         <!-- Referencias -->
         <div class="bg-secondary text-white p-3 rounded">
             <h4 class="text-white">Referencias:</h4>
             <ul>
-                <li>Lédinghen, V. y Vergniol, J. (2008). Elastografía transitoria (FibroScan). <i>Gastroenterología Clínica</i>.</li>
-                <li>Eddowes, P.J., Sasso, M., Allison, M., et al. (2019). <i>FibroScan accuracy in chronic liver disease</i>. <b>BMJ Open Gastroenterology</b>.</li>
+                <li>Lédinghen, V. y Vergniol, J. (2008). Elastografía transitoria (FibroScan). <i>Gastroenterología
+                        Clínica</i>.</li>
+                <li>Eddowes, P.J., Sasso, M., Allison, M., et al. (2019). <i>FibroScan accuracy in chronic liver
+                        disease</i>. <b>BMJ Open Gastroenterology</b>.</li>
             </ul>
         </div>
 
@@ -99,26 +112,27 @@
 <!-- WhatsApp CTA Start -->
 <div class="container my-5">
     <div class="row text-center">
-      <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
-      <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos para ayudarte!</p>
-      
-      <div class="col-md-6 mb-3">
-        <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
-           target="_blank"
-           class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
-          <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
-        </a>
-      </div>
-      
-      <div class="col-md-6 mb-3">
-        <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
-           target="_blank"
-           class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
-          <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
-        </a>
-      </div>
+        <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+        <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos para
+            ayudarte!</p>
+
+        <div class="col-md-6 mb-3">
+            <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                target="_blank"
+                class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+            </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                target="_blank"
+                class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+            </a>
+        </div>
     </div>
-  </div>
-  <!-- WhatsApp CTA End -->
+</div>
+<!-- WhatsApp CTA End -->
 
 {% endblock %}
