@@ -136,5 +136,9 @@ def checklist_preconsulta():
 def señales_cbp():
     return render_template('blog_content/blog/señales_cbp.html', canonical_url="https://higadograso.mx/blog/señales_cbp")       
 
+@blog_bp.route('/blog/imc_normal_yaunasi_higado_graso')
+def imc_normal_yaunasi_higado_graso():
+    return render_template('blog_content/blog/imc_normal_yaunasi_higado_graso.html', canonical_url="https://higadograso.mx/blog/imc_normal_yaunasi_higado_graso")       
+
 
 
