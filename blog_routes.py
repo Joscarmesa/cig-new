@@ -140,5 +140,7 @@ def señales_cbp():
 def imc_normal_yaunasi_higado_graso():
     return render_template('blog_content/blog/imc_normal_yaunasi_higado_graso.html', canonical_url="https://higadograso.mx/blog/imc_normal_yaunasi_higado_graso")       
 
-
+@blog_bp.route('/blog/dia_colangitis_billiar_primaria')
+def dia_colangitis_billiar_primaria():
+    return render_template('blog_content/blog/dia_colangitis_billiar_primaria.html', canonical_url="https://higadograso.mx/blog/dia_colangitis_billiar_primaria")       
 

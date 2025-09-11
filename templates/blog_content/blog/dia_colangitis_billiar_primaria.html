@@ -1,0 +1,163 @@
+```jinja
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Día Internacional de la Colangitis Biliar Primaria (PBC): Nuevas esperanzas — CIG</title>
+<meta name="description"
+    content="El 11 de septiembre se conmemora el Día Internacional de la PBC. Conoce qué es la colangitis biliar primaria, los nuevos tratamientos (seladelpar y elafibranor), y cómo en CIG puedes acceder a protocolos clínicos.">
+<link rel="canonical"
+    href="{{ url_for('blog_post', slug='dia-internacional-colangitis-biliar-primaria-pbc', _external=True) }}">
+{{ super() }}
+
+{# Schema.org: BlogPosting + MedicalCondition #}
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BlogPosting",
+    "headline":"Día Internacional de la Colangitis Biliar Primaria: Nuevas esperanzas de tratamiento",
+    "description":"Qué es la PBC, nuevos tratamientos (seladelpar y elafibranor) y cómo participar en protocolos activos en CIG.",
+    "author":{"@type":"Organization","name":"Centro de Investigación y Gastroenterología (CIG)"},
+    "publisher":{"@type":"Organization","name":"CIG","logo":{"@type":"ImageObject","url":"{{ url_for('static', filename='img/logo_CIG_def.jpg', _external=True) }}"}},
+    "image":[
+      "{{ url_for('static', filename='img/BLOGSEPT1.webp', _external=True) }}",
+      "{{ url_for('static', filename='img/BLOGSEPT2.webp', _external=True) }}"
+    ],
+    "mainEntityOfPage":{"@type":"WebPage","@id":"{{ url_for('blog_post', slug='dia-internacional-colangitis-biliar-primaria-pbc', _external=True) }}"}
+  }
+  </script>
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-pbc-day">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Día Internacional de la Colangitis Biliar Primaria (PBC): nuevas esperanzas de
+                tratamiento</h1>
+        </div>
+
+        <!-- Intro -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.15s">
+            <p class="mb-3">
+                El <strong>11 de septiembre</strong> se conmemora el Día Internacional de la Colangitis Biliar Primaria
+                (PBC), una enfermedad hepática poco frecuente que afecta en su mayoría a mujeres (alrededor del 90% de
+                los casos).
+                Este año la fecha cobra especial relevancia gracias a nuevos avances terapéuticos:
+                <strong>seladelpar</strong> y <strong>elafibranor</strong>.
+            </p>
+            <p class="mb-0">En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> participamos
+                activamente en protocolos internacionales y actualmente tenemos abiertos estudios con estas opciones
+                innovadoras.</p>
+        </div>
+
+        <!-- Imagen 1 -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGSEPT1.webp') }}"
+                alt="Mujer con molestias abdominales y esquema de vías biliares: concientización sobre PBC"
+                fetchpriority="high" decoding="async"
+                style="max-width:100%;height:auto;object-fit:cover;object-position:center;">
+        </div>
+
+        <!-- ¿Qué es la PBC? -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">¿Qué es la colangitis biliar primaria (PBC)?</h2>
+            <p>
+                La PBC es una <strong>enfermedad autoinmune</strong> en la que el sistema inmunológico daña los
+                <em>conductos biliares intrahepáticos</em>. Con el tiempo, esta agresión puede provocar inflamación,
+                <strong>fibrosis</strong>, <strong>cirrosis</strong> y <strong>falla hepática</strong>.
+            </p>
+        </section>
+
+        <!-- Nuevos tratamientos -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-4">Nuevos tratamientos aprobados</h2>
+            <h3 class="h5">Seladelpar</h3>
+            <p class="mb-3">
+                Modulador de <strong>PPAR-δ</strong> que ha demostrado disminuir <em>fosfatasa alcalina</em> y mejorar
+                síntomas como <strong>fatiga</strong> y <strong>prurito</strong>.
+            </p>
+
+            <h3 class="h5">Elafibranor</h3>
+            <p class="mb-0">
+                Agonista dual <strong>PPAR</strong> con impacto favorable en parámetros bioquímicos y en el
+                <strong>perfil metabólico</strong> de las personas con PBC.
+            </p>
+            <div class="alert alert-info mt-3" role="alert">
+                <small>
+                    Nota: La disponibilidad regulatoria puede variar por país. En México, el CIG mantiene seguimiento
+                    del proceso ante COFEPRIS y facilita el acceso a <strong>protocolos clínicos</strong> cuando están
+                    activos.
+                </small>
+            </div>
+        </section>
+
+        <!-- Imagen 2 -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGSEPT2.webp') }}"
+                alt="Hombre con prurito cutáneo: síntoma frecuente en PBC" loading="lazy"
+                style="max-width:100%;height:auto;object-fit:cover;object-position:center;">
+        </div>
+
+        <!-- Rol de CIG -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h3 text-primary mb-3">El papel del CIG</h2>
+            <p>
+                En nuestros sitios en México, participamos en <strong>protocolos</strong> con seladelpar y mantenemos
+                vigilancia del estatus regulatorio de elafibranor ante COFEPRIS. Esto permite que nuestras y nuestros
+                pacientes puedan <strong>acceder a terapias de vanguardia</strong> bajo supervisión de especialistas,
+                antes de su disponibilidad comercial general.
+            </p>
+            <p class="mb-0">
+                El Día de la PBC nos recuerda que, aunque es una enfermedad rara, <strong>la ciencia avanza</strong>
+                para ofrecer nuevas esperanzas. Si tienes diagnóstico de PBC o sospechas de enfermedad hepática, en CIG
+                podemos evaluar tu caso y revisar si eres candidata(o) para un estudio clínico.
+            </p>
+        </section>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-3">¿Necesitas orientación sobre PBC o deseas conocer protocolos activos?</h3>
+                <p class="mb-4">Escríbenos por WhatsApp. Te atenderá nuestro equipo médico.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20colangitis%20biliar%20primaria%20en%20la%20Sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'pbc_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quisiera%20saber%20si%20soy%20candidata%2Fo%20a%20un%20protocolo%20de%20PBC%20en%20la%20Sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'pbc_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.35s">
+            <h2 class="h4 text-white mb-3">Referencias</h2>
+            <ul class="mb-0">
+                <li>Mayo, M. J., et al. (2023). <em>Seladelpar in primary biliary cholangitis</em>: Results from phase 3
+                    trials. <strong>NEJM</strong>.</li>
+                <li>Corpechot, C., et al. (2024). <em>Efficacy and safety of elafibranor in PBC</em>: Phase 3 outcomes.
+                    <strong>Journal of Hepatology</strong>.</li>
+            </ul>
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}
+```
