@@ -144,3 +144,8 @@ def imc_normal_yaunasi_higado_graso():
 def dia_colangitis_billiar_primaria():
     return render_template('blog_content/blog/dia_colangitis_billiar_primaria.html', canonical_url="https://higadograso.mx/blog/dia_colangitis_billiar_primaria")       
 
+@blog_bp.route('/blog/semaglutida_nuevo_tratamiento_aprobado')
+def semaglutida_nuevo_tratamiento_aprobado():
+    return render_template('blog_content/blog/semaglutida_nuevo_tratamiento_aprobado.html', canonical_url="https://higadograso.mx/blog/semaglutida_nuevo_tratamiento_aprobado")       
+
+
