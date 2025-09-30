@@ -148,4 +148,9 @@ def dia_colangitis_billiar_primaria():
 def semaglutida_nuevo_tratamiento_aprobado():
     return render_template('blog_content/blog/semaglutida_nuevo_tratamiento_aprobado.html', canonical_url="https://higadograso.mx/blog/semaglutida_nuevo_tratamiento_aprobado")       
 
+@blog_bp.route('/blog/como_leer_fibroscan')
+def como_leer_fibroscan():
+    return render_template('blog_content/blog/como_leer_fibroscan.html', canonical_url="https://higadograso.mx/blog/como_leer_fibroscan")       
+
+
 
