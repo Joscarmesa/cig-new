@@ -152,5 +152,9 @@ def semaglutida_nuevo_tratamiento_aprobado():
 def como_leer_fibroscan():
     return render_template('blog_content/blog/como_leer_fibroscan.html', canonical_url="https://higadograso.mx/blog/como_leer_fibroscan")       
 
+@blog_bp.route('/blog/dia_nacional_de_la_donacion_de_organos')
+def dia_nacional_de_la_donacion_de_organos():
+    return render_template('blog_content/blog/dia_nacional_de_la_donacion_de_organos.html', canonical_url="https://higadograso.mx/blog/dia_nacional_de_la_donacion_de_organos")       
+
 
 

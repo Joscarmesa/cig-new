@@ -1,0 +1,159 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Día Nacional de la Donación de Órganos: Un acto de vida — CIG</title>
+<meta name="description"
+    content="Cada 26 de septiembre, México conmemora el Día Nacional de la Donación y Trasplante de Órganos y Tejidos. Conoce por qué es importante donar, cómo registrarte en CENATRA y cómo te orientamos en CIG.">
+<link rel="canonical" href="{{ url_for('blog_post', slug='dia-nacional-donacion-organos', _external=True) }}">
+
+{# Open Graph / Twitter #}
+<meta property="og:type" content="article">
+<meta property="og:title" content="Día Nacional de la Donación de Órganos: Un acto de vida — CIG">
+<meta property="og:description"
+    content="Di sí a la donación. Un donador puede salvar hasta 8 vidas. Aprende a registrarte en CENATRA y cómo CIG puede orientarte.">
+<meta property="og:image" content="{{ url_for('static', filename='img/Post_donacionorganos.png', _external=True) }}">
+<meta property="og:url" content="{{ url_for('blog_post', slug='dia-nacional-donacion-organos', _external=True) }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Día Nacional de la Donación de Órganos: Un acto de vida — CIG">
+<meta name="twitter:description" content="Regístrate como donador voluntario en CENATRA. En CIG te orientamos.">
+<meta name="twitter:image" content="{{ url_for('static', filename='img/Post_donacionorganos.png', _external=True) }}">
+
+{# JSON-LD Article #}
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Día Nacional de la Donación de Órganos: Un acto de vida",
+    "description":"Por qué es importante donar órganos, cómo registrarte en CENATRA y el papel del CIG.",
+    "image":["{{ url_for('static', filename='img/Post_donacionorganos.png', _external=True) }}"],
+    "author":{"@type":"Organization","name":"Centro de Investigación y Gastroenterología (CIG)"},
+    "publisher":{"@type":"Organization","name":"CIG","logo":{"@type":"ImageObject","url":"{{ url_for('static', filename='img/logo.png', _external=True) }}"}},
+    "datePublished":"2025-09-29",
+    "dateModified":"2025-09-29",
+    "mainEntityOfPage":"{{ url_for('blog_post', slug='dia-nacional-donacion-organos', _external=True) }}"
+  }
+  </script>
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-donacion-organos">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-3">Día Nacional de la Donación de Órganos: Un acto de vida</h1>
+            <p class="text-muted mb-0">Cada 26 de septiembre se conmemora en México el Día Nacional de la Donación y
+                Trasplante de Órganos y Tejidos. Esta fecha busca crear conciencia sobre la importancia de decir “sí” a
+                la donación, un gesto solidario que puede cambiar y salvar vidas. En el Centro de Investigación y
+                Gastroenterología (CIG) creemos que hablar de este tema es fundamental: miles de personas esperan un
+                trasplante para seguir viviendo y tu decisión puede ser clave.</p>
+        </div>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img src="{{ url_for('static', filename='img/Post_donacionorganos.png') }}" class="img-fluid rounded shadow"
+                alt="Ilustración de donación de órganos con manos ofreciendo un hígado" loading="lazy" width="1200"
+                height="1500">
+            <figcaption class="small text-muted mt-2">Dona vida: regístrate y comparte tu decisión con tu familia.
+            </figcaption>
+        </figure>
+
+        <!-- Sección: Por qué es importante -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">¿Por qué es importante donar órganos?</h2>
+            <ul class="mb-0">
+                <li><strong>Un solo donador puede salvar hasta 8 vidas</strong> y mejorar la calidad de vida de más de
+                    50 personas con tejidos donados.</li>
+                <li><strong>En México, miles de pacientes están en lista de espera</strong> para trasplante de hígado,
+                    riñón, corazón, pulmones o córneas.</li>
+                <li><strong>Promover la cultura de la donación</strong> es un compromiso con la vida y la solidaridad.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Sección: Registro CENATRA -->
+        <div class="p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s" style="background:#f7fbff;">
+            <h2 class="h3 text-primary mb-3">¿Cómo registrarse para ser donador en México?</h2>
+            <p class="mb-3">Muchas personas piensan que ser donador depende únicamente de informar a la familia, pero en
+                México existe un <strong>registro oficial para donadores voluntarios</strong>.</p>
+            <p class="mb-3">Puedes registrarte de manera sencilla en el sitio del <strong>Centro Nacional de Trasplantes
+                    (CENATRA)</strong>:</p>
+            <p class="mb-4">
+                🔗 <a href="https://www.gob.mx/cenatra/es/articulos/registro-de-donadores-voluntarios?idiom=es"
+                    class="link-primary fw-bold" target="_blank" rel="noopener nofollow">Registro de Donadores
+                    Voluntarios</a>
+            </p>
+            <p class="mb-0"><strong>Tip importante:</strong> además de registrarte, <strong>platícalo con tu
+                    familia</strong> para que respeten tu decisión en caso de ser necesario.</p>
+        </div>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img src="{{ url_for('static', filename='img/Story_donació_de_organos.png') }}"
+                class="img-fluid rounded shadow" alt="Cartel del Día de la Donación de Órganos con hígado ilustrado"
+                loading="lazy" width="1080" height="1920">
+        </figure>
+
+        <!-- Sección: Papel del CIG -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">El papel del CIG</h2>
+            <p class="mb-3">En el CIG trabajamos todos los días con pacientes que enfrentan enfermedades hepáticas
+                avanzadas y que, en algunos casos, llegan a requerir un trasplante de hígado. Sabemos lo valioso que es
+                que existan donadores y por eso nos unimos a la conmemoración de este día para invitarte a informarte y
+                tomar acción.</p>
+            <p class="mb-0"><strong>Donar órganos es regalar esperanza.</strong> Hoy puedes dar un paso muy sencillo que
+                en el futuro puede significar la vida de alguien más. <strong>Regístrate, infórmate y comparte este
+                    mensaje.</strong> Y recuerda: en el CIG podemos orientarte sobre enfermedades hepáticas y protocolos
+                activos relacionados con trasplantes.</p>
+        </div>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-3">¿Necesitas orientación sobre enfermedades hepáticas?</h3>
+                <p class="mb-4">Escríbenos por WhatsApp y con gusto te atendemos.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20donaci%C3%B3n%20de%20%C3%B3rganos%20y%20trasplantes%20en%20Sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'donacion_organos_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20donaci%C3%B3n%20de%20%C3%B3rganos%20y%20trasplantes%20en%20Sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'donacion_organos_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h4 text-white mb-3">📚 Referencias</h2>
+            <ul class="mb-0">
+                <li>Centro Nacional de Trasplantes (CENATRA). (2025). Registro de Donadores Voluntarios. Recuperado de:
+                    <a class="text-white text-decoration-underline"
+                        href="https://www.gob.mx/cenatra/es/articulos/registro-de-donadores-voluntarios?idiom=es"
+                        target="_blank" rel="noopener">gob.mx/cenatra</a></li>
+                <li>Secretaría de Salud. (2024). Día Nacional de la Donación y Trasplante de Órganos y Tejidos. Gobierno
+                    de México.</li>
+                <li>Organización Mundial de la Salud (OMS). (2023). Global Observatory on Donation and Transplantation.
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
