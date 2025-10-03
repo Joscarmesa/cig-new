@@ -1,0 +1,160 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>¿Qué es un protocolo de investigación clínica? — CIG</title>
+<meta name="description"
+    content="Entiende qué es un protocolo de investigación clínica, sus componentes, por qué es importante y cómo protege a los pacientes. Atención especializada en CIG.">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-protocolo-investigacion">
+    <div class="container">
+
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">¿Qué es un protocolo de investigación clínica?</h1>
+        </div>
+
+        <!-- Intro -->
+        <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.15s">
+            <p class="mb-0 text-justify">
+                Un <strong>protocolo de investigación clínica</strong> es un documento detallado que describe cómo se va
+                a llevar a cabo un estudio clínico, desde la definición de objetivos hasta la manera de recopilar y
+                analizar los datos. Los protocolos son la base de cualquier investigación médica confiable,
+                <strong>asegurando que los estudios sean éticos, seguros y útiles</strong> para generar conocimiento
+                válido.
+            </p>
+        </div>
+
+        <!-- Imagen principal -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                src="{{ url_for('static', filename='img/BLOGOCT2.webp') }}"
+                alt="Especialista del CIG explicando un protocolo de investigación clínica a una paciente"
+                loading="lazy">
+        </div>
+
+        <!-- Componentes -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="text-primary h3 mb-4">Componentes principales de un protocolo</h2>
+
+            <h3 class="h5"><strong>Objetivo del estudio</strong></h3>
+            <p>Define qué se quiere investigar, por ejemplo, evaluar la seguridad de un medicamento, identificar efectos
+                secundarios o comprender la progresión de una enfermedad. <strong>Cada objetivo debe ser específico y
+                    medible.</strong></p>
+
+            <h3 class="h5 mt-3"><strong>Diseño del estudio</strong></h3>
+            <p>Describe cómo se realizará la investigación, incluyendo si será observacional, prospectivo,
+                retrospectivo, aleatorizado o controlado. <strong>El diseño determina la robustez de los
+                    resultados</strong> y su aplicabilidad clínica.</p>
+
+            <h3 class="h5 mt-3"><strong>Criterios de inclusión y exclusión</strong></h3>
+            <p>Establece quiénes pueden participar y quiénes no, según características como edad, diagnóstico,
+                antecedentes médicos o medicación actual. Esto asegura que los resultados sean relevantes y
+                <strong>seguros para los participantes</strong>.</p>
+
+            <h3 class="h5 mt-3"><strong>Procedimientos y evaluaciones</strong></h3>
+            <p>Detalla qué estudios, análisis y consultas médicas se realizarán, así como la frecuencia y duración del
+                seguimiento. Esto puede incluir <strong>análisis de laboratorio, imágenes, cuestionarios</strong> o
+                medición de signos clínicos.</p>
+
+            <h3 class="h5 mt-3"><strong>Consideraciones éticas y seguridad</strong></h3>
+            <p>Todo protocolo debe incluir <strong>protección de los participantes, manejo de riesgos y obtención de
+                    consentimiento informado</strong>. Esto garantiza que la investigación cumpla con normas éticas y
+                regulatorias internacionales.</p>
+        </div>
+
+        <!-- Imagen secundaria -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                src="{{ url_for('static', filename='img/BLOGOCT1.webp') }}"
+                alt="Hígado personaje del CIG mostrando medicamentos y seguridad en investigación clínica"
+                loading="lazy">
+        </div>
+
+        <!-- Por qué es importante -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="text-primary h3 mb-3">¿Por qué es importante conocer los protocolos?</h2>
+            <ul class="mb-0">
+                <li><strong>Claridad y transparencia:</strong> los protocolos definen exactamente cómo se realizará la
+                    investigación y cómo se protegerá la salud de los participantes.</li>
+                <li><strong>Rigor científico:</strong> permiten que los resultados sean confiables, reproducibles y
+                    aplicables a la práctica médica.</li>
+                <li><strong>Seguridad del paciente:</strong> establecen procedimientos de monitoreo y manejo de efectos
+                    adversos, minimizando riesgos durante la investigación.</li>
+            </ul>
+        </div>
+
+        <!-- Recordatorios para pacientes -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="text-primary h3 mb-3">Lo que los pacientes deben recordar</h2>
+            <ul>
+                <li>Participar en un estudio clínico <strong>no garantiza un beneficio directo</strong>, pero sí
+                    contribuye a mejorar el conocimiento y tratamiento de enfermedades.</li>
+                <li><strong>La supervisión médica continua es clave:</strong> cualquier cambio en síntomas o reacciones
+                    debe ser reportado de inmediato al equipo investigador.</li>
+                <li>La información obtenida a partir de los protocolos <strong>ayuda a desarrollar terapias más seguras
+                        y efectivas</strong> en el futuro.</li>
+            </ul>
+            <p class="mb-0">Un protocolo de investigación clínica es mucho más que un conjunto de reglas: <strong>es un
+                    plan riguroso que protege a los pacientes, asegura la validez científica y genera conocimiento
+                    confiable</strong> sobre enfermedades y tratamientos. Entender su importancia permite a los
+                pacientes participar de manera informada y a los médicos tomar decisiones basadas en evidencia.</p>
+        </div>
+
+        <!-- CIG -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.35s">
+            <p class="mb-0">En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong>, seguimos
+                protocolos estrictos en todos nuestros estudios y evaluaciones, garantizando que cada investigación
+                cumpla con los más altos estándares de seguridad y ética. <strong>📍 Consulta con nuestros
+                    especialistas</strong> y conoce cómo se aplican los protocolos de investigación clínica en la
+                práctica médica.</p>
+        </div>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-3">¿Necesitas orientación personalizada?</h3>
+                <p class="mb-4">Envíanos un mensaje por WhatsApp y con gusto te ayudamos.</p>
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20protocolos%20cl%C3%ADnicos%20en%20CIG%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'protocolos_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+                    </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20protocolos%20cl%C3%ADnicos%20en%20CIG%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'protocolos_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.4s">
+            <h3 class="text-white h4">Referencias</h3>
+            <ul class="mb-0">
+                <li>World Health Organization (WHO). (2022). <em>Guidelines for Good Clinical Practice (GCP)</em>.</li>
+                <li>U.S. Food &amp; Drug Administration (FDA). (2023). <em>Clinical Trial Protocol Information</em>.
+                </li>
+                <li>ICH Harmonised Guideline. (2021). <em>Integrated Addendum to ICH E6(R1): Guideline for Good Clinical
+                        Practice E6(R2)</em>.</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

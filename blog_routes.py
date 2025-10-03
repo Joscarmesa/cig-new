@@ -156,5 +156,10 @@ def como_leer_fibroscan():
 def dia_nacional_de_la_donacion_de_organos():
     return render_template('blog_content/blog/dia_nacional_de_la_donacion_de_organos.html', canonical_url="https://higadograso.mx/blog/dia_nacional_de_la_donacion_de_organos")       
 
+@blog_bp.route('/blog/que_es_un_protocolo_de_investigacion_clinica')
+def que_es_un_protocolo_de_investigacion_clinica():
+    return render_template('blog_content/blog/que_es_un_protocolo_de_investigacion_clinica.html', canonical_url="https://higadograso.mx/blog/que_es_un_protocolo_de_investigacion_clinica")       
+
+
 
 
