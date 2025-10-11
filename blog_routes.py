@@ -160,6 +160,6 @@ def dia_nacional_de_la_donacion_de_organos():
 def que_es_un_protocolo_de_investigacion_clinica():
     return render_template('blog_content/blog/que_es_un_protocolo_de_investigacion_clinica.html', canonical_url="https://higadograso.mx/blog/que_es_un_protocolo_de_investigacion_clinica")       
 
-
-
-
+@blog_bp.route('/blog/mash_masd')
+def mash_masd():
+    return render_template('blog_content/blog/mash_masd.html', canonical_url="https://higadograso.mx/blog/mash_masd")

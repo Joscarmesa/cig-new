@@ -1,0 +1,169 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+  <title>De NAFLD a MASLD y de NASH a MASH: lo que necesitas saber — CIG</title>
+  <meta name="description"
+        content="Entiende por qué NAFLD pasó a llamarse MASLD y NASH ahora forma parte de MASH. Factores metabólicos, diagnóstico (FibroScan/biopsia), riesgos y seguimiento con especialistas del CIG.">
+  {{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-masld-mash">
+  <div class="container">
+
+    <!-- Título -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">De NASH a MASH y de NAFLD a MASLD: <span class="text-primary">lo que necesitas saber</span></h1>
+    </div>
+
+    <!-- Imagen principal -->
+    <div class="row mb-5 text-center">
+      <img class="img-fluid rounded shadow"
+           style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+           src="{{ url_for('static', filename='img/BLOGOCT3.webp') }}"
+           alt="Comparación de hígado con grasa y hígado sano en dos personas"
+           loading="lazy">
+    </div>
+
+    <!-- Introducción -->
+    <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.15s">
+      <p class="mb-0 text-justify">
+        En los últimos años, la terminología sobre enfermedades hepáticas ha evolucionado para
+        reflejar mejor los mecanismos que las causan y cómo deben abordarse. Lo que antes
+        conocíamos como <strong>NAFLD (Non-Alcoholic Fatty Liver Disease)</strong> ahora se denomina <strong>MASLD
+        (Metabolic dysfunction-Associated Steatotic Liver Disease)</strong>, y la <strong>NASH</strong> (Non-Alcoholic
+        Steatohepatitis) se reconoce dentro del espectro de <strong>MASH</strong>. Entender estos cambios ayuda a
+        pacientes y médicos a tener un lenguaje común y a enfocar el cuidado de manera más precisa.
+      </p>
+    </div>
+
+    <!-- ¿Qué es MASLD? -->
+    <div class="bg-white p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="h3 text-primary mb-3">¿Qué es MASLD?</h2>
+      <p>MASLD se refiere a la acumulación de grasa en el hígado no relacionada con el consumo
+      de alcohol, pero asociada a alteraciones metabólicas. Entre los factores que contribuyen
+      están:</p>
+      <ul class="mb-3">
+        <li>Resistencia a la insulina</li>
+        <li>Dislipidemia (alteraciones en colesterol y triglicéridos)</li>
+        <li>Hipertensión y síndrome metabólico</li>
+        <li>Predisposición genética</li>
+      </ul>
+      <p class="mb-0">Este término reemplaza a NAFLD porque no todas las personas con hígado graso están
+      libres de otros factores de riesgo metabólico, y refleja la importancia de evaluar estos
+      mecanismos en cada paciente.</p>
+    </div>
+
+    <!-- De NASH a MASH -->
+    <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.25s">
+      <h2 class="h3 text-primary mb-3">De NASH a MASH: inflamación y fibrosis</h2>
+      <p>La NASH, ahora incluida bajo el concepto de <strong>MASH (Metabolic dysfunction-Associated
+      Steatohepatitis)</strong>, describe una etapa más avanzada en la que el hígado no solo acumula
+      grasa, sino que presenta inflamación y daño celular, que puede conducir a fibrosis y,
+      eventualmente, cirrosis si no se detecta y maneja a tiempo.</p>
+      <ul>
+        <li><strong>No todas las personas con MASLD desarrollan MASH</strong>, pero la presencia de
+        inflamación aumenta el riesgo de progresión.</li>
+        <li>Identificar los factores de riesgo y monitorear el hígado mediante estudios como
+        <strong>FibroScan</strong> o <strong>biopsia</strong> cuando sea necesario permite tomar decisiones oportunas.</li>
+      </ul>
+    </div>
+
+    <!-- Imagen secundaria -->
+    <div class="row mb-5 text-center">
+      <img class="img-fluid rounded shadow"
+           style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+           src="{{ url_for('static', filename='img/BLOGOCT4.webp') }}"
+           alt="Símbolo de interrogación sobre un hígado graso para ilustrar dudas de MASLD y MASH"
+           loading="lazy">
+    </div>
+
+    <!-- Importancia de la actualización -->
+    <div class="bg-white p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="h3 text-primary mb-3">¿Por qué es importante esta actualización terminológica?</h2>
+      <ol class="mb-0">
+        <li><strong>Refleja la causa metabólica:</strong> el nuevo nombre enfatiza que el hígado graso no es solo
+        un problema de acumulación de grasa, sino un reflejo de alteraciones metabólicas
+        sistémicas.</li>
+        <li><strong>Facilita la investigación clínica:</strong> al unificar criterios, se pueden comparar resultados de
+        estudios con mayor precisión.</li>
+        <li><strong>Mejora la comunicación médico-paciente:</strong> entender la relación entre metabolismo y
+        salud hepática ayuda a tomar decisiones de prevención y seguimiento más informadas.</li>
+      </ol>
+    </div>
+
+    <!-- Lo que deben tener en cuenta -->
+    <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.35s">
+      <h2 class="h3 text-primary mb-3">Lo que los pacientes deben tener en cuenta</h2>
+      <ul>
+        <li><strong>Los hábitos saludables son esenciales, pero no sustituyen la supervisión médica.</strong>
+        Mantener actividad física, alimentación equilibrada y control metabólico ayuda a reducir
+        riesgos, pero siempre es necesario acudir a un especialista.</li>
+        <li><strong>Detección temprana:</strong> incluso pacientes delgados o con IMC normal pueden tener
+        MASLD. Los controles periódicos son clave para prevenir complicaciones.</li>
+        <li><strong>Seguimiento individualizado:</strong> cada paciente requiere un enfoque adaptado a su perfil
+        metabólico y hepático.</li>
+      </ul>
+      <p class="mb-0">La transición de NAFLD a MASLD y de NASH a MASH no cambia únicamente los nombres;
+      representa un avance en cómo entendemos y abordamos las enfermedades hepáticas.
+      Reconocer los factores metabólicos subyacentes, vigilar la inflamación y el daño hepático, y
+      mantener hábitos saludables bajo supervisión médica son pasos fundamentales para cuidar el
+      hígado.</p>
+    </div>
+
+    <!-- Bloque CIG -->
+    <div class="bg-white p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.4s">
+      <h2 class="h3 text-primary">Atención especializada en CIG</h2>
+      <p class="mb-0">En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> contamos con especialistas que
+      pueden evaluar tu salud hepática, explicarte tu riesgo metabólico y orientarte en los pasos
+      necesarios para proteger tu hígado de manera responsable. <strong>Agenda tu consulta en CIG y
+      conoce tu estado hepático con expertos.</strong></p>
+    </div>
+
+    <!-- CTA WhatsApp -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <h3 class="mb-4">¿Necesitas orientación personalizada?</h3>
+        <p class="mb-4">Escríbenos por WhatsApp y con gusto te atendemos.</p>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20MASLD%2FMASH%20y%20mi%20riesgo%20metab%C3%B3lico%20en%20CIG%20Durango."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'masld_mash_durango'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+          </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20MASLD%2FMASH%20y%20mi%20riesgo%20metab%C3%B3lico%20en%20CIG%20Universidad."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'masld_mash_universidad'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Referencias -->
+    <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.45s">
+      <h3 class="text-white h4">Referencias</h3>
+      <ul class="mb-0">
+        <li>Eslam, M., et al. (2023). A new definition for metabolic dysfunction-associated fatty liver
+        disease: An international expert consensus statement. <em>Journal of Hepatology</em>, 78(4), 859–873.</li>
+        <li>Younossi, Z. M., et al. (2019). Nonalcoholic fatty liver disease in lean individuals. <em>Nature
+        Reviews Gastroenterology &amp; Hepatology</em>, 16(4), 211–220.</li>
+        <li>Chalasani, N., et al. (2023). The diagnosis and management of nonalcoholic fatty liver
+        disease: Practice guidance. <em>Hepatology</em>.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
