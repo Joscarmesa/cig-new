@@ -1,0 +1,191 @@
+```jinja
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>MASH hoy: por qué hay pocas terapias aprobadas y qué viene — CIG</title>
+<meta name="description"
+    content="La MASH (esteatohepatitis asociada a disfunción metabólica) tiene pocas terapias aprobadas por su complejidad y retos regulatorios. Conoce qué se espera, cómo avanza la investigación y cuándo consultar.">
+<link rel="canonical"
+    href="{{ url_for('blog_detail', slug='mash-hoy-terapias-aprobadas-y-que-viene', _external=True) }}">
+<meta property="og:title" content="MASH hoy: por qué hay pocas terapias aprobadas y qué viene — CIG">
+<meta property="og:description"
+    content="Qué es MASH, por qué hay pocas terapias aprobadas, avances esperados y cuándo acudir al especialista.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="{{ url_for('static', filename='img/BLOGOCT5.webp', _external=True) }}">
+<meta property="og:url"
+    content="{{ url_for('blog_detail', slug='mash-hoy-terapias-aprobadas-y-que-viene', _external=True) }}">
+<meta name="twitter:card" content="summary_large_image">
+
+{# Schema.org Article #}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "MASH hoy: por qué hay pocas terapias aprobadas y qué viene",
+    "description": "La MASH tiene pocas terapias aprobadas; revisamos la complejidad de la enfermedad, retos de los ensayos clínicos y avances que vienen.",
+    "image": ["{{ url_for('static', filename='img/BLOGOCT5.webp', _external=True) }}"],
+    "author": {"@type":"Organization","name":"Centro de Investigación y Gastroenterología (CIG)"},
+    "publisher": {"@type":"Organization","name":"CIG","logo":{"@type":"ImageObject","url":"{{ url_for('static', filename='img/logo.webp', _external=True) }}"}},
+    "mainEntityOfPage": "{{ url_for('blog_detail', slug='mash-hoy-terapias-aprobadas-y-que-viene', _external=True) }}"
+  }
+  </script>
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-mash-hoy">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">MASH hoy: por qué hay pocas terapias aprobadas y qué viene</h1>
+        </div>
+
+        <!-- Intro -->
+        <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.15s">
+            <p class="mb-3">
+                La <strong>MASH (Metabolic dysfunction-associated steatohepatitis)</strong>, antes conocida como NASH,
+                es una enfermedad hepática progresiva caracterizada por la acumulación de grasa en el hígado acompañada
+                de inflamación y daño celular. A pesar de su creciente prevalencia, el número de <strong>terapias
+                    aprobadas sigue siendo limitado</strong>, lo que refleja la complejidad de la enfermedad y la
+                rigurosidad de los procesos regulatorios.
+            </p>
+        </div>
+
+        <!-- Imagen principal -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGOCT5.webp') }}"
+                alt="Médica evaluando a paciente con sospecha de MASH en consulta" loading="lazy"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        </div>
+
+        <!-- Sección: Por qué hay pocas terapias -->
+        <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">Por qué hay pocas terapias aprobadas</h2>
+
+            <h3 class="h5 mb-1"><strong>Complejidad de la enfermedad</strong></h3>
+            <p class="mb-3">
+                La MASH no es solo hígado graso; implica <strong>inflamación, fibrosis y disfunción metabólica</strong>.
+                Esto significa que un tratamiento eficaz debe actuar en múltiples frentes: reducir la grasa, controlar
+                la inflamación y proteger contra la progresión a cirrosis o cáncer hepático.
+            </p>
+
+            <h3 class="h5 mb-1"><strong>Desafíos en el desarrollo clínico</strong></h3>
+            <p class="mb-3">
+                Los ensayos clínicos en MASH requieren evaluaciones a largo plazo, incluyendo <strong>biopsias
+                    hepáticas</strong> para medir fibrosis y mejora histológica. Estos estudios son costosos, invasivos
+                y toman años, lo que ralentiza la aprobación de nuevas terapias.
+            </p>
+
+            <h3 class="h5 mb-1"><strong>Variabilidad entre pacientes</strong></h3>
+            <p class="mb-0">
+                La progresión de MASH puede diferir mucho de un paciente a otro, dependiendo de factores como edad,
+                genética, resistencia a la insulina o enfermedades asociadas como diabetes y obesidad. Esta
+                heterogeneidad dificulta demostrar <strong>eficacia consistente</strong> en todos los grupos durante los
+                ensayos clínicos.
+            </p>
+        </div>
+
+        <!-- Imagen secundaria -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGOCT6.webp') }}"
+                alt="Ilustración de hígado inflamado representando MASH" loading="lazy"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        </div>
+
+        <!-- Avances -->
+        <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">Qué avances se esperan</h2>
+            <p class="mb-3">Aunque actualmente hay pocas terapias aprobadas, la investigación activa ha generado
+                candidatos prometedores que buscan:</p>
+            <ul class="mb-3">
+                <li><strong>Reducir la acumulación de grasa</strong> en el hígado mediante moduladores metabólicos.</li>
+                <li><strong>Disminuir la inflamación hepática</strong> a través de agentes antiinflamatorios
+                    específicos.</li>
+                <li><strong>Frenar la progresión de fibrosis</strong> con fármacos antifibróticos que protejan la
+                    estructura hepática.</li>
+            </ul>
+            <p class="mb-0">
+                Se espera que estos avances, junto con una <strong>detección temprana</strong> más precisa mediante
+                FibroScan, elastografía y biomarcadores, permitan tratar a los pacientes antes de que desarrollen
+                complicaciones graves.
+            </p>
+        </div>
+
+        <!-- Recordatorios al paciente -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h3 text-primary mb-3">Lo que los pacientes deben tener presente</h2>
+            <ul class="mb-3">
+                <li><strong>MASH es progresiva:</strong> aunque los síntomas sean leves o inexistentes al inicio, el
+                    daño hepático puede avanzar silenciosamente.</li>
+                <li><strong>Hábitos saludables son complementarios:</strong> una alimentación equilibrada, actividad
+                    física y control metabólico son importantes, pero no sustituyen la evaluación médica.</li>
+                <li><strong>Detección temprana salva hígados:</strong> si tienes factores de riesgo como diabetes,
+                    obesidad o antecedentes familiares de enfermedad hepática, acude a revisiones periódicas.</li>
+            </ul>
+            <p class="mb-0">
+                El tratamiento de la MASH sigue siendo un reto médico y científico, con pocas terapias aprobadas hasta
+                la fecha. Sin embargo, la investigación en curso promete opciones más dirigidas y efectivas en los
+                próximos años. Mientras tanto, la <strong>supervisión médica</strong>, el seguimiento especializado y
+                los hábitos saludables son la mejor estrategia para preservar la función hepática y prevenir
+                complicaciones.
+            </p>
+        </div>
+
+        <!-- CIG -->
+        <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.35s">
+            <p class="mb-0">
+                En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> brindamos atención integral,
+                interpretación de estudios como <strong>FibroScan</strong> y seguimiento personalizado para pacientes
+                con MASH.
+            </p>
+        </div>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-2">📍 Agenda tu consulta en CIG y protege tu hígado a tiempo</h3>
+                <p class="mb-4">Escríbenos por WhatsApp y con gusto te orientamos.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20MASH%20y%20mis%20opciones%20de%20atenci%C3%B3n%20en%20Durango."
+                        target="_blank" rel="noopener"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'mash_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20MASH%20y%20mis%20opciones%20de%20atenci%C3%B3n%20en%20Universidad."
+                        target="_blank" rel="noopener"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'mash_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.4s">
+            <h3 class="text-white h4">Referencias</h3>
+            <ul class="mb-0">
+                <li>Younossi, Z. M., et al. (2023). Current and emerging therapies for nonalcoholic steatohepatitis.
+                    <em>Nature Reviews Gastroenterology &amp; Hepatology</em>.</li>
+                <li>Chalasani, N., et al. (2023). The diagnosis and management of nonalcoholic fatty liver disease:
+                    Practice guidance. <em>Hepatology</em>.</li>
+                <li>Loomba, R., et al. (2022). Emerging therapies for NASH: Mechanisms and clinical evidence.
+                    <em>Journal of Hepatology</em>.</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+```

@@ -163,3 +163,9 @@ def que_es_un_protocolo_de_investigacion_clinica():
 @blog_bp.route('/blog/mash_masd')
 def mash_masd():
     return render_template('blog_content/blog/mash_masd.html', canonical_url="https://higadograso.mx/blog/mash_masd")
+
+@blog_bp.route('/blog/mash_por_que_hay_pocas_terapias_aprobadas')
+def mash_por_que_hay_pocas_terapias_aprobadas():
+    return render_template('blog_content/blog/mash_por_que_hay_pocas_terapias_aprobadas.html', canonical_url="https://higadograso.mx/blog/mash_por_que_hay_pocas_terapias_aprobadas")
+
+
