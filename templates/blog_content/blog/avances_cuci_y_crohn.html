@@ -1,0 +1,166 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Avances 2024–2025 en CUCI y Crohn: lo que debes saber — CIG</title>
+<meta name="description"
+    content="Resumen claro y actualizado de los avances 2024–2025 en colitis ulcerosa y enfermedad de Crohn: terapias dirigidas, monitoreo, manejo integral y cuándo acudir al especialista.">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="blog-avances-eii-2025">
+    <div class="container">
+
+        <!-- Título -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Avances 2024–2025 en CUCI y Crohn: lo que debes saber</h1>
+        </div>
+
+        <!-- Intro -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.15s">
+            <p class="mb-3">
+                Las enfermedades inflamatorias intestinales (EII), como la <strong>colitis ulcerosa crónica idiopática
+                    (CUCI)</strong> y la <strong>enfermedad de Crohn</strong>, son condiciones crónicas del aparato
+                digestivo que afectan a millones de personas en todo el mundo. Aunque los tratamientos han avanzado
+                significativamente, estas enfermedades siguen siendo progresivas y requieren seguimiento médico
+                especializado para evitar complicaciones como <em>sangrado, estenosis, fístulas o cirugía</em>.
+            </p>
+            <p class="mb-0">
+                En los últimos años, los estudios clínicos y la investigación en terapias han generado nuevas opciones y
+                estrategias para el manejo de la CUCI y la enfermedad de Crohn, centradas en controlar la inflamación,
+                mejorar la calidad de vida y reducir el riesgo de complicaciones.
+            </p>
+        </div>
+
+        <!-- Imagen 1 -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                src="{{ url_for('static', filename='img/BLOGOCT8.webp') }}"
+                alt="Paciente con EII iniciando tratamiento farmacológico" loading="lazy">
+        </div>
+
+        <!-- Comprendiendo CUCI y Crohn -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="text-primary h3 mb-3">Comprendiendo la CUCI y la enfermedad de Crohn</h2>
+            <ul class="mb-3">
+                <li class="mb-2"><strong>CUCI:</strong> afecta principalmente el colon y el recto, provocando
+                    inflamación continua de la mucosa intestinal. Sus síntomas más comunes incluyen diarrea con sangre,
+                    urgencia para evacuar y dolor abdominal.</li>
+                <li><strong>Crohn:</strong> puede afectar cualquier segmento del tracto digestivo, desde la boca hasta
+                    el ano. La inflamación puede ser más profunda, generando úlceras, estenosis y complicaciones
+                    sistémicas.</li>
+            </ul>
+            <p class="mb-0">Ambas enfermedades son crónicas, de curso fluctuante, y requieren diagnóstico temprano y
+                seguimiento continuo.</p>
+        </div>
+
+        <!-- Avances -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.22s">
+            <h2 class="text-primary h3 mb-3">Avances recientes en tratamientos 2024–2025</h2>
+
+            <h3 class="h5">Terapias biológicas más precisas</h3>
+            <p class="mb-3">Las investigaciones han permitido desarrollar medicamentos que actúan sobre moléculas
+                específicas del sistema inmunológico, reduciendo la inflamación intestinal con menos efectos secundarios
+                en comparación con tratamientos convencionales.</p>
+
+            <h3 class="h5">Medicamentos dirigidos a la vía inflamatoria</h3>
+            <p class="mb-3">Nuevos fármacos inhiben rutas específicas de la inflamación, ofreciendo alternativas para
+                pacientes que no responden a tratamientos previos.</p>
+
+            <h3 class="h5">Monitoreo más eficaz de la enfermedad</h3>
+            <p class="mb-3">Se han optimizado marcadores serológicos y de imagen, incluyendo cápsulas endoscópicas y
+                elastografía intestinal, que permiten detectar actividad inflamatoria sin procedimientos invasivos
+                frecuentes.</p>
+
+            <h3 class="h5">Manejo integral y personalizado</h3>
+            <p class="mb-0">La investigación reciente enfatiza la importancia de planes de tratamiento individualizados,
+                combinando dieta, actividad física, control metabólico y farmacología según la gravedad y ubicación de
+                la enfermedad.</p>
+        </div>
+
+        <!-- Imagen 2 -->
+        <div class="row mb-5 text-center">
+            <img class="img-fluid rounded shadow"
+                style="max-width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                src="{{ url_for('static', filename='img/BLOGOCT7.webp') }}"
+                alt="Equipo médico realizando endoscopía para evaluar actividad inflamatoria" loading="lazy">
+        </div>
+
+        <!-- Recordatorios para pacientes -->
+        <div class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.24s">
+            <h2 class="text-primary h3 mb-3">Lo que los pacientes deben recordar</h2>
+            <ul class="mb-0">
+                <li class="mb-2"><strong>Las enfermedades inflamatorias son progresivas:</strong> aun cuando los
+                    síntomas mejoren, la inflamación puede continuar. Por eso es importante acudir a revisiones
+                    periódicas con un especialista.</li>
+                <li class="mb-2"><strong>Hábitos saludables ayudan, pero no sustituyen tratamiento:</strong>
+                    alimentación equilibrada, ejercicio y reducción de estrés son complementos, no reemplazos del
+                    seguimiento médico.</li>
+                <li><strong>Detección temprana de complicaciones:</strong> estreñimiento, sangrado, pérdida de peso o
+                    dolor abdominal persistente requieren atención inmediata.</li>
+            </ul>
+        </div>
+
+        <!-- Cierre + CTA -->
+        <div class="bg-light p-4 rounded shadow mb-4 wow fadeIn" data-wow-delay="0.26s">
+            <p class="mb-3">
+                Los avances en 2024–2025 han ampliado las opciones para quienes viven con CUCI y enfermedad de Crohn,
+                ofreciendo terapias más dirigidas y un seguimiento más preciso. Sin embargo, la <strong>supervisión
+                    médica constante</strong> sigue siendo esencial para prevenir complicaciones y mejorar la calidad de
+                vida.
+            </p>
+            <p class="mb-0">
+                En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> brindamos atención
+                especializada, evaluaciones personalizadas y orientación basada en la evidencia para ayudarte a manejar
+                tu enfermedad de manera segura y efectiva.
+            </p>
+        </div>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-2">📍 Agenda tu cita en CIG y cuida tu salud intestinal con expertos.</h3>
+                <p class="mb-4">Envíanos un WhatsApp y con gusto te orientamos.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quisiera%20agendar%20cita%20por%20un%20tema%20de%20CUCI%2FCrohn%20en%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'avances_eii_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quisiera%20agendar%20cita%20por%20un%20tema%20de%20CUCI%2FCrohn%20en%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'avances_eii_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Referencias -->
+        <div class="bg-secondary text-white p-3 rounded wow fadeIn" data-wow-delay="0.28s">
+            <h3 class="text-white h4">Referencias</h3>
+            <ul class="mb-0">
+                <li>Rubin, D. T., et al. (2024). Advances in the management of inflammatory bowel disease: 2024 update.
+                    <em>Gastroenterology</em>.</li>
+                <li>Torres, J., et al. (2023). Crohn’s disease and ulcerative colitis: Clinical practice update. <em>The
+                        Lancet Gastroenterology &amp; Hepatology</em>.</li>
+                <li>Panaccione, R., et al. (2023). Biologics and small molecules in IBD: Current perspectives.
+                    <em>Current Opinion in Gastroenterology</em>.</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

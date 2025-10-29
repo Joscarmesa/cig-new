@@ -168,4 +168,9 @@ def mash_masd():
 def mash_por_que_hay_pocas_terapias_aprobadas():
     return render_template('blog_content/blog/mash_por_que_hay_pocas_terapias_aprobadas.html', canonical_url="https://higadograso.mx/blog/mash_por_que_hay_pocas_terapias_aprobadas")
 
+@blog_bp.route('/blog/avances_cuci_y_crohn')
+def avances_cuci_y_crohn():
+    return render_template('blog_content/blog/avances_cuci_y_crohn.html', canonical_url="https://higadograso.mx/blog/avances_cuci_y_crohn")
+
+
 
