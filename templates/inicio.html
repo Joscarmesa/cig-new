@@ -87,55 +87,77 @@
 
 
 <!-- Banner Start -->
-<div class="container-fluid banner mb-5" id="banner">
+<section class="container-fluid banner mb-5" id="banner" role="region" aria-labelledby="banner-title">
   <div class="container">
-    <div class="row gx-0">
-      <!-- Primera columna, ahora ocupa 6 de 12 unidades -->
-      <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
-        <div class="bg-primary d-flex flex-column p-5" style="height: 300px">
-          <h3 class="text-white text-center display-7 mb-4">Atención telefónica y en línea</h3>
-          <div class="d-flex justify-content-between text-white mb-3">
-            <h6 class="text-white mb-0">Lunes a Viernes</h6>
-            <p class="mb-0">08:00am - 07:30pm</p>
+    <div class="row g-4 align-items-stretch">
+
+      <!-- Horarios -->
+      <div class="col-lg-6">
+        <article class="card h-100 bg-primary text-white shadow-sm">
+          <div class="card-body p-5 d-flex flex-column">
+            <h2 class="h3 text-center mb-4" id="banner-title">Atención telefónica y en línea</h2>
+
+            <dl class="mb-0">
+              <div class="d-flex justify-content-between border-white-25 pb-2 mb-3">
+                <dt class="mb-0 fw-semibold">Lunes a viernes</dt>
+                <dd class="mb-0">
+                  <time datetime="08:00">08:00</time>–<time datetime="19:30">19:30</time>
+                </dd>
+              </div>
+              <div class="d-flex justify-content-between border-white-25 pb-2 mb-3">
+                <dt class="mb-0 fw-semibold">Sábado</dt>
+                <dd class="mb-0">
+                  <time datetime="10:00">10:00</time>–<time datetime="15:30">15:30</time>
+                </dd>
+              </div>
+              <div class="d-flex justify-content-between">
+                <dt class="mb-0 fw-semibold">Domingo</dt>
+                <dd class="mb-0">Cerrado</dd>
+              </div>
+            </dl>
           </div>
-          <div class="d-flex justify-content-between text-white mb-3">
-            <h6 class="text-white mb-0">Sabado</h6>
-            <p class="mb-0">10:00am - 3:30pm</p>
-          </div>
-          <div class="d-flex justify-content-between text-white mb-3">
-            <h6 class="text-white mb-0">Domingo</h6>
-            <p class="mb-0">Cerrado</p>
-          </div>
-        </div>
+        </article>
       </div>
-      <!-- Segunda columna, también ocupa 6 de 12 unidades -->
-      <div class="col-lg-6 wow zoomIn" data-wow-delay="0.6s">
-        <div class="bg-secondary d-flex flex-column p-5" style="height: 300px">
-          <h3 class="text-white text-center mb-4">Información de contacto</h3>
-          <div class="contact-info mb-3">
-            <div class="d-flex justify-content-between">
-              <span class="text-white">Sucursal Durango:</span>
-              <span class="text-white">551-054-6591</span>
+
+      <!-- Contacto -->
+      <div class="col-lg-6" itemscope itemtype="https://schema.org/Organization">
+        <article class="card h-100 bg-secondary text-white shadow-sm">
+          <div class="card-body p-5 d-flex flex-column">
+            <h2 class="h3 text-center mb-4">Información de contacto</h2>
+
+            <div class="mb-4" itemprop="department" itemscope itemtype="https://schema.org/ContactPoint">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="fw-semibold">Sucursal Durango</span>
+                <a class="link-light text-decoration-underline" itemprop="telephone" href="tel:+525510546591">55 1054
+                  6591</a>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-semibold">WhatsApp</span>
+                <a class="link-light text-decoration-underline" rel="noopener" target="_blank"
+                  href="https://wa.me/525565430983">55 6543 0983</a>
+              </div>
             </div>
-            <div class="d-flex justify-content-between">
-              <span class="text-white">WhatsApp:</span>
-              <span class="text-white">556-543-0983</span>
-            </div>
-            <div class="d-flex justify-content-between">
-              <span class="text-white">Sucursal Universidad:</span>
-              <span class="text-white">559-314-4340</span>
-            </div>
-            <div class="d-flex justify-content-between">
-              <span class="text-white">WhatsApp:</span>
-              <span class="text-white">564-407-1939</span>
+
+            <div class="mb-4" itemprop="department" itemscope itemtype="https://schema.org/ContactPoint">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="fw-semibold">Sucursal Universidad</span>
+                <a class="link-light text-decoration-underline" itemprop="telephone" href="tel:+525593144340">55 9314
+                  4340</a>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-semibold">WhatsApp</span>
+                <a class="link-light text-decoration-underline" rel="noopener" target="_blank"
+                  href="https://wa.me/525644071939">56 4407 1939</a>
+              </div>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </div>
-</div>
+</section>
 <!-- Banner End -->
+
 
 <!-- WhatsApp CTA Start -->
 <div class="container my-5">
@@ -597,6 +619,9 @@
             <strong class="text-white">Sin embargo, el Centro de Investigación y Gastroenterología no ofrece tratamiento
               directo para enfermedades cardiovasculares.</strong>
           </p>
+
+          <!-- Inicio de solicitud de laboratorios -->
+
           <p class="text-white mb-2">
             Para fortalecer su diagnóstico, le solicitamos que, en la medida de lo posible, nos proporcione los
             siguientes estudios de laboratorio para su próxima visita:
