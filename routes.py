@@ -71,6 +71,7 @@ def register_routes(app, mail, db):
             referido_nombre = request.form.get('referido_nombre', '').strip()
             sede = request.form.get('sede')
             participar = request.form.get('participar')
+            labs = request.form.get('labs')
             metodo_contacto = request.form.get('contacto')
             telefono = request.form.get('telefono', '').strip()
             whatsapp = request.form.get('whatsapp', '').strip()
@@ -100,6 +101,7 @@ def register_routes(app, mail, db):
             Referido: {referido} ({referido_nombre})
             Sede seleccionada: {sede}
             Interés en participar: {participar}
+            labs: {labs}
             Método de contacto preferido: {metodo_contacto}
             Teléfono: {telefono}
             WhatsApp: {whatsapp}
