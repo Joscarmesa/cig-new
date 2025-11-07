@@ -172,5 +172,9 @@ def mash_por_que_hay_pocas_terapias_aprobadas():
 def avances_cuci_y_crohn():
     return render_template('blog_content/blog/avances_cuci_y_crohn.html', canonical_url="https://higadograso.mx/blog/avances_cuci_y_crohn")
 
+@blog_bp.route('/blog/fibrosis_hepatica_f0_f4')
+def fibrosis_hepatica_f0_f4():
+    return render_template('blog_content/blog/fibrosis_hepatica_f0_f4.html', canonical_url="https://higadograso.mx/blog/fibrosis_hepatica_f0_f4")
+
 
 
