@@ -176,5 +176,8 @@ def avances_cuci_y_crohn():
 def fibrosis_hepatica_f0_f4():
     return render_template('blog_content/blog/fibrosis_hepatica_f0_f4.html', canonical_url="https://higadograso.mx/blog/fibrosis_hepatica_f0_f4")
 
+@blog_bp.route('/blog/esteatosis_s1_s3')
+def esteatosis_s1_s3():
+    return render_template('blog_content/blog/esteatosis_s1_s3.html', canonical_url="https://higadograso.mx/blog/esteatosis_s1_s3")
 
 
