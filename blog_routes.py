@@ -180,4 +180,8 @@ def fibrosis_hepatica_f0_f4():
 def esteatosis_s1_s3():
     return render_template('blog_content/blog/esteatosis_s1_s3.html', canonical_url="https://higadograso.mx/blog/esteatosis_s1_s3")
 
+@blog_bp.route('/blog/suplementos_naturales')
+def suplementos_naturales():
+    return render_template('blog_content/blog/suplementos_naturales.html', canonical_url="https://higadograso.mx/blog/suplementos_naturales")
+
 
