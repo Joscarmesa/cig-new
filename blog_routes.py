@@ -184,4 +184,6 @@ def esteatosis_s1_s3():
 def suplementos_naturales():
     return render_template('blog_content/blog/suplementos_naturales.html', canonical_url="https://higadograso.mx/blog/suplementos_naturales")
 
-
+@blog_bp.route('/blog/evolucion_de_lod_protocolos_de_investigacion')
+def evolucion_de_lod_protocolos_de_investigacion():
+    return render_template('blog_content/blog/evolucion_de_lod_protocolos_de_investigacion.html', canonical_url="https://higadograso.mx/blog/evolucion_de_lod_protocolos_de_investigacion")

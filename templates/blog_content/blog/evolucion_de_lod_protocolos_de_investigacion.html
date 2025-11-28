@@ -1,0 +1,207 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Evolución de los protocolos de investigación: hacia una medicina más precisa y personalizada — CIG</title>
+<meta name="description"
+    content="Descubre cómo han evolucionado los protocolos de investigación clínica hacia una medicina más precisa, segura y personalizada, y el papel del CIG en este proceso.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-evolucion-protocolos-investigacion">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Evolución de los protocolos de investigación: hacia una medicina más precisa y personalizada</h1>
+        </div>
+
+        <!-- Introducción -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                La <strong>investigación clínica</strong> ha recorrido un largo camino en las últimas décadas. Los protocolos,
+                que antes seguían un enfoque más generalizado, hoy buscan adaptarse a las <strong>características individuales de cada paciente</strong>.
+                Esta evolución refleja el avance hacia una <strong>medicina de precisión</strong>, donde los tratamientos se diseñan
+                considerando el perfil genético, metabólico y clínico de las personas.
+            </p>
+            <p class="mb-0">
+                Los protocolos actuales no solo mejoran la <strong>eficacia de los tratamientos</strong>, sino también su
+                <strong>seguridad</strong>, al ayudar a identificar qué terapias funcionan mejor para cada tipo de paciente.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow"
+                 src="{{ url_for('static', filename='img/BLOGNOV7.webp') }}"
+                 alt="Medicamentos e ilustración del Centro de Investigación y Gastroenterología"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- ¿Qué es un protocolo de investigación clínica? -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">¿Qué es un protocolo de investigación clínica?</h2>
+            <p>
+                Un <strong>protocolo de investigación clínica</strong> es un estudio que se lleva a cabo en seres humanos
+                para evaluar la <strong>seguridad y eficacia</strong> de un medicamento, terapia o intervención médica.
+            </p>
+            <p>
+                Antes de iniciar cualquier estudio se elabora un documento que describe detalladamente cómo se llevará a cabo,
+                siempre poniendo el <strong>beneficio del paciente y su seguridad por encima de todo</strong>. Este documento incluye:
+            </p>
+            <ul>
+                <li>Los <strong>objetivos</strong> del estudio.</li>
+                <li>La <strong>metodología</strong> y el diseño del ensayo.</li>
+                <li>Los <strong>criterios de inclusión y exclusión</strong> de los participantes.</li>
+                <li>Los <strong>tratamientos</strong> a evaluar y la forma de administrarlos.</li>
+                <li>Las <strong>medidas de seguridad y monitoreo</strong> durante todo el estudio.</li>
+            </ul>
+            <p class="mb-0">
+                Este diseño permite garantizar la <strong>validez científica y ética</strong> del estudio, asegurando que los resultados
+                sean confiables, reproducibles y ofrezcan un beneficio real al paciente.
+                En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong>, los protocolos son una herramienta clave
+                para desarrollar <strong>tratamientos innovadores</strong> y brindar a nuestros pacientes la mejor atención posible.
+            </p>
+        </section>
+
+        <!-- De la medicina general a la medicina de precisión -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow FadeIn" data-wow-delay="0.18s">
+            <h3 class="h4 mb-3">De la medicina general a la medicina de precisión</h3>
+            <p>
+                Durante muchos años, los tratamientos médicos se desarrollaban bajo un enfoque de
+                <strong>“una terapia para todos”</strong>. Sin embargo, la respuesta de los pacientes a un mismo fármaco puede
+                variar de forma importante.
+            </p>
+            <p>
+                Gracias al análisis <strong>genético, molecular y metabólico</strong>, hoy sabemos que cada persona tiene un
+                <strong>perfil biológico único</strong> que influye en cómo responde a una enfermedad o a un medicamento.
+                La medicina de precisión busca adaptar las terapias a estas características particulares, lo que permite:
+            </p>
+            <ul>
+                <li><strong>Mayor eficacia terapéutica.</strong></li>
+                <li><strong>Menores efectos adversos.</strong></li>
+                <li><strong>Mejor pronóstico y calidad de vida</strong> para los pacientes.</li>
+            </ul>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow"
+                 src="{{ url_for('static', filename='img/BLOGNOV8.webp') }}"
+                 alt="Paciente participando en un estudio clínico con supervisión médica"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Innovación: tecnología y datos -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.2s">
+            <h3 class="h4 mb-3">Innovación en los protocolos: tecnología y datos</h3>
+            <p>
+                El avance tecnológico ha transformado la forma en que se diseñan y ejecutan los protocolos clínicos.
+                Actualmente, los estudios pueden incorporar:
+            </p>
+            <ul>
+                <li><strong>Biomarcadores genéticos y moleculares</strong>, que ayudan a seleccionar pacientes que responderán mejor a ciertos tratamientos.</li>
+                <li><strong>Big Data e inteligencia artificial</strong>, para procesar grandes volúmenes de información clínica en tiempo real.</li>
+                <li><strong>Ensayos descentralizados (DCTs)</strong>, que permiten la participación de pacientes a distancia y mejoran la accesibilidad.</li>
+                <li><strong>Plataformas digitales seguras</strong> para el monitoreo y la recolección precisa de datos.</li>
+            </ul>
+            <p class="mb-0">
+                Estos avances permiten que la investigación médica sea más <strong>inclusiva, eficiente y representativa</strong>
+                de la población real.
+            </p>
+        </section>
+
+        <!-- Seguridad del paciente -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.22s">
+            <h3 class="h4 mb-3">Impacto en la seguridad del paciente</h3>
+            <p>
+                Uno de los mayores beneficios de la evolución de los protocolos clínicos es la mejora en la
+                <strong>seguridad de los participantes</strong>.
+            </p>
+            <p>
+                Los estudios se rigen por las <strong>Buenas Prácticas Clínicas (GCP, por sus siglas en inglés)</strong>,
+                un conjunto de lineamientos internacionales que garantizan la protección de los derechos, la seguridad
+                y el bienestar de los pacientes.
+            </p>
+            <p>
+                Además:
+            </p>
+            <ul>
+                <li>Los participantes pueden <strong>retirarse del estudio en cualquier momento</strong>, sin que esto afecte su atención médica.</li>
+                <li>Los comités de ética y las autoridades regulatorias <strong>supervisan continuamente</strong> la seguridad de los ensayos.</li>
+                <li>En los estudios de <strong>fase 3</strong>, la participación de los pacientes es fundamental para confirmar la seguridad y eficacia de los tratamientos antes de su aprobación.</li>
+            </ul>
+            <p class="mb-0">
+                Estas medidas aseguran que el bienestar de cada persona esté siempre por encima de los objetivos científicos.
+            </p>
+        </section>
+
+        <!-- Hacia una medicina personalizada -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.24s">
+            <h3 class="h4 mb-3">Hacia una medicina personalizada</h3>
+            <p>
+                La combinación de <strong>genómica, bioinformática y medicina clínica</strong> ha impulsado una nueva era de
+                tratamientos individualizados. En enfermedades <strong>hepáticas, gastrointestinales y metabólicas</strong>,
+                este enfoque ha sido clave para identificar <strong>biomarcadores predictivos</strong> y desarrollar
+                <strong>terapias dirigidas</strong>.
+            </p>
+            <p>
+                Por ejemplo, en pacientes con <strong>enfermedad por hígado graso (MASLD)</strong> o
+                <strong>colitis ulcerosa (CUCI)</strong>, los protocolos personalizados permiten identificar subgrupos que responden
+                mejor a ciertos medicamentos o a cambios específicos en el estilo de vida.
+            </p>
+            <p class="mb-0">
+                La evolución de los protocolos de investigación clínica representa un paso decisivo hacia una
+                <strong>medicina más inteligente, segura y personalizada</strong>. En el
+                <strong>Centro de Investigación y Gastroenterología (CIG)</strong> trabajamos continuamente en protocolos que
+                impulsan la innovación médica y contribuyen al desarrollo de una atención más precisa y humana.
+            </p>
+        </section>
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.28s">
+            <h2 class="h4 text-white mb-3">Referencias:</h2>
+            <ul class="mb-0">
+                <li>National Institutes of Health (NIH). (2023). <em>Precision Medicine and Clinical Research: The Future of Personalized Healthcare.</em></li>
+                <li>European Medicines Agency (EMA). (2022). <em>Guideline on personalized medicine and data-driven clinical trials.</em></li>
+                <li>Collins, F. S., &amp; Varmus, H. (2015). A new initiative on precision medicine. <em>New England Journal of Medicine</em>, 372(9), 793–795.</li>
+            </ul>
+        </section>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-3">¿Quieres saber si puedes participar en <strong>protocolos de investigación</strong> en el CIG?</h3>
+                <p class="mb-4">Escríbenos por WhatsApp y con gusto te orientamos.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20protocolos%20de%20investigaci%C3%B3n%20en%20la%20sede%20Durango."
+                       target="_blank"
+                       class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                       onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'protocolos_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Durango</strong>
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20protocolos%20de%20investigaci%C3%B3n%20en%20la%20sede%20Universidad."
+                       target="_blank"
+                       class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                       onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'protocolos_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Universidad</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
