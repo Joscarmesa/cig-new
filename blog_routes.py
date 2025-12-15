@@ -187,3 +187,7 @@ def suplementos_naturales():
 @blog_bp.route('/blog/evolucion_de_lod_protocolos_de_investigacion')
 def evolucion_de_lod_protocolos_de_investigacion():
     return render_template('blog_content/blog/evolucion_de_lod_protocolos_de_investigacion.html', canonical_url="https://higadograso.mx/blog/evolucion_de_lod_protocolos_de_investigacion")
+
+@blog_bp.route('/blog/fgf21_en_palabras_simples')
+def fgf21_en_palabras_simples():
+    return render_template('blog_content/blog/fgf21_en_palabras_simples.html', canonical_url="https://higadograso.mx/blog/fgf21_en_palabras_simples")

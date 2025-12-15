@@ -1,0 +1,328 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>FGF21 en palabras simples: cómo funciona y por qué está en el radar — CIG</title>
+<meta name="description"
+    content="Explicación clara y orientada a pacientes sobre FGF21: qué es, cómo actúa en el hígado graso (MASLD/MASH), qué muestran los estudios clínicos y por qué podría ser un tratamiento prometedor.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-fgf21-palabras-simples">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">FGF21 en palabras simples: cómo funciona y por qué está en el radar</h1>
+            <p class="mt-3 mb-0">Una explicación clara, validada y orientada a pacientes.</p>
+        </div>
+
+        <!-- Introducción -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                En los últimos años, un nombre empezó a tomar fuerza en el mundo de la hepatología y el metabolismo:
+                <strong>FGF21</strong>. Aunque para muchos pacientes suena como un concepto nuevo o demasiado técnico,
+                para la comunidad científica se ha convertido en una de las <strong>moléculas más prometedoras</strong>
+                para ayudar a tratar enfermedades relacionadas con el hígado y el metabolismo, como
+                <strong>MASLD y MASH</strong>.
+            </p>
+            <p class="mb-0">
+                En este artículo explicamos, de manera sencilla pero precisa, <strong>qué es FGF21, qué hace y por qué
+                    se habla tanto de él</strong>.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGDIC1.webp') }}"
+                alt="Hígado caricaturizado protegido por un paraguas con la palabra FGF21" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- ¿Qué es FGF21? -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">¿Qué es FGF21?</h2>
+            <p>
+                <strong>FGF21</strong> significa <strong>Fibroblast Growth Factor 21</strong>, una proteína que produce
+                principalmente el <strong>hígado</strong>, aunque también puede formarse en otros órganos como el
+                tejido adiposo.
+            </p>
+            <p>Su función natural es actuar como una señal que ayuda al cuerpo a regular:</p>
+            <ul>
+                <li>El <strong>uso de energía</strong>.</li>
+                <li>La forma en que procesamos los <strong>azúcares</strong>.</li>
+                <li>La <strong>quema de grasas</strong>.</li>
+                <li>La <strong>inflamación metabólica</strong>.</li>
+            </ul>
+            <p class="mb-0">
+                Podemos pensar en FGF21 como un <strong>“mensajero metabólico”</strong> que le indica al cuerpo cómo
+                manejar mejor la energía y reducir el daño asociado al metabolismo.
+            </p>
+        </section>
+
+        <!-- ¿Por qué es importante para el hígado? -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.18s">
+            <h3 class="h4 mb-3">¿Por qué es importante para el hígado?</h3>
+            <p>
+                El hígado es un órgano clave en el metabolismo. Cuando una persona tiene <strong>MASLD o MASH</strong>,
+                el hígado enfrenta tres grandes problemas:
+            </p>
+            <ol>
+                <li><strong>Acumulación de grasa</strong> en el tejido hepático.</li>
+                <li><strong>Inflamación</strong> persistente.</li>
+                <li><strong>Lesión progresiva</strong> y formación de cicatrices (fibrosis).</li>
+            </ol>
+            <p>
+                El FGF21 tiene la capacidad de intervenir en estos tres procesos. Diversos estudios han demostrado que
+                puede:
+            </p>
+            <ul>
+                <li><strong>Reducir la cantidad de grasa</strong> acumulada en el hígado.</li>
+                <li><strong>Disminuir la inflamación</strong> relacionada con el metabolismo.</li>
+                <li><strong>Mejorar la sensibilidad a la insulina</strong>.</li>
+                <li><strong>Favorecer la reparación</strong> del tejido hepático dañado.</li>
+            </ul>
+            <p class="mb-0">
+                Además, al ser una proteína que el propio cuerpo produce, los investigadores han podido diseñar
+                <strong>versiones más potentes y duraderas</strong> para usarlas como medicamentos experimentales
+                en ensayos clínicos.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGDIC2.webp') }}"
+                alt="Hígado protegido por un escudo con la palabra FGF21" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- ¿Cómo actúa FGF21 en el cuerpo? -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.2s">
+            <h3 class="h4 mb-3">¿Cómo actúa FGF21 en el cuerpo?</h3>
+            <p>
+                El efecto de FGF21 es integral; no se limita a un solo órgano. Entre los sitios donde más actúa se
+                encuentran:
+            </p>
+            <h4 class="h5 mt-3">1. En el hígado</h4>
+            <ul>
+                <li><strong>Reduce la grasa hepática</strong> al favorecer su uso como fuente de energía.</li>
+                <li><strong>Disminuye la inflamación</strong> que conduce a daño tisular.</li>
+                <li><strong>Mejora la sensibilidad a la insulina</strong> dentro del propio órgano.</li>
+            </ul>
+
+            <h4 class="h5 mt-3">2. En el tejido adiposo</h4>
+            <ul>
+                <li>Mejora la forma en que las <strong>células grasas manejan la energía</strong>.</li>
+                <li>Reduce la liberación de <strong>sustancias inflamatorias</strong> que viajan al hígado.</li>
+            </ul>
+
+            <h4 class="h5 mt-3">3. En el sistema nervioso</h4>
+            <ul>
+                <li>Ayuda a <strong>regular el apetito</strong> y la sensación de energía disponible.</li>
+            </ul>
+
+            <p class="mb-0">
+                El resultado es un efecto global: <strong>menos grasa, menos inflamación y menos señales de daño
+                    hepático</strong>.
+            </p>
+        </section>
+
+        <!-- Comparación con GLP-1 y otros tratamientos -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.22s">
+            <h3 class="h4 mb-3">¿En qué se diferencia de los GLP-1 y otros tratamientos metabólicos?</h3>
+            <p>
+                Los medicamentos basados en <strong>GLP-1</strong>, como la semaglutida, han sido muy útiles para:
+            </p>
+            <ul>
+                <li>Favorecer la <strong>bajada de peso</strong>.</li>
+                <li>Mejorar el <strong>control de la glucosa</strong>.</li>
+                <li>Reducir la <strong>inflamación metabólica</strong> general.</li>
+            </ul>
+            <p>
+                Sin embargo, los GLP-1 no siempre logran <strong>mejorar la estructura del hígado</strong>,
+                especialmente en etapas más avanzadas de MASH. Su acción se centra principalmente en el
+                <strong>apetito y el azúcar en sangre</strong>.
+            </p>
+            <p>
+                En cambio, FGF21:
+            </p>
+            <ul>
+                <li><strong>Trabaja dentro del hígado</strong>, no solo en el apetito.</li>
+                <li>Participa en <strong>vías metabólicas específicas del tejido hepático</strong>.</li>
+                <li><strong>Regula directamente la inflamación hepática</strong>.</li>
+                <li>Disminuye <strong>marcadores de daño celular</strong>.</li>
+            </ul>
+            <p class="mb-0">
+                En palabras simples: <strong>GLP-1 ayuda mucho en el peso y el metabolismo;</strong> FGF21
+                <strong>actúa de forma más directa sobre el hígado y la grasa hepática</strong>.
+            </p>
+        </section>
+
+        <!-- Lo que dicen los estudios clínicos -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.24s">
+            <h3 class="h4 mb-3">Lo que han encontrado los estudios clínicos</h3>
+            <p>
+                Los ensayos clínicos más importantes hasta el momento —como <strong>ENLIVEN</strong> y
+                <strong>HARMONY</strong>— han evaluado análogos de FGF21 (por ejemplo, pegozafermin y efruxifermin)
+                en personas con diagnóstico confirmado de MASH mediante biopsia.
+            </p>
+            <h4 class="h5 mt-2">Reducción de grasa hepática</h4>
+            <p>
+                Más del <strong>60&nbsp;% de los participantes</strong> en algunos estudios lograron reducir la grasa
+                en el hígado a un nivel considerado clínicamente relevante, medido por técnicas como
+                <strong>MRI-PDFF</strong>.
+            </p>
+
+            <h4 class="h5 mt-2">Disminución de inflamación y daño celular</h4>
+            <ul>
+                <li>Reducción importante de <strong>enzimas hepáticas</strong> como ALT y AST.</li>
+                <li>Descenso de <strong>marcadores sanguíneos de inflamación crónica</strong>.</li>
+            </ul>
+
+            <h4 class="h5 mt-2">Mejoría de la resistencia a la insulina</h4>
+            <p>
+                Un componente clave, ya que la <strong>disfunción metabólica</strong> es uno de los motores del daño
+                hepático.
+            </p>
+
+            <h4 class="h5 mt-2">Impacto en la fibrosis</h4>
+            <p>
+                Aunque aún no existe un tratamiento aprobado que revierta por completo la fibrosis avanzada, los
+                estudios con FGF21 han mostrado <strong>señales de mejoría o estabilización</strong> del tejido
+                hepático,
+                con menor formación de cicatrices sin empeorar otras características de la enfermedad.
+            </p>
+
+            <p class="mb-0">
+                Estos datos han sido revisados por expertos y publicados en revistas como
+                <em>Hepatology</em>, <em>Journal of Hepatology</em> y <em>New England Journal of Medicine</em>.
+            </p>
+        </section>
+
+        <!-- Seguridad -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.26s">
+            <h3 class="h4 mb-3">¿Es seguro? Lo que dice la evidencia</h3>
+            <p>
+                La seguridad es uno de los puntos más importantes cuando se habla de nuevos tratamientos. Hasta ahora,
+                los estudios clínicos con FGF21 han mostrado un <strong>perfil de seguridad favorable</strong>:
+            </p>
+            <ul>
+                <li>Los efectos secundarios más frecuentes han sido <strong>leves</strong> (dolor en el sitio de
+                    inyección, cansancio o malestar pasajero).</li>
+                <li>No se han reportado efectos graves que hayan detenido su desarrollo.</li>
+                <li>A diferencia de algunos agonistas GLP-1, FGF21 <strong>no suele producir náuseas o vómitos</strong>,
+                    lo que podría facilitar la adherencia al tratamiento.</li>
+            </ul>
+            <p class="mb-0">
+                Este perfil de seguridad ha permitido avanzar hacia <strong>estudios fase 3</strong>, con un número
+                mayor de participantes y seguimiento más prolongado.
+            </p>
+        </section>
+
+        <!-- Futuro y mensaje para pacientes -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.28s">
+            <h3 class="h4 mb-3">¿Qué lo hace tan prometedor para el futuro cercano?</h3>
+            <p>
+                Si los resultados de los estudios en curso confirman lo que ya se ha visto, FGF21 podría convertirse en:
+            </p>
+            <ul>
+                <li>El <strong>primer tratamiento dirigido específicamente a MASH</strong>.</li>
+                <li>Una opción para <strong>modificar el curso de la enfermedad</strong> antes de que progrese a
+                    cirrosis.</li>
+                <li>Una <strong>herramienta que complemente</strong> los cambios en el estilo de vida.</li>
+                <li>Una forma de <strong>actuar sobre la inflamación y el daño hepático</strong> sin depender únicamente
+                    de la pérdida de peso.</li>
+            </ul>
+            <p>
+                Para muchos especialistas, FGF21 representa una <strong>oportunidad real</strong> de intervenir en una
+                enfermedad que hasta hace poco no tenía tratamiento específico.
+            </p>
+
+            <h3 class="h4 mt-4 mb-3">Lo más importante para los pacientes</h3>
+            <ul>
+                <li><strong>FGF21 no es una “moda científica”</strong>; es una molécula que el cuerpo ya produce y que
+                    está mostrando beneficios clínicos reales.</li>
+                <li>No sustituye los <strong>cambios de estilo de vida</strong> ni la atención médica, pero podría
+                    ayudar a mejorar lo que hoy no se resuelve completamente con los tratamientos disponibles.</li>
+                <li>Puede convertirse en una <strong>herramienta clave para el futuro de MASLD/MASH</strong>.</li>
+                <li>Es fundamental obtener más datos en <strong>población mexicana</strong> para conocer mejor su
+                    comportamiento en nuestro contexto.</li>
+            </ul>
+            <p class="mb-0">
+                En los próximos años podríamos ver, por primera vez, un <strong>tratamiento diseñado específicamente
+                    para MASH</strong>.
+            </p>
+        </section>
+
+        <!-- Papel del CIG -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h3 class="h4 mb-3">El papel del CIG en México</h3>
+            <p>
+                En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> damos seguimiento cercano a los
+                avances internacionales en terapias emergentes para enfermedades hepáticas, incluyendo aquellas
+                basadas en FGF21.
+            </p>
+            <p class="mb-0">
+                Nuestro equipo médico se mantiene actualizado con la <strong>evidencia más reciente</strong> para
+                orientar
+                a los pacientes sobre opciones de evaluación, manejo integral y, cuando corresponda, <strong>acceso a
+                    terapias innovadoras</strong> a través de las vías regulatorias adecuadas.
+            </p>
+        </section>
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.32s">
+            <h2 class="h4 text-white mb-3">Referencias:</h2>
+            <ul class="mb-0">
+                <li>Flippo, K. H., &amp; Potthoff, M. J. (2021). Metabolic messengers: FGF21. <em>Cell Metabolism</em>,
+                    33(9), 1673–1692.</li>
+                <li>Loomba, R., et al. (2023). Randomized, controlled trial of the FGF21 analogue pegozafermin in
+                    patients with nonalcoholic steatohepatitis (ENLIVEN). <em>New England Journal of Medicine</em> /
+                    reportes de ensayo clínico.</li>
+                <li>Harrison, S. A. (2024). FGF21 agonists: An emerging therapeutic for metabolic dysfunction-associated
+                    steatohepatitis and beyond. <em>Journal of Hepatology</em>.</li>
+                <li>ENLIVEN — ClinicalTrials.gov (NCT04929483). Información del ensayo clínico con pegozafermin.</li>
+                <li>European Association for the Study of the Liver (EASL). (2024). Clinical practice guidance on
+                    MASLD/MASH. <em>Journal of Hepatology</em>.</li>
+                <li>American Association for the Study of Liver Diseases (AASLD). (2023). Practice guidance: Clinical
+                    assessment and management of MASLD/MASH.</li>
+                <li>Cui, X., et al. (2025). Targeting FGF21: preclinical and clinical perspectives. <em>Frontiers in
+                        Pharmacology</em>.</li>
+            </ul>
+        </section>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-3">¿Quieres saber más sobre <strong>FGF21</strong> y la evaluación de hígado graso?</h3>
+                <p class="mb-4">Escríbenos por WhatsApp y con gusto te orientamos.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20FGF21%20y%20la%20evaluaci%C3%B3n%20de%20h%C3%ADgado%20graso%20en%20la%20sede%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'fgf21_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Durango</strong>
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20FGF21%20y%20la%20evaluaci%C3%B3n%20de%20h%C3%ADgado%20graso%20en%20la%20sede%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'fgf21_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Universidad</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
