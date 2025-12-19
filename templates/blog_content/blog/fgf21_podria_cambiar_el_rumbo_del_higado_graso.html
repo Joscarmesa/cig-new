@@ -1,0 +1,289 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>De la teoría a los datos: por qué FGF21 podría cambiar el rumbo del hígado graso avanzado (MASH) — CIG</title>
+<meta name="description"
+    content="Resumen para pacientes sobre FGF21: cómo pasó de ser una teoría a contar con datos clínicos sólidos y por qué podría convertirse en el primer tratamiento específico para MASH.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-fgf21-mash-datos">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">De la teoría a los datos: ¿por qué FGF21 podría cambiar el rumbo del hígado graso avanzado (MASH)?</h1>
+        </div>
+
+        <!-- Introducción -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                Durante muchos años, el <strong>hígado graso avanzado</strong> —conocido como <strong>MASH</strong>—
+                ha sido una enfermedad difícil de tratar. Aunque afecta a millones de personas en el mundo y puede
+                avanzar hacia <strong>fibrosis y cirrosis</strong>, no existían tratamientos aprobados capaces de
+                detener su progresión.
+            </p>
+            <p>
+                La comunidad médica sabía qué ocurría en el hígado, pero no contaba con <strong>herramientas específicas
+                para intervenir</strong>. Esto empezó a cambiar cuando se comenzó a estudiar una molécula llamada
+                <strong>FGF21</strong>.
+            </p>
+            <p class="mb-0">
+                Lo que inició como una idea basada en biología molecular hoy cuenta con <strong>resultados clínicos
+                sólidos</strong> que indican que podría ser una de las opciones más prometedoras para el hígado graso
+                avanzado. En este blog explicamos cómo pasamos de la teoría a los datos y qué significa esto para los
+                pacientes.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow"
+                 src="{{ url_for('static', filename='img/BLOGDIC3.webp') }}"
+                 alt="Hígado caricaturizado con bata de laboratorio y probeta"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- ¿Qué había antes? -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">¿Qué había antes? El reto de tratar el MASH</h2>
+            <p>
+                El MASH es la forma más avanzada y peligrosa del hígado graso. Además de grasa, presenta
+                <strong>inflamación</strong> y <strong>daño en el tejido hepático</strong>.
+            </p>
+            <p>
+                El problema es que estos cambios pueden progresar silenciosamente hacia:
+            </p>
+            <ul>
+                <li><strong>Fibrosis</strong>.</li>
+                <li><strong>Cirrosis</strong>.</li>
+                <li>Complicaciones graves como <strong>hipertensión portal</strong> o <strong>cáncer hepático</strong>.</li>
+            </ul>
+            <p>
+                Durante años, las únicas recomendaciones disponibles eran <strong>controlar el peso, mejorar la
+                alimentación y realizar actividad física</strong>. Aunque estas medidas son indispensables, muchos
+                pacientes no logran detener el avance de la enfermedad solo con cambios en el estilo de vida.
+            </p>
+            <p class="mb-0">
+                Aquí surge una necesidad urgente: contar con un <strong>tratamiento capaz de actuar directamente
+                sobre el hígado</strong>.
+            </p>
+        </section>
+
+        <!-- ¿Por qué FGF21 parecía buena idea? -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.18s">
+            <h3 class="h4 mb-3">¿Por qué el FGF21 parecía una buena idea desde el inicio?</h3>
+            <p>
+                El <strong>FGF21</strong> es una hormona que produce naturalmente el hígado para <strong>regular el
+                metabolismo</strong>. Los científicos observaron que, en personas con enfermedades metabólicas como
+                diabetes y MASH, los niveles de FGF21 están alterados y su acción es insuficiente.
+            </p>
+            <p>
+                Esto abrió una posibilidad: <strong>¿y si se diseñaba una versión sintética más potente y estable?</strong>
+            </p>
+            <p>La teoría era prometedora por tres razones principales:</p>
+            <ol>
+                <li>Actúa <strong>directamente sobre las células del hígado</strong>.</li>
+                <li>Mejora cómo el cuerpo maneja <strong>grasas y azúcares</strong>.</li>
+                <li>Reduce la <strong>inflamación y el estrés celular</strong>, componentes centrales del MASH.</li>
+            </ol>
+            <p class="mb-0">
+                Sin embargo, la ciencia necesita más que posibilidades: necesita <strong>datos clínicos</strong>.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow"
+                 src="{{ url_for('static', filename='img/BLOGDIC4.webp') }}"
+                 alt="Paciente mayor sonriente con ilustración de hígado sano gracias a FGF21"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Evidencia clínica -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.2s">
+            <h3 class="h4 mb-3">De la teoría a los datos: lo que han mostrado los estudios clínicos</h3>
+            <p>
+                En los últimos años se han realizado <strong>estudios clínicos</strong> con versiones sintéticas de FGF21
+                en personas con MASH confirmado por biopsia. Entre los más destacados se encuentran:
+            </p>
+
+            <h4 class="h5 mt-2">El estudio ENLIVEN</h4>
+            <p>
+                Evaluó un análogo de FGF21 en pacientes con MASH. Los resultados fueron relevantes:
+            </p>
+            <ul>
+                <li>Más del <strong>70&nbsp;% de los pacientes</strong> redujeron al menos un 30&nbsp;% la grasa en el hígado.</li>
+                <li>Se observaron <strong>mejoras importantes en inflamación</strong> y en indicadores de <strong>daño celular</strong>.</li>
+                <li>Se registró una tasa significativa de <strong>reducción de fibrosis</strong>, sin empeorar otros aspectos de la enfermedad.</li>
+            </ul>
+
+            <h4 class="h5 mt-3">El estudio HARMONY</h4>
+            <p>
+                Confirmó beneficios similares, destacando:
+            </p>
+            <ul>
+                <li><strong>Reducción rápida y sostenida</strong> de la grasa hepática.</li>
+                <li><strong>Mejoría metabólica integral</strong>, incluso en personas con obesidad o diabetes.</li>
+                <li><strong>Buena tolerancia</strong> general al tratamiento.</li>
+            </ul>
+
+            <p class="mb-0">
+                En conjunto, estos datos señalan que el FGF21 no solo reduce grasa, sino que impacta
+                directamente el proceso que daña el hígado, incluyendo <strong>inflamación y cicatrización</strong>.
+            </p>
+        </section>
+
+        <!-- Comparación con otras terapias -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow FadeIn" data-wow-delay="0.22s">
+            <h3 class="h4 mb-3">FGF21 vs otras terapias metabólicas: una diferencia clave</h3>
+            <p>
+                Existen otros medicamentos que ayudan a mejorar el metabolismo, como los <strong>agonistas GLP-1</strong>.
+                Estos se enfocan principalmente en:
+            </p>
+            <ul>
+                <li>Controlar el <strong>apetito</strong>.</li>
+                <li>Mejorar los niveles de <strong>azúcar en sangre</strong>.</li>
+            </ul>
+            <p>
+                El FGF21 sobresale porque:
+            </p>
+            <ul>
+                <li>Actúa en el <strong>hígado de manera directa</strong>.</li>
+                <li>Reduce <strong>grasa, inflamación y fibrosis</strong> al mismo tiempo.</li>
+                <li>Muestra <strong>menor incidencia de náuseas o vómito</strong>.</li>
+                <li>Mejora la <strong>sensibilidad a la insulina</strong> sin depender solamente de la pérdida de peso.</li>
+            </ul>
+            <p class="mb-0">
+                Esto explica por qué muchos especialistas consideran al FGF21 como la <strong>molécula con mayor
+                potencial</strong> en el tratamiento de enfermedades hepáticas progresivas.
+            </p>
+        </section>
+
+        <!-- Seguridad -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.24s">
+            <h3 class="h4 mb-3">¿Es seguro? Lo que sabemos hasta ahora</h3>
+            <p>
+                Los estudios disponibles muestran que el FGF21 es, en general, <strong>bien tolerado</strong>.
+                Los efectos adversos más comunes han sido:
+            </p>
+            <ul>
+                <li><strong>Dolor en el sitio de inyección</strong>.</li>
+                <li>Molestias leves, similares a un <strong>resfriado</strong>.</li>
+                <li><strong>Cansancio temporal</strong>.</li>
+            </ul>
+            <p>
+                No se ha identificado daño importante en otros órganos ni se han descrito efectos secundarios graves
+                que hayan detenido su desarrollo. Aun así, se requieren <strong>estudios de fase 3</strong> para confirmar
+                plenamente su seguridad y eficacia a largo plazo.
+            </p>
+            <p class="mb-0">
+                Hasta el momento, los resultados han sido <strong>consistentes y alentadores</strong>.
+            </p>
+        </section>
+
+        <!-- Significado para los pacientes -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.26s">
+            <h3 class="h4 mb-3">¿Qué significa esto para los pacientes?</h3>
+            <p>
+                Si los estudios más grandes confirman lo observado hasta ahora, el FGF21 podría convertirse en el
+                <strong>primer tratamiento aprobado específicamente para MASH</strong>. Esto implicaría:
+            </p>
+            <ul>
+                <li><strong>Intervenir antes</strong> de que el daño hepático avance.</li>
+                <li>Disminuir el <strong>riesgo de cirrosis</strong>.</li>
+                <li>Reducir, en el futuro, la necesidad de <strong>trasplante hepático</strong> en ciertos casos.</li>
+                <li>Ofrecer opciones a pacientes que hoy <strong>carecen de tratamientos farmacológicos dirigidos</strong>.</li>
+            </ul>
+            <p class="mb-0">
+                Sería uno de los avances más relevantes en hepatología de las últimas décadas.
+            </p>
+        </section>
+
+        <!-- Papel de México y del CIG -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.28s">
+            <h3 class="h4 mb-3">El papel de México y del CIG en esta transición</h3>
+            <p>
+                El <strong>Centro de Investigación y Gastroenterología (CIG)</strong> participa activamente en
+                <strong>estudios clínicos</strong> sobre nuevos tratamientos para enfermedades hepáticas, incluyendo
+                moléculas relacionadas con FGF21.
+            </p>
+            <p>Estos estudios:</p>
+            <ul>
+                <li>Están <strong>aprobados por COFEPRIS</strong>.</li>
+                <li>Cumplen <strong>normas internacionales de ética y seguridad</strong>.</li>
+                <li>Protegen totalmente la <strong>confidencialidad del paciente</strong>.</li>
+                <li>Son <strong>voluntarios y sin costo</strong> para los participantes.</li>
+            </ul>
+            <p class="mb-0">
+                Participar en un protocolo puede permitir <strong>acceso temprano</strong> a medicamentos prometedores
+                antes de su aprobación comercial, siempre bajo supervisión médica especializada.
+            </p>
+        </section>
+
+        <!-- Conclusión -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h3 class="h4 mb-3">Un posible cambio de rumbo para el MASH</h3>
+            <p>
+                El camino del FGF21 —desde una propuesta teórica hasta evidencia clínica sólida— indica que podría
+                convertirse en una <strong>herramienta esencial contra el hígado graso avanzado</strong>.
+            </p>
+            <p class="mb-0">
+                Sus efectos sobre la <strong>grasa hepática, la inflamación y la fibrosis</strong> representan una
+                oportunidad real para <strong>frenar la progresión de la enfermedad</strong> y mejorar el pronóstico
+                de miles de pacientes. Los próximos años serán decisivos para confirmar su papel, pero por primera vez
+                en décadas, la ciencia ofrece una posibilidad clara de <strong>cambiar el rumbo del MASH</strong>.
+            </p>
+        </section>
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.32s">
+            <h2 class="h4 text-white mb-3">Referencias:</h2>
+            <ul class="mb-0">
+                <li>American Association for the Study of Liver Diseases. (2023). Guidance on the diagnosis and management of metabolic dysfunction–associated steatohepatitis (MASH). <em>Hepatology</em>.</li>
+                <li>European Association for the Study of the Liver. (2024). EASL–EASD–EASO Clinical Practice Guidelines for MASLD/MASH. <em>Journal of Hepatology</em>.</li>
+                <li>Harrison, S. A., et al. (2023). Efficacy of pegbelfermin (FGF21 analog) in patients with metabolic-associated steatohepatitis: ENLIVEN trial. <em>Gastroenterology</em>.</li>
+                <li>Sanyal, A. J., et al. (2021). Pegbelfermin for the treatment of NASH: phase 2 trial. <em>The Lancet Gastroenterology &amp; Hepatology</em>.</li>
+                <li>World Health Organization. (2023). Nonalcoholic fatty liver disease: Key facts. WHO.</li>
+                <li>Instituto Nacional de Salud Pública. (2023). Panorama de las enfermedades hepáticas en México. INSP.</li>
+            </ul>
+        </section>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-3">¿Te interesa saber si eres candidato para <strong>estudios sobre MASH y FGF21</strong>?</h3>
+                <p class="mb-4">Escríbenos por WhatsApp y con gusto te orientamos.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20estudios%20cl%C3%ADnicos%20para%20MASH%20y%20tratamientos%20basados%20en%20FGF21%20en%20la%20sede%20Durango."
+                       target="_blank"
+                       class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                       onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'fgf21_mash_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Durango</strong>
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20estudios%20cl%C3%ADnicos%20para%20MASH%20y%20tratamientos%20basados%20en%20FGF21%20en%20la%20sede%20Universidad."
+                       target="_blank"
+                       class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                       onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'fgf21_mash_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Universidad</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
