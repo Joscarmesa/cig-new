@@ -1,0 +1,215 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>De la vitamina E a los GLP-1: cómo ha cambiado el tratamiento del hígado graso — CIG</title>
+<meta name="description"
+    content="Repaso claro y orientado a pacientes sobre la evolución del tratamiento del hígado graso: de la vitamina E a los agonistas GLP-1 y su impacto en el metabolismo.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-vitamina-e-glp1-higado-graso">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">De la vitamina E a los GLP-1: cómo ha cambiado el tratamiento del hígado graso</h1>
+        </div>
+
+        <!-- Introducción -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                Durante muchos años, el tratamiento del <strong>hígado graso</strong> fue limitado y, en la práctica,
+                poco específico. Aunque hoy sabemos que esta enfermedad puede avanzar hacia <strong>inflamación,
+                fibrosis y cirrosis</strong>, durante décadas no existieron medicamentos diseñados para actuar
+                directamente sobre los mecanismos que dañan el hígado.
+            </p>
+            <p>
+                Las recomendaciones médicas se centraban principalmente en <strong>cambios en el estilo de vida</strong>:
+                pérdida de peso, modificación de la dieta y aumento de la actividad física. Estas medidas siguen siendo
+                fundamentales, pero no siempre logran detener la progresión de la enfermedad, especialmente en personas
+                con alteraciones metabólicas importantes.
+            </p>
+            <p class="mb-0">
+                Con el tiempo, la investigación fue avanzando y permitió entender mejor qué ocurre en el organismo de
+                quienes desarrollan hígado graso. Este conocimiento abrió la puerta a <strong>nuevas estrategias
+                terapéuticas</strong> y marcó un cambio claro en la forma de abordar la enfermedad.
+            </p>
+        </section>
+
+        <!-- Imagen principal (ajusta el nombre del archivo según tu estático) -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow"
+                 src="{{ url_for('static', filename='img/BLOGENE1.webp') }}"
+                 alt="Ilustración de hígado recibiendo tratamiento farmacológico"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Vitamina E -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">Los primeros tratamientos farmacológicos: el papel de la vitamina E</h2>
+            <p>
+                Uno de los primeros tratamientos estudiados fue la <strong>vitamina E</strong>. Su uso se basó en su
+                capacidad <strong>antioxidante</strong>, con el objetivo de reducir el daño celular y la inflamación en
+                el hígado.
+            </p>
+            <p>
+                Algunos estudios mostraron mejoría en ciertos parámetros histológicos, especialmente en pacientes sin
+                diabetes. Sin embargo, los resultados fueron variables y con limitaciones importantes:
+            </p>
+            <ul>
+                <li>No demostró un <strong>efecto consistente sobre la fibrosis hepática</strong>.</li>
+                <li>No estaba indicada para <strong>todos los pacientes</strong>.</li>
+                <li>Su uso prolongado generó <strong>dudas sobre seguridad</strong> en determinados grupos.</li>
+            </ul>
+            <p class="mb-0">
+                Por estas razones, la vitamina E nunca se consolidó como una solución definitiva. Representó un
+                <strong>avance inicial</strong>, pero dejó claro que el hígado graso requería tratamientos más
+                específicos y dirigidos a su <strong>origen metabólico</strong>.
+            </p>
+        </section>
+
+        <!-- Origen metabólico -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.18s">
+            <h3 class="h4 mb-3">Comprender el origen metabólico del hígado graso</h3>
+            <p>
+                Con el avance de la investigación, se hizo evidente que el hígado graso no es solo un problema del
+                hígado. Se trata de una enfermedad estrechamente relacionada con <strong>alteraciones metabólicas</strong>
+                como:
+            </p>
+            <ul>
+                <li><strong>Resistencia a la insulina</strong>.</li>
+                <li><strong>Obesidad</strong>.</li>
+                <li>Alteraciones en el metabolismo de <strong>grasas y azúcares</strong>.</li>
+                <li><strong>Inflamación crónica</strong> de bajo grado.</li>
+            </ul>
+            <p class="mb-0">
+                Este nuevo entendimiento cambió la pregunta central: ya no se trataba solo de cómo proteger al hígado,
+                sino de <strong>cómo corregir los procesos metabólicos</strong> que lo dañan de forma continua. A partir
+                de este enfoque surgió el interés por medicamentos que, además de controlar la glucosa, tuvieran impacto
+                sobre el <strong>peso corporal y el metabolismo en general</strong>.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow"
+                 src="{{ url_for('static', filename='img/BLOGENE2.webp') }}"
+                 alt="Paciente con mejoría metabólica gracias a GLP-1"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- GLP-1 -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.2s">
+            <h3 class="h4 mb-3">La aparición de los GLP-1: un nuevo enfoque terapéutico</h3>
+            <p>
+                Los <strong>agonistas del GLP-1</strong> fueron desarrollados inicialmente para el tratamiento de la
+                <strong>diabetes tipo 2</strong>. Su principal función es mejorar el control de la glucosa y regular el
+                apetito, lo que favorece la <strong>pérdida de peso</strong>.
+            </p>
+            <p>
+                Con el uso clínico, se observó que estos medicamentos también tenían efectos importantes a nivel
+                hepático. Estudios posteriores demostraron que los GLP-1 podían:
+            </p>
+            <ul>
+                <li><strong>Reducir la cantidad de grasa</strong> acumulada en el hígado.</li>
+                <li>Mejorar parámetros de <strong>inflamación</strong>.</li>
+                <li>Contribuir a una <strong>mejoría global del perfil metabólico</strong>.</li>
+            </ul>
+            <p class="mb-0">
+                Estos efectos no se limitan a un solo órgano. Los GLP-1 actúan sobre un eje que involucra
+                <strong>intestino, cerebro, páncreas y metabolismo energético</strong>, lo que permite intervenir en
+                varios factores que favorecen la progresión del hígado graso.
+            </p>
+        </section>
+
+        <!-- Por qué son un cambio importante -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.22s">
+            <h3 class="h4 mb-3">¿Por qué los GLP-1 representan un cambio importante?</h3>
+            <p>
+                A diferencia de tratamientos previos, los GLP-1 no actúan de forma aislada. Su beneficio proviene de
+                <strong>corregir procesos metabólicos</strong> que influyen directamente en el daño hepático. Entre las
+                razones por las que se consideran un avance relevante se encuentran:
+            </p>
+            <ul>
+                <li><strong>Reducción sostenida de la grasa hepática</strong>.</li>
+                <li><strong>Mejor control de la resistencia a la insulina</strong>.</li>
+                <li><strong>Impacto positivo</strong> incluso en personas con obesidad o diabetes.</li>
+                <li><strong>Potencial para frenar la progresión</strong> de la enfermedad cuando se usan de forma adecuada.</li>
+            </ul>
+            <p class="mb-0">
+                Es importante aclarar que estos medicamentos <strong>no sustituyen</strong> los cambios en el estilo de
+                vida, pero sí representan una <strong>herramienta terapéutica más sólida</strong> que las disponibles en
+                el pasado.
+            </p>
+        </section>
+
+        <!-- Cambio de etapa -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.24s">
+            <h3 class="h4 mb-3">Un cambio de etapa en el tratamiento del hígado graso</h3>
+            <p>
+                Hoy, el tratamiento del hígado graso se encuentra en una <strong>etapa distinta</strong>. Se ha pasado
+                de opciones limitadas y poco específicas a terapias que responden mejor a la <strong>complejidad de la
+                enfermedad</strong>.
+            </p>
+            <p>
+                Los GLP-1 no son el punto final, sino parte de una transición hacia tratamientos cada vez más
+                <strong>dirigidos</strong>, algunos de los cuales buscan actuar directamente sobre el hígado, la
+                inflamación hepática y la fibrosis.
+            </p>
+            <p class="mb-0">
+                Este cambio ofrece una perspectiva más clara para los pacientes: por primera vez, la investigación
+                médica cuenta con <strong>tratamientos basados en datos sólidos</strong> y en un mejor entendimiento de
+                los mecanismos que provocan el daño hepático.
+            </p>
+        </section>
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.28s">
+            <h2 class="h4 text-white mb-3">Referencias:</h2>
+            <ul class="mb-0">
+                <li>American Association for the Study of Liver Diseases. (2023). Guidance on the diagnosis and management of metabolic dysfunction–associated steatotic liver disease. <em>Hepatology</em>.</li>
+                <li>European Association for the Study of the Liver. (2024). EASL–EASD–EASO clinical practice guidelines on the management of MASLD/MASH. <em>Journal of Hepatology</em>.</li>
+                <li>Sanyal, A. J., et al. (2021). Semaglutide in patients with nonalcoholic steatohepatitis. <em>New England Journal of Medicine</em>, 384(12), 1113–1124.</li>
+                <li>Younossi, Z. M., et al. (2023). Global epidemiology of metabolic-associated fatty liver disease. <em>Nature Reviews Gastroenterology &amp; Hepatology</em>.</li>
+                <li>Instituto Nacional de Salud Pública. (2023). Panorama de las enfermedades hepáticas en México. INSP.</li>
+            </ul>
+        </section>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-3">¿Te interesa saber si eres candidato para <strong>tratamientos y estudios sobre hígado graso</strong>?</h3>
+                <p class="mb-4">Escríbenos por WhatsApp y con gusto te orientamos.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20tratamientos%20y%20valoraci%C3%B3n%20de%20h%C3%ADgado%20graso%20en%20la%20sede%20Durango."
+                       target="_blank"
+                       class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                       onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'glp1_higado_graso_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Durango</strong>
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20tratamientos%20y%20valoraci%C3%B3n%20de%20h%C3%ADgado%20graso%20en%20la%20sede%20Universidad."
+                       target="_blank"
+                       class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                       onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'glp1_higado_graso_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Universidad</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

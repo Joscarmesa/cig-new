@@ -196,3 +196,9 @@ def fgf21_en_palabras_simples():
 def fgf21_podria_cambiar_el_rumbo_del_higado_graso():
     return render_template('blog_content/blog/fgf21_podria_cambiar_el_rumbo_del_higado_graso.html', canonical_url="https://higadograso.mx/blog/fgf21_en_palabras_simples")
 
+@blog_bp.route('/blog/tratamiento-higado-graso-glp-1-vitamina-e')
+def tratamiento_higado_graso_glp_1_vitamina_e():
+    return render_template(
+        'blog_content/blog/tratamiento_higado_graso_glp_1_vitamina_e.html',
+        canonical_url="https://higadograso.mx/blog/tratamiento-higado-graso-glp-1-vitamina-e"
+    )
