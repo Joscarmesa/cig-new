@@ -202,3 +202,10 @@ def tratamiento_higado_graso_glp_1_vitamina_e():
         'blog_content/blog/tratamiento_higado_graso_glp_1_vitamina_e.html',
         canonical_url="https://higadograso.mx/blog/tratamiento-higado-graso-glp-1-vitamina-e"
     )
+
+@blog_bp.route('/blog/glp_1_por_que_son_relevantes_en_el_higado_graso')
+def glp_1_por_que_son_relevantes_en_el_higado_graso():
+    return render_template(
+        'blog_content/blog/glp_1_por_que_son_relevantes_en_el_higado_graso.html',
+        canonical_url="https://higadograso.mx/blog/glp-1-relevantes-higado-graso"
+    )

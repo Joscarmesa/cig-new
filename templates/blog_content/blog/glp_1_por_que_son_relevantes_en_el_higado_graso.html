@@ -1,0 +1,220 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>¿Qué son los GLP-1 y por qué son relevantes en el hígado graso? — CIG</title>
+<meta name="description"
+    content="Explicación clara para pacientes sobre qué son los agonistas GLP-1, cómo funcionan y por qué son relevantes en el tratamiento del hígado graso y las enfermedades metabólicas.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-glp1-higado-graso">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">¿Qué son los GLP-1 y por qué son relevantes en el hígado graso?</h1>
+        </div>
+
+        <!-- Introducción -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                En los últimos años, los medicamentos conocidos como <strong>agonistas del GLP-1</strong> se mencionan
+                cada vez más en las consultas médicas. Aunque inicialmente se desarrollaron para tratar la
+                <strong>diabetes tipo 2</strong>, hoy se sabe que sus efectos van más allá del control del azúcar en
+                sangre y que tienen un papel relevante en <strong>enfermedades metabólicas complejas</strong>, incluido
+                el <strong>hígado graso</strong>.
+            </p>
+            <p class="mb-0">
+                Entender qué son los GLP-1 y cómo actúan ayuda a comprender por qué se han convertido en una
+                <strong>herramienta importante</strong> dentro del manejo médico actual de esta enfermedad.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow"
+                 src="{{ url_for('static', filename='img/BLOGENE3.webp') }}"
+                 alt="Infografía de los efectos de GLP-1 en apetito, peso, insulina y salud cardiovascular"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- ¿Qué es el GLP-1? -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">¿Qué es el GLP-1?</h2>
+            <p>
+                El <strong>GLP-1</strong> (péptido similar al glucagón tipo 1) es una <strong>hormona</strong> que
+                produce de manera natural el <strong>intestino</strong> después de comer. Su función principal es ayudar
+                al organismo a manejar mejor los nutrientes que se ingieren.
+            </p>
+            <p>Entre sus acciones más importantes se encuentran:</p>
+            <ul>
+                <li><strong>Estimular la liberación de insulina</strong> cuando la glucosa en sangre se eleva.</li>
+                <li><strong>Reducir la liberación de glucagón</strong>, una hormona que aumenta el azúcar en sangre.</li>
+                <li><strong>Enviar señales de saciedad</strong> al cerebro.</li>
+                <li><strong>Retrasar el vaciamiento del estómago</strong>, lo que favorece un control más estable de la glucosa.</li>
+            </ul>
+            <p class="mb-0">
+                En conjunto, estas funciones ayudan a <strong>regular el metabolismo de la glucosa y la energía</strong>.
+            </p>
+        </section>
+
+        <!-- GLP-1 en enfermedades metabólicas -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.18s">
+            <h3 class="h4 mb-3">¿Qué ocurre con el GLP-1 en las enfermedades metabólicas?</h3>
+            <p>
+                En personas con <strong>obesidad, diabetes tipo 2</strong> y otras enfermedades metabólicas, la respuesta
+                del organismo al GLP-1 suele ser <strong>insuficiente</strong>. Aunque la hormona está presente, su
+                efecto no es el esperado.
+            </p>
+            <p>Esto contribuye a:</p>
+            <ul>
+                <li><strong>Dificultad para controlar el apetito</strong>.</li>
+                <li><strong>Elevaciones persistentes de glucosa</strong> en sangre.</li>
+                <li><strong>Acumulación de grasa</strong> en distintos órganos, incluido el hígado.</li>
+            </ul>
+            <p class="mb-0">
+                A partir de esta observación, se desarrollaron medicamentos que <strong>imitan la acción del GLP-1
+                natural</strong>, pero con una <strong>duración y potencia mayores</strong>.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow"
+                 src="{{ url_for('static', filename='img/BLOGENE4.webp') }}"
+                 alt="Ilustración de hígado protegido dentro de un castillo marcado con GLP-1"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Agonistas GLP-1 -->
+        <section class="p-4 rounded shadow mb-5 border wow FadeIn" data-wow-delay="0.2s">
+            <h3 class="h4 mb-3">¿Qué son los agonistas del GLP-1?</h3>
+            <p>
+                Los <strong>agonistas del GLP-1</strong> son fármacos diseñados para activar los mismos receptores que el
+                GLP-1 natural. Al hacerlo, <strong>reproducen y amplifican</strong> sus efectos metabólicos.
+            </p>
+            <p>
+                Se administran generalmente por vía <strong>subcutánea</strong> y han demostrado:
+            </p>
+            <ul>
+                <li><strong>Mejorar el control de la glucosa</strong>.</li>
+                <li><strong>Favorecer la pérdida de peso</strong>.</li>
+                <li><strong>Reducir la resistencia a la insulina</strong>.</li>
+            </ul>
+            <p class="mb-0">
+                Con el uso clínico, se observó que estos cambios metabólicos tenían un <strong>impacto directo sobre la
+                acumulación de grasa en el hígado</strong>.
+            </p>
+        </section>
+
+        <!-- Relevancia en hígado graso -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow FadeIn" data-wow-delay="0.22s">
+            <h3 class="h4 mb-3">¿Por qué los GLP-1 son relevantes en el hígado graso?</h3>
+            <p>
+                El <strong>hígado graso</strong> está estrechamente relacionado con alteraciones en el metabolismo y la
+                <strong>resistencia a la insulina</strong>. Cuando estas condiciones persisten, el hígado acumula grasa
+                y desarrolla inflamación, lo que puede llevar a <strong>daño progresivo del tejido hepático</strong>.
+            </p>
+            <p>
+                Los agonistas del GLP-1 ayudan a intervenir en este proceso de varias formas:
+            </p>
+            <ul>
+                <li><strong>Reducen la cantidad de grasa</strong> que llega y se deposita en el hígado.</li>
+                <li><strong>Mejoran la sensibilidad a la insulina</strong>, disminuyendo el impacto de la resistencia insulínica.</li>
+                <li><strong>Disminuyen la inflamación</strong> asociada al metabolismo alterado.</li>
+            </ul>
+            <p class="mb-0">
+                Diversos estudios han mostrado que su uso se asocia con una <strong>reducción significativa de la grasa
+                hepática</strong> y una <strong>mejoría de marcadores relacionados con inflamación y daño hepático</strong>.
+            </p>
+        </section>
+
+        <!-- Tratamiento específico -->
+        <section class="p-4 rounded shadow mb-5 border wow FadeIn" data-wow-delay="0.24s">
+            <h3 class="h4 mb-3">¿Son un tratamiento específico para el hígado graso?</h3>
+            <p>
+                Actualmente, los agonistas del GLP-1 <strong>no están aprobados exclusivamente</strong> para el
+                tratamiento del hígado graso. Sin embargo, la evidencia científica ha demostrado que pueden ser una
+                <strong>herramienta útil</strong> en pacientes que presentan esta enfermedad junto con <strong>obesidad
+                o diabetes</strong>.
+            </p>
+            <p>Es importante entender que:</p>
+            <ul>
+                <li>No sustituyen los <strong>cambios en el estilo de vida</strong>.</li>
+                <li>Deben ser <strong>indicados y supervisados por un médico</strong>.</li>
+                <li>Forman parte de un <strong>abordaje integral</strong> de la enfermedad.</li>
+            </ul>
+            <p class="mb-0">
+                Su valor radica en que actúan sobre <strong>varios de los factores que impulsan la progresión del daño
+                hepático</strong>.
+            </p>
+        </section>
+
+        <!-- Cierre -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow FadeIn" data-wow-delay="0.26s">
+            <h3 class="h4 mb-3">Un paso importante dentro de un tratamiento más amplio</h3>
+            <p>
+                Los GLP-1 no representan una solución única ni inmediata, pero sí un <strong>avance relevante</strong>
+                dentro del manejo moderno del hígado graso. Han ayudado a cambiar la forma en que se aborda la
+                enfermedad, al enfocarse en su <strong>origen metabólico</strong> y no solo en las consecuencias a nivel
+                del hígado.
+            </p>
+            <p class="mb-0">
+                Además, su desarrollo ha abierto la puerta a <strong>nuevas investigaciones</strong> y a otros
+                tratamientos que buscan actuar de manera aún más directa sobre el tejido hepático y la inflamación. Para
+                los pacientes, esto significa que el tratamiento del hígado graso ya no se limita a recomendaciones
+                generales, sino que comienza a apoyarse en <strong>opciones terapéuticas con bases científicas
+                sólidas</strong>.
+            </p>
+        </section>
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow FadeIn" data-wow-delay="0.28s">
+            <h2 class="h4 text-white mb-3">Referencias:</h2>
+            <ul class="mb-0">
+                <li>American Diabetes Association. (2024). Pharmacologic approaches to glycemic treatment. <em>Diabetes Care</em>.</li>
+                <li>American Association for the Study of Liver Diseases. (2023). Guidance on the diagnosis and management of metabolic dysfunction–associated steatotic liver disease. <em>Hepatology</em>.</li>
+                <li>European Association for the Study of the Liver. (2024). Clinical practice guidelines on MASLD/MASH. <em>Journal of Hepatology</em>.</li>
+                <li>Sanyal, A. J., et al. (2021). Semaglutide in patients with nonalcoholic steatohepatitis. <em>New England Journal of Medicine</em>, 384(12), 1113–1124.</li>
+                <li>Younossi, Z. M., et al. (2023). Global epidemiology and burden of metabolic-associated fatty liver disease. <em>Nature Reviews Gastroenterology &amp; Hepatology</em>.</li>
+            </ul>
+        </section>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-3">¿Quieres saber si los <strong>GLP-1</strong> pueden ser opción en tu caso?</h3>
+                <p class="mb-4">Escríbenos por WhatsApp y con gusto te orientamos.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20GLP-1%20y%20h%C3%ADgado%20graso%20en%20la%20sede%20Durango."
+                       target="_blank"
+                       class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                       onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'glp1_higado_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Durango</strong>
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20GLP-1%20y%20h%C3%ADgado%20graso%20en%20la%20sede%20Universidad."
+                       target="_blank"
+                       class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                       onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'glp1_higado_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Universidad</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
