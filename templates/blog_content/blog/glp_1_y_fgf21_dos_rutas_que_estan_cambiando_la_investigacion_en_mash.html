@@ -1,0 +1,236 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>GLP-1 y FGF21: dos rutas que están cambiando la investigación en MASH — CIG</title>
+<meta name="description"
+    content="Explicación clara para pacientes sobre cómo los GLP-1 y el FGF21 están cambiando la investigación y el tratamiento del hígado graso avanzado (MASH).">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-glp1-fgf21-mash">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">GLP-1 y FGF21: dos rutas que están cambiando la investigación en MASH</h1>
+        </div>
+
+        <!-- Introducción -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                En los últimos años, la investigación sobre el <strong>hígado graso avanzado</strong>, conocido como
+                <strong>MASH</strong>, ha entrado en una etapa distinta. Durante mucho tiempo, el tratamiento se limitó
+                a recomendaciones generales y a opciones con beneficios parciales.
+            </p>
+            <p>
+                Hoy, el enfoque ha cambiado: la ciencia se centra en <strong>comprender y modificar los mecanismos
+                metabólicos</strong> que impulsan el daño hepático. Dentro de este nuevo escenario, dos rutas han cobrado
+                especial relevancia: los <strong>agonistas del GLP-1</strong> y las terapias basadas en
+                <strong>FGF21</strong>.
+            </p>
+            <p class="mb-0">
+                Aunque actúan de forma diferente, ambas representan avances importantes en la búsqueda de
+                <strong>tratamientos más eficaces para el MASH</strong>.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow"
+                 src="{{ url_for('static', filename='img/BLOGENE5.webp') }}"
+                 alt="Hígado como guerrero protegido por GLP-1 y FGF21"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- MASH como enfermedad metabólica compleja -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">El MASH como enfermedad metabólica compleja</h2>
+            <p>
+                El MASH no es únicamente un problema de <strong>acumulación de grasa en el hígado</strong>. Se trata de
+                una enfermedad en la que intervienen múltiples procesos:
+            </p>
+            <ul>
+                <li><strong>Alteraciones en el metabolismo</strong> de grasas y azúcares.</li>
+                <li><strong>Resistencia a la insulina</strong>.</li>
+                <li><strong>Inflamación persistente</strong> de bajo grado.</li>
+                <li><strong>Daño progresivo del tejido hepático y fibrosis</strong>.</li>
+            </ul>
+            <p class="mb-0">
+                Esta complejidad explica por qué durante años no fue posible encontrar un tratamiento único capaz de
+                frenar su progresión y por qué las nuevas terapias se enfocan en <strong>rutas metabólicas
+                específicas</strong>.
+            </p>
+        </section>
+
+        <!-- Ruta GLP-1 -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.18s">
+            <h3 class="h4 mb-3">La ruta del GLP-1: actuar desde el metabolismo general</h3>
+            <p>
+                Los <strong>agonistas del GLP-1</strong> fueron desarrollados inicialmente para el tratamiento de la
+                <strong>diabetes tipo 2</strong>. Su efecto principal es:
+            </p>
+            <ul>
+                <li>Mejorar el <strong>control de la glucosa</strong>.</li>
+                <li><strong>Regular el apetito</strong> y favorecer la saciedad.</li>
+                <li><strong>Promover la pérdida de peso</strong>.</li>
+            </ul>
+            <p>En pacientes con MASH, estos efectos tienen implicaciones importantes:</p>
+            <ul>
+                <li><strong>Disminuyen la cantidad de grasa</strong> que llega al hígado.</li>
+                <li><strong>Mejoran la sensibilidad a la insulina</strong>.</li>
+                <li><strong>Reducen factores metabólicos</strong> que favorecen la inflamación.</li>
+            </ul>
+            <p class="mb-0">
+                Diversos estudios han mostrado que el uso de GLP-1 se asocia con una <strong>reducción significativa de
+                la grasa hepática</strong> y con mejoría en parámetros relacionados con la inflamación. Sin embargo, su
+                acción sobre la <strong>fibrosis</strong> es más bien indirecta y depende, en gran medida, de los cambios
+                metabólicos globales.
+            </p>
+        </section>
+
+        <!-- Ruta FGF21 -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.2s">
+            <h3 class="h4 mb-3">La ruta del FGF21: un enfoque directo sobre el hígado</h3>
+            <p>
+                El <strong>FGF21</strong> es una hormona producida de forma natural por el hígado que participa en la
+                <strong>regulación del metabolismo energético</strong>. En personas con MASH, su acción se encuentra
+                alterada o es insuficiente.
+            </p>
+            <p>
+                A partir de este hallazgo, se desarrollaron <strong>versiones sintéticas de FGF21</strong> con el objetivo
+                de potenciar sus efectos. A diferencia de los GLP-1, estas terapias buscan actuar de manera más
+                <strong>directa sobre el tejido hepático</strong>. Los estudios clínicos han mostrado que el FGF21 puede:
+            </p>
+            <ul>
+                <li><strong>Reducir de forma marcada la grasa hepática</strong>.</li>
+                <li><strong>Disminuir la inflamación</strong> dentro del hígado.</li>
+                <li><strong>Impactar directamente en la fibrosis</strong> y en la cicatrización del tejido.</li>
+            </ul>
+            <p class="mb-0">
+                Esta acción más específica ha llevado a que el FGF21 sea considerado uno de los <strong>tratamientos con
+                mayor potencial</strong> para modificar el curso del MASH.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow"
+                 src="{{ url_for('static', filename='img/BLOGENE7.webp') }}"
+                 alt="Guardias GLP-1 y FGF21 protegiendo el hígado"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Diferencias clave -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.22s">
+            <h3 class="h4 mb-3">Diferencias clave entre GLP-1 y FGF21</h3>
+            <p>
+                Aunque ambos tratamientos actúan sobre el <strong>metabolismo</strong>, sus mecanismos son distintos:
+            </p>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h4 class="h5 text-primary">GLP-1</h4>
+                    <ul>
+                        <li>Actúa principalmente a nivel <strong>sistémico</strong>.</li>
+                        <li>Su efecto depende en parte de la <strong>pérdida de peso</strong>.</li>
+                        <li>Mejora <strong>múltiples factores metabólicos</strong> (glucosa, apetito, peso).</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h4 class="h5 text-primary">FGF21</h4>
+                    <ul>
+                        <li>Actúa de manera más <strong>directa sobre el hígado</strong>.</li>
+                        <li>Impacta simultáneamente <strong>grasa, inflamación y fibrosis</strong>.</li>
+                        <li>No depende exclusivamente de cambios en el peso corporal.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mb-0">
+                Por esta razón, no se consideran terapias excluyentes, sino <strong>complementarias</strong> dentro del
+                panorama de investigación actual.
+            </p>
+        </section>
+
+        <!-- Significado para pacientes -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.24s">
+            <h3 class="h4 mb-3">¿Qué significa esto para los pacientes?</h3>
+            <p>
+                El desarrollo de estas dos rutas terapéuticas refleja un <strong>cambio importante</strong> en la forma
+                de abordar el MASH. En lugar de tratar solo las consecuencias, la investigación actual busca
+                <strong>intervenir en los procesos que provocan el daño hepático</strong> desde etapas tempranas.
+            </p>
+            <p>Para los pacientes, esto implica:</p>
+            <ul>
+                <li>Mayor posibilidad de <strong>frenar la progresión de la enfermedad</strong>.</li>
+                <li><strong>Opciones terapéuticas</strong> basadas en evidencia científica sólida.</li>
+                <li>Un enfoque más <strong>personalizado</strong> según el perfil metabólico.</li>
+            </ul>
+            <p class="mb-0">
+                Aunque todavía se requieren estudios más amplios y de fase avanzada, los resultados actuales representan
+                uno de los <strong>avances más relevantes</strong> en el tratamiento del MASH en las últimas décadas.
+            </p>
+        </section>
+
+        <!-- Nuevo panorama -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.26s">
+            <h3 class="h4 mb-3">Un nuevo panorama en la investigación del MASH</h3>
+            <p>
+                La combinación del <strong>conocimiento metabólico</strong> con <strong>terapias dirigidas</strong> ha
+                cambiado el rumbo de la investigación en MASH. Los GLP-1 y el FGF21 no son soluciones inmediatas, pero
+                sí marcan una transición clara hacia <strong>tratamientos más específicos y eficaces</strong>.
+            </p>
+            <p class="mb-0">
+                Por primera vez, la ciencia cuenta con herramientas capaces de <strong>intervenir en los mecanismos
+                centrales de la enfermedad</strong>, lo que abre una nueva etapa en el manejo del hígado graso avanzado.
+            </p>
+        </section>
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.28s">
+            <h2 class="h4 text-white mb-3">Referencias:</h2>
+            <ul class="mb-0">
+                <li>American Association for the Study of Liver Diseases. (2023). Guidance on the diagnosis and management of metabolic dysfunction–associated steatohepatitis. <em>Hepatology</em>.</li>
+                <li>European Association for the Study of the Liver. (2024). EASL–EASD–EASO clinical practice guidelines on the management of MASLD/MASH. <em>Journal of Hepatology</em>.</li>
+                <li>Harrison, S. A., Neff, G., Guy, C. D., et al. (2023). Efficacy of pegbelfermin (FGF21 analog) in patients with metabolic-associated steatohepatitis. <em>Gastroenterology</em>.</li>
+                <li>Sanyal, A. J., et al. (2021). Semaglutide in patients with nonalcoholic steatohepatitis. <em>New England Journal of Medicine</em>, 384(12), 1113–1124.</li>
+                <li>Younossi, Z. M., et al. (2023). Global epidemiology of metabolic-associated fatty liver disease. <em>Nature Reviews Gastroenterology &amp; Hepatology</em>.</li>
+            </ul>
+        </section>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-3">¿Quieres saber más sobre <strong>GLP-1, FGF21</strong> y opciones para <strong>MASH</strong>?</h3>
+                <p class="mb-4">Escríbenos por WhatsApp y con gusto te orientamos.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20GLP-1%2C%20FGF21%20y%20tratamientos%20para%20MASH%20en%20la%20sede%20Durango."
+                       target="_blank"
+                       class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                       onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'glp1_fgf21_mash_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Durango</strong>
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20GLP-1%2C%20FGF21%20y%20tratamientos%20para%20MASH%20en%20la%20sede%20Universidad."
+                       target="_blank"
+                       class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                       onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'glp1_fgf21_mash_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Universidad</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

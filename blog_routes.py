@@ -209,3 +209,11 @@ def glp_1_por_que_son_relevantes_en_el_higado_graso():
         'blog_content/blog/glp_1_por_que_son_relevantes_en_el_higado_graso.html',
         canonical_url="https://higadograso.mx/blog/glp-1-relevantes-higado-graso"
     )
+
+@blog_bp.route('/blog/glp_1_y_fgf21_dos_rutas_que_estan_cambiando_la_investigacion_en_mash')
+def glp_1_y_fgf21_dos_rutas_que_estan_cambiando_la_investigacion_en_mash():
+    return render_template(
+        'blog_content/blog/glp_1_y_fgf21_dos_rutas_que_estan_cambiando_la_investigacion_en_mash.html',
+        canonical_url="https://higadograso.mx/blog/glp_1_y_fgf21_dos_rutas_que_estan_cambiando_la_investigacion_en_mash"
+    )
+
