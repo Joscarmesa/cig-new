@@ -217,3 +217,10 @@ def glp_1_y_fgf21_dos_rutas_que_estan_cambiando_la_investigacion_en_mash():
         canonical_url="https://higadograso.mx/blog/glp_1_y_fgf21_dos_rutas_que_estan_cambiando_la_investigacion_en_mash"
     )
 
+@blog_bp.route('/blog/que_es_el_masld_o_mash_explicacion_clara_para_pacientes.html')
+def que_es_el_masld_o_mash_explicacion_clara_para_pacientes():
+    return render_template(
+        'blog_content/blog/que_es_el_masld_o_mash_explicacion_clara_para_pacientes.html',
+        canonical_url="https://higadograso.mx/blog/que_es_el_masld_o_mash_explicacion_clara_para_pacientes"
+    )
+
