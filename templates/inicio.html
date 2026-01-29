@@ -56,7 +56,7 @@
             <h5 class="text-white text-uppercase mb-3 animated slideInDown">
               Una Oportunidad para Cuidar tu Hígado
             </h5>
-            <h1 class="display-1 text-white mb-md-4 animated zoomIn">FibroScan Gratis</h1>
+            <h1 class="display-1 text-white mb-md-4 animated zoomIn">FibroScan</h1>
             <a href="{{ url_for('blog.fibroscan_gratis_cdmx') }}"
               class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Más Información</a>
           </div>
@@ -453,10 +453,10 @@
           convencionales para estas condiciones:
         </p>
       </div>
-      <div class="col-lg-5" style="min-height: 500px">
-        <div class="position-relative h-100">
-          <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-            src="{{ url_for('static', filename='img/enfermedades-1.jpg.webp') }}" style="object-fit: cover" />
+      <div class="col-lg-5">
+        <div class="position-relative rounded overflow-hidden" style="height: 500px;">
+          <img class="w-100 h-100 wow zoomIn" data-wow-delay="0.9s"
+            src="{{ url_for('static', filename='img/enfermedades-1.jpg.webp') }}" style="object-fit: contain;" />
         </div>
       </div>
     </div>
@@ -666,8 +666,7 @@
                   <label class="form-check-label" for="dislipidemias">Dislipidemias</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="cuci"
-                    value="Cuci">
+                  <input class="form-check-input" type="checkbox" name="padecimientos[]" id="cuci" value="Cuci">
                   <label class="form-check-label" for="cuci">Colitis Ulcerativa (CUCI)</label>
                 </div>
                 <div class="form-check">
