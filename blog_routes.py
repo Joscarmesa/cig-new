@@ -224,3 +224,10 @@ def que_es_el_masld_o_mash_explicacion_clara_para_pacientes():
         canonical_url="https://higadograso.mx/blog/que_es_el_masld_o_mash_explicacion_clara_para_pacientes"
     )
 
+@blog_bp.route('/blog/asi_es_tu_cita_de_fibroscan_paso_a_paso.html')
+def asi_es_tu_cita_de_fibroscan_paso_a_paso():
+    return render_template(
+        'blog_content/blog/asi_es_tu_cita_de_fibroscan_paso_a_paso.html',
+        canonical_url="https://higadograso.mx/blog/asi_es_tu_cita_de_fibroscan_paso_a_paso"
+    )
+
