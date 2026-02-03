@@ -231,3 +231,9 @@ def asi_es_tu_cita_de_fibroscan_paso_a_paso():
         canonical_url="https://higadograso.mx/blog/asi_es_tu_cita_de_fibroscan_paso_a_paso"
     )
 
+@blog_bp.route('/blog/de_la_ciencia_al_paciente_es_seguro_participar_en_un_estudio_clinico.html')
+def de_la_ciencia_al_paciente_es_seguro_participar_en_un_estudio_clinico():
+    return render_template(
+        'blog_content/blog/de_la_ciencia_al_paciente_es_seguro_participar_en_un_estudio_clinico.html',
+        canonical_url="https://higadograso.mx/blog/de_la_ciencia_al_paciente_es_seguro_participar_en_un_estudio_clinico"
+    )

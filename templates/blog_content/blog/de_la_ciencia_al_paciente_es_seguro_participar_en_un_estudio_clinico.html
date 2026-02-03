@@ -1,0 +1,223 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>¿Es seguro participar en un estudio clínico? Explicación clara para pacientes — CIG</title>
+<meta name="description"
+      content="Conoce qué es un estudio clínico, qué tan seguro es participar, cuáles son tus derechos como paciente y cómo se protege tu salud en estos protocolos.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-estudios-clinicos">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-3">De la ciencia al paciente: ¿es seguro participar en un estudio clínico?</h1>
+      <p class="text-muted mb-0">
+        Los estudios clínicos permiten que los avances de la ciencia se conviertan en tratamientos reales para
+        los pacientes. Aquí te explicamos, con lenguaje claro, qué son, cómo se regulan y por qué su objetivo
+        principal es cuidar tu salud.
+      </p>
+    </div>
+
+    <!-- Intro + Imagen principal -->
+    <div class="row g-5 align-items-center mb-5">
+      <div class="col-lg-6">
+        <p class="mb-3 text-justify">
+          Participar en un estudio clínico es una forma de llevar los avances médicos directamente a la práctica.
+          Gracias a estos estudios hoy existen tratamientos que han transformado el manejo de diversas enfermedades
+          y han mejorado la atención de millones de personas en todo el mundo.
+        </p>
+        <p class="mb-3 text-justify">
+          En diferentes áreas de la salud —incluyendo las enfermedades del hígado— la investigación continúa
+          avanzando de manera constante. Formar parte de un estudio clínico puede darte acceso a nuevas
+          alternativas de tratamiento, seguimiento médico cercano y la oportunidad de contribuir al desarrollo
+          de opciones que podrían beneficiar a otros pacientes en el futuro.
+        </p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="{{ url_for('static', filename='img/BLOGFEB12026.webp') }}"
+             class="img-fluid rounded shadow-sm"
+             alt="Médica observando un microscopio en el Centro de Investigación y Gastroenterología"
+             loading="lazy">
+      </div>
+    </div>
+
+    <!-- ¿Qué es un estudio clínico? -->
+    <div class="row g-5 mb-5">
+      <div class="col-12">
+        <h2 class="mb-3">¿Qué es realmente un estudio clínico?</h2>
+        <p class="mb-3 text-justify">
+          Un estudio clínico es una investigación médica cuidadosamente diseñada para evaluar si un medicamento,
+          tratamiento o intervención es segura y eficaz en personas. Antes de llegar a esta etapa, los tratamientos
+          ya han pasado por varias fases de análisis en laboratorio y en modelos experimentales, lo que permite
+          conocer mejor su comportamiento y posibles efectos.
+        </p>
+        <p class="mb-0 text-justify">
+          Esto significa que no se trata de “pruebas improvisadas”, sino de estudios con reglas claras,
+          supervisión constante y con un objetivo principal: proteger tu salud y bienestar como paciente,
+          al mismo tiempo que se genera conocimiento científico confiable.
+        </p>
+      </div>
+    </div>
+
+    <!-- Beneficios para el paciente + Imagen secundaria -->
+    <div class="row g-5 mb-5 align-items-center">
+      <div class="col-lg-6 order-lg-1 order-2">
+        <h2 class="mb-3">¿Por qué participar en un estudio clínico puede ayudarte?</h2>
+        <p class="mb-3 text-justify">
+          Participar en un estudio clínico puede brindarte acceso a tratamientos innovadores, especialmente
+          en enfermedades que aún no cuentan con muchas opciones aprobadas de forma comercial. En algunos
+          casos, estos tratamientos pueden representar una alternativa valiosa cuando las terapias habituales
+          no son suficientes.
+        </p>
+        <p class="mb-3 text-justify">
+          Además, al participar recibes una evaluación médica más completa, que puede incluir:
+        </p>
+        <ul class="mb-3">
+          <li>Consultas periódicas con un equipo especializado.</li>
+          <li>Estudios de laboratorio y de imagen de forma estructurada.</li>
+          <li>Monitoreo constante de tu evolución y de posibles efectos secundarios.</li>
+        </ul>
+        <p class="mb-0 text-justify">
+          Este seguimiento cercano permite detectar cambios a tiempo y cuidar tu salud de manera integral,
+          sin ningún costo para ti como participante.
+        </p>
+      </div>
+      <div class="col-lg-6 order-lg-2 order-1 text-center">
+        <img src="{{ url_for('static', filename='img/BLOGFEB22026.webp') }}"
+             class="img-fluid rounded shadow-sm"
+             alt="Manos protegiendo un corazón con una jeringa, simbolizando seguridad en la investigación clínica"
+             loading="lazy">
+      </div>
+    </div>
+
+    <!-- Seguridad y regulación -->
+    <div class="row g-5 mb-5">
+      <div class="col-12">
+        <h2 class="mb-3">¿Es seguro participar en un estudio clínico?</h2>
+        <p class="mb-3 text-justify">
+          La seguridad del paciente es la prioridad en cualquier estudio clínico. Antes de que un protocolo
+          pueda iniciar, autoridades regulatorias como COFEPRIS en México o la FDA en Estados Unidos revisan
+          cuidadosamente la información científica disponible, el diseño del estudio y las medidas de vigilancia
+          que se aplicarán.
+        </p>
+        <p class="mb-3 text-justify">
+          Además, todos los estudios cuentan con <strong>comités de ética</strong>, que son grupos independientes
+          de especialistas encargados de evaluar que:
+        </p>
+        <ul class="mb-3">
+          <li>El estudio sea adecuado para los pacientes a los que se dirige.</li>
+          <li>Los riesgos estén justificados y reducidos al mínimo posible.</li>
+          <li>Se protejan tus derechos, tu seguridad y tu confidencialidad.</li>
+          <li>Recibas información clara y suficiente antes de tomar una decisión.</li>
+        </ul>
+        <p class="mb-0 text-justify">
+          Durante el estudio, recibes atención cercana por parte de profesionales de la salud que monitorean
+          cualquier efecto secundario o evento adverso. Si en algún momento se considera necesario, el médico
+          puede ajustar la dosis, suspender el tratamiento del estudio o retirarte del protocolo, siempre
+          priorizando tu bienestar.
+        </p>
+      </div>
+    </div>
+
+    <!-- Derechos del paciente -->
+    <div class="row g-5 mb-5">
+      <div class="col-12">
+        <h2 class="mb-3">Tus derechos como paciente</h2>
+        <p class="mb-3 text-justify">
+          Antes de participar, recibirás un documento llamado <strong>consentimiento informado</strong>.
+          El médico tratante te explicará este documento de manera detallada y con lenguaje accesible.
+          En él se describe:
+        </p>
+        <ul class="mb-3">
+          <li>En qué consiste el estudio y cuánto tiempo durará.</li>
+          <li>Qué procedimientos se realizarán y con qué frecuencia.</li>
+          <li>Cuáles son los posibles riesgos y beneficios esperados.</li>
+          <li>Tus derechos y obligaciones como participante.</li>
+        </ul>
+        <p class="mb-3 text-justify">
+          El consentimiento solo se firma cuando ya no tienes dudas y decides participar de forma
+          libre e informada. También tienes derecho a retirarte del estudio en cualquier momento,
+          sin necesidad de justificar la razón y sin que esto afecte tu atención médica habitual.
+        </p>
+        <p class="mb-0 text-justify">
+          A lo largo de todo el proceso puedes hacer todas las preguntas que necesites; el equipo
+          de investigación está obligado a responderlas con claridad y honestidad.
+        </p>
+      </div>
+    </div>
+
+    <!-- Mitos y realidades -->
+    <div class="row g-5 mb-5">
+      <div class="col-12">
+        <h2 class="mb-3">Mitos comunes sobre los estudios clínicos</h2>
+        <p class="mb-3 text-justify">
+          Es frecuente que los estudios clínicos generen dudas o temores. Algunos de los mitos más
+          comunes incluyen la idea de que los pacientes son utilizados como “experimentos sin control”.
+          En la realidad, estos estudios están altamente regulados, supervisados y evaluados por
+          autoridades como COFEPRIS y la FDA, además de los comités de ética.
+        </p>
+        <p class="mb-3 text-justify">
+          Otra preocupación frecuente es la posibilidad de recibir algo “peligroso”. Sin embargo,
+          los tratamientos que llegan a la fase de investigación en personas ya han sido evaluados
+          previamente en otras etapas. Durante el estudio, el equipo médico monitorea de forma
+          constante cualquier reacción secundaria y toma decisiones oportunas, incluyendo la
+          suspensión del tratamiento si fuera necesario para cuidar tu salud.
+        </p>
+        <p class="mb-0 text-justify">
+          Participar en un estudio clínico no es una decisión impulsiva: es una decisión informada,
+          basada en información clara, protección ética y acompañamiento médico.
+        </p>
+      </div>
+    </div>
+
+    <!-- Cierre + CTA CIG -->
+    <div class="row g-5 mb-5">
+      <div class="col-12">
+        <h2 class="mb-3">De la ciencia al paciente: una decisión informada</h2>
+        <p class="mb-3 text-justify">
+          La investigación clínica es una herramienta segura, regulada y fundamental para llevar
+          los avances de la ciencia al paciente. Gracias a los estudios clínicos, hoy contamos con
+          tratamientos más eficaces y con mejores estrategias de prevención y diagnóstico para
+          múltiples enfermedades, incluyendo las enfermedades hepáticas.
+        </p>
+        <p class="mb-3 text-justify">
+          Si tu médico te ha hablado sobre la posibilidad de participar en un protocolo de
+          investigación, tómate el tiempo para leer la información que te entreguen, hacer todas
+          tus preguntas y valorar con calma tu decisión. Tu participación es voluntaria y siempre
+          debe estar acompañada de una comunicación abierta con el equipo médico.
+        </p>
+        <p class="mb-0 text-justify">
+          En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong>, los estudios clínicos
+          se realizan bajo normas internacionales de ética y seguridad, con el objetivo de cuidar
+          tu salud y, al mismo tiempo, aportar a la construcción de una medicina más precisa y
+          humana.
+        </p>
+      </div>
+    </div>
+
+    <!-- Referencias -->
+    <div class="row g-5">
+      <div class="col-12">
+        <h3 class="mb-3">Fuentes bibliográficas</h3>
+        <ul class="mb-0 small">
+          <li>Califf, R. M. (2018). Clinical trials: What patients need to know. <em>JAMA</em>, 319(10), 1022–1023.</li>
+          <li>National Institutes of Health. (2022). <em>Clinical research trials and you: The basics</em>. NIH.</li>
+          <li>Sharma, P., &amp; Allison, M. (2020). Clinical trial participation in liver disease: Safety, ethics, and patient considerations. <em>Hepatology Communications</em>, 4(6), 918–930.</li>
+          <li>U.S. Food and Drug Administration. (2023). <em>The drug development process</em>. FDA.</li>
+          <li>World Medical Association. (2013). <em>Declaration of Helsinki: Ethical principles for medical research involving human subjects</em>.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
