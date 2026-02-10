@@ -237,3 +237,12 @@ def de_la_ciencia_al_paciente_es_seguro_participar_en_un_estudio_clinico():
         'blog_content/blog/de_la_ciencia_al_paciente_es_seguro_participar_en_un_estudio_clinico.html',
         canonical_url="https://higadograso.mx/blog/de_la_ciencia_al_paciente_es_seguro_participar_en_un_estudio_clinico"
     )
+
+@blog_bp.route('/blog/para_que_sirve_la_dimeticona_en_mi_fibroscan.html')
+def para_que_sirve_la_dimeticona_en_mi_fibroscan():
+    return render_template(
+        'blog_content/blog/para_que_sirve_la_dimeticona_en_mi_fibroscan.html',
+        canonical_url="https://higadograso.mx/blog/para_que_sirve_la_dimeticona_en_mi_fibroscan"
+    )
+
+
