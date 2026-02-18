@@ -245,4 +245,10 @@ def para_que_sirve_la_dimeticona_en_mi_fibroscan():
         canonical_url="https://higadograso.mx/blog/para_que_sirve_la_dimeticona_en_mi_fibroscan"
     )
 
+@blog_bp.route('/blog/higado_graso_y_enfermedades_cardiacas_la_conexion_silenciosa_del_sindrome_metabolico.html')
+def higado_graso_y_enfermedades_cardiacas_la_conexion_silenciosa_del_sindrome_metabolico():
+    return render_template(
+        'blog_content/blog/higado_graso_y_enfermedades_cardiacas_la_conexion_silenciosa_del_sindrome_metabolico.html',
+        canonical_url="https://higadograso.mx/blog/higado_graso_y_enfermedades_cardiacas_la_conexion_silenciosa_del_sindrome_metabolico"
+    )
 
