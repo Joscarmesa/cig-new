@@ -252,3 +252,13 @@ def higado_graso_y_enfermedades_cardiacas_la_conexion_silenciosa_del_sindrome_me
         canonical_url="https://higadograso.mx/blog/higado_graso_y_enfermedades_cardiacas_la_conexion_silenciosa_del_sindrome_metabolico"
     )
 
+
+@blog_bp.route('/blog/esteatohepatitis_asociada_a_disfuncion_metabolica_mash.html')
+def esteatohepatitis_asociada_a_disfuncion_metabolica_mash():
+    return render_template(
+        'blog_content/blog/esteatohepatitis_asociada_a_disfuncion_metabolica_mash.html',
+        canonical_url="https://higadograso.mx/blog/esteatohepatitis_asociada_a_disfuncion_metabolica_mash"
+    )
+
+
+
