@@ -1,0 +1,242 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Día Mundial de la Obesidad: entender qué es y cómo se aborda hoy — CIG</title>
+<meta name="description"
+      content="La obesidad es una enfermedad crónica asociada a riesgo metabólico. Conoce cómo se evalúa (IMC y cintura), qué factores influyen y cómo se aborda hoy con metas realistas y seguimiento.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-dia-mundial-obesidad">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Día Mundial de la Obesidad: entender qué es y cómo se aborda hoy</h1>
+    </div>
+
+    <!-- Intro -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <p>
+        La <strong>obesidad</strong> es una enfermedad crónica (de larga duración) que ocurre cuando se acumula un exceso de grasa corporal.
+        No se trata únicamente del número en la báscula, sino de cómo tu cuerpo <strong>almacena</strong> y <strong>utiliza</strong> la energía.
+      </p>
+      <p class="mb-0">
+        Con el tiempo, en estudios clínicos se ha relacionado con alteraciones en <strong>glucosa</strong>, <strong>presión arterial</strong>,
+        <strong>metabolismo del hígado</strong> y <strong>riesgo cardiovascular</strong>. Por eso hoy se reconoce como una condición médica
+        que requiere <strong>evaluación</strong> y <strong>seguimiento</strong>, no como un tema de apariencia.
+      </p>
+    </section>
+
+    <!-- Imagen principal -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGMAR12026.webp') }}"
+           alt="Ilustración educativa sobre obesidad, metabolismo y salud integral"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- ¿Cómo se evalúa? -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+      <h2 class="h3 text-primary mb-3">¿Cómo se evalúa la obesidad?</h2>
+      <p>
+        Para saber si estás en rango de obesidad no se utiliza solo el peso. En consulta se calcula el
+        <strong>Índice de Masa Corporal (IMC)</strong>, que relaciona tu peso con tu estatura, y también puede medirse la
+        <strong>circunferencia de cintura</strong>.
+      </p>
+      <p>
+        La cintura ayuda a estimar la grasa acumulada en el abdomen, la cual se asocia con mayor <strong>riesgo metabólico</strong>,
+        es decir, con cambios en niveles de azúcar, colesterol y triglicéridos.
+      </p>
+      <p class="mb-0">
+        En adultos, un <strong>IMC de 30 o más</strong> entra dentro de la clasificación de obesidad, aunque siempre debe interpretarse junto
+        con otros datos clínicos, ya que la composición corporal varía entre personas.
+      </p>
+    </section>
+
+    <!-- ¿Cómo se desarrolla y qué factores influyen? -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="h3 text-primary mb-3">¿Cómo se desarrolla y qué factores influyen?</h2>
+      <p>
+        El aumento de grasa corporal suele aparecer cuando, durante mucho tiempo, consumes más energía de la que tu cuerpo utiliza.
+        Sin embargo, no depende de un solo factor.
+      </p>
+      <p>También influyen elementos como:</p>
+      <ul>
+        <li><strong>Genética</strong> y regulación hormonal.</li>
+        <li><strong>Calidad del sueño</strong> y <strong>estrés</strong>.</li>
+        <li>Algunos <strong>medicamentos</strong>.</li>
+        <li>Nivel de <strong>actividad física</strong> y tiempo sedentario.</li>
+        <li>Entorno alimentario actual (productos ultraprocesados y bebidas azucaradas).</li>
+      </ul>
+      <p class="mb-0">
+        A este entorno que favorece el aumento de peso se le conoce como <strong>ambiente obesogénico</strong>.
+        Por eso, el abordaje moderno considera tanto factores biológicos como hábitos y contexto de vida.
+      </p>
+    </section>
+
+    <!-- Imagen secundaria -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGMAR22026.webp') }}"
+           alt="Ilustración sobre alimentación, actividad física y hábitos sostenibles"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Alimentación y actividad física -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+      <h2 class="h3 text-primary mb-3">Alimentación y movimiento: cambios sostenibles</h2>
+      <p>
+        La calidad de tu alimentación influye en el metabolismo. Los patrones que incluyen con frecuencia alimentos ultraprocesados,
+        bebidas con azúcar y porciones grandes se han asociado con mayor acumulación de grasa corporal.
+      </p>
+      <p>
+        Cuando mejoras la calidad de lo que comes e incorporas con mayor regularidad <strong>verduras</strong>, <strong>frutas</strong>,
+        <strong>leguminosas</strong>, <strong>fuentes de proteína</strong> y <strong>agua simple</strong>, se han observado mejoras en algunos
+        indicadores metabólicos.
+      </p>
+      <p>
+        El movimiento corporal también participa en el manejo de la energía. La actividad física regular se asocia con mejor respuesta a la glucosa
+        y mayor gasto energético. No es necesario iniciar con rutinas intensas: <strong>caminar</strong>, moverte más durante el día y reducir el
+        tiempo sedentario también cuenta.
+      </p>
+      <p class="mb-0">
+        Guías internacionales suelen sugerir alrededor de <strong>150 minutos semanales</strong> de actividad moderada en adultos,
+        ajustados a tu condición física y posibilidades.
+      </p>
+    </section>
+
+    <!-- ¿Por qué evaluarla y cómo se aborda hoy? -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="h3 text-primary mb-3">¿Por qué se recomienda evaluarla y cómo se aborda actualmente?</h2>
+      <p>
+        Cuando la obesidad no se evalúa, puede acompañarse de alteraciones como <strong>glucosa elevada</strong>, cambios en el perfil de lípidos,
+        <strong>presión arterial alta</strong>, acumulación de grasa en el hígado y trastornos del sueño como la <strong>apnea</strong>
+        (pausas respiratorias durante el descanso nocturno).
+      </p>
+      <p>
+        La evidencia médica muestra que reducciones moderadas de peso, alrededor de <strong>5 a 10%</strong>, se han asociado con mejoras
+        en diversos indicadores metabólicos. Por eso, el enfoque actual prioriza metas <strong>realistas</strong>, seguimiento y ajustes progresivos.
+      </p>
+      <p class="mb-0">
+        El manejo suele incluir orientación nutricional, incremento gradual de actividad física y estrategias de cambio de hábitos con acompañamiento profesional.
+        En ciertos perfiles, el equipo médico puede considerar tratamiento farmacológico.
+      </p>
+    </section>
+
+    <!-- Precaución con suplementos + opciones médicas -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.35s">
+      <h2 class="h3 text-primary mb-3">Cuidado con “productos milagro” y suplementos</h2>
+      <p>
+        Es importante tener precaución con suplementos “naturales” o productos para bajar de peso que no hayan sido indicados por un profesional de la salud.
+        Algunos prometen resultados rápidos, pero no cuentan con respaldo científico suficiente y, en ciertos casos, pueden causar efectos adversos
+        o incluso ser <strong>hepatotóxicos</strong> (dañar el hígado).
+      </p>
+      <p>
+        Antes de iniciar cualquier suplemento o tratamiento, lo recomendable es consultar con un médico para evaluar si es seguro y adecuado para ti.
+      </p>
+      <p class="mb-0">
+        Entre los tratamientos médicos que pueden considerarse en perfiles seleccionados están los <strong>análogos de GLP-1</strong>, que actúan sobre señales
+        biológicas relacionadas con apetito y regulación de glucosa (siempre bajo indicación médica). También existen líneas de investigación metabólica,
+        como <strong>FGF21</strong>, vinculadas con la regulación de energía y grasa hepática.
+      </p>
+    </section>
+
+    <!-- Cierre: día mundial + CIG -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.5s">
+      <h2 class="h3 text-primary mb-3">Informarte y pedir ayuda es parte del tratamiento</h2>
+      <p>
+        Debido a que la obesidad afecta a millones de personas en el mundo, cada año se conmemora el <strong>Día Mundial de la Obesidad</strong> para generar
+        conciencia y promover un abordaje integral basado en evidencia científica.
+      </p>
+      <p class="mb-0">
+        La obesidad no es una cuestión de apariencia ni de “falta de voluntad”, sino una condición médica compleja que requiere evaluación y acompañamiento.
+        Informarte, acudir a valoración y adoptar cambios progresivos puede marcar una diferencia importante en tu salud a largo plazo.
+      </p>
+    </section>
+
+    <!-- Participación en estudios -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.55s">
+      <h2 class="h3 text-primary mb-3">Investigación y opciones de seguimiento en CIG</h2>
+      <p class="mb-0">
+        En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> participamos en estudios clínicos enfocados en obesidad y enfermedades metabólicas,
+        evaluando tratamientos bajo protocolos de investigación aprobados. Si deseas recibir orientación profesional o conocer si existe algún estudio en el que puedas
+        participar, puedes acercarte a nuestro equipo para obtener más información.
+      </p>
+    </section>
+
+    <!-- Fuentes -->
+    <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.6s">
+      <h2 class="h4 text-white mb-3">Fuentes:</h2>
+      <ul class="mb-0">
+        <li>
+          Organización Mundial de la Salud (OMS). Obesidad y sobrepeso.
+          <a class="text-white" href="https://www.who.int/es/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">
+            https://www.who.int/es/news-room/fact-sheets/detail/obesity-and-overweight
+          </a>
+        </li>
+        <li>
+          Mayo Clinic. Obesidad – Síntomas y causas.
+          <a class="text-white" href="https://www.mayoclinic.org/es/diseases-conditions/obesity/symptoms-causes/syc-20375742" target="_blank" rel="noopener">
+            https://www.mayoclinic.org/es/diseases-conditions/obesity/symptoms-causes/syc-20375742
+          </a>
+        </li>
+        <li>
+          MedlinePlus. Obesidad.
+          <a class="text-white" href="https://medlineplus.gov/spanish/obesity.html" target="_blank" rel="noopener">
+            https://medlineplus.gov/spanish/obesity.html
+          </a>
+        </li>
+        <li>
+          MSD Manuals. Obesidad.
+          <a class="text-white" href="https://www.msdmanuals.com/es/hogar/trastornos-nutricionales/obesidady-s%C3%ADndrome-metab%C3%B3lico/obesidad" target="_blank" rel="noopener">
+            https://www.msdmanuals.com/es/hogar/trastornos-nutricionales/obesidady-s%C3%ADndrome-metab%C3%B3lico/obesidad
+          </a>
+        </li>
+        <li>
+          Instituto Nacional de Salud Pública (INSP). Obesidad, principal problema de salud en México.
+          <a class="text-white" href="https://insp.mx/avisos/obesidad-principal-problema-de-salud-en-mexico" target="_blank" rel="noopener">
+            https://insp.mx/avisos/obesidad-principal-problema-de-salud-en-mexico
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CTA WhatsApp -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <h3 class="mb-3">¿Quieres <strong>orientación profesional</strong> sobre obesidad y salud metabólica?</h3>
+        <p class="mb-4">Escríbenos por WhatsApp y con gusto te indicamos cómo agendar una valoración o solicitar información sobre estudios clínicos.</p>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20orientaci%C3%B3n%20sobre%20obesidad%20y%20salud%20metab%C3%B3lica%20en%20Sucursal%20Durango."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_obesidad_durango'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Durango</strong>
+          </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20orientaci%C3%B3n%20sobre%20obesidad%20y%20salud%20metab%C3%B3lica%20en%20Sucursal%20Universidad."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_obesidad_universidad'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Universidad</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

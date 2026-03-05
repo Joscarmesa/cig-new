@@ -261,4 +261,10 @@ def esteatohepatitis_asociada_a_disfuncion_metabolica_mash():
     )
 
 
+@blog_bp.route('/blog/dia_mundial_de_la_obesidad_entender_que_es_y_como_se_aborda_hoy.html')
+def dia_mundial_de_la_obesidad_entender_que_es_y_como_se_aborda_hoy():
+    return render_template(
+        'blog_content/blog/dia_mundial_de_la_obesidad_entender_que_es_y_como_se_aborda_hoy.html',
+        canonical_url="https://higadograso.mx/blog/dia_mundial_de_la_obesidad_entender_que_es_y_como_se_aborda_hoy"
+    )
 
