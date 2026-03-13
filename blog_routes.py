@@ -268,3 +268,10 @@ def dia_mundial_de_la_obesidad_entender_que_es_y_como_se_aborda_hoy():
         canonical_url="https://higadograso.mx/blog/dia_mundial_de_la_obesidad_entender_que_es_y_como_se_aborda_hoy"
     )
 
+
+@blog_bp.route('/blog/dia_mundial_del_glaucoma_como_se_relaciona_la_diabetes_con_el_riesgo_de_glaucoma.html')
+def dia_mundial_del_glaucoma_como_se_relaciona_la_diabetes_con_el_riesgo_de_glaucoma():
+    return render_template(
+        'blog_content/blog/dia_mundial_del_glaucoma_como_se_relaciona_la_diabetes_con_el_riesgo_de_glaucoma.html',
+        canonical_url="https://higadograso.mx/blog/dia_mundial_del_glaucoma_como_se_relaciona_la_diabetes_con_el_riesgo_de_glaucoma"
+    )

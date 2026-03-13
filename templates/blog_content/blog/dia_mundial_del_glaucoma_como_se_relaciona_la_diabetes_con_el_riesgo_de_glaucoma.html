@@ -1,0 +1,278 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Día Mundial del Glaucoma: ¿cómo se relaciona la diabetes con el riesgo de glaucoma? — CIG</title>
+<meta name="description"
+      content="La diabetes aumenta el riesgo de glaucoma y otras enfermedades oculares. Conoce qué es el glaucoma, por qué se relaciona con la glucosa alta y cómo detectarlo a tiempo.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-glaucoma-diabetes-riesgo">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Día Mundial del Glaucoma: ¿cómo se relaciona la diabetes con el riesgo de glaucoma?</h1>
+    </div>
+
+    <!-- Intro -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <p>
+        En el <strong>Día Mundial del Glaucoma</strong>, vale la pena hablar de un factor de riesgo que no siempre se menciona lo suficiente:
+        la <strong>diabetes</strong>. Si vives con diabetes, tu riesgo de desarrollar <strong>glaucoma</strong> es mayor que el de una persona
+        sin esta enfermedad.
+      </p>
+      <p class="mb-0">
+        Por eso es importante entender qué es el glaucoma, cómo se relaciona con los niveles de azúcar en sangre y qué puedes hacer para
+        <strong>detectarlo a tiempo</strong>.
+      </p>
+    </section>
+
+    <!-- Imagen principal -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGMAR32026.webp') }}"
+           alt="Ilustración educativa sobre glaucoma, diabetes y salud visual"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- ¿Qué es el glaucoma? -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+      <h2 class="h3 text-primary mb-3">¿Qué es el glaucoma?</h2>
+      <p>
+        El <strong>glaucoma</strong> es una enfermedad del ojo que daña el <strong>nervio óptico</strong>, encargado de enviar la información
+        visual desde el ojo hasta el cerebro. Cuando este nervio se daña, puede comenzar una <strong>pérdida gradual de visión</strong> y,
+        si no se trata, llegar a causar <strong>ceguera irreversible</strong>.
+      </p>
+      <p>
+        En muchos casos, el glaucoma está relacionado con un aumento de la presión dentro del ojo, llamada
+        <strong>presión intraocular</strong>. El problema es que la mayoría de las veces no causa molestias al inicio,
+        por eso se le conoce como el <strong>“ladrón silencioso de la visión”</strong>.
+      </p>
+      <p>Existen varios tipos de glaucoma. Entre los más importantes están:</p>
+      <ul>
+        <li>
+          <strong>Glaucoma de ángulo abierto</strong>: es el más común. Avanza lentamente porque el sistema de drenaje del ojo funciona cada vez peor,
+          aunque no esté totalmente bloqueado.
+        </li>
+        <li>
+          <strong>Glaucoma de ángulo cerrado</strong>: puede aparecer de forma repentina, causar dolor intenso y visión borrosa.
+          En ese caso es una <strong>urgencia médica</strong>.
+        </li>
+      </ul>
+    </section>
+
+    <!-- ¿Qué es la diabetes? -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="h3 text-primary mb-3">¿Qué es la diabetes?</h2>
+      <p>
+        La <strong>diabetes</strong> es una enfermedad crónica en la que tienes niveles altos de <strong>glucosa</strong> (azúcar) en la sangre.
+        Esto ocurre porque tu cuerpo no produce suficiente <strong>insulina</strong> o no la utiliza correctamente.
+      </p>
+      <p>
+        La insulina es la hormona que ayuda a que la glucosa entre a tus células para darte energía. Con el tiempo, los niveles elevados de azúcar
+        pueden dañar vasos sanguíneos y nervios en distintas partes del cuerpo, incluyendo los <strong>ojos</strong>.
+      </p>
+      <p>Los tipos más comunes son:</p>
+      <ul>
+        <li>
+          <strong>Diabetes tipo 1</strong>: ocurre cuando tu cuerpo deja de producir insulina. Suele aparecer desde la infancia o juventud
+          y requiere uso diario de insulina.
+        </li>
+        <li>
+          <strong>Diabetes tipo 2</strong>: es la más frecuente. Tu cuerpo sí produce insulina, pero no la usa bien o no es suficiente.
+          Se relaciona con factores como sobrepeso, sedentarismo y antecedentes familiares.
+        </li>
+        <li>
+          <strong>Diabetes gestacional</strong>: aparece durante el embarazo. En muchos casos desaparece después del parto, pero aumenta el
+          riesgo de desarrollar diabetes tipo 2 más adelante.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Imagen secundaria -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGMAR42026.webp') }}"
+           alt="Ilustración sobre revisión ocular y relación entre diabetes y glaucoma"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- ¿La diabetes puede afectar tus ojos? -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+      <h2 class="h3 text-primary mb-3">¿La diabetes puede afectar tus ojos?</h2>
+      <p>
+        Sí. Si tienes diabetes, tienes mayor riesgo de desarrollar varias enfermedades oculares:
+      </p>
+      <ul>
+        <li>
+          <strong>Retinopatía diabética</strong>: daño en los vasos sanguíneos de la retina. Pueden filtrar líquido o sangrar.
+          Al inicio no da síntomas, pero puede causar pérdida de visión.
+        </li>
+        <li>
+          <strong>Edema macular</strong>: acumulación de líquido en la parte central de la retina (mácula), responsable de la visión de detalle.
+          Puede hacer que veas borroso al leer o enfocar.
+        </li>
+        <li>
+          <strong>Cataratas</strong>: opacidad del cristalino, el lente natural del ojo. La visión se vuelve nublada.
+          En diabetes puede aparecer antes y avanzar más rápido.
+        </li>
+        <li>
+          <strong>Glaucoma</strong>: daño progresivo del nervio óptico, generalmente relacionado con presión ocular elevada.
+        </li>
+      </ul>
+      <p class="mb-0">
+        De hecho, la diabetes aumenta el riesgo de presentar glaucoma, especialmente <strong>glaucoma de ángulo abierto</strong>.
+        Muchos daños oculares por diabetes no dan síntomas al inicio, por eso, aunque veas bien, necesitas
+        <strong>revisiones oftalmológicas periódicas</strong>.
+      </p>
+    </section>
+
+    <!-- ¿Por qué la diabetes se relaciona con el glaucoma? -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="h3 text-primary mb-3">¿Por qué la diabetes se relaciona con el glaucoma?</h2>
+      <p>
+        La relación ocurre por varios mecanismos. Los niveles altos de glucosa pueden dañar los <strong>vasos sanguíneos del ojo</strong>,
+        alterar el <strong>sistema de drenaje</strong> del líquido interno y favorecer el aumento de la <strong>presión intraocular</strong>.
+      </p>
+      <p class="mb-0">
+        Si tienes <strong>retinopatía diabética avanzada</strong>, pueden formarse vasos sanguíneos anormales que bloquean la salida del líquido
+        y provocar un tipo llamado <strong>glaucoma neovascular</strong>. Todo esto aumenta la probabilidad de que el nervio óptico se deteriore.
+      </p>
+    </section>
+
+    <!-- Humor acuoso -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.35s">
+      <h2 class="h3 text-primary mb-3">¿Qué es el humor acuoso y por qué importa?</h2>
+      <p>
+        Dentro del ojo circula un líquido transparente llamado <strong>humor acuoso</strong>. Su función es nutrir estructuras internas y mantener
+        la presión adecuada. El ojo produce este líquido de forma constante y también debe drenarlo.
+      </p>
+      <p class="mb-0">
+        Cuando el drenaje no funciona bien, el líquido se acumula, sube la presión dentro del ojo y puede dañarse el nervio óptico.
+        Ese aumento de presión es uno de los principales factores del glaucoma.
+      </p>
+    </section>
+
+    <!-- ¿Qué tipo de diabetes se asocia con mayor riesgo? -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+      <h2 class="h3 text-primary mb-3">¿Qué tipo de diabetes se asocia con mayor riesgo?</h2>
+      <p>
+        Tanto la <strong>diabetes tipo 1</strong> como la <strong>diabetes tipo 2</strong> aumentan el riesgo de problemas oculares,
+        incluido el glaucoma. Sin embargo, la diabetes tipo 2 es la más frecuente y, por eso, la que más se asocia en la práctica clínica
+        con esta enfermedad.
+      </p>
+      <p>El riesgo aumenta todavía más si:</p>
+      <ul>
+        <li>Llevas muchos años con diabetes.</li>
+        <li>Tienes <strong>mal control de glucosa</strong>.</li>
+        <li>Presentas <strong>presión arterial alta</strong> o <strong>colesterol elevado</strong>.</li>
+        <li><strong>Fumas</strong>.</li>
+        <li>No realizas <strong>revisiones oculares regulares</strong>.</li>
+      </ul>
+      <p class="mb-0">
+        Mantener un buen control de la diabetes es fundamental para reducir el riesgo de complicaciones oculares como el glaucoma.
+      </p>
+    </section>
+
+    <!-- Cierre -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.45s">
+      <h2 class="h3 text-primary mb-3">Cuidar tu glucosa también es cuidar tu visión</h2>
+      <p>
+        Seguir las indicaciones médicas, acudir a revisiones oftalmológicas periódicas y vigilar tus niveles de glucosa puede ayudarte
+        a proteger tu visión a largo plazo.
+      </p>
+      <p class="mb-0">
+        En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> trabajamos con protocolos de investigación enfocados en
+        enfermedades metabólicas y sus complicaciones. Si vives con diabetes o presentas factores de riesgo, puedes acercarte a nuestro equipo
+        para conocer los protocolos de investigación activos y recibir orientación especializada.
+      </p>
+    </section>
+
+    <!-- Fuentes -->
+    <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.55s">
+      <h2 class="h4 text-white mb-3">Fuentes:</h2>
+      <ul class="mb-0">
+        <li>
+          NIH – ¿La diabetes puede afectar a sus ojos?
+          <a class="text-white" href="https://salud.nih.gov/preguntele-a-carla/la-diabetes-puede-afectar-a-sus-ojos" target="_blank" rel="noopener">
+            https://salud.nih.gov/preguntele-a-carla/la-diabetes-puede-afectar-a-sus-ojos
+          </a>
+        </li>
+        <li>
+          Mayo Clinic – Glaucoma: síntomas y causas
+          <a class="text-white" href="https://www.mayoclinic.org/es/diseases-conditions/glaucoma/symptoms-causes/syc-20372839" target="_blank" rel="noopener">
+            https://www.mayoclinic.org/es/diseases-conditions/glaucoma/symptoms-causes/syc-20372839
+          </a>
+        </li>
+        <li>
+          MedlinePlus – Retinopatía diabética
+          <a class="text-white" href="https://medlineplus.gov/spanish/ency/article/001212.htm" target="_blank" rel="noopener">
+            https://medlineplus.gov/spanish/ency/article/001212.htm
+          </a>
+        </li>
+        <li>
+          MedlinePlus – Problemas de los ojos relacionados con la diabetes
+          <a class="text-white" href="https://medlineplus.gov/spanish/diabeticeyeproblems.html" target="_blank" rel="noopener">
+            https://medlineplus.gov/spanish/diabeticeyeproblems.html
+          </a>
+        </li>
+        <li>
+          CDC – La diabetes y la pérdida de la visión
+          <a class="text-white" href="https://www.cdc.gov/diabetes/es/diabetes-complications/la-diabetes-y-la-perdida-de-la-vision.html" target="_blank" rel="noopener">
+            https://www.cdc.gov/diabetes/es/diabetes-complications/la-diabetes-y-la-perdida-de-la-vision.html
+          </a>
+        </li>
+        <li>
+          NIDDK – ¿Qué es la diabetes?
+          <a class="text-white" href="https://www.niddk.nih.gov/health-information/informacion-de-la-salud/diabetes/informacion-general/que-es" target="_blank" rel="noopener">
+            https://www.niddk.nih.gov/health-information/informacion-de-la-salud/diabetes/informacion-general/que-es
+          </a>
+        </li>
+        <li>
+          American Academy of Ophthalmology – ¿Qué es el glaucoma?
+          <a class="text-white" href="https://www.aao.org/salud-ocular/enfermedades/que-es-la-glaucoma" target="_blank" rel="noopener">
+            https://www.aao.org/salud-ocular/enfermedades/que-es-la-glaucoma
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CTA WhatsApp -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <h3 class="mb-3">¿Vives con <strong>diabetes</strong> o quieres orientación sobre salud metabólica?</h3>
+        <p class="mb-4">Escríbenos por WhatsApp y con gusto te orientamos sobre valoración y protocolos de investigación activos.</p>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20orientaci%C3%B3n%20sobre%20diabetes%20y%20salud%20metab%C3%B3lica%20en%20Sucursal%20Durango."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_glaucoma_diabetes_durango'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Durango</strong>
+          </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20orientaci%C3%B3n%20sobre%20diabetes%20y%20salud%20metab%C3%B3lica%20en%20Sucursal%20Universidad."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_glaucoma_diabetes_universidad'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Universidad</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
