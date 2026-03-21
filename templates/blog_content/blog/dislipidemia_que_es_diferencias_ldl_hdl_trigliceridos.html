@@ -1,0 +1,263 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Dislipidemia: qué es, diferencias entre LDL, HDL y triglicéridos — CIG</title>
+<meta name="description"
+      content="La dislipidemia ocurre cuando hay alteraciones en colesterol LDL, HDL o triglicéridos. Conoce sus diferencias, cómo se detecta y por qué importa para tu salud cardiovascular.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-dislipidemia-ldl-hdl-trigliceridos">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Dislipidemia: qué es, diferencias entre LDL, HDL y triglicéridos</h1>
+    </div>
+
+    <!-- Intro -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <p>
+        La <strong>dislipidemia</strong> es un trastorno metabólico que ocurre cuando tienes niveles anormales de grasas en la sangre.
+        Puede presentarse como <strong>colesterol LDL elevado</strong>, <strong>triglicéridos altos</strong>, <strong>colesterol HDL bajo</strong>
+        o una combinación de estas alteraciones.
+      </p>
+      <p class="mb-0">
+        Aunque no suele causar síntomas al inicio, sí puede aumentar el riesgo de <strong>enfermedades del corazón</strong> y de las
+        <strong>arterias</strong>. Por eso es importante entender qué significa cada valor de tu perfil de lípidos y cuándo conviene evaluarlo.
+      </p>
+    </section>
+
+    <!-- Imagen principal -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGMAR62026.webp') }}"
+           alt="Ilustración educativa sobre colesterol y salud cardiovascular"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- ¿Qué es la dislipidemia? -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+      <h2 class="h3 text-primary mb-3">¿Qué es la dislipidemia?</h2>
+      <p>
+        Es un <strong>desequilibrio en los lípidos</strong> (grasas) presentes en tu sangre. Estas grasas no circulan libres:
+        se transportan unidas a proteínas formando estructuras llamadas <strong>lipoproteínas</strong>, que permiten su distribución
+        en el organismo.
+      </p>
+      <p>
+        Se considera dislipidemia cuando presentas:
+      </p>
+      <ul>
+        <li><strong>Colesterol LDL alto</strong></li>
+        <li><strong>Triglicéridos elevados</strong></li>
+        <li><strong>Colesterol HDL bajo</strong></li>
+        <li>O una <strong>combinación</strong> de estas alteraciones</li>
+      </ul>
+      <p>
+        Este desbalance favorece la formación de <strong>placas de grasa</strong> en las paredes de las arterias. Con el tiempo,
+        estas placas pueden estrechar u obstruir el flujo sanguíneo.
+      </p>
+      <p class="mb-0">
+        La dislipidemia puede ser de origen <strong>genético</strong> o <strong>secundaria</strong>, cuando aparece asociada a condiciones
+        como diabetes, obesidad, hipotiroidismo, enfermedad renal o hábitos de vida poco saludables.
+      </p>
+    </section>
+
+    <!-- ¿Qué es el colesterol y para qué sirve? -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="h3 text-primary mb-3">¿Qué es el colesterol y para qué sirve?</h2>
+      <p>
+        El <strong>colesterol</strong> es una sustancia grasa que tu cuerpo necesita para funcionar. No todo el colesterol es dañino.
+        De hecho, es fundamental para:
+      </p>
+      <ul>
+        <li>Formar la estructura de tus <strong>células</strong></li>
+        <li>Producir <strong>hormonas</strong></li>
+        <li>Fabricar <strong>vitamina D</strong></li>
+        <li>Ayudar a digerir grasas mediante la <strong>bilis</strong></li>
+      </ul>
+      <p class="mb-0">
+        Tu hígado produce colesterol y también lo obtienes de los alimentos. El problema aparece cuando su concentración en sangre
+        supera los niveles saludables.
+      </p>
+    </section>
+
+    <!-- Imagen secundaria -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGMAR52026.webp') }}"
+           alt="Infografía sobre dislipidemia, colesterol HDL, LDL y triglicéridos"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Diferencias entre LDL, HDL y triglicéridos -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+      <h2 class="h3 text-primary mb-3">Diferencias entre LDL, HDL y triglicéridos</h2>
+      <p>
+        En tu perfil de lípidos aparecen estos tres valores. Cada uno tiene una función distinta y un impacto diferente
+        en tu riesgo cardiovascular.
+      </p>
+
+      <h3 class="h5 mt-3">LDL: el colesterol “malo”</h3>
+      <p>
+        El <strong>LDL</strong> (lipoproteína de baja densidad) transporta colesterol hacia los tejidos. Se le conoce como colesterol “malo”
+        porque, cuando está elevado, puede depositarse en la pared de las arterias y formar acumulaciones de grasa.
+      </p>
+      <p>
+        Estas acumulaciones favorecen la <strong>aterosclerosis</strong> y aumentan el riesgo de <strong>infarto</strong>
+        y <strong>accidente cerebrovascular</strong>.
+      </p>
+
+      <h3 class="h5 mt-3">HDL: el colesterol “bueno”</h3>
+      <p>
+        El <strong>HDL</strong> (lipoproteína de alta densidad) cumple una función protectora. Retira colesterol sobrante de la sangre
+        y de las arterias y lo lleva al hígado para su eliminación.
+      </p>
+      <p>
+        Por eso se considera colesterol “bueno”. Tener niveles adecuados de HDL se asocia con menor riesgo cardiovascular,
+        aunque no compensa por completo un LDL elevado.
+      </p>
+
+      <h3 class="h5 mt-3">Triglicéridos</h3>
+      <p>
+        Los <strong>triglicéridos</strong> son el tipo más común de grasa en la sangre y funcionan como reserva de energía.
+        Se forman a partir de las calorías que consumes y no utilizas de inmediato.
+      </p>
+      <p class="mb-0">
+        Tienden a elevarse cuando existe exceso de azúcares, harinas refinadas, alcohol o consumo calórico elevado.
+        También son frecuentes en el sobrepeso y en la diabetes mal controlada. Cuando están altos, contribuyen al riesgo cardiovascular
+        y, en niveles muy elevados, pueden causar <strong>pancreatitis</strong>.
+      </p>
+    </section>
+
+    <!-- Tipos de dislipidemia -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="h3 text-primary mb-3">Tipos de dislipidemia</h2>
+      <p>Los tipos se nombran según qué valor está alterado en tu estudio de sangre:</p>
+      <ul>
+        <li>
+          <strong>Hipercolesterolemia:</strong> colesterol LDL elevado. Es la forma más común y se relaciona con acumulación de grasa en arterias.
+        </li>
+        <li>
+          <strong>Hipertrigliceridemia:</strong> triglicéridos elevados. Suele asociarse con exceso de azúcares, alcohol, sobrepeso o diabetes.
+        </li>
+        <li>
+          <strong>Dislipidemia mixta:</strong> hay más de un valor alterado al mismo tiempo, por ejemplo, LDL y triglicéridos altos junto con HDL bajo.
+        </li>
+        <li>
+          <strong>Dislipidemia aterogénica:</strong> patrón de mayor riesgo cardiovascular caracterizado por triglicéridos altos y HDL bajo,
+          acompañado de partículas de LDL más propensas a depositarse en arterias.
+        </li>
+      </ul>
+    </section>
+
+    <!-- ¿Cómo se detectan? -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.35s">
+      <h2 class="h3 text-primary mb-3">¿Cómo se detectan?</h2>
+      <p>
+        Estas alteraciones se detectan con un análisis de sangre llamado <strong>perfil de lípidos</strong>, que mide
+        <strong>colesterol total</strong>, <strong>LDL</strong>, <strong>HDL</strong> y <strong>triglicéridos</strong>.
+      </p>
+      <p>
+        En algunos casos también se calcula el <strong>colesterol no-HDL</strong>, que agrupa las fracciones más relacionadas
+        con el desarrollo de enfermedad cardiovascular.
+      </p>
+      <p>
+        Realizar este estudio de forma periódica permite identificarlas a tiempo y tratarlas antes de que generen complicaciones.
+      </p>
+      <p class="mb-0">
+        Además, mantener una alimentación equilibrada, realizar actividad física de manera regular y evitar el consumo excesivo
+        de azúcares y grasas saturadas ayuda a mantener estos niveles dentro de un rango saludable.
+      </p>
+    </section>
+
+    <!-- Cierre -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.5s">
+      <h2 class="h3 text-primary mb-3">Por qué vale la pena revisar tu perfil de lípidos</h2>
+      <p>
+        Si en tus estudios aparecen valores fuera de rango, es importante acudir con tu médico, realizar controles periódicos y seguir
+        las recomendaciones indicadas.
+      </p>
+      <p class="mb-0">
+        En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> participamos en estudios clínicos enfocados en el manejo
+        integral de trastornos metabólicos, contribuyendo al desarrollo de nuevas estrategias terapéuticas. Si presentas antecedentes
+        familiares o resultados alterados en tu perfil de lípidos, puedes acercarte a nuestro equipo para recibir información sobre los
+        estudios clínicos activos y opciones de seguimiento especializado.
+      </p>
+    </section>
+
+    <!-- Fuentes -->
+    <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.55s">
+      <h2 class="h4 text-white mb-3">Fuentes:</h2>
+      <ul class="mb-0">
+        <li>
+          Clínica Universidad de Navarra — Dislipidemia
+          <a class="text-white" href="https://www.cun.es/diccionario-medico/terminos/dislipidemia" target="_blank" rel="noopener">
+            https://www.cun.es/diccionario-medico/terminos/dislipidemia
+          </a>
+        </li>
+        <li>
+          MSD Manuals — Dislipidemia (Dislipemia)
+          <a class="text-white" href="https://www.msdmanuals.com/es/hogar/trastornos-hormonales-y-metab%C3%B3licos/trastornos-relacionados-con-el-colesterol/dislipidemia-dislipemia" target="_blank" rel="noopener">
+            https://www.msdmanuals.com/es/hogar/trastornos-hormonales-y-metab%C3%B3licos/trastornos-relacionados-con-el-colesterol/dislipidemia-dislipemia
+          </a>
+        </li>
+        <li>
+          MedlinePlus — Colesterol
+          <a class="text-white" href="https://medlineplus.gov/spanish/cholesterol.html" target="_blank" rel="noopener">
+            https://medlineplus.gov/spanish/cholesterol.html
+          </a>
+        </li>
+        <li>
+          MedlinePlus — Triglicéridos
+          <a class="text-white" href="https://medlineplus.gov/spanish/triglycerides.html" target="_blank" rel="noopener">
+            https://medlineplus.gov/spanish/triglycerides.html
+          </a>
+        </li>
+        <li>
+          American Heart Association — HDL, LDL y triglicéridos explicados
+          <a class="text-white" href="https://www.heart.org/es/health-topics/cholesterol" target="_blank" rel="noopener">
+            https://www.heart.org/es/health-topics/cholesterol
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CTA WhatsApp -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <h3 class="mb-3">¿Quieres <strong>orientación</strong> sobre colesterol, triglicéridos y salud metabólica?</h3>
+        <p class="mb-4">Escríbenos por WhatsApp y con gusto te orientamos sobre valoración y estudios clínicos activos.</p>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20orientaci%C3%B3n%20sobre%20dislipidemia%2C%20colesterol%20y%20triglic%C3%A9ridos%20en%20Sucursal%20Durango."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_dislipidemia_durango'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Durango</strong>
+          </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20orientaci%C3%B3n%20sobre%20dislipidemia%2C%20colesterol%20y%20triglic%C3%A9ridos%20en%20Sucursal%20Universidad."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_dislipidemia_universidad'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · <strong>Sucursal Universidad</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -275,3 +275,11 @@ def dia_mundial_del_glaucoma_como_se_relaciona_la_diabetes_con_el_riesgo_de_glau
         'blog_content/blog/dia_mundial_del_glaucoma_como_se_relaciona_la_diabetes_con_el_riesgo_de_glaucoma.html',
         canonical_url="https://higadograso.mx/blog/dia_mundial_del_glaucoma_como_se_relaciona_la_diabetes_con_el_riesgo_de_glaucoma"
     )
+
+
+@blog_bp.route('/blog/dislipidemia_que_es_diferencias_ldl_hdl_trigliceridos.html')
+def dislipidemia_que_es_diferencias_ldl_hdl_trigliceridos():
+    return render_template(
+        'blog_content/blog/dislipidemia_que_es_diferencias_ldl_hdl_trigliceridos.html',
+        canonical_url="https://higadograso.mx/blog/dislipidemia_que_es_diferencias_ldl_hdl_trigliceridos"
+    )
