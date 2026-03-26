@@ -1,0 +1,154 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Dislipidemia: qué es, diferencias entre LDL, HDL y triglicéridos — CIG</title>
+<meta name="description"
+      content="La dislipidemia ocurre cuando hay alteraciones en colesterol LDL, HDL o triglicéridos. Conoce sus diferencias, cómo se detecta y por qué importa para tu salud cardiovascular.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-dislipidemia-ldl-hdl-trigliceridos">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Dislipidemia: qué es, diferencias entre LDL, HDL y triglicéridos</h1>
+    </div>
+
+    <!-- Intro -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <p>
+        La <strong>dislipidemia</strong> es un trastorno metabólico que ocurre cuando tienes niveles anormales de grasas en la sangre.
+        Puede presentarse como <strong>colesterol LDL elevado</strong>, <strong>triglicéridos altos</strong>, <strong>colesterol HDL bajo</strong>
+        o una combinación de estas alteraciones.
+      </p>
+      <p class="mb-0">
+        Aunque no suele causar síntomas al inicio, sí puede aumentar el riesgo de <strong>enfermedades cardiovasculares</strong>.
+        Por eso es importante entender qué significa cada valor en tus estudios.
+      </p>
+    </section>
+
+    <!-- Imagen principal -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGMAR72026.webp') }}"
+           alt="Ilustración educativa sobre colesterol y circulación sanguínea"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- ¿Qué es la dislipidemia? -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+      <h2 class="h3 text-primary mb-3">¿Qué es la dislipidemia?</h2>
+      <p>
+        Es un <strong>desequilibrio en los lípidos</strong> (grasas) en la sangre. Estas grasas viajan en forma de
+        <strong>lipoproteínas</strong>, que permiten su transporte dentro del cuerpo.
+      </p>
+      <p>Se considera dislipidemia cuando presentas:</p>
+      <ul>
+        <li><strong>LDL elevado</strong></li>
+        <li><strong>Triglicéridos altos</strong></li>
+        <li><strong>HDL bajo</strong></li>
+      </ul>
+      <p class="mb-0">
+        Estas alteraciones favorecen la acumulación de grasa en las arterias, lo que puede afectar la circulación con el tiempo.
+      </p>
+    </section>
+
+    <!-- ¿Qué es el colesterol? -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="h3 text-primary mb-3">¿Qué es el colesterol?</h2>
+      <p>
+        El colesterol es una sustancia grasa necesaria para funciones como la formación de células, hormonas y vitamina D.
+      </p>
+      <p class="mb-0">
+        El problema aparece cuando sus niveles en sangre son más altos de lo recomendado.
+      </p>
+    </section>
+
+    <!-- Imagen secundaria -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGMAR82026.webp') }}"
+           alt="Infografía sobre HDL, LDL y triglicéridos"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Diferencias -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+      <h2 class="h3 text-primary mb-3">Diferencias entre LDL, HDL y triglicéridos</h2>
+
+      <h3 class="h5 mt-3">LDL</h3>
+      <p>
+        Transporta colesterol hacia los tejidos. Cuando está elevado, puede acumularse en arterias.
+      </p>
+
+      <h3 class="h5 mt-3">HDL</h3>
+      <p>
+        Ayuda a retirar colesterol de la sangre y llevarlo al hígado para su eliminación.
+      </p>
+
+      <h3 class="h5 mt-3">Triglicéridos</h3>
+      <p class="mb-0">
+        Son una forma de almacenamiento de energía. Se elevan con exceso de calorías, azúcares o alcohol.
+      </p>
+    </section>
+
+    <!-- ¿Cómo se detecta? -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="h3 text-primary mb-3">¿Cómo se detecta?</h2>
+      <p>
+        Se evalúa con un <strong>perfil de lípidos</strong>, que mide colesterol total, LDL, HDL y triglicéridos.
+      </p>
+      <p class="mb-0">
+        Este estudio permite identificar alteraciones antes de que causen síntomas.
+      </p>
+    </section>
+
+    <!-- Cierre -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.5s">
+      <h2 class="h3 text-primary mb-3">Evaluar a tiempo hace la diferencia</h2>
+      <p class="mb-0">
+        Revisar tus niveles de colesterol y triglicéridos permite detectar riesgos de forma temprana.
+        En el Centro de Investigación y Gastroenterología (CIG) contamos con protocolos de investigación
+        enfocados en enfermedades metabólicas para brindar orientación y seguimiento especializado.
+      </p>
+    </section>
+
+    <!-- CTA WhatsApp -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <h3 class="mb-3">¿Quieres <strong>orientación</strong> sobre colesterol y salud metabólica?</h3>
+        <p class="mb-4">Escríbenos por WhatsApp.</p>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525565430983"
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_dislipidemia_durango'});">
+            WhatsApp · Durango
+          </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525644071939"
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_dislipidemia_universidad'});">
+            WhatsApp · Universidad
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
