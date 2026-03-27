@@ -2,9 +2,9 @@
 
 {# ---------- HEAD (SEO) ---------- #}
 {% block head %}
-<title>Dislipidemia: qué es, diferencias entre LDL, HDL y triglicéridos — CIG</title>
+<title>Colangitis biliar primaria (PBC): qué es y por qué el UDCA es el tratamiento base — CIG</title>
 <meta name="description"
-      content="La dislipidemia ocurre cuando hay alteraciones en colesterol LDL, HDL o triglicéridos. Conoce sus diferencias, cómo se detecta y por qué importa para tu salud cardiovascular.">
+      content="La colangitis biliar primaria es una enfermedad autoinmune del hígado. Conoce qué es, síntomas, diagnóstico y por qué el UDCA es el tratamiento base.">
 <link rel="canonical" href="{{ canonical_url }}">
 {{ super() }}
 {% endblock %}
@@ -12,25 +12,24 @@
 {# ---------- CONTENIDO PRINCIPAL ---------- #}
 {% block main_content %}
 
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-dislipidemia-ldl-hdl-trigliceridos">
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-pbc-udca-tratamiento">
   <div class="container">
 
     <!-- Encabezado -->
     <div class="section-title mb-5 text-center">
       <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
-      <h1 class="display-5 mb-0">Dislipidemia: qué es, diferencias entre LDL, HDL y triglicéridos</h1>
+      <h1 class="display-5 mb-0">Colangitis biliar primaria (PBC): qué es y por qué el UDCA es el tratamiento base</h1>
     </div>
 
     <!-- Intro -->
     <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
       <p>
-        La <strong>dislipidemia</strong> es un trastorno metabólico que ocurre cuando tienes niveles anormales de grasas en la sangre.
-        Puede presentarse como <strong>colesterol LDL elevado</strong>, <strong>triglicéridos altos</strong>, <strong>colesterol HDL bajo</strong>
-        o una combinación de estas alteraciones.
+        La <strong>colangitis biliar primaria (CBP)</strong> es una enfermedad crónica en la que el sistema inmunológico
+        ataca los pequeños conductos biliares dentro del hígado.
       </p>
       <p class="mb-0">
-        Aunque no suele causar síntomas al inicio, sí puede aumentar el riesgo de <strong>enfermedades cardiovasculares</strong>.
-        Por eso es importante entender qué significa cada valor en tus estudios.
+        Aunque puede avanzar lentamente y sin síntomas al inicio, con el tiempo puede provocar <strong>inflamación</strong>,
+        <strong>fibrosis</strong> y en etapas avanzadas <strong>cirrosis</strong>. Por eso, entenderla a tiempo es clave para su seguimiento.
       </p>
     </section>
 
@@ -38,37 +37,45 @@
     <figure class="text-center mb-5">
       <img class="img-fluid rounded shadow"
            src="{{ url_for('static', filename='img/BLOGMAR72026.webp') }}"
-           alt="Ilustración educativa sobre colesterol y circulación sanguínea"
+           alt="Ilustración sobre hígado y acumulación de bilis en colangitis biliar primaria"
            loading="lazy"
            style="max-width: 100%; height: auto;">
     </figure>
 
-    <!-- ¿Qué es la dislipidemia? -->
+    <!-- ¿Qué es la PBC? -->
     <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
-      <h2 class="h3 text-primary mb-3">¿Qué es la dislipidemia?</h2>
+      <h2 class="h3 text-primary mb-3">¿Qué es la colangitis biliar primaria?</h2>
       <p>
-        Es un <strong>desequilibrio en los lípidos</strong> (grasas) en la sangre. Estas grasas viajan en forma de
-        <strong>lipoproteínas</strong>, que permiten su transporte dentro del cuerpo.
+        Es una enfermedad en la que los <strong>conductos biliares</strong> se dañan progresivamente.
+        Estos conductos transportan la <strong>bilis</strong>, un líquido que ayuda a digerir grasas y eliminar toxinas.
       </p>
-      <p>Se considera dislipidemia cuando presentas:</p>
-      <ul>
-        <li><strong>LDL elevado</strong></li>
-        <li><strong>Triglicéridos altos</strong></li>
-        <li><strong>HDL bajo</strong></li>
-      </ul>
+      <p>
+        Cuando se destruyen, la bilis se acumula en el hígado, lo que se conoce como <strong>colestasis</strong>.
+      </p>
       <p class="mb-0">
-        Estas alteraciones favorecen la acumulación de grasa en las arterias, lo que puede afectar la circulación con el tiempo.
+        Con el tiempo, esta acumulación puede causar inflamación, cicatrización del tejido hepático (fibrosis)
+        y eventualmente cirrosis.
       </p>
     </section>
 
-    <!-- ¿Qué es el colesterol? -->
+    <!-- ¿Por qué se desarrolla? -->
     <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
-      <h2 class="h3 text-primary mb-3">¿Qué es el colesterol?</h2>
+      <h2 class="h3 text-primary mb-3">¿Por qué se desarrolla?</h2>
       <p>
-        El colesterol es una sustancia grasa necesaria para funciones como la formación de células, hormonas y vitamina D.
+        No existe una causa única identificada. Se considera una enfermedad <strong>autoinmune</strong>, lo que significa que
+        el sistema inmunológico ataca por error estructuras propias del cuerpo.
       </p>
+      <p>
+        También pueden influir:
+      </p>
+      <ul>
+        <li><strong>Factores genéticos</strong></li>
+        <li><strong>Factores ambientales</strong> (infecciones, toxinas)</li>
+        <li><strong>Tabaquismo</strong></li>
+      </ul>
       <p class="mb-0">
-        El problema aparece cuando sus niveles en sangre son más altos de lo recomendado.
+        En muchos casos se detectan en sangre los <strong>anticuerpos antimitocondriales (AMA)</strong>,
+        que son un marcador importante para el diagnóstico.
       </p>
     </section>
 
@@ -76,63 +83,93 @@
     <figure class="text-center mb-5">
       <img class="img-fluid rounded shadow"
            src="{{ url_for('static', filename='img/BLOGMAR82026.webp') }}"
-           alt="Infografía sobre HDL, LDL y triglicéridos"
+           alt="Infografía sobre hígado, bilis y progresión de enfermedad hepática"
            loading="lazy"
            style="max-width: 100%; height: auto;">
     </figure>
 
-    <!-- Diferencias -->
+    <!-- Síntomas -->
     <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
-      <h2 class="h3 text-primary mb-3">Diferencias entre LDL, HDL y triglicéridos</h2>
-
-      <h3 class="h5 mt-3">LDL</h3>
+      <h2 class="h3 text-primary mb-3">¿Qué puedes sentir?</h2>
       <p>
-        Transporta colesterol hacia los tejidos. Cuando está elevado, puede acumularse en arterias.
+        En muchos casos no hay síntomas durante años. Cuando aparecen, los más frecuentes son:
       </p>
-
-      <h3 class="h5 mt-3">HDL</h3>
-      <p>
-        Ayuda a retirar colesterol de la sangre y llevarlo al hígado para su eliminación.
-      </p>
-
-      <h3 class="h5 mt-3">Triglicéridos</h3>
+      <ul>
+        <li><strong>Cansancio persistente</strong></li>
+        <li><strong>Picazón intensa</strong> (prurito)</li>
+        <li><strong>Sequedad en ojos o boca</strong></li>
+        <li><strong>Dolor abdominal</strong> en la parte superior derecha</li>
+        <li><strong>Ictericia</strong> (color amarillo en piel y ojos)</li>
+      </ul>
       <p class="mb-0">
-        Son una forma de almacenamiento de energía. Se elevan con exceso de calorías, azúcares o alcohol.
+        En etapas avanzadas pueden presentarse complicaciones como ascitis o várices esofágicas.
       </p>
     </section>
 
-    <!-- ¿Cómo se detecta? -->
+    <!-- UDCA -->
     <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
-      <h2 class="h3 text-primary mb-3">¿Cómo se detecta?</h2>
+      <h2 class="h3 text-primary mb-3">¿Por qué el UDCA es el tratamiento base?</h2>
       <p>
-        Se evalúa con un <strong>perfil de lípidos</strong>, que mide colesterol total, LDL, HDL y triglicéridos.
+        El <strong>ácido ursodesoxicólico (UDCA)</strong> es el tratamiento de primera línea.
+      </p>
+      <p>
+        Este medicamento ayuda a mejorar el flujo de bilis y reduce el efecto tóxico de los ácidos biliares acumulados.
       </p>
       <p class="mb-0">
-        Este estudio permite identificar alteraciones antes de que causen síntomas.
+        Iniciar el tratamiento en etapas tempranas puede <strong>retrasar la progresión</strong> de la enfermedad
+        y mejorar el pronóstico.
+      </p>
+    </section>
+
+    <!-- ¿Qué pasa si no responde? -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.35s">
+      <h2 class="h3 text-primary mb-3">¿Y si no respondes al tratamiento?</h2>
+      <p>
+        Si no hay una respuesta adecuada, el médico puede considerar terapias complementarias como el
+        <strong>ácido obeticólico</strong>.
+      </p>
+      <p>
+        En etapas avanzadas, cuando el hígado pierde su función, puede ser necesario evaluar un
+        <strong>trasplante hepático</strong>.
+      </p>
+      <p class="mb-0">
+        Actualmente existen nuevas líneas de investigación con tratamientos como <strong>Seladelpar</strong> y
+        <strong>Elafibranor</strong>, que forman parte del avance en el manejo de esta enfermedad.
       </p>
     </section>
 
     <!-- Cierre -->
     <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.5s">
-      <h2 class="h3 text-primary mb-3">Evaluar a tiempo hace la diferencia</h2>
+      <h2 class="h3 text-primary mb-3">Importancia del seguimiento médico</h2>
       <p class="mb-0">
-        Revisar tus niveles de colesterol y triglicéridos permite detectar riesgos de forma temprana.
-        En el Centro de Investigación y Gastroenterología (CIG) contamos con protocolos de investigación
-        enfocados en enfermedades metabólicas para brindar orientación y seguimiento especializado.
+        La colangitis biliar primaria requiere seguimiento continuo para ajustar el tratamiento según la evolución.
+        En el <strong>Centro de Investigación y Gastroenterología (CIG)</strong> contamos con especialistas en hígado
+        y participamos en estudios clínicos sobre nuevas alternativas terapéuticas.
       </p>
     </section>
 
-    <!-- CTA WhatsApp -->
+    <!-- Fuentes -->
+    <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.55s">
+      <h2 class="h4 text-white mb-3">Fuentes:</h2>
+      <ul class="mb-0">
+        <li>MedlinePlus — Ursodiol</li>
+        <li>Mayo Clinic — Colangitis biliar primaria</li>
+        <li>MSD Manuals — Colangitis biliar primaria</li>
+        <li>NIH — Primary Biliary Cholangitis</li>
+      </ul>
+    </section>
+
+    <!-- CTA -->
     <div class="container my-5">
       <div class="row text-center">
-        <h3 class="mb-3">¿Quieres <strong>orientación</strong> sobre colesterol y salud metabólica?</h3>
+        <h3 class="mb-3">¿Quieres <strong>orientación</strong> sobre enfermedades del hígado?</h3>
         <p class="mb-4">Escríbenos por WhatsApp.</p>
 
         <div class="col-md-6 mb-3">
           <a href="https://wa.me/525565430983"
              target="_blank"
              class="btn btn-whatsapp-custom btn-lg w-100"
-             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_dislipidemia_durango'});">
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_pbc_durango'});">
             WhatsApp · Durango
           </a>
         </div>
@@ -141,7 +178,7 @@
           <a href="https://wa.me/525644071939"
              target="_blank"
              class="btn btn-whatsapp-custom btn-lg w-100"
-             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_dislipidemia_universidad'});">
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_pbc_universidad'});">
             WhatsApp · Universidad
           </a>
         </div>

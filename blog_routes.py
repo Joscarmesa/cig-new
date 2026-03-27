@@ -283,3 +283,10 @@ def dislipidemia_que_es_diferencias_ldl_hdl_trigliceridos():
         'blog_content/blog/dislipidemia_que_es_diferencias_ldl_hdl_trigliceridos.html',
         canonical_url="https://higadograso.mx/blog/dislipidemia_que_es_diferencias_ldl_hdl_trigliceridos"
     )
+
+@blog_bp.route('/blog/colangitis_biliar_primaria_pbc_que_es_y_por_que_el_udca_es_el_tratamiento_base.html')
+def colangitis_biliar_primaria_pbc_que_es_y_por_que_el_udca_es_el_tratamiento_base():
+    return render_template(
+        'blog_content/blog/colangitis_biliar_primaria_pbc_que_es_y_por_que_el_udca_es_el_tratamiento_base.html',
+        canonical_url="https://higadograso.mx/blog/colangitis_biliar_primaria_pbc_que_es_y_por_que_el_udca_es_el_tratamiento_base"
+    )
