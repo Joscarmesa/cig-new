@@ -1,0 +1,158 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Ensayos clínicos: ¿cómo se crean los nuevos medicamentos? — CIG</title>
+<meta name="description"
+      content="Descubre cómo se desarrollan los nuevos medicamentos, qué es un ensayo clínico, sus fases y por qué son clave para garantizar seguridad y eficacia.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-ensayos-clinicos">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Ensayos clínicos: ¿cómo se crean los nuevos medicamentos?</h1>
+    </div>
+
+    <!-- Intro -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <p>
+        Crear un medicamento nuevo es un proceso largo, regulado y cuidadoso que puede tardar entre
+        <strong>10 y 15 años</strong>. Antes de llegar a los pacientes, pasa por múltiples etapas que buscan
+        asegurar que sea <strong>seguro y efectivo</strong>.
+      </p>
+      <p class="mb-0">
+        Todo comienza en el laboratorio y solo después de cumplir ciertos criterios puede evaluarse en personas.
+      </p>
+    </section>
+
+    <!-- Imagen principal -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGMAR92026.webp') }}"
+           alt="Proceso de investigación y desarrollo de medicamentos"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- ¿Cómo nace un medicamento? -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+      <h2 class="h3 text-primary mb-3">¿Cómo nace un medicamento?</h2>
+      <p>
+        Todo inicia cuando los investigadores identifican qué está fallando en una enfermedad.
+        Buscan una <strong>diana terapéutica</strong>, es decir, el punto específico donde el medicamento puede actuar.
+      </p>
+      <p>
+        Después se diseñan moléculas que puedan influir en ese punto. Estas se prueban en laboratorio para evaluar:
+      </p>
+      <ul>
+        <li>Si parecen funcionar</li>
+        <li>Si muestran un perfil de seguridad adecuado</li>
+      </ul>
+      <p class="mb-0">
+        Si los resultados son favorables, se solicita autorización a autoridades como <strong>COFEPRIS</strong> en México
+        o la <strong>FDA</strong> en Estados Unidos para comenzar estudios en personas.
+      </p>
+    </section>
+
+    <!-- ¿Qué es un ensayo clínico? -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="h3 text-primary mb-3">¿Qué es un ensayo clínico?</h2>
+      <p>
+        Es un estudio en el que participan personas voluntarias para evaluar si un tratamiento es
+        <strong>seguro</strong> y si realmente <strong>funciona</strong>.
+      </p>
+      <p class="mb-0">
+        Sin estos estudios, no sería posible aprobar nuevos medicamentos ni garantizar su eficacia.
+      </p>
+    </section>
+
+    <!-- Imagen secundaria -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGMAR102026.webp') }}"
+           alt="Fases de los ensayos clínicos ilustradas"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Fases -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+      <h2 class="h3 text-primary mb-3">Las fases de los ensayos clínicos</h2>
+
+      <h3 class="h5 mt-3">Fase 1: Seguridad</h3>
+      <p>
+        Se prueba por primera vez en personas sanas. Se evalúan dosis seguras, efectos secundarios y respuesta del cuerpo.
+      </p>
+
+      <h3 class="h5 mt-3">Fase 2: Eficacia inicial</h3>
+      <p>
+        Participan personas con la enfermedad. Se analiza si el tratamiento funciona y se continúa evaluando su seguridad.
+      </p>
+
+      <h3 class="h5 mt-3">Fase 3: Comparación</h3>
+      <p>
+        Se compara con tratamientos existentes en cientos o miles de personas. Aquí se confirma si es mejor o más seguro.
+      </p>
+
+      <h3 class="h5 mt-3">Fase 4: Seguimiento</h3>
+      <p class="mb-0">
+        El medicamento ya está aprobado, pero sigue bajo vigilancia para detectar efectos a largo plazo.
+      </p>
+    </section>
+
+    <!-- Placebo -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="h3 text-primary mb-3">¿Qué es el placebo?</h2>
+      <p class="mb-0">
+        Es una sustancia sin efecto activo que se utiliza para comparar resultados y confirmar que el efecto del tratamiento
+        es real.
+      </p>
+    </section>
+
+    <!-- Cierre -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.5s">
+      <h2 class="h3 text-primary mb-3">Un proceso diseñado para tu seguridad</h2>
+      <p class="mb-0">
+        Cada fase está diseñada para garantizar que los medicamentos sean seguros y eficaces. Participar en un ensayo clínico
+        no solo permite acceder a nuevas opciones, sino que también contribuye al avance de la medicina.
+      </p>
+    </section>
+
+    <!-- CTA -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <h3 class="mb-3">¿Quieres saber más sobre <strong>ensayos clínicos</strong>?</h3>
+        <p class="mb-4">Escríbenos por WhatsApp y recibe orientación.</p>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525565430983"
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_ensayos_durango'});">
+            WhatsApp · Durango
+          </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525644071939"
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'blog_ensayos_universidad'});">
+            WhatsApp · Universidad
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

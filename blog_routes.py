@@ -290,3 +290,13 @@ def colangitis_biliar_primaria_pbc_que_es_y_por_que_el_udca_es_el_tratamiento_ba
         'blog_content/blog/colangitis_biliar_primaria_pbc_que_es_y_por_que_el_udca_es_el_tratamiento_base.html',
         canonical_url="https://higadograso.mx/blog/colangitis_biliar_primaria_pbc_que_es_y_por_que_el_udca_es_el_tratamiento_base"
     )
+
+@blog_bp.route('/blog/ensayos_clinicos_como_se_crean_los_nuevos_medicamentos.html')
+def ensayos_clinicos_como_se_crean_los_nuevos_medicamentos():
+    return render_template(
+        'blog_content/blog/ensayos_clinicos_como_se_crean_los_nuevos_medicamentos.html',
+        canonical_url="https://higadograso.mx/blog/ensayos_clinicos_como_se_crean_los_nuevos_medicamentos"
+    )
+
+
+
