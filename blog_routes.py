@@ -298,5 +298,11 @@ def ensayos_clinicos_como_se_crean_los_nuevos_medicamentos():
         canonical_url="https://higadograso.mx/blog/ensayos_clinicos_como_se_crean_los_nuevos_medicamentos"
     )
 
+@blog_bp.route('/blog/colangitis_biliar_primaria_cbp_lo_que_necesitas_saber_sobre_su_diagnostico.html')
+def colangitis_biliar_primaria_cbp_lo_que_necesitas_saber_sobre_su_diagnostico():
+    return render_template(
+        'blog_content/blog/colangitis_biliar_primaria_cbp_lo_que_necesitas_saber_sobre_su_diagnostico.html',
+        canonical_url="https://higadograso.mx/blog/colangitis_biliar_primaria_cbp_lo_que_necesitas_saber_sobre_su_diagnostico"
+    )
 
 

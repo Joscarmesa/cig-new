@@ -1,0 +1,117 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Colangitis Biliar Primaria (CBP): Lo que necesitas saber sobre su diagnóstico — CIG</title>
+<meta name="description"
+      content="Conoce cómo se diagnostica la colangitis biliar primaria (CBP), qué estudios se utilizan y por qué detectarla a tiempo es clave para prevenir daño hepático.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-cbp-diagnostico">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Colangitis Biliar Primaria (CBP): Lo que necesitas saber sobre su diagnóstico</h1>
+    </div>
+
+    <!-- Intro -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <p>
+        La Colangitis Biliar Primaria (CBP) es una condición crónica en la que el sistema inmunológico, por error, ataca los pequeños conductos biliares del hígado. Estos conductos funcionan como “tuberías” que transportan la bilis (necesaria para digerir grasas y eliminar toxinas). Cuando se dañan, la bilis se acumula, causando una inflamación que, con el tiempo, puede lastimar el tejido hepático. 
+      </p>
+      <p class="mb-0">
+        Lo más importante que debes saber es que la CBP suele avanzar muy lentamente. De hecho, muchas personas no presentan síntomas al principio y descubren la condición a través de un chequeo de rutina. Detectarla a tiempo es la clave para evitar que el daño progrese hacia una cirrosis. 
+      </p>
+    </section>
+
+    <!-- Imagen principal -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGABR22026.webp') }}"
+           alt="Proceso diagnóstico de colangitis biliar primaria"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Diagnóstico -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+      <h2 class="h3 text-primary mb-3">¿Cómo llegamos al diagnóstico?</h2>
+      <p>
+        No existe una sola prueba, sino una combinación de hallazgos que nos ayuda a confirmar la presencia de CBP:
+      </p>
+      <ul>
+        <li>
+          Pruebas de función hepática: A través de un análisis de sangre, observamos niveles elevados de ciertas enzimas, especialmente la fosfatasa alcalina, que nos indica que algo está ocurriendo en las vías biliares. 
+        </li>
+        <li>
+          Anticuerpos antimitocondriales (AMA): Este es el marcador más importante. Es un estudio de sangre que busca proteínas específicas que el cuerpo genera en esta enfermedad. Su presencia es una señal muy clara para el diagnóstico. 
+        </li>
+        <li>
+          Estudios de imagen: Utilizamos ultrasonidos o resonancias magnéticas para observar la estructura de tu hígado y asegurarnos de que no existan obstrucciones físicas. 
+        </li>
+        <li>
+          Biopsia hepática: Sólo en casos donde los resultados anteriores no son concluyentes, tomamos una pequeña muestra de tejido para analizarla a detalle bajo el microscopio.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Imagen secundaria -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGABR12026.webp') }}"
+           alt="Hígado con colangitis biliar primaria"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Importancia -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="h3 text-primary mb-3">La importancia de la detección temprana</h2>
+      <p class="mb-0">
+        El objetivo de identificar la CBP en sus fases iniciales es simple pero vital: actuar antes de que el daño sea irreversible. Si iniciamos el tratamiento a tiempo, podemos prevenir la formación de cicatrices (fibrosis) y mantener la función de tu hígado saludable por mucho más tiempo. 
+      </p>
+    </section>
+
+    <!-- Atención -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+      <h2 class="h3 text-primary mb-3">Diagnóstico y atención especializada en CDMX</h2>
+      <p>
+        Si te encuentras en la Ciudad de México y has notado fatiga inusual, pizacón en la piel (prurito) o si tus estudios de laboratorio muestran alteraciones en el hígado, es momento de consultar a un especialista. 
+      </p>
+      <p>
+        En el Centro de Investigación y Gastroenterología (CIG), comprendemos que recibir un diagnóstico crónico genera muchas dudas. Por ello, te ofrecemos: 
+      </p>
+      <ul>
+        <li>Evaluación por expertos. Médicos especialistas en hepatología que te brindarán un seguimiento cercano y personalizado.</li>
+        <li>Tecnología de vanguardia: Herramientas de diagnóstico precisas para monitorear la salud de tu hígado.</li>
+        <li>Protocolos de investigación: Como centro de referencia, participamos en estudios clínicos que buscan desarrollar nuevas y mejores alternativas de tratamiento para la CBP.</li>
+      </ul>
+      <p class="mb-0">
+        Un diagnóstico oportuno marca la diferencia en tu futuro. Estamos aquí para acompañarte en cada paso. 
+      </p>
+    </section>
+
+    <!-- Referencias -->
+    <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="h4 text-white mb-3">Referencias bibliográficas</h2>
+      <ul class="mb-0">
+        <li>Kudavaralli, P. y John, S. (2023, 7 de agosto). Primary Biliary Cholangitis. StatPearls Publishing / National Library of Medicine. https://www.ncbi.nlm.nih.gov/books/NBK459209/</li>
+        <li>Mayo Clinic. (2022, 24 de agosto). Colangitis biliar primaria: Síntomas y causas. https://www.mayoclinic.org/es/diseases-conditions/primary-biliary-cholangitis/symptoms-causes/syc-20376874</li>
+        <li>Mayo Clinic. (2023, 23 de agosto). Biopsia de hígado. https://www.mayoclinic.org/es/tests-procedures/liver-biopsy/about/pac-20394576</li>
+        <li>MedlinePlus. (2023, 10 de mayo). Análisis de sangre de fosfatasa alcalina. Biblioteca Nacional de Medicina. https://medlineplus.gov/spanish/ency/article/000545.htm</li>
+        <li>National Institute of Diabetes and Digestive and Kidney Diseases. (s.f.). Colangitis biliar primaria. U.S. Department of Health and Human Services. https://www.niddk.nih.gov/health-information/informacion-de-la-salud/enfermedades-higado/colangitis-biliar-primaria</li>
+        <li>Podolsky, D.K. (2023, noviembre). Colangitis biliar primaria (CBP). Manual MSD versión para profesionales. https://www.msdmanuals.com/es/professional/trastornos-hep%C3%A1ticos-y-biliares/fibrosis-y-cirrosis/colangitis-biliar-primaria-cbp</li>
+      </ul>
+    </section>
+
+  </div>
+</div>
+
+{% endblock %}
