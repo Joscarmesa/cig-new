@@ -305,4 +305,12 @@ def colangitis_biliar_primaria_cbp_lo_que_necesitas_saber_sobre_su_diagnostico()
         canonical_url="https://higadograso.mx/blog/colangitis_biliar_primaria_cbp_lo_que_necesitas_saber_sobre_su_diagnostico"
     )
 
+@blog_bp.route('/blog/conviviendo_con_cuci_y_crohn_una_guia_sobre_tus_opciones_de_tratamiento.html')
+def conviviendo_con_cuci_y_crohn_una_guia_sobre_tus_opciones_de_tratamiento():
+    return render_template(
+        'blog_content/blog/conviviendo_con_cuci_y_crohn_una_guia_sobre_tus_opciones_de_tratamiento.html',
+        canonical_url="https://higadograso.mx/blog/conviviendo_con_cuci_y_crohn_una_guia_sobre_tus_opciones_de_tratamiento"
+    )
+
+
 
