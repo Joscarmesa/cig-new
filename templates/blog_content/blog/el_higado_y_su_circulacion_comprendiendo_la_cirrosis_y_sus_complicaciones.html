@@ -1,0 +1,145 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>El hígado y su circulación: comprendiendo la cirrosis y sus complicaciones — CIG</title>
+<meta name="description"
+    content="Aprende cómo la cirrosis afecta la circulación del hígado, qué es la hipertensión portal y por qué aparecen las várices esofágicas.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-cirrosis-circulacion">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">El Hígado y su Circulación: Comprendiendo la Cirrosis y sus complicaciones</h1>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                El hígado es el gran “laboratorio” de nuestro cuerpo: procesa nutrientes, elimina toxinas y produce
+                sustancias vitales para la digestión. Sin embargo, cuando sufre daños durante mucho tiempo, su
+                estructura cambia y esto afecta directamente la forma en que la sangre circula en nuestro organismo.
+            </p>
+            <p class="mb-0">
+                Tres términos que suelen aparecer juntos en este proceso son la cirrosis, la hipertensión portal y las
+                varices esofágicas. Aunque suenan complejos, aquí te explicamos cómo se conectan entre sí.
+            </p>
+        </section>
+
+        <!-- Imagen principal (placeholder) -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/PLACEHOLDER1.webp') }}"
+                alt="Circulación del hígado y daño por cirrosis" loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Cirrosis -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">¿Qué es la cirrosis?</h2>
+            <p>
+                La cirrosis no es una enfermedad que aparece de la noche a la mañana. Es el resultado de un daño
+                prolongado (por alcohol, hígado graso o hepatitis, entre otras causas) que genera cicatrices en el
+                tejido sano.
+            </p>
+            <p class="mb-0">
+                Imagina que el hígado, el cual debería de ser suave y flexible, se vuelve rígido como corcho, debido a
+                estas cicatrices. Esta rigidez dificulta que el órgano cumpla sus funciones y, lo más importante, que la
+                sangre pueda pasar libremente a través de él.
+            </p>
+        </section>
+
+        <!-- Hipertensión portal -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">Hipertensión Portal: El aumento de presión</h2>
+            <p class="mb-0">
+                Para entender esto, imagina una autopista: la vena porta es la vía principal que lleva la sangre desde
+                el intestino hacia el hígado. Cuando el hígado tiene cirrosis, funciona como un “bloqueo” en la
+                carretera y, al no poder pasar fácilmente, la sangre comienza a acumularse, aumentando la presión dentro
+                de la vena porta. A este fenómeno lo conocemos como hipertensión portal.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria (placeholder) -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/PLACEHOLDER2.webp') }}"
+                alt="Hipertensión portal y várices esofágicas" loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Varices -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">Varices Esofágicas: La búsqueda de rutas alternas</h2>
+            <p class="mb-0">
+                Como la sangre no puede pasar por el hígado debido a la presión aumentada, el cuerpo busca “atajos” o
+                rutas alternas para regresar al corazón. Esas rutas suelen ser venas muy pequeñas y delgadas ubicadas en
+                el esófago.
+                Al recibir mucha más sangre de la que pueden soportar, estas venas pequeñas se inflan y se dilatan,
+                convirtiéndose en várices esofágicas.
+            </p>
+        </section>
+
+        <!-- Vigilancia -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h3 text-primary mb-3">¿Por qué es vital la vigilancia médica?</h2>
+            <p class="mb-0">
+                El mayor riesgo es que, al ser venas con paredes muy delgadas, las várices pueden romperse y causar un
+                sangrado interno. Lo más importante que debes saber es que las várices esofágicas no suelen doler ni dar
+                avisos previos. Por eso, si hay un diagnóstico de cirrosis, los chequeos periódicos son la mejor
+                herramienta para actuar antes de que ocurra una Complicación.
+            </p>
+        </section>
+
+        <!-- Señales -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.35s">
+            <h2 class="h3 text-primary mb-3">Señales de alerta que requieren atención inmediata</h2>
+            <ul>
+                <li>● Vómito con sangre.</li>
+                <li>● Heces muy oscuras o negras (como el color del café).</li>
+                <li>● Sensación de debilidad extrema o mareo repentino.</li>
+            </ul>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+            <h2 class="h3 text-primary mb-3">Tu salud hepática es nuestra prioridad</h2>
+            <p>
+                Si ya cuentas con un diagnóstico de cirrosis o hígado graso, o si presentas síntomas digestivos que te
+                preocupen, en el Centro de Investigación y Gastroenterología (CIG) estamos para acompañarte en este
+                proceso.
+            </p>
+            <p class="mb-0">
+                Contamos con especialistas en hepatología que evaluarán tu caso de forma integral. Además, como centro
+                de vanguardia, contamos con protocolos de investigación clínica donde algunos pacientes pueden acceder a
+                nuevas alternativas terapéuticas en desarrollo. Cuidar tu hígado es cuidar tu vida. Permítenos
+                orientarte.
+            </p>
+        </section>
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.45s">
+            <h2 class="h4 text-white mb-3">Referencias bibliográficas</h2>
+            <ul class="mb-0">
+                <li>American College of Gastroenterology. (s.f.). Cirrosis hepática.
+                    https://gi.org/patients/recursos-en-espanol/cirrosis-hepatica/</li>
+                <li>Mayo Clinic. (2013, 11 de octubre). Cirrosis: Síntomas y causas.
+                    https://www.mayoclinic.org/es/diseases-conditions/cirrhosis/symptoms-causes/syc-20351487</li>
+                <li>Mayo Clinic. (2022, 22 de abril). Várices esofágicas: Síntomas y causas.
+                    https://www.mayoclinic.org/es/diseases-conditions/esophageal-varices/symptoms-causes/syc-20351538
+                </li>
+                <li>MedlinePlus. (2023, 22 de mayo). Cirrosis. Biblioteca Nacional de Medicina.
+                    https://medlineplus.gov/spanish/ency/article/000255.htm</li>
+                <li>Sharma, R. y Sharma, P. (2023, 12 de junio). Portal Hypertension. StatPearles Publishing / National
+                    Library of Medicine. https://www.ncbi.nlm.nih.gov/books/NBK507718/</li>
+            </ul>
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}

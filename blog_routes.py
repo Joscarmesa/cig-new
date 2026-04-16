@@ -312,5 +312,9 @@ def conviviendo_con_cuci_y_crohn_una_guia_sobre_tus_opciones_de_tratamiento():
         canonical_url="https://higadograso.mx/blog/conviviendo_con_cuci_y_crohn_una_guia_sobre_tus_opciones_de_tratamiento"
     )
 
-
-
+@blog_bp.route('/blog/el_higado_y_su_circulacion_comprendiendo_la_cirrosis_y_sus_complicaciones.html')
+def el_higado_y_su_circulacion_comprendiendo_la_cirrosis_y_sus_complicaciones():
+    return render_template(
+        'blog_content/blog/el_higado_y_su_circulacion_comprendiendo_la_cirrosis_y_sus_complicaciones.html',
+        canonical_url="https://higadograso.mx/blog/el_higado_y_su_circulacion_comprendiendo_la_cirrosis_y_sus_complicaciones"
+    )
