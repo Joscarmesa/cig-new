@@ -1,0 +1,153 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Salud hepática: ¿Cuándo es momento de consultar a un especialista? — CIG</title>
+<meta name="description"
+      content="Conoce cuándo acudir con un especialista en hígado, qué estudios se utilizan y cómo se evalúa la salud hepática.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-salud-hepatica-consulta">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Salud hepática: ¿Cuándo es momento de consultar a un especialista?</h1>
+    </div>
+
+    <!-- Intro -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <p>
+        El hígado es un órgano extraordinario: procesa nutrientes, limpia la sangre de sustancias innecesarias y produce elementos clave para la digestión. Sin embargo, tiene una característica particular: muchas de sus enfermedades avanzan en silencio, sin causar dolor ni molestias durante años.
+      </p>
+      <p class="mb-0">
+        Por ello, la prevención y la detección oportuna son los pilares más éticos y efectivos para cuidar tu salud.
+      </p>
+    </section>
+
+    <!-- Imagen principal -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGABR72026.webp') }}"
+           alt="Evaluación médica del hígado mediante estudios clínicos"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Especialista -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+      <h2 class="h3 text-primary mb-3">¿Qué hace un especialista en hígado?</h2>
+      <p>
+        Un especialista (frecuentemente un gastroenterólogo o hepatólogo) es el médico experto en diagnosticar y tratar los padecimientos que afectan el funcionamiento de este órgano. Su labor no es solo tratar la enfermedad, sino acompañarte para entender el estado actual de tu hígado mediante tu historia clínica, hábitos y estudios precisos.
+      </p>
+      <p>Entre las condiciones que se evalúan con mayor frecuencia se encuentran:</p>
+      <ul>
+        <li>● Hígado graso: Acumulación de grasa en las células hepáticas.</li>
+        <li>● Hepatitis: Inflamación del hígado, a veces causada por virus.</li>
+        <li>● Fibrosis hepática: Formación de cicatrices en el hígado como resultado de inflamación o daño prolongado.</li>
+        <li>● Cirrosis: Presencia de cicatrización avanzada en el tejido.</li>
+      </ul>
+    </section>
+
+    <!-- Señales -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="h3 text-primary mb-3">Señales y factores de riesgo: ¿Cuándo acudir?</h2>
+      <p>
+        No siempre hay síntomas físicos, pero existen situaciones donde una valoración médica es fundamental para actuar a tiempo:
+      </p>
+      <ul>
+        <li>● Hallazgos de laboratorio: Si tus estudios de sangre muestran alteraciones en las pruebas de función hepática.</li>
+        <li>● Diagnósticos previos: Si ya sabes que tienes hígado graso o antecedentes de hepatitis viral.</li>
+        <li>● Factores de estilo de vida: Consumo frecuente de alcohol o vivir con sobrepeso, obesidad o alteraciones del metabolismo (como diabetes).</li>
+        <li>● Signos físicos: El más común es la ictericia (cuando la piel o la parte blanca de los ojos se tornan amarillentas).</li>
+      </ul>
+    </section>
+
+    <!-- Imagen secundaria -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGABR82026.webp') }}"
+           alt="Especialista en hígado explicando estudios diagnósticos"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Evaluación -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+      <h2 class="h3 text-primary mb-3">¿Cómo se evalúa la salud de tu hígado?</h2>
+      <p>
+        Para darte un diagnóstico ético y certero, el especialista puede apoyarse en diversas herramientas:
+      </p>
+      <ol>
+        <li>Análisis de sangre: Mide sustancias que indican si hay inflamación o daño de células.</li>
+        <li>Estudios de imagen: El ultrasonido, la tomografía o la resonancia permiten ver la forma y el tamaño del órgano.</li>
+        <li>Elastografía (FibroScan): Una prueba moderna y no invasiva que mide la rigidez del hígado y también permite evaluar la cantidad de grasa en el hígado. Esto ayuda a saber si hay fibrosis (cicatrices) o esteatosis hepática (hígado graso).</li>
+        <li>Biopsia hepática: En casos muy específicos, se toma una pequeña muestra del tejido para analizarla debajo de un microscopio.</li>
+      </ol>
+    </section>
+
+    <!-- CDMX -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="h3 text-primary mb-3">Especialistas en la Ciudad de México</h2>
+      <p>
+        En la CDMX, el Centro de Investigación y Gastroenterología (CIG) se dedica a la evaluación integral de enfermedades digestivas y hepáticas. Bajo un enfoque de ética médica e investigación, el centro busca entender a fondo cada caso para ofrecer el mejor seguimiento.
+      </p>
+      <p>El equipo está liderado por especialistas certificadas:</p>
+      <ul>
+        <li>● Dra. Laura Ladrón de Guevara: Directora e investigadora principal.</li>
+        <li>● Dra. Graciela Torres: Subinvestigadora.</li>
+      </ul>
+      <p class="mb-0">
+        Ambas están certificadas por el Consejo Mexicano de Gastroenterología. Además de la consulta clínica, CIG participa en protocolos de investigación clínica, lo que permite a algunos pacientes acceder a alternativas terapéuticas de vanguardia en el estudio de enfermedades del hígado.
+      </p>
+    </section>
+
+    <!-- CTA WhatsApp -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <h3 class="mb-4">¿Necesitas orientación personalizada?</h3>
+        <p class="mb-4">Escríbenos por WhatsApp y con gusto te atendemos.</p>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20MASLD%2FMASH%20y%20mi%20riesgo%20metab%C3%B3lico%20en%20CIG%20Durango."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'masld_mash_durango'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+          </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20MASLD%2FMASH%20y%20mi%20riesgo%20metab%C3%B3lico%20en%20CIG%20Universidad."
+             target="_blank"
+             class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+             onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'masld_mash_universidad'});">
+            <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Referencias -->
+    <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.35s">
+      <h2 class="h4 text-white mb-3">Referencias bibliográficas</h2>
+      <ul class="mb-0">
+        <li>American Liver Foundation. (s.f.). Diagnosing liver disease. https://liverfoundation.org/liver-diseases/diagnosing-liver-disease</li>
+        <li>Mayo Clinic. (2023, 13 de mayo). Enfermedad hepática. https://www.mayoclinic.org/es/diseases-conditions/liver-problems/diagnosis-treatment/drc-20374507</li>
+        <li>Médica Sur. (s.f.). ¿Qué enfermedades atiende el hepatólogo? https://medicasur.com.mx/es/ms/hepatologia-medica-sur</li>
+        <li>National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). (s.f.). Enfermedad hepática. https://www.niddk.nih.gov/health-information/liver-disease</li>
+        <li>National Library of Medicine. (s.f.). Enfermedades del hígado. https://medlineplus.gov/spanish/liverdiseases.html</li>
+        <li>National Library of Medicine. (s.f.). Pruebas funcionales hepáticas. MedlinePlus. https://medlineplus.gov/spanish/pruebas-de-laboratorio/pruebas-funcionales-hepaticas</li>
+      </ul>
+    </section>
+
+  </div>
+</div>
+
+{% endblock %}

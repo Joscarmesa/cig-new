@@ -318,3 +318,11 @@ def el_higado_y_su_circulacion_comprendiendo_la_cirrosis_y_sus_complicaciones():
         'blog_content/blog/el_higado_y_su_circulacion_comprendiendo_la_cirrosis_y_sus_complicaciones.html',
         canonical_url="https://higadograso.mx/blog/el_higado_y_su_circulacion_comprendiendo_la_cirrosis_y_sus_complicaciones"
     )
+
+@blog_bp.route('/blog/especialistas_en_higado_en_cdmx_cuando_acudir_y_que_estudios_pedir.html')
+def especialistas_en_higado_en_cdmx_cuando_acudir_y_que_estudios_pedir():
+    return render_template(
+        'blog_content/blog/especialistas_en_higado_en_cdmx_cuando_acudir_y_que_estudios_pedir.html',
+        canonical_url="https://higadograso.mx/blog/especialistas_en_higado_en_cdmx_cuando_acudir_y_que_estudios_pedir"
+    )
+
