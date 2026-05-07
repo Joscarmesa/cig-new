@@ -326,3 +326,12 @@ def especialistas_en_higado_en_cdmx_cuando_acudir_y_que_estudios_pedir():
         canonical_url="https://higadograso.mx/blog/especialistas_en_higado_en_cdmx_cuando_acudir_y_que_estudios_pedir"
     )
 
+
+@blog_bp.route('/blog/hepatitis_lo_que_necesitas_saber_sobre_la_salud_de_tu_higado.html')
+def hepatitis_lo_que_necesitas_saber_sobre_la_salud_de_tu_higado():
+    return render_template(
+        'blog_content/blog/hepatitis_lo_que_necesitas_saber_sobre_la_salud_de_tu_higado.html',
+        canonical_url="https://higadograso.mx/blog/hepatitis_lo_que_necesitas_saber_sobre_la_salud_de_tu_higado"
+    )
+
+

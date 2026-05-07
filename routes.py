@@ -156,3 +156,6 @@ def register_routes(app, mail, db):
             logging.error(f'Error al listar suscriptores: {e}')
             flash('No se pudieron recuperar los suscriptores.', 'danger')
             return redirect(url_for('index'))
+
+
+
