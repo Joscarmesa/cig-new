@@ -334,4 +334,9 @@ def hepatitis_lo_que_necesitas_saber_sobre_la_salud_de_tu_higado():
         canonical_url="https://higadograso.mx/blog/hepatitis_lo_que_necesitas_saber_sobre_la_salud_de_tu_higado"
     )
 
-
+@blog_bp.route('/blog/el_sindrome_metabolico_y_tu_corazon_por_que_es_importante_cuidarlos_juntos.html')
+def el_sindrome_metabolico_y_tu_corazon_por_que_es_importante_cuidarlos_juntos():
+    return render_template(
+        'blog_content/blog/el_sindrome_metabolico_y_tu_corazon_por_que_es_importante_cuidarlos_juntos.html',
+        canonical_url="https://higadograso.mx/blog/el_sindrome_metabolico_y_tu_corazon_por_que_es_importante_cuidarlos_juntos"
+    )

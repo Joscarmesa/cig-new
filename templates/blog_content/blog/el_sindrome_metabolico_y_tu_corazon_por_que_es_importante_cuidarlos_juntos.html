@@ -1,0 +1,132 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>El Síndrome Metabólico y tu Corazón: ¿Por qué es importante cuidarlos juntos? — CIG</title>
+<meta name="description"
+    content="Conoce cómo el síndrome metabólico puede afectar el corazón, las arterias y la circulación, y por qué el hígado graso puede ser una señal de riesgo metabólico.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-sindrome-metabolico-corazon">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">El Síndrome Metabólico y tu Corazón: ¿Por qué es importante cuidarlos juntos?
+            </h1>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                Si te han mencionado que tienes síndrome metabólico, esto significa que en tu cuerpo se han juntado
+                varios factores al mismo tiempo: presión alta, niveles elevados de azúcar, grasa en la cintura y
+                problemas con el colesterol.
+            </p>
+            <p>
+                Cuando estos factores se unen, funcionan como una “tormenta perfecta” que ataca el bienestar de tu
+                corazón y de tus arterias.
+            </p>
+            <p class="mb-0">
+                Imagina que tus arterias son tuberías por las que fluye la sangre; el síndrome metabólico hace que esas
+                tuberías se llenen de “sarro” (grasa y placa) y se vuelvan rígidas, obligando al corazón a trabajar
+                mucho más fuerte para bombear, lo que con el tiempo lo cansa y lo daña.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGMAY32026.webp') }}"
+                alt="Enfermedades cardíacas que afectan a las personas con síndrome metabólico" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Problemas -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">Algunos problemas que pueden aparecer son:</h2>
+            <ol class="mb-0">
+                <li>Arterias tapadas (Enfermedad Coronaria): La grasa se acumula en las paredes de las arterias del
+                    corazón, haciendo que el camino de la sangre sea cada vez más estrecho.</li>
+                <li>Infarto: Si una de esas placas de grasa se rompe, puede formar un coágulo que bloquea el paso por
+                    completo. Es como si una tubería se tapara de repente.</li>
+                <li>Corazón cansado (Insuficiencia Cardíaca): De tanto esfuerzo por trabajar con la presión alta y las
+                    arterias obstruidas, el corazón pierde fuerza y ya no puede bombear sangre de forma eficiente.</li>
+                <li>Problemas en las piernas: La falta de buena circulación también puede afectar tus piernas, causando
+                    dolor al caminar porque no llega suficiente sangre a los músculos.</li>
+            </ol>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGMAY42026.webp') }}"
+                alt="Problemas cardiovasculares asociados al síndrome metabólico" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Hígado y corazón -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">¿Por qué hablamos del hígado si el problema es el corazón?</h2>
+            <p>
+                Tu cuerpo funciona como un sistema conectado. El hígado graso suele ser el “compañero silencioso” del
+                síndrome metabólico. Cuando el hígado tiene problemas, a menudo es una señal de que el corazón también
+                puede estar en riesgo.
+            </p>
+            <p class="mb-0">
+                Lo bueno es que estas enfermedades no aparecen de la noche a la mañana y tenemos tiempo para actuar. En
+                el Centro de Investigación y Gastroenterología (CIG), utilizamos herramientas como el FibroScan, el cual
+                nos da información acerca de la salud del hígado, lo cual puede ser una pista para saber más acerca de
+                tu salud metabólica general.Además, contamos con especialistas y protocolos de investigación diseñados
+                para ayudarte a mejorar tu calidad de vida.
+            </p>
+        </section>
+
+        <!-- WhatsApp CTA Start -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+                <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos
+                    para
+                    ayudarte!</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- WhatsApp CTA End -->
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h4 text-white mb-3">Referencias</h2>
+            <ul class="mb-0">
+                <li>● American Heart Association [AHA]. (2024, 12 de mayo). About metabolic syndrome.
+                    https://www.heart.org/en/health-topics/metabolic-syndrome/about-metabolic-syndrome</li>
+                <li>● MedlinePlus. (2023, 14 de junio). Síndrome metabólico. Biblioteca Nacional de Medicina.
+                    https://medlineplus.gov/spanish/metabolicsyndrome.html</li>
+                <li>● National Heart, Lung, and Blood Institute [NHLBI]. (s.f.) What is metabolic Syndrome? Institutos
+                    Nacionales de Salud. https://www.nhlbi.nih.gov/health/metabolic-syndrome</li>
+            </ul>
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}
