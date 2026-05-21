@@ -340,3 +340,11 @@ def el_sindrome_metabolico_y_tu_corazon_por_que_es_importante_cuidarlos_juntos()
         'blog_content/blog/el_sindrome_metabolico_y_tu_corazon_por_que_es_importante_cuidarlos_juntos.html',
         canonical_url="https://higadograso.mx/blog/el_sindrome_metabolico_y_tu_corazon_por_que_es_importante_cuidarlos_juntos"
     )
+
+@blog_bp.route('/blog/de_mayo_dia_mundial_del_ensayo_clinico.html')
+def de_mayo_dia_mundial_del_ensayo_clinico():
+    return render_template(
+        'blog_content/blog/de_mayo_dia_mundial_del_ensayo_clinico.html',
+        canonical_url="https://higadograso.mx/blog/de_mayo_dia_mundial_del_ensayo_clinico"
+    )
+

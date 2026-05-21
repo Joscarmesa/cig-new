@@ -1,0 +1,153 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>20 de mayo: Día Mundial del Ensayo Clínico — CIG</title>
+<meta name="description"
+    content="Conoce por qué la investigación clínica es clave para tu salud, cómo surgieron los ensayos clínicos y por qué hacen posible el avance de la medicina.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-dia-mundial-ensayo-clinico">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">20 de mayo: Día Mundial del Ensayo Clínico</h1>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <h2 class="h3 text-primary mb-3">¿Por qué la investigación es clave para tu salud?</h2>
+            <p class="mb-0">
+                Cada 20 de mayo celebramos el Día del Ensayo Clínico. Quizás el nombre suene muy técnico, pero en
+                realidad es algo que nos beneficia a todos: es el proceso mediante el cual la ciencia descubre nuevas
+                formas de curar o tratar enfermedades.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGMAY62026.webp') }}"
+                alt="El Dr. Lind separó a los enfermos en grupos para demostrar que los que comían cítricos se curaban"
+                loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Historia -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">Un poco de historia: El primer “experimento” en el mar</h2>
+            <p class="mb-0">
+                Todo empezó en 1747 con un médico llamado James Lind. En ese entonces, los marineros morían de una
+                enfermedad llamada escorbuto. El Dr. Lind separó a los enfermos en grupos y a unos les dio cítricos
+                (limones y naranjas) y a otros no. ¡Los que comieron fruta se curaron! Ese fue el primer ensayo clínico
+                de la historia y demostró que investigar con orden salva vidas.
+            </p>
+        </section>
+
+        <!-- Para qué sirven -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">¿Para qué sirven los ensayos clínicos hoy?</h2>
+            <p>
+                Casi todo lo que tienes hoy en tu botiquín (desde una aspirina hasta tratamientos avanzados para la
+                diabetes o el hígado) existe gracias a estos estudios. La investigación médica sirve para:
+            </p>
+            <ul class="mb-0">
+                <li>● Encontrar nuevas medicinas que sean más potentes o tengan menores efectos secundarios.</li>
+                <li>● Descubrir formas más rápidas de detectar enfermedades antes de que sean graves.</li>
+                <li>● Mejorar tratamientos que ya existen para que funcionen mejor.</li>
+            </ul>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGMAY52026.webp') }}"
+                alt="Los ensayos clínicos hacen posible el avance de la medicina con evidencia" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Seguridad -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">¿Es seguro participar en un estudio?</h2>
+            <p>
+                Esta es la duda más común. Es importante que sepas que un ensayo clínico no es &quot;experimentar a
+                ciegas&quot;.
+            </p>
+            <ol class="mb-0">
+                <li>Comparación: Muchas veces se compara una medicina nueva con la que ya usamos siempre para ver cuál
+                    es mejor.</li>
+                <li>Vigilancia total: Si participas, un equipo de médicos te revisa con mucha más frecuencia de lo
+                    normal.</li>
+                <li>Protección: Antes de empezar, un comité de ética y las autoridades de salud revisan que el estudio
+                    sea seguro para los pacientes.</li>
+            </ol>
+        </section>
+
+        <!-- Futuro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h3 text-primary mb-3">Tu ayuda hoy es la medicina del futuro</h2>
+            <p>
+                Participar en investigación no solo es una oportunidad para recibir tratamientos de vanguardia y
+                atención médica cercana; también es un acto generoso. Gracias a los pacientes que participan hoy, mañana
+                existirán curas para las siguientes generaciones.
+            </p>
+            <p class="mb-0">
+                En el Centro de Investigación y Gastroenterología (CIG), participamos en estudios internacionales bajo
+                las reglas más estrictas de seguridad. Si quieres saber más sobre los protocolos que tenemos disponibles
+                para enfermedades del hígado o digestivas, ¡acércate a nosotros!
+            </p>
+        </section>
+
+        <!-- WhatsApp CTA Start -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+                <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos
+                    para
+                    ayudarte!</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- WhatsApp CTA End -->
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.35s">
+            <h2 class="h4 text-white mb-3">Referencias</h2>
+            <ul class="mb-0">
+                <li>● Asociación Mexicana de Industrias de Investigación Farmacéutica [AMIIF]. (2021, 20 de mayo).
+                    ¿Sabes cuál fue el primer ensayo clínico de la historia?
+                    https://www.amiif.com.mx/sabes-cual-fue-el-primer-ensayo-clinico-de-la-historia/</li>
+                <li>● Instituto de Salud para el Bienestar [INSABI]. (2021, 20 de mayo). 20 de mayo: Día Internacional
+                    del Ensayo Clínico. Gobierno de México.
+                    https://www.gob.mx/insabi/articulos/20-de-mayo-dia-internacional-del-ensayo-clinico</li>
+                <li>● MedlinePlus. (2023, 19 de septiembre). Estudios clínicos. Biblioteca Nacional de Medicina.
+                    https://medlineplus.gov/spanish/clinicaltrials.html</li>
+                <li>● National Heart, Lung, and Blood Institute [NHLBI]. (s.f.). ¿Cómo funcionan los ensayos clínicos?
+                    Institutos Nacionales de Salud.
+                    https://www.nhlbi.nih.gov/es/investigacion/ensayos-clinicos/como-funcionan</li>
+            </ul>
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}
