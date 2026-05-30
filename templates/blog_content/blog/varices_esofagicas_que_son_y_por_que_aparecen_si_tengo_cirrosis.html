@@ -1,0 +1,137 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Varices esofágicas: ¿Qué son y por qué aparecen si tengo cirrosis? — CIG</title>
+<meta name="description"
+      content="Conoce qué son las varices esofágicas, por qué pueden aparecer en personas con cirrosis y por qué es importante detectarlas a tiempo.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-varices-esofagicas-cirrosis">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Varices esofágicas: ¿Qué son y por qué aparecen si tengo cirrosis?</h1>
+    </div>
+
+    <!-- Intro -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <p>
+        Si tienes una enfermedad del hígado, es posible que hayas escuchado sobre las várices esofágicas. Aunque el nombre suena complicado, entender por qué aparecen es el primer paso para prevenirlas y cuidarte mejor.
+      </p>
+    </section>
+
+    <!-- Imagen principal -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGMAY82026.webp') }}"
+           alt="Ilustración sobre várices esofágicas y circulación sanguínea"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Formación -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+      <h2 class="h3 text-primary mb-3">¿Por qué se forman? (El efecto “embotellamiento”)</h2>
+      <p>
+        Imagina que el hígado es la entrada principal a una ciudad. Cuando hay cirrosis, el hígado se pone duro y lleno de cicatrices, lo que actúa como un bloqueo o embotellamiento.
+      </p>
+      <p>
+        La sangre, que normalmente pasa por el hígado sin problemas, se topa con esta barrera y la presión empieza a subir (esto se llama hipertensión portal). Como la sangre necesita seguir avanzando, busca &quot;vías alternas&quot; o atajos por venas más pequeñas, como las que están en el esófago (el tubo que conecta tu boca con el estómago).
+      </p>
+    </section>
+
+    <!-- Imagen secundaria -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGMAY72026.webp') }}"
+           alt="Ilustración sobre presión en venas que no están preparadas para soportarla"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Riesgo -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="h3 text-primary mb-3">El riesgo de las várices</h2>
+      <p>
+        El problema es que las venas del esófago son muy delgadas y no están hechas para aguantar tanta presión. Al recibir tanta sangre, se inflan como un globo que se estira demasiado.
+      </p>
+      <ul class="mb-0">
+        <li>● Várices pequeñas: A veces no causan ninguna molestia.</li>
+        <li>● Várices grandes: Si la presión sigue subiendo, la pared de la vena se vuelve tan delgada que pueden romperse. Esto causa un sangrado que es una urgencia médica.</li>
+      </ul>
+    </section>
+
+    <!-- Síntomas -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+      <h2 class="h3 text-primary mb-3">¿Qué se siente?</h2>
+      <p class="mb-0">
+        Lo más traicionero de las várices es que no duelen ni se sienten mientras se están formando. Muchas personas no saben que las tienen hasta que se rompen. Por eso, si tienes cirrosis, es vital hacer revisiones constantes aunque te sientas bien.
+      </p>
+    </section>
+
+    <!-- Prevención -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="h3 text-primary mb-3">¿Cómo podemos prevenirlas?</h2>
+      <p>
+        La buena noticia es que, si la detectamos a tiempo, podemos actuar antes de que haya un sangrado:
+      </p>
+      <ol>
+        <li>Medicamentos: Existen medicinas que ayudan a bajar la “presión” en esas venas.</li>
+        <li>Revisiones médicas: Tu doctor puede ver el estado de tu hígado y tus venas para saber si hay riesgo.</li>
+      </ol>
+      <p>
+        En el Centro de Investigación y Gastroenterología (CIG), usamos herramientas como el FibroScan, que nos ayuda a conocer la salud de tu hígado de forma rápida y sin dolor. Además, contamos con especialistas y protocolos de investigación que buscan las mejores formas de tratar estas complicaciones.
+      </p>
+      <p class="mb-0">
+        Detectarlas a tiempo es la mejor forma de evitar sustos.
+      </p>
+    </section>
+
+     <!-- WhatsApp CTA Start -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+                <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos
+                    para
+                    ayudarte!</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- WhatsApp CTA End -->
+
+    <!-- Referencias -->
+    <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.35s">
+      <h2 class="h4 text-white mb-3">Referencias</h2>
+      <ul class="mb-0">
+        <li>● MedlinePlus. (2022, 25 de enero). Várices esofágicas sangrantes. Biblioteca Nacional de Medicina. https://medlineplus.gov/spanish/ency/article/000268.htm</li>
+        <li>● World Gastroenterology Organisation [WGO]. (2014). Guía Mundial de la Organización Mundial de Gastroenterología: Várices esofágicas. https://www.worldgastroenterology.org/UserFiles/file/guidelines/esophageal-varices-spanish-204.pdf</li>
+      </ul>
+    </section>
+
+  </div>
+</div>
+
+{% endblock %}

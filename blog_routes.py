@@ -348,3 +348,10 @@ def de_mayo_dia_mundial_del_ensayo_clinico():
         canonical_url="https://higadograso.mx/blog/de_mayo_dia_mundial_del_ensayo_clinico"
     )
 
+@blog_bp.route('/blog/varices_esofagicas_que_son_y_por_que_aparecen_si_tengo_cirrosis.html')
+def varices_esofagicas_que_son_y_por_que_aparecen_si_tengo_cirrosis():
+    return render_template(
+        'blog_content/blog/varices_esofagicas_que_son_y_por_que_aparecen_si_tengo_cirrosis.html',
+        canonical_url="https://higadograso.mx/blog/varices_esofagicas_que_son_y_por_que_aparecen_si_tengo_cirrosis"
+    )
+
