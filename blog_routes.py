@@ -355,3 +355,9 @@ def varices_esofagicas_que_son_y_por_que_aparecen_si_tengo_cirrosis():
         canonical_url="https://higadograso.mx/blog/varices_esofagicas_que_son_y_por_que_aparecen_si_tengo_cirrosis"
     )
 
+@blog_bp.route('/blog/partidos_botanas_y_alcohol_como_cuidar_tu_higado_durante_la_temporada_de_juegos.html')
+def partidos_botanas_y_alcohol_como_cuidar_tu_higado_durante_la_temporada_de_juegos():
+    return render_template(
+        'blog_content/blog/partidos_botanas_y_alcohol_como_cuidar_tu_higado_durante_la_temporada_de_juegos.html',
+        canonical_url="https://higadograso.mx/blog/partidos_botanas_y_alcohol_como_cuidar_tu_higado_durante_la_temporada_de_juegos"
+    )
