@@ -361,3 +361,10 @@ def partidos_botanas_y_alcohol_como_cuidar_tu_higado_durante_la_temporada_de_jue
         'blog_content/blog/partidos_botanas_y_alcohol_como_cuidar_tu_higado_durante_la_temporada_de_juegos.html',
         canonical_url="https://higadograso.mx/blog/partidos_botanas_y_alcohol_como_cuidar_tu_higado_durante_la_temporada_de_juegos"
     )
+
+@blog_bp.route('/blog/disfruta_el_partido_sin_descuidar_tu_salud_el_ejercicio_como_tu_mejor_aliado_contra_el_higado_graso.html')
+def disfruta_el_partido_sin_descuidar_tu_salud_el_ejercicio_como_tu_mejor_aliado_contra_el_higado_graso():
+    return render_template(
+        'blog_content/blog/disfruta_el_partido_sin_descuidar_tu_salud_el_ejercicio_como_tu_mejor_aliado_contra_el_higado_graso.html',
+        canonical_url="https://higadograso.mx/blog/disfruta_el_partido_sin_descuidar_tu_salud_el_ejercicio_como_tu_mejor_aliado_contra_el_higado_graso"
+    )
