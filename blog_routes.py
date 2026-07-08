@@ -368,3 +368,10 @@ def disfruta_el_partido_sin_descuidar_tu_salud_el_ejercicio_como_tu_mejor_aliado
         'blog_content/blog/disfruta_el_partido_sin_descuidar_tu_salud_el_ejercicio_como_tu_mejor_aliado_contra_el_higado_graso.html',
         canonical_url="https://higadograso.mx/blog/disfruta_el_partido_sin_descuidar_tu_salud_el_ejercicio_como_tu_mejor_aliado_contra_el_higado_graso"
     )
+
+@blog_bp.route('/blog/el_estres_afecta_tu_digestion_lo_que_realmente_pasa_en_tu_cuerpo.html')
+def el_estres_afecta_tu_digestion_lo_que_realmente_pasa_en_tu_cuerpo():
+    return render_template(
+        'blog_content/blog/el_estres_afecta_tu_digestion_lo_que_realmente_pasa_en_tu_cuerpo.html',
+        canonical_url="https://higadograso.mx/blog/el_estres_afecta_tu_digestion_lo_que_realmente_pasa_en_tu_cuerpo"
+    )

@@ -1,0 +1,186 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+
+<title>¿El estrés afecta tu digestión? Lo que realmente pasa en tu cuerpo — CIG</title>
+<meta name="description"
+    content="Conoce cómo el estrés puede afectar tu digestión, qué síntomas puede provocar y cuándo es importante acudir con un especialista.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-estres-digestion">
+    <div class="container">
+
+        ```
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">¿El estrés afecta tu digestión? Lo que realmente pasa en tu cuerpo</h1>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                ¿Has sentido alguna vez "mariposas" o un vacío en el estómago antes de una entrevista de trabajo, un
+                examen o una discusión importante? ¿O has notado que, en las épocas de mucha presión, aparecen molestias
+                como inflamación, acidez, diarrea o estreñimiento?
+            </p>
+            <p class="mb-0">
+                No es una coincidencia ni algo que esté solo en tu mente. El estrés afecta de forma real y directa a tu
+                digestión. Tu cerebro y tu sistema digestivo están conectados de manera constante a través de una red de
+                comunicación directa. Por eso, cuando vives bajo una carga constante de presión, preocupación o
+                ansiedad, tu cuerpo entra en un estado de alerta y libera sustancias químicas que alteran el
+                funcionamiento de tus órganos, afectando principalmente a tu estómago.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGJUL12026.webp') }}"
+                alt="¿El estrés afecta tu digestión? Lo que realmente pasa en tu cuerpo" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Estrés y digestión -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">¿Qué pasa en tu digestión cuando estás bajo estrés?</h2>
+            <p>
+                Cuando la tensión emocional se vuelve una constante en tu rutina, el sistema digestivo reacciona de
+                diferentes maneras. El impacto se suele dividir en dos áreas:
+            </p>
+
+            <h3 class="h5 mt-3">1. Síntomas digestivos directos:</h3>
+            <ul>
+                <li>a. Reflujo y acidez: Sensación de ardor o náuseas constantes.</li>
+                <li>b. Inflamación y gases: Pesadez abdominal, incluso después de comer porciones pequeñas.</li>
+                <li>c. Alteraciones en el ritmo intestinal: Cambios drásticos en las evacuaciones; algunas personas
+                    presentan diarrea por la misma angustia, mientras que otras sufren de estreñimiento prolongado.</li>
+            </ul>
+
+            <h3 class="h5 mt-3">2. Cambiar en tu comportamiento al comer:</h3>
+            <ul class="mb-0">
+                <li>a. Comer demasiado rápido o de forma impulsiva.</li>
+                <li>b. Tener mayores antojos de comida poco saludable (alta en azúcares o grasas).</li>
+                <li>c. Pérdida notable del apetito.</li>
+            </ul>
+        </section>
+
+        <!-- Nota médica -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">Nota médica:</h2>
+            <p class="mb-0">
+                Si ya padeces de condiciones digestivas previas como gastritis, reflujo gastroesofágico o síndrome de
+                intestino irritable (colitis), el estrés actúa como un potenciador, provocando que las crisis y los
+                dolores aparecen con mayor intensidad en los momentos emocionalmente complicados.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGJUL22026.webp') }}"
+                alt="Tu abdomen es un segundo cerebro sensible al estrés y las preocupaciones" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Cuerpo -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">El cuerpo refleja lo que estás viviendo</h2>
+            <p>
+                A veces nos convencemos de que "ya nos acostumbramos" al ritmo acelerado de la rutina diaria. Sin
+                embargo, el cuerpo tiene su propia forma de hablar y expresar que algo no está en equilibrio. Presta
+                atención si, además de los síntomas estomacales, notas:
+            </p>
+            <ul>
+                <li>● Cansancio físico constante que no mejora al descansar.</li>
+                <li>● Dificultad para conciliar el sueño o insomnio.</li>
+                <li>● Irritabilidad, dolores de cabeza frecuentes y falta de concentración.</li>
+            </ul>
+            <p class="mb-0">
+                Tu abdomen es un "segundo cerebro" sumamente sensible a las preocupaciones acumuladas, el exceso de
+                trabajo o los conflictos personales.
+            </p>
+        </section>
+
+        <!-- Diferencias individuales -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h3 text-primary mb-3">¿Por qué no todos nos sentimos igual?</h2>
+            <p class="mb-0">
+                Cada organismo responde a la tensión de forma única. La manera en que te afecta depende de múltiples
+                factores individuales: la calidad de tu descanso, tus hábitos diarios, tu nivel de actividad física y
+                las herramientas personales con las que manejas tus emociones en el día a día.
+            </p>
+        </section>
+
+        <!-- Cierre -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.35s">
+            <h2 class="h3 text-primary mb-3">Escucha lo que tu cuerpo lleva tiempo tratando de decirte</h2>
+            <p>
+                Tener una molestia estomacal de forma aislada u ocasional es normal. Sin embargo, cuando los síntomas
+                digestivos se vuelven frecuentes (aparecen varias veces por semana) o empiezan a afectar tu calidad de
+                vida, es fundamental detenerse y prestarles atención. Tu salud física y emocional están unidas; a veces,
+                el estrés que la mente calla o guarda, termina hablándole directamente al estómago.
+            </p>
+            <p class="mb-0">
+                Si el estrés está afectando tu salud digestiva y deseas recuperar tu bienestar, en el Centro de
+                Investigación y Gastroenterología (CIG) contamos con médicos especialistas que pueden orientarte. Te
+                ayudamos a evaluar el origen de tus síntomas para ofrecerte un diagnóstico preciso y un tratamiento
+                integral adecuado. Agenda tu valoración hoy mismo con nosotros.
+            </p>
+        </section>
+
+
+        <!-- WhatsApp CTA Start -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+                <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos
+                    para
+                    ayudarte!</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- WhatsApp CTA End -->
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.4s">
+            <h2 class="h4 text-white mb-3">Referencias</h2>
+            <ul class="mb-0">
+                <li>1. Clínica Endoscópica del Ecuador. (2022, 14 de marzo). Dolor de estómago causado por ansiedad o
+                    estrés: descubre cómo calmarlo y prevenirlo. Bienestar Institucional.
+                    https://clinicaendoscopicaec.com/bienestar/dolor-de-estomago-causado-por-ansiedad/</li>
+                <li>2. Houston Methodist. (2023, 14 de abril). ¿Cómo afecta el estrés al sistema digestivo? Blog de
+                    Salud.
+                    https://www.houstonmethodist.org/es/why-choose-houston-methodist/blog/2023/april/how-does-stress-affect-the-digestive-system/
+                </li>
+                <li>3. Mayo Clinic. (2021, 12 de marzo). Síntomas de estrés: consecuencias en el cuerpo y el
+                    comportamiento. Mayo Foundation for Medical Education and Research.
+                    https://www.mayoclinic.org/es/healthy-lifestyle/stress-management/in-depth/stress-symptoms/art-20050987
+                </li>
+            </ul>
+        </section>
+        ```
+
+    </div>
+</div>
+
+{% endblock %}
