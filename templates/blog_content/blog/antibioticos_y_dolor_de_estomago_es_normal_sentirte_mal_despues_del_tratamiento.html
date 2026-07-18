@@ -1,0 +1,173 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+
+<title>Antibióticos y dolor de estómago: ¿es normal sentirte mal después del tratamiento? — CIG</title>
+<meta name="description"
+    content="Conoce por qué puedes sentir inflamación, gases, cólicos o diarrea después de tomar antibióticos y cuándo es importante consultar a un especialista.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-antibioticos-dolor-estomago">
+    <div class="container">
+
+        ```
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Antibióticos y dolor de estómago: ¿es normal sentirte mal después del
+                tratamiento?</h1>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p class="mb-0">
+                Terminaste tu tratamiento con antibióticos y la infección desapareció, pero ahora notas inflamación,
+                gases, cólicos o cambios en tus evacuaciones (como diarrea). Aunque esta situación es muy frecuente, es
+                una señal importante de tu cuerpo que no debes ignorar: tu sistema digestivo está intentando recuperar
+                su equilibrio natural.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGJUL4 2026.webp') }}"
+                alt="Antibióticos y dolor de estómago" loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Malestar -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">¿Por qué ocurre este malestar?</h2>
+            <p>
+                La clave de todo está en tu microbiota intestinal (conocida comúnmente como flora intestinal). Esta es
+                una comunidad de millones de microorganismos buenos y amigables que viven en tu intestino y que trabajan
+                todos los días para ayudarte a digerir la comida, producir vitaminas y reforzar tus defensas.
+            </p>
+            <ul>
+                <li>● El rol del antibiótico: Su objetivo es destruir las bacterias dañinas que te enfermaron.</li>
+                <li>● El “efecto colateral”: El medicamento es sumamente efectivo pero no distingue entre bacterias
+                    buenas y malas. Al eliminar por accidente una parte de tus microbios protectores, el equilibrio se
+                    altera temporalmente, provocando pesadez o cólicos.</li>
+            </ul>
+            <p class="mb-0">
+                En la gran mayoría de los casos, estas molestias son leves y desaparecen solas en unos pocos días a
+                medida que tus defensas intestinales se regeneran.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGJUL3 2026.webp') }}"
+                alt="Terminas tu tratamiento de antibióticos sintiéndote mejor de la infección pero ahora lidias con gases, inflamación o cólicos"
+                loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Uso correcto -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">El problema no es el medicamento, sino cómo lo usamos</h2>
+            <p>
+                Los antibióticos son herramientas fundamentales que salvan vidas. El verdadero inconveniente surge
+                cuando no se utilizan de forma correcta. Para proteger tu salud y tu microbiota, evita por completo
+                estos dos errores críticos:
+            </p>
+            <ol>
+                <li>Automedicarse: Tomarlos sin receta médica, especialmente para gripes o resfriados. Estas
+                    enfermedades son causadas por virus, y los antibióticos no le hacen ningún efecto a los virus, solo
+                    dañan tu estómago innecesariamente.</li>
+                <li>Interrumpir el tratamiento antes de tiempo: Dejar de tomarlos porque "ya te sientes bien" o guardar
+                    los sobrantes para compartirlos después con alguien más.</li>
+            </ol>
+            <p class="mb-0">
+                Hacer esto debilita tu microbiota y, peor aún, provoca resistencia bacteriana, un problema grave que
+                hace que las bacterias se vuelvan "superfuertes" y las infecciones sean cada vez más difíciles de curar
+                en el futuro.
+            </p>
+        </section>
+
+        <!-- Recuperación -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">Cómo ayudar a tu cuerpo a recuperarse</h2>
+            <p>
+                Después de un tratamiento con antibióticos, puedes apoyar activamente a tu sistema digestivo siguiendo
+                estas recomendaciones:
+            </p>
+            <ul class="mb-0">
+                <li>● Alimentación limpia: Prioriza alimentos ligeros y fáciles de digerir; disminuye temporalmente las
+                    grasas, los irritantes (picante, condimentos en exceso) y los azúcares refinados.</li>
+                <li>● Buena hidratación: Toma suficiente agua simple durante el día para ayudar a la mucosa intestinal.
+                </li>
+                <li>● Evitar la automedicación: No tomes otros fármacos para el estómago sin consultar antes con un
+                    profesional.</li>
+            </ul>
+        </section>
+
+        <!-- Dolor -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h3 text-primary mb-3">¿Cuándo deja de ser normal el dolor?</h2>
+            <p>
+                El malestar por un antibiótico debe ser pasajero y disminuir gradualmente. No debes normalizar el dolor
+                crónico o persistente. Existen condiciones médicas más serias, como la inflamación crónica del intestino
+                (Enfermedad de Crohn o Colitis Ulcerosa), que causan síntomas parecidos pero persistentes en la mucosa
+                intestinal y que requieren un diagnóstico especializado.
+            </p>
+            <p class="mb-0">
+                Si tus molestias no mejoran o deseas asegurarte de que todo esté en orden con tu salud digestiva, en el
+                Centro de Investigación y Gastroenterología (CIG) contamos con especialistas listos para orientarte.
+                Agenda una revisión integral con nosotros para obtener un diagnóstico preciso y oportuno. Tu bienestar
+                es lo más importante.
+            </p>
+        </section>
+
+        <!-- CTA WhatsApp -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-3">¿Necesitas una evaluación de tu hígado?</h3>
+                <p class="mb-4">Escríbenos por WhatsApp y agenda tu estudio o consulta.</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20quiero%20agendar%20evaluaci%C3%B3n%20de%20fibrosis%20hep%C3%A1tica%20en%20Sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'fibrosis_durango'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20quiero%20agendar%20evaluaci%C3%B3n%20de%20fibrosis%20hep%C3%A1tica%20en%20Sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center"
+                        onclick="gtag('event','click_whatsapp',{event_category:'contacto',event_label:'fibrosis_universidad'});">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp · Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.35s">
+            <h2 class="h4 text-white mb-3">Referencias</h2>
+            <ul class="mb-0">
+                <li>1. Doctoralia. (2019, 12 de junio). ¿Cómo afectan los antibióticos a la microbiota intestinal? Blog
+                    de Doctoralia. https://www.doctoralia.es/blog/antibioticos-afectan-microbiota-intestinal</li>
+                <li>2. Gut Microbiota for Health. (2020, 16 de diciembre). Aspectos que debes saber sobre los efectos de
+                    los antibióticos sobre el microbioma intestinal y cómo recuperarse después de un tratamiento.
+                    https://www.gutmicrobiotaforhealth.com/es/aspectos-que-debe-saber-sobre-los-efectosde-los-antibioticos-sobre-el-microbioma-intestinal/
+                </li>
+                <li>3. Mayo Clinic. (2023, 22 de noviembre). Antibióticos: ¿no los está usando correctamente? Mayo
+                    Foundation for Medical Education and Research.
+                    https://www.mayoclinic.org/es/healthy-lifestyle/consumer-health/in-depth/antibiotics/art-20045720
+                </li>
+            </ul>
+        </section>
+        ```
+
+    </div>
+</div>
+
+{% endblock %}

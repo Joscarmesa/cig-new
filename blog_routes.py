@@ -375,3 +375,10 @@ def el_estres_afecta_tu_digestion_lo_que_realmente_pasa_en_tu_cuerpo():
         'blog_content/blog/el_estres_afecta_tu_digestion_lo_que_realmente_pasa_en_tu_cuerpo.html',
         canonical_url="https://higadograso.mx/blog/el_estres_afecta_tu_digestion_lo_que_realmente_pasa_en_tu_cuerpo"
     )
+
+@blog_bp.route('/blog/antibioticos_y_dolor_de_estomago_es_normal_sentirte_mal_despues_del_tratamiento.html')
+def antibioticos_y_dolor_de_estomago_es_normal_sentirte_mal_despues_del_tratamiento():
+    return render_template(
+        'blog_content/blog/antibioticos_y_dolor_de_estomago_es_normal_sentirte_mal_despues_del_tratamiento.html',
+        canonical_url="https://higadograso.mx/blog/antibioticos_y_dolor_de_estomago_es_normal_sentirte_mal_despues_del_tratamiento"
+    )
