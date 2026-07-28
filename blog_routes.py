@@ -382,3 +382,10 @@ def antibioticos_y_dolor_de_estomago_es_normal_sentirte_mal_despues_del_tratamie
         'blog_content/blog/antibioticos_y_dolor_de_estomago_es_normal_sentirte_mal_despues_del_tratamiento.html',
         canonical_url="https://higadograso.mx/blog/antibioticos_y_dolor_de_estomago_es_normal_sentirte_mal_despues_del_tratamiento"
     )
+
+@blog_bp.route('/blog/higado_graso_por_que_cada_vez_aparece_mas_en_personas_jovenes.html')
+def higado_graso_por_que_cada_vez_aparece_mas_en_personas_jovenes():
+    return render_template(
+        'blog_content/blog/higado_graso_por_que_cada_vez_aparece_mas_en_personas_jovenes.html',
+        canonical_url="https://higadograso.mx/blog/higado_graso_por_que_cada_vez_aparece_mas_en_personas_jovenes"
+    )
