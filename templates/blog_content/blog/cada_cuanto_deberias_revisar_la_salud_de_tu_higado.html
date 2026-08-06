@@ -1,0 +1,181 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+
+<title>¿Cada cuánto deberías revisar la salud de tu hígado? — CIG</title>
+<meta name="description"
+    content="Conoce cada cuánto revisar la salud de tu hígado según tu estado de salud, factores de riesgo, hígado graso, cirrosis y estudios como ultrasonido o FibroScan.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-revisar-salud-higado">
+    <div class="container">
+
+        ```
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">¿Cada cuánto deberías revisar la salud de tu hígado?</h1>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <h2 class="h3 text-primary mb-3">La respuesta no depende del calendario, sino de tu salud</h2>
+            <p>
+                Es normal pensar que, cuando algo no está bien en tu cuerpo, aparecerá algún dolor o una molestia que te
+                hará buscar ayuda. Sin embargo, con el hígado no siempre ocurre así, ya que puede acumular grasa o
+                sufrir daño durante años sin causar síntomas.
+            </p>
+            <p>
+                Por eso, muchas personas descubren que tienen una enfermedad hepática cuando se realizan estudios de
+                sangre o un ultrasonido solicitado por otro motivo y no porque el hígado les haya dado una señal de
+                alerta.
+            </p>
+            <p>
+                Si esto te ha pasado o sabes que tienes factores de riesgo, seguramente te has hecho esta pregunta:
+                ¿cada cuánto tiempo debes revisar la salud de tu hígado?
+            </p>
+            <p class="mb-0">
+                La respuesta dependerá de cómo se encuentre tu hígado, ya que no todas las personas necesitan el mismo
+                seguimiento. La frecuencia de las revisiones siempre debe adaptarse a cada caso.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGAGO22026.webp') }}"
+                alt="¿Cada cuánto deberías revisar la salud de tu hígado?" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Hígado sano -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">Si tu hígado está sano, ¿necesitas revisarlo?</h2>
+            <p>
+                Si no tienes síntomas y durante tu consulta médica no se han identificado factores de riesgo
+                importantes, como diabetes, obesidad, colesterol o triglicéridos elevados, no existe una recomendación
+                para que todas las personas se realicen estudios especializados del hígado cada año, pero puede ser una
+                medida preventiva.
+            </p>
+            <p class="mb-0">
+                Lo más recomendable es acudir a tus revisiones médicas habituales y tu médico valorará tu estado de
+                salud y decidirá si es necesario solicitar análisis de sangre u otros estudios. De esta manera, los
+                estudios se realizan cuando realmente pueden aportar información útil.
+            </p>
+        </section>
+
+        <!-- Hígado graso -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">Si ya te diagnosticaron hígado graso, ¿cada cuánto debes revisarte?</h2>
+            <p>
+                La frecuencia con la que debes revisar tu hígado dependerá de cómo evolucione la enfermedad.
+            </p>
+            <p>
+                Para decidir cada cuánto necesitas seguimiento, tu médico tomará en cuenta si existe cicatrización del
+                hígado (fibrosis), además de otros factores como diabetes tipo 2, obesidad, presión arterial alta o
+                niveles elevados de colesterol y triglicéridos.
+            </p>
+            <p>
+                Si el riesgo de progresión es bajo, tu médico decidirá cuándo es conveniente volver a evaluar tu hígado
+                para confirmar que la enfermedad continúa estable.
+            </p>
+            <p class="mb-0">
+                En cambio, si el riesgo es mayor o ya existe cicatrización del hígado, probablemente necesitarás un
+                seguimiento más cercano para decidir cuándo repetir estudios como análisis de sangre, ultrasonido o
+                FibroScan.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGAGO12026.webp') }}"
+                alt="Evaluación de la salud del hígado y estudios de seguimiento" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Cirrosis -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">Si tienes cirrosis, ¿cada cuánto debes revisar tu hígado?</h2>
+            <p>
+                Si tienes cirrosis, es muy importante que no suspendas tus revisiones, aunque te sientas bien.
+            </p>
+            <p>
+                De acuerdo con las guías internacionales American Association for the Study of Liver Diseases (AASLD) y
+                la European Association for the Study of the Liver (EASL), se recomienda realizar un ultrasonido del
+                hígado cada seis meses para detectar de forma temprana el cáncer de hígado.
+            </p>
+            <p class="mb-0">
+                Además, tu especialista puede solicitar análisis de sangre, endoscopia u otros estudios, según las
+                necesidades de tu caso.
+            </p>
+        </section>
+
+        <!-- Estudios -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h3 text-primary mb-3">¿Siempre necesitas un ultrasonido o un FibroScan?</h2>
+            <p>
+                No. El estudio que necesites dependerá de tu diagnóstico y de lo que tu médico quiera evaluar.
+            </p>
+            <ul>
+                <li>● Los análisis de sangre ayudan a conocer cómo está funcionando tu hígado.</li>
+                <li>● El ultrasonido permite observar el hígado e identificar cambios en su aspecto, como la acumulación
+                    de grasa o la presencia de alguna lesión.</li>
+                <li>● El FibroScan ayuda a medir la cantidad de grasa acumulada y evaluar si existe cicatrización en el
+                    hígado, sin necesidad de realizar una biopsia en la mayoría de los casos</li>
+            </ul>
+            <p class="mb-0">
+                Ningún estudio sustituye a otro. Cada uno aporta información diferente y será tu médico quien determine
+                cuál necesitas según tu caso.
+            </p>
+        </section>
+
+        <!-- Cierre -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.35s">
+            <h2 class="h3 text-primary mb-3">Entonces, ¿cada cuánto debes revisar tu hígado?</h2>
+            <p>
+                No existe una fecha que aplique para todas las personas. La frecuencia con la que debes revisar tu
+                hígado dependerá de tu estado de salud, de tus factores de riesgo y de si ya existe un diagnóstico de
+                enfermedad hepática.
+            </p>
+            <p>
+                Más que seguir un calendario, lo importante es acudir a las revisiones que te indique tu médico.
+            </p>
+            <p class="mb-0">
+                En el Centro de Investigación y Gastroenterología (CIG) contamos con especialistas y con tecnología como
+                FibroScan para evaluar la salud de tu hígado. ¡Agenda tu cita ahora mismo!
+            </p>
+        </section>
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.4s">
+            <h2 class="h4 text-white mb-3">Referencias</h2>
+            <ul class="mb-0">
+                <li>1. Asociación Americana para el Estudio de las Enfermedades Hepáticas. (2023). Guía de práctica
+                    clínica sobre la evaluación y el manejo de la enfermedad hepática esteatósica asociada a la
+                    disfunción metabólica (MASLD).
+                    https://journals.lww.com/hep/fulltext/10.1097/hep.0000000000000323~aasld-practice-guidance-on-the-clinical-assessment-and
+                </li>
+                <li>2. European Association for the Study of the Liver. (2024). EASL Clinical Practice Guidelines on the
+                    management of MASLD. https://www.journal-of-hepatology.eu/article/S0168-8278(24)00329-5/fulltext
+                </li>
+                <li>3. National Institute of Diabetes and Digestive and Kidney Diseases. (2023). Nonalcoholic Fatty
+                    Liver Disease (NAFLD).
+                    https://www.niddk.nih.gov/health-information/informacion-de-la-salud/enfermedades-higado/esteatohepatitis-no-alcoholica
+                </li>
+                <li>4. American Association for the Study of Liver Diseases. (2023). Practice Guidance on Prevention,
+                    Diagnosis, and Treatment of Hepatocellular Carcinoma.
+                    https://journals.lww.com/hep/fulltext/10.1097/hep.0000000000000466~aasld-practice-guidance-on-prevention-diagnosis-and
+                </li>
+            </ul>
+        </section>
+        ```
+
+    </div>
+</div>
+
+{% endblock %}

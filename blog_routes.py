@@ -389,3 +389,11 @@ def higado_graso_por_que_cada_vez_aparece_mas_en_personas_jovenes():
         'blog_content/blog/higado_graso_por_que_cada_vez_aparece_mas_en_personas_jovenes.html',
         canonical_url="https://higadograso.mx/blog/higado_graso_por_que_cada_vez_aparece_mas_en_personas_jovenes"
     )
+
+@blog_bp.route('/blog/cada_cuanto_deberias_revisar_la_salud_de_tu_higado.html')
+def cada_cuanto_deberias_revisar_la_salud_de_tu_higado():
+    return render_template(
+        'blog_content/blog/cada_cuanto_deberias_revisar_la_salud_de_tu_higado.html',
+        canonical_url="https://higadograso.mx/blog/cada_cuanto_deberias_revisar_la_salud_de_tu_higado"
+    )
+
