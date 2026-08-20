@@ -397,3 +397,9 @@ def cada_cuanto_deberias_revisar_la_salud_de_tu_higado():
         canonical_url="https://higadograso.mx/blog/cada_cuanto_deberias_revisar_la_salud_de_tu_higado"
     )
 
+@blog_bp.route('/blog/hepatitis_autoinmune_y_colangitis_biliar_primaria_en_que_se_diferencian.html')
+def hepatitis_autoinmune_y_colangitis_biliar_primaria_en_que_se_diferencian():
+    return render_template(
+        'blog_content/blog/hepatitis_autoinmune_y_colangitis_biliar_primaria_en_que_se_diferencian.html',
+        canonical_url="https://higadograso.mx/blog/hepatitis_autoinmune_y_colangitis_biliar_primaria_en_que_se_diferencian"
+    )
