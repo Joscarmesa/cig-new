@@ -1,0 +1,268 @@
+{% extends 'index.html' %}
+
+{% block main_content %}
+<main>
+    <!-- Encabezado -->
+    <section class="container-fluid bg-primary text-white py-5 mb-5">
+        <div class="container py-4 text-center">
+            <span class="badge rounded-pill bg-light text-primary mb-3">
+                Registro de pacientes
+            </span>
+            <h1 class="display-4 fw-bold text-white mb-3">
+                Tu proceso de FibroScan comienza aquí
+            </h1>
+            <p class="lead col-lg-8 mx-auto mb-4">
+                Completa el formulario para que nuestro equipo conozca tus antecedentes,
+                te oriente sobre la preparación y dé seguimiento a tu estudio.
+            </p>
+            <a href="#formulario-registro" class="btn btn-light btn-lg px-4">
+                Comenzar registro
+            </a>
+        </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="container py-5" aria-labelledby="proceso-fibroscan">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+                <p class="text-primary fw-bold text-uppercase mb-2">Paso a paso</p>
+                <h2 id="proceso-fibroscan" class="display-6 fw-bold mb-3">
+                    ¿Qué sucederá después de registrarte?
+                </h2>
+                <p class="text-muted mb-0">
+                    El registro nos permite revisar tu información y acompañarte antes,
+                    durante y después de tu FibroScan.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-xl-3">
+                <article class="card h-100 border-0 border-top border-primary border-4 shadow-sm">
+                    <div class="card-body p-4">
+                        <span class="badge bg-primary rounded-pill mb-3">Paso 1</span>
+                        <h3 class="h5 card-title">Completa tu registro</h3>
+                        <p class="card-text text-muted">
+                            Comparte tus datos de contacto y la información de salud
+                            solicitada en el formulario.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <article class="card h-100 border-0 border-top border-primary border-4 shadow-sm">
+                    <div class="card-body p-4">
+                        <span class="badge bg-primary rounded-pill mb-3">Paso 2</span>
+                        <h3 class="h5 card-title">Recibe indicaciones</h3>
+                        <p class="card-text text-muted">
+                            Nuestro equipo te confirmará la cita y las instrucciones
+                            de preparación que correspondan.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <article class="card h-100 border-0 border-top border-primary border-4 shadow-sm">
+                    <div class="card-body p-4">
+                        <span class="badge bg-primary rounded-pill mb-3">Paso 3</span>
+                        <h3 class="h5 card-title">Realiza tu FibroScan</h3>
+                        <p class="card-text text-muted">
+                            Es un estudio no invasivo que estima la rigidez y la cantidad
+                            de grasa en el hígado.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <article class="card h-100 border-0 border-top border-primary border-4 shadow-sm">
+                    <div class="card-body p-4">
+                        <span class="badge bg-primary rounded-pill mb-3">Paso 4</span>
+                        <h3 class="h5 card-title">Revisión de resultados</h3>
+                        <p class="card-text text-muted">
+                            El personal médico interpretará tus mediciones junto con
+                            tus antecedentes clínicos.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preparación -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-7">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 p-lg-5">
+                            <p class="text-primary fw-bold text-uppercase mb-2">
+                                Antes de tu estudio
+                            </p>
+                            <h2 class="h3 mb-4">
+                                Prepárate para una medición adecuada
+                            </h2>
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0 py-3">
+                                    <span class="badge bg-primary rounded-pill me-2">1</span>
+                                    Respeta el tiempo de ayuno que te indique nuestro
+                                    equipo al confirmar tu cita.
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+                                    <span class="badge bg-primary rounded-pill me-2">2</span>
+                                    Usa ropa cómoda que permita descubrir con facilidad
+                                    el costado derecho del abdomen.
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+                                    <span class="badge bg-primary rounded-pill me-2">3</span>
+                                    Si te indican dimeticona, tómala únicamente de acuerdo
+                                    con las instrucciones recibidas.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="card h-100 border-primary shadow-sm">
+                        <div class="card-body p-4 p-lg-5 d-flex flex-column justify-content-center">
+                            <h2 class="h4">¿Por qué pueden indicarte dimeticona?</h2>
+                            <p class="text-muted">
+                                Puede ayudar a reducir las burbujas de gas que dificultan
+                                la medición. Consulta la explicación completa antes de tu cita.
+                            </p>
+                            <a
+                                class="btn btn-outline-primary align-self-start"
+                                href="https://higadograso.mx/blog/para_que_sirve_la_dimeticona_en_mi_fibroscan.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Leer sobre la dimeticona
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investigación clínica -->
+    <section class="container py-5">
+        <div class="card border-0 bg-dark text-white shadow">
+            <div class="card-body p-4 p-lg-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7">
+                        <span class="badge bg-primary rounded-pill mb-3">
+                            Investigación clínica
+                        </span>
+                        <h2 class="text-white">
+                            Tus resultados podrían abrir una opción adicional
+                        </h2>
+                        <p class="mb-lg-0">
+                            Dependiendo de las mediciones de tu FibroScan, tus antecedentes
+                            y los criterios de los estudios disponibles, podrías ser
+                            considerado para una evaluación de preselección de algún
+                            protocolo de investigación.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <h3 class="h5 text-white">¿Qué significa esto?</h3>
+                        <ul class="mb-4">
+                            <li class="mb-2">
+                                El equipo revisará si existe un protocolo compatible.
+                            </li>
+                            <li class="mb-2">
+                                Podrían contactarte para explicarte el estudio y realizar
+                                evaluaciones adicionales.
+                            </li>
+                            <li>
+                                La decisión de participar siempre será voluntaria.
+                            </li>
+                        </ul>
+
+                        <div class="alert alert-light mb-0" role="note">
+                            Ser contactado o completar una preselección no garantiza el
+                            ingreso a un protocolo. La participación requiere cumplir
+                            todos los criterios y otorgar un consentimiento informado
+                            independiente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario -->
+    <section
+        id="formulario-registro"
+        class="container pb-5"
+        aria-labelledby="titulo-formulario"
+    >
+        <div class="row justify-content-center text-center mb-4">
+            <div class="col-lg-9">
+                <p class="text-primary fw-bold text-uppercase mb-2">
+                    Formulario de registro
+                </p>
+                <h2 id="titulo-formulario" class="display-6 fw-bold">
+                    Completa tu información
+                </h2>
+                <p class="text-muted">
+                    Revisa que tus datos sean correctos antes de enviar. El registro
+                    no sustituye una consulta médica ni confirma por sí mismo una cita
+                    o la elegibilidad para investigación.
+                </p>
+            </div>
+        </div>
+
+        <div class="card border-0 shadow overflow-hidden">
+            <div class="card-header bg-light p-3 p-lg-4">
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
+                    <h2 class="h4 mb-0">Registro para FibroScan</h2>
+                    <span class="badge bg-primary rounded-pill align-self-start">
+                        Tiempo estimado: 5–10 minutos
+                    </span>
+                </div>
+            </div>
+
+            <div class="card-body p-0">
+                <iframe
+                    class="w-100 border-0 d-block"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSe-SpMOiVpmuXCnwMOlIiJ31b_Pde4NhVBU6Q0CBe6IOnbyLw/viewform?embedded=true"
+                    title="Formulario de registro de pacientes para FibroScan"
+                    width="640"
+                    height="2960"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                >Cargando…</iframe>
+            </div>
+
+            <div class="card-footer bg-white text-center p-3">
+                <p class="text-muted small mb-2">
+                    Si el formulario no aparece correctamente, puedes abrirlo
+                    directamente en una pestaña nueva.
+                </p>
+                <a
+                    class="btn btn-sm btn-outline-primary"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe-SpMOiVpmuXCnwMOlIiJ31b_Pde4NhVBU6Q0CBe6IOnbyLw/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Abrir formulario
+                </a>
+            </div>
+        </div>
+
+        {# Antes de publicar: confirma que el Google Form incluya el aviso de privacidad aplicable. #}
+        <p class="text-center text-muted small mt-4 mb-0">
+            La información enviada será revisada por el equipo del Centro de
+            Investigación y Gastroenterología. Completar este registro no confirma
+            una cita ni obliga a participar en un protocolo de investigación.
+        </p>
+    </section>
+</main>
+{% endblock %}

@@ -50,6 +50,12 @@ def register_routes(app, mail, db):
     @app.route('/ensayos')
     def ensayos():
         return render_template('ensayos.html', canonical_url="https://higadograso.mx/ensayos")
+
+        # RUTA PARA EL REGISTRO DE PACIENTES
+
+    @app.route('/registro-pacientes')
+    def registro_pacientes():
+        return render_template('registro_pacientes.html', canonical_url='https://higadograso.mx/registro-pacientes')
     
 
     # RUTAS PARA LA CARRERA / TERMINOS Y CONDICIONES
