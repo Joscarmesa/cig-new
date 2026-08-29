@@ -1,0 +1,154 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Nuevos horizontes en el cuidado del hígado: cómo avanza la investigación médica — CIG</title>
+<meta name="description"
+    content="Conoce cómo avanza la investigación médica en enfermedades del hígado, tratamientos como UDCA, nuevas alternativas como seladelpar y medicamentos en investigación como lanifibranor.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-investigacion-medica-higado">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Nuevos horizontes en el cuidado del hígado: cómo avanza la investigación médica
+            </h1>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p class="mb-0">
+                Gracias a los avances de la investigación médica, hoy conocemos mejor cómo se desarrollan las
+                enfermedades del hígado y contamos con alternativas terapéuticas que permiten ofrecer una atención más
+                personalizada para cada paciente.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGAGO62026.webp') }}"
+                alt="Investigación médica y nuevas opciones para enfermedades del hígado" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- UDCA -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">Ácido ursodesoxicólico: un tratamiento que sigue siendo fundamental</h2>
+            <p>
+                Aunque la investigación continúa avanzando, algunos medicamentos siguen siendo la base del tratamiento
+                de ciertas enfermedades. Un ejemplo es el ácido ursodesoxicólico (UDCA), considerado el tratamiento de
+                primera línea para la mayoría de las personas con colangitis biliar primaria (CBP).
+            </p>
+            <p class="mb-0">
+                Su uso favorece el flujo normal de la bilis y ha demostrado ayudar a retrasar la progresión de la
+                enfermedad en muchas personas con colangitis biliar primaria. Sin embargo, como cada organismo responde
+                de manera diferente, tu especialista dará seguimiento a tu evolución para valorar si el tratamiento está
+                ofreciendo la respuesta esperada.
+            </p>
+        </section>
+
+        <!-- Nuevas alternativas -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">Cuando se necesitan nuevas alternativas</h2>
+            <p class="mb-0">
+                No todas las personas responden de la misma manera al tratamiento inicial. Por ello, la investigación
+                médica ha impulsado el desarrollo de nuevas opciones terapéuticas. Una de ellas es seladelpar, una
+                alternativa para determinados pacientes con colangitis biliar primaria cuando el tratamiento inicial no
+                es suficiente o no puede utilizarse. Su función es ayudar a disminuir la producción de bilis en el
+                hígado para reducir la acumulación de sustancias irritantes. Su indicación siempre debe ser valorada por
+                su especialista, ya que cada persona presenta necesidades diferentes.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGAGO52026.webp') }}"
+                alt="Tratamientos e investigación médica para el cuidado del hígado" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Investigación -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">La investigación sigue construyendo el futuro.</h2>
+            <p class="mb-0">
+                Mientras algunos tratamientos ya forman parte de la práctica clínica, otros continúan siendo evaluados
+                para confirmar su seguridad y eficacia antes de ser aprobados. Un ejemplo es lanifibranor, un
+                medicamento en investigación para personas con MASH. Actualmente se encuentra en estudios clínicos y
+                aunque los resultados obtenidos hasta ahora son buenos, todavía es necesario completar las
+                investigaciones y las evaluaciones de las autoridades regulatorias antes de que pueda formar parte del
+                tratamiento habitual.
+            </p>
+        </section>
+
+        <!-- Atención personalizada -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h3 text-primary mb-3">Más opciones significan una atención más personalizada</h2>
+            <p>
+                No existe un tratamiento mejor que otro. Cada enfermedad del hígado tiene características distintas y
+                por ello, el tratamiento debe adaptarse al diagnóstico, la evolución y las necesidades de cada paciente.
+            </p>
+            <p class="mb-0">
+                En el Centro de Investigación y Gastroenterología (CIG) participamos activamente en protocolos de
+                investigación clínica para contribuir al desarrollo de nuevas alternativas terapéuticas, siempre bajo
+                estrictos estándares éticos y científicos.
+            </p>
+        </section>
+
+        <!-- WhatsApp CTA Start -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+                <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos
+                    para
+                    ayudarte!</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- WhatsApp CTA End -->
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.35s">
+            <h2 class="h4 text-white mb-3">Referencias Bibliográficas</h2>
+            <ul class="mb-0">
+                <li>1. Agencia Española de Medicamentos y Productos Sanitarios. (2025). Informe de Posicionamiento
+                    Terapéutico de Lyvdelzi (seladelpar) en el tratamiento de la colangitis biliar primaria (CBP)
+                    https://www.aemps.gob.es/medicamentosUsoHumano/informesPublicos/docs/2025/IPT-378-Lyvdelzi-seladelpar.pdf
+                </li>
+                <li>2. Barb, D., et al. (2025). Lanifibranor mejora la sensibilidad a la insulina y reduce los
+                    triglicéridos intrahepáticos en pacientes con diabetes tipo 2 y MASLD. Journal of Hepatology
+                    https://www.journal-of-hepatology.eu/article/S0168-8278(25)00002-9/fulltext</li>
+                <li>3. MedlinePlus. (2024). Seladelpar . Biblioteca Nacional de Medicina de los EE. UU.
+                    https://medlineplus.gov/spanish/druginfo/meds/a624062-es.html</li>
+                <li>4. Centro Nacional de Información Biotecnológica. (2024). Ácido ursodesoxicólico (AUDC) StatPearls
+                    Publishing . https://www.ncbi.nlm.nih.gov/books/NBK545303/</li>
+                <li>5. Revista de Hepatología . (2025). Agonista triple de PPAR lanifibranor en MASH con fibrosis.
+                    https://www.journal-of-hepatology.eu/article/S0168-8278(25)00158-8/fulltext</li>
+            </ul>
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}

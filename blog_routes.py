@@ -403,3 +403,10 @@ def hepatitis_autoinmune_y_colangitis_biliar_primaria_en_que_se_diferencian():
         'blog_content/blog/hepatitis_autoinmune_y_colangitis_biliar_primaria_en_que_se_diferencian.html',
         canonical_url="https://higadograso.mx/blog/hepatitis_autoinmune_y_colangitis_biliar_primaria_en_que_se_diferencian"
     )
+
+@blog_bp.route('/blog/nuevos_horizontes_en_el_cuidado_del_higado_como_avanza_la_investigacion_medica.html')
+def nuevos_horizontes_en_el_cuidado_del_higado_como_avanza_la_investigacion_medica():
+    return render_template(
+        'blog_content/blog/nuevos_horizontes_en_el_cuidado_del_higado_como_avanza_la_investigacion_medica.html',
+        canonical_url="https://higadograso.mx/blog/nuevos_horizontes_en_el_cuidado_del_higado_como_avanza_la_investigacion_medica"
+    )
