@@ -410,3 +410,10 @@ def nuevos_horizontes_en_el_cuidado_del_higado_como_avanza_la_investigacion_medi
         'blog_content/blog/nuevos_horizontes_en_el_cuidado_del_higado_como_avanza_la_investigacion_medica.html',
         canonical_url="https://higadograso.mx/blog/nuevos_horizontes_en_el_cuidado_del_higado_como_avanza_la_investigacion_medica"
     )
+
+@blog_bp.route('/blog/regreso_a_clases_ideas_para_preparar_lunch_mas_equilibrados_y_cuidar_la_salud.html')
+def regreso_a_clases_ideas_para_preparar_lunch_mas_equilibrados_y_cuidar_la_salud():
+    return render_template(
+        'blog_content/blog/regreso_a_clases_ideas_para_preparar_lunch_mas_equilibrados_y_cuidar_la_salud.html',
+        canonical_url="https://higadograso.mx/blog/regreso_a_clases_ideas_para_preparar_lunch_mas_equilibrados_y_cuidar_la_salud"
+    )

@@ -1,0 +1,167 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Regreso a clases: ideas para preparar lunch más equilibrados y cuidar la salud — CIG</title>
+<meta name="description"
+    content="Ideas prácticas para preparar lunch más equilibrados en el regreso a clases y ayudar a formar hábitos saludables en la alimentación diaria.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-regreso-clases-lunch-saludable">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">Regreso a clases: ideas para preparar lunch más equilibrados y cuidar la salud
+            </h1>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                Con el regreso a clases también vuelve una de las preguntas más frecuentes: ¿qué preparar de lunch y que
+                realmente se lo coman? En medio de las prisas de la mañana, es común recurrir a alimentos empaquetados o
+                ultraprocesados porque parecen la opción más rápida.
+            </p>
+            <p class="mb-0">
+                Sin embargo, preparar un lunch nutritivo puede ser más sencillo de lo que imaginas. A continuación, te
+                compartimos 10 ideas que puedes variar durante la semana para ofrecer una alimentación más completa y
+                atractiva.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGAGO82026.webp') }}"
+                alt="Regreso a clases: ideas para preparar lunch más equilibrados y cuidar la salud" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Ideas de lunch -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">10 ideas de lunch</h2>
+
+            <h3 class="h5 mt-3">1. Molletes saludables</h3>
+            <p>
+                Medio bolillo integral con frijoles refritos bajos en grasa y queso Oaxaca gratinado. Acompaña con uvas
+                o fresas.
+            </p>
+
+            <h3 class="h5 mt-3">2. Sincronizadas</h3>
+            <p>
+                Dos tortillas de harina integral con jamón de pavo y queso panela o queso Oaxaca. Agrega pepino y jícama
+                en bastones.
+            </p>
+
+            <h3 class="h5 mt-3">3. Burrito de pollo</h3>
+            <p>
+                Tortilla de harina integral rellena de pollo deshebrado, aguacate y lechuga. Como complemento, una
+                mandarina.
+            </p>
+
+            <h3 class="h5 mt-3">4. Quesadillas</h3>
+            <p>
+                Dos tortillas de maíz con queso Oaxaca o queso panela. Acompaña con jitomates cherry, pepino y una
+                manzana.
+            </p>
+
+            <h3 class="h5 mt-3">5. Sándwich de atún</h3>
+            <p class="mb-0">
+                Pan integral con atún preparado con yogurt natural o una pequeña cantidad de mayonesa, lechuga y
+                jitomate. Agrega una pera.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGAGO72026.webp') }}"
+                alt="Hacer pequeños cambios en la alimentación diaria puede contribuir a formar hábitos saludables"
+                loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Más ideas -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">Más opciones para variar durante la semana</h2>
+
+            <h3 class="h5 mt-3">6. Tostadas horneadas</h3>
+            <p>
+                Tostadas horneadas con frijoles refritos bajos en grasa, queso fresco, aguacate y pico de gallo.
+                Completa con una naranja.
+            </p>
+
+            <h3 class="h5 mt-3">7. Hot cakes de avena y plátano</h3>
+            <p>
+                Hot cakes preparados con avena y plátano. Puedes acompañarlos con yogurt natural y fresas o manzana.
+            </p>
+
+            <h3 class="h5 mt-3">8. Huevo con verduras</h3>
+            <p>
+                Huevo revuelto con jitomate, cebolla y espinaca, acompañado de tortillas de maíz y pepino en rodajas.
+            </p>
+
+            <h3 class="h5 mt-3">9. Yogurt con fruta</h3>
+            <p>
+                Yogurt natural o griego con avena, plátano y canela. Puedes agregar unas almendras o nueces picadas.
+            </p>
+
+            <h3 class="h5 mt-3">10. Torta saludable</h3>
+            <p class="mb-0">
+                Bolillo integral con queso panela, aguacate, jitomate y pechuga de pavo. Incluir al menos una fruta o
+                una porción de verduras en cada lunch.
+            </p>
+        </section>
+
+        <!-- Recomendaciones -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">Recomendaciones</h2>
+            <ul>
+                <li>● Preferir cereales integrales para aumentar el aporte de fibra.</li>
+                <li>● Elegir proteínas magras como pollo, huevo, queso, yogurt o atún.</li>
+                <li>● Enviar agua natural como bebida principal.</li>
+                <li>● Evitar el consumo frecuente de refrescos, jugos industrializados, dulces, frituras y otros
+                    productos ultraprocesados.</li>
+            </ul>
+            <p class="mb-0">
+                No existe un lunch perfecto, pero hacer pequeños cambios en la alimentación diaria puede contribuir a
+                formar hábitos saludables. Lo importante es ofrecer opciones variadas y equilibradas la mayor parte del
+                tiempo, adaptándolas a las necesidades y preferencias de cada miembro de la familia.
+            </p>
+        </section>
+
+        <!-- WhatsApp CTA Start -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+                <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos
+                    para
+                    ayudarte!</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- WhatsApp CTA End -->
+
+    </div>
+</div>
+
+{% endblock %}
