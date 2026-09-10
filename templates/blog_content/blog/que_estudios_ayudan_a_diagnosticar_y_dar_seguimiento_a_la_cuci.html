@@ -1,0 +1,207 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>¿Qué estudios ayudan a diagnosticar y dar seguimiento a la CUCI? — CIG</title>
+<meta name="description"
+    content="Conoce qué estudios ayudan a diagnosticar y dar seguimiento a la CUCI, incluyendo análisis de sangre, estudios de heces, calprotectina fecal, colonoscopia y biopsias.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-estudios-diagnostico-seguimiento-cuci">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">¿Qué estudios ayudan a diagnosticar y dar seguimiento a la CUCI?</h1>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                Cuando existe sospecha de colitis ulcerosa crónica inespecífica (CUCI), no existe un único estudio que
+                confirme el diagnóstico. Tu gastroenterólogo necesita reunir diferentes piezas de información para
+                conocer qué está ocurriendo en tu intestino y descartar otras enfermedades que pueden causar síntomas
+                similares.
+            </p>
+            <p class="mb-0">
+                Pero ¿qué busca exactamente en cada estudio?
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGSEP22026.webp') }}"
+                alt="¿Qué estudios ayudan a diagnosticar y dar seguimiento al CUCI?" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Análisis de sangre -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">Análisis de sangre: conocer cómo está tu organismo</h2>
+            <p>
+                La biometría hemática es un análisis de sangre que permite evaluar tus células sanguíneas. En una
+                persona con CUCI, este estudio ayuda a detectar anemia, una alteración que puede presentarse por pérdida
+                de sangre o inflamación. La diarrea y el sangrado también pueden provocar pérdida de líquidos,
+                electrolitos y nutrientes. Por eso, mantener una nutrición adecuada es importante como parte del cuidado
+                de las personas con CUCI.
+            </p>
+            <p class="mb-0">
+                También pueden solicitarse pruebas como la proteína C reactiva (PCR) y la velocidad de sedimentación
+                globular (VSG), ambas ayudan a identificar la presencia de inflamación en el organismo. Estos análisis
+                aportan información importante, pero por sí solos no confirman la presencia de CUCI. Incluso pueden
+                estar dentro de los parámetros normales en algunas personas con enfermedad leve. Por eso, el médico
+                interpreta estos resultados a la par de tus síntomas y otros estudios.
+            </p>
+        </section>
+
+        <!-- Estudios de heces -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">Estudios de heces: descartar otras causas y buscar señales de inflamación
+            </h2>
+            <p>
+                Cuando tienes diarrea o cambios importantes en tus evacuaciones, tu médico puede solicitar un estudio de
+                heces
+            </p>
+            <p>
+                ¿Por qué? Porque una infección intestinal puede producir síntomas muy parecidos a los de la CUCI. Por
+                ejemplo, al momento del diagnóstico se recomienda descartar la infección por Clostridioides difficile,
+                una bacteria que causa diarrea y otros síntomas intestinales. En las heces también puede medirse la
+                calprotectina fecal, una sustancia que aumenta cuando existe inflamación en el inestino. En personas con
+                CUCI, esta prueba es muy útil para saber si existe actividad inflamatoria, evaluar la respuesta al
+                tratamiento o detectar una posible reaparición de la enfermedad. Una de sus ventajas es que no necesitas
+                una colonoscopia para realizarla: basta con proporcionar una muestra de heces.
+            </p>
+            <p class="mb-0">
+                La calprotectina no sustituye a la colonoscopia ni confirma por sí sola la CUCI, pero es una herramienta
+                importante para vigilar la evolución de la enfermedad.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGSEP12026.webp') }}"
+                alt="Tu gastroenterólogo necesita reunir diferentes piezas de información para conocer qué está ocurriendo en tu intestino"
+                loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Colonoscopia -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">Colonoscopia: mirar directamente qué está pasando</h2>
+            <p>
+                La colonoscopia permite observar directamente el interior de tu colon y recto, mediante un tubo flexible
+                equipado con una pequeña cámara. En una persona con sospecha de CUCI, este procedimiento permite
+                identificar si existe inflamación y conocer qué tan extendida está. Además, tu especialista evalúa el
+                estado de la mucosa, que es la capa que recubre el intestino.
+            </p>
+            <p>
+                Pero hay algo todavía más importante: durante la colonoscopia pueden tomarse biopsias.
+            </p>
+            <p>
+                ¿Qué es una biopsia? Una biopsia es una pequeña muestra de tejido que se obtiene durante la
+                colonoscopia. Después, un especialista la analiza bajo el microscopio para buscar cambios relacionados
+                con la inflamación.
+            </p>
+            <p>
+                ¿Por qué es necesaria? Porque lo que se observa durante una colonoscopia es solo una parte de la
+                información. El análisis del tejido aporta información importante para confirmar el diagnóstico y
+                diferenciar la CUCI de otras enfermedades que puedan causar síntomas similares.
+            </p>
+            <p class="mb-0">
+                Por eso, en el diagnóstico de CUCI se consideran en conjunto tus síntomas, los análisis de sangre y
+                heces, lo que se observa durante la colonoscopia y los resultados de las biopsias.
+            </p>
+        </section>
+
+        <!-- Seguimiento -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h3 text-primary mb-3">¿Y después del diagnóstico? El seguimiento también es importante</h2>
+            <p>
+                La CUCI es una enfermedad que puede tener periodos de mayor y menor actividad. Por eso, durante el
+                seguimiento, tu gastroenterólogo necesita saber no solo cómo te sientes, sino también si la inflamación
+                está realmente controlada.
+            </p>
+            <p>
+                Dependiendo de tu situación, tu médico se apoyará en la revisión de tus síntomas, tus análisis de
+                sangre, la calprotectina fecal y estudios endoscópicos cuando sean necesarios. Las guías actuales
+                recomiendan utilizar estas herramientas de manera conjunta para evaluar la respuesta al tratamiento y
+                vigilar posibles recaídas.
+            </p>
+            <p class="mb-0">
+                Esto es importante porque sentirte mejor no siempre significa que la inflamación haya desaparecido por
+                completo. Por esa razón, el seguimiento permite detectar cambios que quizás todavía no estés percibiendo
+                y tomar decisiones oportunas sobre tu tratamiento.
+            </p>
+        </section>
+
+        <!-- CIG -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.35s">
+            <p class="mb-0">
+                En el Centro de Investigación y Gastroenterología (CIG) contamos con especialistas en enfermedades
+                inflamatorias intestinales que pueden ayudarte en el diagnóstico y seguimiento de la CUCI. Además,
+                participamos en investigación clínica enfocada en ampliar las opciones de tratamiento para personas con
+                enfermedades inflamatorias intestinales.
+            </p>
+        </section>
+
+        <!-- WhatsApp CTA Start -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+                <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos
+                    para
+                    ayudarte!</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- WhatsApp CTA End -->
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.4s">
+            <h2 class="h4 text-white mb-3">Referencias</h2>
+            <ul class="mb-0">
+                <li>1.Instituto Nacional de Diabetes y Enfermedades Digestivas y Renales (NIDDK). Diagnóstico de la
+                    colitis ulcerosa.
+                    https://www.niddk.nih.gov/health-information/digestive-diseases/ulcerative-colitis/diagnosis</li>
+                <li>2.Asociación Americana de Gastroenterología (AGA). El papel de los biomarcadores en el manejo de la
+                    colitis ulcerosa.
+                    https://gastro.org/clinical-guidance/the-role-of-biomarkers-for-the-management-of-ulcerative-colitis-uc
+                </li>
+                <li>3.Colegio Americano de Gastroenterología (ACG/EBGI). Guía del ACG para el manejo de pacientes
+                    adultos con colitis ulcerosa https://gi.org/journals-publications/ebgi/alkazzi_aug2025</li>
+                <li>4.ECCO-ESGAR-ESP-IBUS. (2025). Guía sobre el diagnóstico y seguimiento de pacientes con enfermedad
+                    inflamatoria intestinal: Parte 1. Journal of Crohn's and Colitis,19(7)
+                    https://academic.oup.com/ecco-jcc/article/19/7/jjaf106/8219802</li>
+                <li>5.Revista de Gastroenterología de México. Consenso Mexicano para el Diagnóstico y Tratamiento de la
+                    Colitis Ulcerosa Crónica Inespecífica.
+                    https://www.revistagastroenterologiamexico.org/es-consenso-mexicano-el-diagnostico-tratamiento-articulo-S037509061830034X
+                </li>
+                <li>6. Colitis ulcerosa crónica inespecífica
+                    https://medicasur.com.mx/es/ms/ms_intcol_Colitis_Ulcerosa_Cronica_Inespecifica_CUCI</li>
+            </ul>
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -417,3 +417,10 @@ def regreso_a_clases_ideas_para_preparar_lunch_mas_equilibrados_y_cuidar_la_salu
         'blog_content/blog/regreso_a_clases_ideas_para_preparar_lunch_mas_equilibrados_y_cuidar_la_salud.html',
         canonical_url="https://higadograso.mx/blog/regreso_a_clases_ideas_para_preparar_lunch_mas_equilibrados_y_cuidar_la_salud"
     )
+    
+@blog_bp.route('/blog/que_estudios_ayudan_a_diagnosticar_y_dar_seguimiento_a_la_cuci.html')
+def que_estudios_ayudan_a_diagnosticar_y_dar_seguimiento_a_la_cuci():
+    return render_template(
+        'blog_content/blog/que_estudios_ayudan_a_diagnosticar_y_dar_seguimiento_a_la_cuci.html',
+        canonical_url="https://higadograso.mx/blog/que_estudios_ayudan_a_diagnosticar_y_dar_seguimiento_a_la_cuci"
+    )
