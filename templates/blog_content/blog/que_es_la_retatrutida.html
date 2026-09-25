@@ -1,0 +1,140 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>¿Qué es la retatrutida? — CIG</title>
+<meta name="description"
+    content="Conoce qué es la retatrutida, cómo funciona, por qué se considera un agonista triple y cuál es su situación actual como medicamento en investigación.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-retatrutida">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">¿Qué es la retatrutida?</h1>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p class="mb-0">
+                La retatrutida, también conocida como retatrutide (LY3437943), es una molécula que actualmente se
+                encuentra en investigación clínica, principalmente para el tratamiento de la obesidad y algunas
+                enfermedades relacionadas con ella. A diferencia de algunos medicamentos actuales que actúan sobre una o
+                dos vías hormonales, la retatrutida actúa sobre tres receptores relacionados con la regulación del
+                metabolismo: GIP, GLP-1 y glucagón. Por esta razón se describe como un agonista triple.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGSEP62026.webp') }}"
+                alt="Retatrutida como triple agonista de los receptores GLP-1, GIP y glucagón" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Cómo funciona -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">¿Cómo funciona?</h2>
+            <p>
+                El GLP-1 participa en la regulación del apetito y de la glucosa después de comer. El GIP también
+                interviene en la regulación de la glucosa y en la respuesta del organismo a los alimentos. Por su parte,
+                el glucagón participa en la regulación de la glucosa y del metabolismo energético.
+            </p>
+            <p>
+                La retatrutida activa los receptores de estas tres hormonas al mismo tiempo y la combinación de estas
+                acciones es la que se está estudiando para conocer su efecto sobre el peso corporal, el metabolismo y
+                algunas complicaciones relacionadas con la obesidad.
+            </p>
+            <p class="mb-0">
+                Por eso, si encuentras en internet que la llaman GLP-3, debes tener cuidado con ese término, no existe
+                una hormona llamada GLP-3 ni es una clasificación científica de la retatrutida. Es un nombre informal
+                utilizado para referirse a que actúa sobre tres receptores diferentes.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGSEP52026.webp') }}"
+                alt="Retatrutida como medicamento actualmente en investigación" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Uso actual -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">¿Significa que ya puedes utilizar retatrutida?</h2>
+            <p>
+                No. Actualmente, la retatrutida continúa siendo un medicamento en investigación y no está aprobado por
+                ninguna autoridad regulatoria. La FDA señala que la retatrutida no forma parte de ningún medicamento
+                aprobado y que no se ha determinado su seguridad y eficacia para una indicación aprobada.
+            </p>
+            <p class="mb-0">
+                En México, los medicamentos que pueden comercializarse requieren contar con un registro sanitario
+                otorgado por COFEPRIS y la propia Comisión dispone de un visor público para consultar los medicamentos
+                autorizados. Por eso, que encuentres una página de Facebook, un sitio web o incluso a una persona que
+                ofrezca retatrutida no significa que estés comprando un medicamento aprobado.
+            </p>
+        </section>
+
+        <!-- Cierre -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <p class="mb-0">
+                En el Centro de Invesgación y Gatroenterolgia nos manetenmos al día con los últimos avances en la
+                ciencia médica. Tu salud y seguridad son lo más importante. Si tienes dudas sobre tratamientos para la
+                obesidad o enfermedades metabólicas, busca siempre orientación de un profesional de la salud.
+            </p>
+        </section>
+
+        <!-- WhatsApp CTA Start -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+                <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos
+                    para
+                    ayudarte!</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- WhatsApp CTA End -->
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h4 text-white mb-3">Referencias</h2>
+            <ul class="mb-0">
+                <li>Eli Lilly and Company (23 de julio de 2026). Lo que debes saber sobre retatrutida
+                    https://www.lilly.com/news/stories/what-to-know-about-retatrutide</li>
+                <li>Preocupaciones de la FDA sobre los medicamentos GLP-1 no aprobados utilizados para la pérdida de
+                    peso (15 de junio de 2026)
+                    https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss
+                </li>
+                <li>COFEPRIS presenta Visor de Registros Sanitarios de Medicamentos (22 de Abril de 2026)
+                    https://www.gob.mx/cofepris/es/articulos/cofepris-presenta-visor-de-registros-sanitarios-de-medicamentos
+                </li>
+            </ul>
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -431,3 +431,10 @@ def como_evolucionan_la_cuci_y_la_cbp_sin_un_tratamiento_adecuado():
         'blog_content/blog/como_evolucionan_la_cuci_y_la_cbp_sin_un_tratamiento_adecuado.html',
         canonical_url="https://higadograso.mx/blog/como_evolucionan_la_cuci_y_la_cbp_sin_un_tratamiento_adecuado"
     )
+
+@blog_bp.route('/blog/que_es_la_retatrutida.html')
+def que_es_la_retatrutida():
+    return render_template(
+        'blog_content/blog/que_es_la_retatrutida.html',
+        canonical_url="https://higadograso.mx/blog/que_es_la_retatrutida"
+    )
