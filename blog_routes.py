@@ -438,3 +438,10 @@ def que_es_la_retatrutida():
         'blog_content/blog/que_es_la_retatrutida.html',
         canonical_url="https://higadograso.mx/blog/que_es_la_retatrutida"
     )
+
+@blog_bp.route('/blog/el_fibroscan_tambien_puede_medir_el_bazo.html')
+def el_fibroscan_tambien_puede_medir_el_bazo():
+    return render_template(
+        'blog_content/blog/el_fibroscan_tambien_puede_medir_el_bazo.html',
+        canonical_url="https://higadograso.mx/blog/el_fibroscan_tambien_puede_medir_el_bazo"
+    )

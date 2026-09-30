@@ -1,0 +1,117 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>¿El FibroScan también puede medir el bazo? — CIG</title>
+<meta name="description"
+    content="Conoce cómo la medición de la rigidez del bazo mediante FibroScan puede aportar información sobre hipertensión portal y el riesgo de algunas complicaciones.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-fibroscan-rigidez-bazo">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">¿El FibroScan también puede medir el bazo?</h1>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                La función principal del FibroScan es medir la rigidez del hígado, lo que ayuda a valorar el grado de
+                fibrosis. Sin embargo, hoy existe tecnología más avanzada que permite ir un paso más allá y medir
+                también la rigidez del bazo.
+            </p>
+            <p class="mb-0">
+                Es importante aclarar que este estudio no mide el tamaño del bazo, sino qué tan rígido está su tejido.
+                Esta información puede aportar datos importantes sobre los cambios que pueden presentarse en la
+                circulación relacionada con el hígado.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGSEP82026.webp') }}"
+                alt="La hipertensión portal puede aumentar la rigidez del bazo" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Utilidad -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">¿Por qué es útil medir la rigidez del bazo?</h2>
+            <p>
+                Cuando el hígado tiene un daño avanzado, el flujo de sangre a través del hígado puede verse afectado y
+                aumentar la presión en la circulación que llega al hígado. A esta condición se le conoce como
+                hipertensión portal.
+            </p>
+            <p class="mb-0">
+                Estos cambios pueden aumentar la rigidez del bazo. Por eso, conocer qué tan rígido está tu bazo puede
+                aportar información útil para valorar la presencia de hipertensión portal y el riesgo de algunas
+                complicaciones.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGSEP72026.webp') }}"
+                alt="Ubicación del bazo y su relación con la circulación del hígado" loading="lazy"
+                style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Beneficios -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">Medir la rigidez del bazo ayuda a:</h2>
+            <ul class="mb-0">
+                <li>● Conocer cómo está la presión en tu circulación de forma rápida y sin dolor, midiendo la rigidez
+                    del tejido con ondas de ultrasonido (elastografía transitoria).</li>
+                <li>● Identificar el riesgo de várices esofágicas (venas dilatadas en el esófago que pueden aparecer
+                    cuando existe hipertensión portal)</li>
+                <li>● Determinar si realmente necesitas una endoscopia, ya que si tus niveles de rigidez se encuentran
+                    dentro de ciertos valores, el especialista puede evitar ese estudio cuando no sea necesario, tal
+                    como lo recomiendan las guías internacionales.</li>
+            </ul>
+        </section>
+
+        <!-- Equipos -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">¿Todos los equipos FibroScan pueden medir el bazo?</h2>
+            <p>
+                No. Los equipos FibroScan convencionales están diseñados principalmente para evaluar la rigidez y la
+                grasa del hígado. La medición de la rigidez esplénica requiere equipos y tecnología específicos. Por
+                ejemplo, el FibroScan Expert 630 cuenta con una tecnología específica para realizar mediciones de
+                rigidez del bazo.
+            </p>
+            <p class="mb-0">
+                En el Centro de Investigación y Gastroenterología (CIG) contamos con tecnología de vanguardia para
+                cuidar de tu salud hepática sin procedimientos dolorosos.
+            </p>
+        </section>
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h4 text-white mb-3">Referencias</h2>
+            <ul class="mb-0">
+                <li>Baveno VII – Portal consenso internacional sobre hipertensión: de Franchis, R., et al. (2022).
+                    Baveno VII – Renovando el consenso en hipertensión portal . Journal of Hepatology, 76(4), 959–974.
+                    https://www.journal-of-hepatology.eu/article/S0168-8278(21)02299-6/fulltext</li>
+                <li>Revista de Gastroenterología de México: El futuro de la elastografía esplénica: ¿es una herramienta
+                    valiosa para el tratamiento personalizado? Revista de Gastroenterología de México.
+                    https://www.revistagastroenterologiamexico.org/es-el-futuro-elastografia-esplenica-es-articulo-S0375090626000340
+                </li>
+                <li>ScienceDirect: El algoritmo de Baveno VII puede utilizarse para excluir las varices que requieren
+                    tratamiento en pacientes con enfermedad hepática crónica avanzada compensada relacionada con MASLD.
+                    https://www.sciencedirect.com/science/article/abs/pii/S0973688326001283</li>
+                <li>Ecoches-Fibroscan expert 360 https://www.echosens.com/es/products/fibroscan-expert-630/</li>
+            </ul>
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}
