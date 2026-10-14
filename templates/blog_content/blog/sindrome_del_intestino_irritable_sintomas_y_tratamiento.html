@@ -1,0 +1,226 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Síndrome del Intestino Irritable, síntomas y tratamiento — CIG</title>
+<meta name="description"
+    content="Conoce qué es el Síndrome del Intestino Irritable (SII), cuáles son sus síntomas, qué puede empeorarlos, cuándo acudir al médico y qué opciones existen para su tratamiento.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-sindrome-intestino-irritable">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">SÍNDROME DEL INTESTINO IRRITABLE, SÍNTOMAS Y TRATAMIENTO</h1>
+        </div>
+
+        <!-- Intro -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                Si con frecuencia sientes dolor o incomodidad en el abdomen, notas inflamación o pasas por períodos de
+                diarrea y estreñimiento, es comprensible que busques una explicación. Muchas personas llaman colitis a
+                este tipo de molestias, pero cuando aparecen de manera recurrente pueden estar relacionadas con el
+                Síndrome del Intestino Irritable (SII).
+            </p>
+            <p class="mb-0">
+                El SII es un trastorno relacionado con la forma en que el cerebro y el intestino trabajan juntos. Esta
+                interacción puede influir en el movimiento y en la sensibilidad del intestino, aunque puede causar
+                molestias importantes, el SII no causa daño al aparato digestivo.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGOCT2 2026.webp') }}"
+                alt="El Síndrome del Intestino Irritable es un trastorno relacionado con la forma en que el cerebro y el intestino trabajan juntos"
+                loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Síntomas -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">¿Cuáles son los síntomas del Síndrome del Intestino Irritable?</h2>
+            <p>
+                Uno de los síntomas principales del SII es el dolor abdominal recurrente, que suele estar relacionado
+                con las evacuaciones y puede acompañarse de cambios en la frecuencia o en la forma de las heces.
+            </p>
+            <p>También pueden presentarse:</p>
+            <ul>
+                <li> Inflamación o distensión abdominal.</li>
+                <li> Gases.</li>
+                <li> Sensación de no haber evacuado por completo.</li>
+                <li> Moco en las heces.</li>
+            </ul>
+            <p>
+                Los síntomas pueden variar de una persona a otra y también pueden aparecer y desaparecer. Según cómo se
+                comporten tus evacuaciones, el SII puede presentarse principalmente con estreñimiento, diarrea o como
+                una combinación de ambos.
+            </p>
+            <p>
+                SII con predominio de estreñimiento: predominan las evacuaciones difíciles y las heces duras o grumosas.
+            </p>
+            <p>
+                SII con predominio de diarrea: predominan las evacuaciones sueltas o líquidas.
+            </p>
+            <p class="mb-0">
+                SII mixto: se alternan períodos en los que predomina el estreñimiento y otros en los que predomina la
+                diarrea.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGOCT1 2026.webp') }}"
+                alt="Los síntomas del Síndrome del Intestino Irritable pueden presentarse principalmente con estreñimiento, diarrea o una combinación de ambos"
+                loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Factores -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">¿Qué puede hacer que los síntomas empeoren?</h2>
+            <p>
+                El estrés y algunos alimentos pueden intensificar las molestias en determinadas personas. También pueden
+                influir otros factores, como cambios en el movimiento digestivo o antecedentes de infecciones
+                digestivas.
+            </p>
+            <p class="mb-0">
+                No todas las personas reaccionan de la misma manera a los alimentos. Por eso, en lugar de eliminar
+                muchos alimentos por tu cuenta, es recomendable que identifiques qué cambios realmente te ayudan a
+                controlar tus síntomas.
+            </p>
+        </section>
+
+        <!-- Cuándo acudir -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">¿Cuándo deberías acudir al médico?</h2>
+            <p>
+                Algunos síntomas pueden sugerir otro problema de salud y requieren una valoración médica. Consulta a un
+                profesional de la salud si presentas:
+            </p>
+            <ul>
+                <li> Sangrado rectal o sangre en las evacuaciones.</li>
+                <li> Heces negras.</li>
+                <li> Pérdida de peso involuntaria.</li>
+                <li> Anemia.</li>
+            </ul>
+            <p class="mb-0">
+                Estas señales no significan por sí mismas que tengas una enfermedad determinada, pero sí es importante
+                investigar qué las está ocasionando.
+            </p>
+        </section>
+
+        <!-- Tratamiento -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h3 text-primary mb-3">¿Cómo se trata el Síndrome del Intestino Irritable?</h2>
+            <p>
+                El SII es una condición de larga duración, por lo que el objetivo del tratamiento es controlar los
+                síntomas y mejorar tu calidad de vida. No existe un tratamiento único que funcione de la misma manera
+                para todas las personas pero cambios en la alimentación y el estilo de vida pueden ayudar a mejorar el
+                SII. Por eso, tu médico puede recomendar diferentes cambios de acuerdo con tus síntomas, entre ellos se
+                encuentra aumentar la actividad física, dormir lo suficiente y reducir en la medida de lo posible, las
+                situaciones de estrés.
+            </p>
+            <p class="mb-0">
+                En cuanto a la alimentación, algunas personas pueden beneficiarse de aumentar la fibra, especialmente la
+                fibra soluble también conocida como fibra suave la cual es la que absorbe agua. También puede
+                considerarse una dieta baja en FODMAP durante un tiempo determinado y con orientación profesional.
+            </p>
+        </section>
+
+        <!-- Alimentación -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.35s">
+            <p class="mb-0">
+                Lo importante es que estos cambios se adapten a ti y recuerda que no todas las personas con SII
+                necesitan eliminar los mismos alimentos.
+            </p>
+        </section>
+
+        <!-- Medicamentos -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+            <h2 class="h3 text-primary mb-3">Medicamentos</h2>
+            <p class="mb-0">
+                Existen opciones para controlar el dolor abdominal, la diarrea o el estreñimiento, pero no todos los
+                medicamentos son adecuados para todas las personas. Por eso, deben utilizarse bajo indicación médica y
+                siguiendo las recomendaciones sobre su uso y posibles efectos secundarios.
+            </p>
+        </section>
+
+        <!-- Cierre -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.45s">
+            <h2 class="h3 text-primary mb-3">No te acostumbres a vivir con molestias digestivas</h2>
+            <p>
+                Si tienes dolor abdominal, inflamación, diarrea, estreñimiento o cambios frecuentes en tus evacuaciones,
+                no tienes por qué asumir que simplemente es tu colitis. Una evaluación médica puede ayudarte a conocer
+                qué está ocurriendo y encontrar el manejo más adecuado para ti
+            </p>
+            <p class="mb-0">
+                En el Centro de Investigación y Gastroenterología (CIG) contamos con atención especializada para la
+                valoración de enfermedades digestivas.
+            </p>
+        </section>
+
+         <!-- WhatsApp CTA Start -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+                <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos
+                    para
+                    ayudarte!</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- WhatsApp CTA End -->
+
+        <!-- Fuentes -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.5s">
+            <h2 class="h4 text-white mb-3">Fuentes consultadas</h2>
+            <ul class="mb-0">
+                <li>1. National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). Síndrome del intestino
+                    irritable: síntomas y causas. National Institutes of Health.
+                    https://www.niddk.nih.gov/health-information/informacion-de-la-salud/enfermedades-digestivas/sindrome-intestino-irritable/sintomas-causas
+                </li>
+                <li>2. National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). Diagnóstico del
+                    síndrome de intestino irritable. National Institutes of Health.
+                    https://www.niddk.nih.gov/health-information/informacion-de-la-salud/enfermedades-digestivas/sindrome-intestino-irritable/diagnostico
+                </li>
+                <li>3. National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). Tratamiento para el
+                    síndrome de intestino irritable. National Institutes of Health.</li>
+                <li>4.
+                    https://www.niddk.nih.gov/health-information/informacion-de-la-salud/enfermedades-digestivas/sindrome-intestino-irritable/tratamiento
+                </li>
+                <li>5. National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). Alimentación, dieta y
+                    nutrición para el síndrome de intestino irritable. National Institutes of Health.
+                    https://www.niddk.nih.gov/health-information/informacion-de-la-salud/enfermedades-digestivas/sindrome-intestino-irritable/alimentos-dietas-nutricion
+                </li>
+                <li>6. Lacy, B. E., Pimentel, M., Brenner, D. M., et al. (2021). ACG Clinical Guideline: Management of
+                    Irritable Bowel Syndrome. The American Journal of Gastroenterology, 116(1), 17–44.
+                    https://pubmed.ncbi.nlm.nih.gov/33315591/</li>
+                <li>7. Rome Foundation. Rome IV Criteria. https://theromefoundation.org/rome-iv/rome-iv-criteria</li>
+            </ul>
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}

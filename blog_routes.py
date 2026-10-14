@@ -445,3 +445,11 @@ def el_fibroscan_tambien_puede_medir_el_bazo():
         'blog_content/blog/el_fibroscan_tambien_puede_medir_el_bazo.html',
         canonical_url="https://higadograso.mx/blog/el_fibroscan_tambien_puede_medir_el_bazo"
     )
+
+
+@blog_bp.route('/blog/sindrome_del_intestino_irritable_sintomas_y_tratamiento.html')
+def sindrome_del_intestino_irritable_sintomas_y_tratamiento():
+    return render_template(
+        'blog_content/blog/sindrome_del_intestino_irritable_sintomas_y_tratamiento.html',
+        canonical_url="https://higadograso.mx/blog/sindrome_del_intestino_irritable_sintomas_y_tratamiento"
+    )
