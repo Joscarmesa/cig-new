@@ -1,0 +1,123 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>Día Mundial de la Alimentación: cuidar lo que comes también es cuidar tu salud — CIG</title>
+<meta name="description"
+      content="En el Día Mundial de la Alimentación, conoce por qué una alimentación variada y equilibrada forma parte del cuidado de tu salud y bienestar digestivo.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-dia-mundial-alimentacion">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">Día Mundial de la Alimentación: cuidar lo que comes también es cuidar tu salud</h1>
+    </div>
+
+    <!-- Intro -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <p>
+        Cada 16 de octubre se conmemora el Día Mundial de la Alimentación, una fecha que busca crear conciencia sobre la importancia de que todas las personas tengan acceso a alimentos suficientes, seguros y nutritivos.
+      </p>
+      <p class="mb-0">
+        Pero hablar de alimentación no solo significa pensar en el hambre o en tener suficiente comida. También es una oportunidad para recordar que los alimentos forman parte de nuestra vida diaria y de la manera en que cuidamos nuestra salud.
+      </p>
+    </section>
+
+    <!-- Imagen principal -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGOCT4 2026.webp') }}"
+           alt="Lo que comes de manera habitual puede influir en tu bienestar y en tu salud digestiva"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Alimentación y salud -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+      <h2 class="h3 text-primary mb-3">¿Qué tiene que ver tu alimentación con tu salud?</h2>
+      <p>
+        Comer es mucho más que quitarte el hambre. A través de los alimentos obtenemos la energía y los nutrientes que tu cuerpo necesita para funcionar. Por eso, lo que comes de manera habitual puede influir en tu bienestar y también en tu salud digestiva. Una alimentación variada y equilibrada puede aportar diferentes nutrientes y formar parte de hábitos que puedas mantener a lo largo del tiempo.
+      </p>
+      <p class="mb-0">
+        Esto no significa que tengas que comer perfecto ni eliminar todos los alimentos que disfrutas. Se trata de encontrar una forma de alimentarte que sea variada, equilibrada y adecuada para tus necesidades.
+      </p>
+    </section>
+
+    <!-- Imagen secundaria -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow"
+           src="{{ url_for('static', filename='img/BLOGOCT3 2026.webp') }}"
+           alt="16 de octubre Día Mundial de la Alimentación"
+           loading="lazy"
+           style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Pausa -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="h3 text-primary mb-3">Una fecha para hacer una pausa</h2>
+      <p>
+        A veces pensamos en nuestra alimentación sólo cuando queremos bajar de peso o cuando aparece alguna molestia digestiva. Sin embargo, cuidar lo que comes también puede ser una forma de cuidar tu salud antes de que aparezcan problemas.
+      </p>
+      <p>
+        Por eso, este Día Mundial de la Alimentación puede ser un buen momento para preguntarte: ¿Tu alimentación actual está cuidando tu bienestar o solo está resolviendo el hambre del momento?
+      </p>
+      <p class="mb-0">
+        No necesitas cambiar todo de un día para otro. Pequeñas decisiones que puedas mantener con el tiempo también forman parte del cuidado de tu salud.
+      </p>
+    </section>
+
+    <!-- Cierre -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+      <p class="mb-0">
+        En el Centro de Investigación y Gastroenterología (CIG) nos sumamos a esta conmemoración recordándote que cuidar tu alimentación también es cuidar tu salud digestiva.
+      </p>
+    </section>
+
+     <!-- WhatsApp CTA Start -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+                <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos
+                    para
+                    ayudarte!</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- WhatsApp CTA End -->
+
+    <!-- Referencias -->
+    <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="h4 text-white mb-3">Referencias</h2>
+      <ul class="mb-0">
+        <li>1. Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO). Día Mundial de la Alimentación 2026. https://www.fao.org/world-food-day/es</li>
+        <li>2. Organización Mundial de la Salud (OMS). Alimentación saludable. https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet</li>
+      </ul>
+    </section>
+
+  </div>
+</div>
+
+{% endblock %}

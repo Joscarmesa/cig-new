@@ -453,3 +453,10 @@ def sindrome_del_intestino_irritable_sintomas_y_tratamiento():
         'blog_content/blog/sindrome_del_intestino_irritable_sintomas_y_tratamiento.html',
         canonical_url="https://higadograso.mx/blog/sindrome_del_intestino_irritable_sintomas_y_tratamiento"
     )
+
+@blog_bp.route('/blog/dia_mundial_de_la_alimentacion.html')
+def dia_mundial_de_la_alimentacion():
+    return render_template(
+        'blog_content/blog/dia_mundial_de_la_alimentacion.html',
+        canonical_url="https://higadograso.mx/blog/dia_mundial_de_la_alimentacion"
+    )
