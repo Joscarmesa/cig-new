@@ -460,3 +460,10 @@ def dia_mundial_de_la_alimentacion():
         'blog_content/blog/dia_mundial_de_la_alimentacion.html',
         canonical_url="https://higadograso.mx/blog/dia_mundial_de_la_alimentacion"
     )
+
+@blog_bp.route('/blog/que_senales_da_tu_colon_cuando_algo_no_esta_bien.html')
+def que_senales_da_tu_colon_cuando_algo_no_esta_bien():
+    return render_template(
+        'blog_content/blog/que_senales_da_tu_colon_cuando_algo_no_esta_bien.html',
+        canonical_url="https://higadograso.mx/blog/que_senales_da_tu_colon_cuando_algo_no_esta_bien"
+    )

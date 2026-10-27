@@ -1,0 +1,277 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>¿Qué señales da tu colon cuando algo no está bien? — CIG</title>
+<meta name="description"
+    content="Conoce las principales señales que puede dar tu colon cuando algo cambia: alteraciones en las evacuaciones, sangre en las heces, dolor abdominal, inflamación y pérdida de peso involuntaria.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-senales-colon">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">¿Qué señales da tu colon cuando algo no está bien?</h1>
+        </div>
+
+        <!-- Introducción -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p>
+                El colon forma parte del intestino grueso. Ahí se absorbe agua y se forman las heces, así que cuando
+                algo cambia en su funcionamiento, casi siempre lo notas al evacuar.
+            </p>
+
+            <p>Estas son las principales señales a las que debes prestar atención:</p>
+
+            <ol>
+                <li>Cambios en tus evacuaciones.</li>
+                <li>Sangre en las heces.</li>
+                <li>Dolor abdominal que persiste.</li>
+                <li>Inflamación y gases fuera de lo habitual.</li>
+                <li>Pérdida de peso involuntaria.</li>
+            </ol>
+
+            <p class="mb-0">
+                Ninguna de ellas significa por sí sola que exista una enfermedad grave: muchas veces se explican por la
+                alimentación, una infección pasajera o el funcionamiento normal del intestino. Lo que sí importa es
+                reconocer cuándo dejan de ser pasajeras o habituales.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGOCT62026.webp') }}"
+                alt="Principales señales a las que debes prestar atención cuando existen cambios en la salud del colon"
+                loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Cambios en evacuaciones -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">Cambios en tus evacuaciones</h2>
+
+            <ul>
+                <li>● Evacuar mucho más o mucho menos de lo habitual.</li>
+                <li>● Diarrea o estreñimiento que se repiten sin causa clara.</li>
+                <li>● Heces más delgadas de lo normal.</li>
+                <li>● Sensación frecuente de no haber terminado de evacuar, incluso después de ir al baño.</li>
+            </ul>
+
+            <p class="mb-0">
+                Un cambio ocasional puede tener distintas explicaciones. Sin embargo, cuando la molestia continúa o
+                aparece de la nada, es importante averiguar qué la está provocando.
+            </p>
+        </section>
+
+        <!-- Sangre en las heces -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">Sangre en las heces</h2>
+
+            <p>
+                La presencia de sangre al evacuar no debe considerarse normal, aunque puede tener diferentes causas,
+                desde problemas frecuentes como las hemorroides hasta enfermedades que afectan al colon. El color puede
+                dar una pista sobre el posible origen del sangrado:
+            </p>
+
+            <ul>
+                <li>● Roja o fresca: suele relacionarse con la parte baja del aparato digestivo (colon, recto, ano).
+                </li>
+                <li>● Negra o muy oscura: puede aparecer cuando existe un sangrado en una zona más alta del aparato
+                    digestivo</li>
+            </ul>
+
+            <p class="mb-0">
+                Sin embargo, algunos alimentos, suplementos de hierro y ciertos medicamentos también pueden oscurecer
+                las heces.
+            </p>
+        </section>
+
+        <!-- Dolor -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">Dolor abdominal que persiste</h2>
+
+            <p class="mb-0">
+                El dolor abdominal puede tener muchas causas y no siempre está relacionado con el colon. Para valorar,
+                además de la intensidad, es importante considerar cuándo aparece, cuánto dura y si se acompaña de otros
+                síntomas. También es importante saber que la intensidad del dolor no siempre refleja la gravedad de su
+                causa.
+            </p>
+        </section>
+
+        <!-- Inflamación -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h3 text-primary mb-3">Inflamación y gases fuera de lo habitual</h2>
+
+            <p class="mb-0">
+                Los gases ocasionales son parte normal de la digestión. La señal está en el cambio: cuando se vuelven
+                más frecuentes o intensos que antes, sobre todo si coinciden con cambios al evacuar. Estos síntomas son
+                muy inespecíficos y pueden aparecer en el síndrome de intestino irritable y en otros problemas
+                digestivos, así que por sí solos no permiten identificar una causa específica
+            </p>
+        </section>
+
+        <!-- Pérdida de peso -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.35s">
+            <h2 class="h3 text-primary mb-3">Pérdida de peso involuntaria</h2>
+
+            <p class="mb-0">
+                Bajar de peso sin haber cambiado tu alimentación ni tu actividad física merece atención, especialmente
+                si aparece junto con otras alteraciones digestivas. La pérdida de peso involuntaria puede tener
+                diferentes causas, por lo que cuando no existe una explicación clara conviene investigar su origen.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGOCT72026.webp') }}"
+                alt="Algunas enfermedades del colon pueden causar cambios en las evacuaciones, sangrado, dolor y otras molestias digestivas"
+                loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Enfermedades -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.4s">
+            <h2 class="h3 text-primary mb-3">Algunas enfermedades del colon pueden causar estas señales</h2>
+
+            <p>
+                Estas señales no siempre tienen el mismo origen. Algunas pueden relacionarse con diferentes enfermedades
+                del colon, entre ellas:
+            </p>
+
+            <ul>
+                <li>
+                    ● Diverticulosis: Se forman pequeñas bolsas en la pared del colon. La mayoría de las personas no
+                    presentan síntomas, pero si estas bolsas se inflaman, puede producir diverticulitis, que puede
+                    causar dolor abdominal y otras molestias.
+                </li>
+                <li>
+                    ● Colitis ulcerativa: Provoca inflamación y úlceras en el colon y el recto. Puede causar diarrea con
+                    sangre, dolor abdominal, sangrado rectal, pérdida de peso y cansancio.
+                </li>
+                <li>
+                    ● Pólipos del colon: Son crecimientos de tejido en la pared del colon. La mayoría no son cancerosos,
+                    pero algunos pueden convertirse en cáncer con el tiempo, cuando se detecta durante una colonoscopia,
+                    pueden retirarse y analizarse.
+                </li>
+            </ul>
+
+            <p class="mb-0">
+                Saber que existen distintas causas ayuda a entender por qué un mismo síntoma puede significar cosas muy
+                diferentes según la persona.
+            </p>
+        </section>
+
+        <!-- Cáncer de colon -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.45s">
+            <h2 class="h3 text-primary mb-3">¿Y si se trata de cáncer de colon?</h2>
+
+            <p>
+                Algunas de estas señales también pueden presentarse en el cáncer colorrectal, como la sangre en las
+                heces, los cambios persistentes al evacuar, las heces más delgadas, el dolor abdominal y la pérdida de
+                peso sin una causa aparente. Sin embargo, presentar alguno de estos síntomas no significa que tengas
+                cáncer, ya que también pueden aparecer en otras enfermedades digestivas. Además, el cáncer colorrectal
+                puede no producir síntomas en sus primeras etapas.
+            </p>
+
+            <p class="mb-0">
+                Por eso existen las pruebas de detección, que buscan identificarlo antes de que aparezcan molestias y
+                pueden detectar algunos pólipos para retirarlos antes de que se conviertan en cáncer. La edad y el tipo
+                de prueba dependen del riesgo de cada persona, los antecedentes familiares y personales pueden modificar
+                las recomendaciones, por lo que esto debe determinarse de manera individual.
+            </p>
+        </section>
+
+        <!-- Atención -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.5s">
+            <h2 class="h3 text-primary mb-3">¿Cuándo buscar atención?</h2>
+
+            <p class="mb-0">
+                Algunas situaciones requieren atención médica inmediata, especialmente si presentas sangrado abundante,
+                vómito con sangre, desmayo, confusión o dolor abdominal intenso.
+            </p>
+        </section>
+
+        <!-- Cierre -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.55s">
+            <h2 class="h3 text-primary mb-3">Escucharte también es cuidarte</h2>
+
+            <p>
+                Los cambios en tu digestión pueden tener diferentes causas. Prestar atención a lo que ocurre y buscar
+                una valoración cuando algo deja de ser habitual te permite conocer su origen y cuidar tu salud
+                digestiva.
+            </p>
+
+            <p class="mb-0">
+                En el Centro de Investigación y Gastroenterología (CIG) contamos con atención especializada para la
+                valoración de enfermedades digestivas y participamos en protocolos de investigación dirigidos a la salud
+                intestinal.
+            </p>
+        </section>
+
+        <!-- WhatsApp CTA Start -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+                <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos
+                    para
+                    ayudarte!</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- WhatsApp CTA End -->
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.6s">
+            <h2 class="h4 text-white mb-3">Referencias</h2>
+
+            <ol class="mb-0">
+                <li>MedlinePlus. Enfermedades del colon. Biblioteca Nacional de Medicina de EE. UU.
+                    https://medlineplus.gov/spanish/colonicdiseases.html</li>
+                <li>National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). El aparato digestivo y su
+                    funcionamiento.
+                    https://www.niddk.nih.gov/health-information/informacion-de-la-salud/enfermedades-digestivas/aparato-digestivo-funcionamiento
+                </li>
+                <li>MedlinePlus. Cáncer del colon y del recto. Biblioteca Nacional de Medicina de EE. UU.
+                    https://medlineplus.gov/spanish/colorectalcancer.html</li>
+                <li>MedlinePlus. Sangrado rectal. Biblioteca Nacional de Medicina de EE. UU.
+                    https://www.medlineplus.gov/spanish/ency/article/007741.htm</li>
+                <li>MedlinePlus. Heces negras o alquitranosas. Biblioteca Nacional de Medicina de EE. UU.
+                    https://www.medlineplus.gov/spanish/ency/article/003130.htm</li>
+                <li>National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). Síntomas y causas del
+                    sangrado gastrointestinal.
+                    https://www.niddk.nih.gov/health-information/informacion-de-la-salud/enfermedades-digestivas/sangrado-gastrointestinal/sintomas-y-causas
+                </li>
+                <li>MedlinePlus. Polipos del colon. https://medlineplus.gov/spanish/colonicpolyps.html</li>
+                <li>MedlinePlus Diverticulosis y Diverticulitis. Biblioteca Nacional de Medicina de EE. UU.
+                    https://www.medlineplus.gov/spanish/diverticulosisanddiverticulitis.html</li>
+                <li>MedlinePlus. Colitis ulcerativa. Biblioteca Nacional de Medicina de EE.UU.
+                    https://www.medlineplus.gov/spanish/ency/article/000250.htm</li>
+                <li>Instituto Nacional de Cancerología (INCan). Programa de Detección de Cáncer Colorrectal.
+                    https://incan.salud.gob.mx/p/info/programa-fit</li>
+            </ol>
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}
