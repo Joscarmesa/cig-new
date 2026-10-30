@@ -467,3 +467,10 @@ def que_senales_da_tu_colon_cuando_algo_no_esta_bien():
         'blog_content/blog/que_senales_da_tu_colon_cuando_algo_no_esta_bien.html',
         canonical_url="https://higadograso.mx/blog/que_senales_da_tu_colon_cuando_algo_no_esta_bien"
     )
+
+@blog_bp.route('/blog/que_relacion_hay_entre_tu_alimentacion_y_tu_salud_intestinal.html')
+def que_relacion_hay_entre_tu_alimentacion_y_tu_salud_intestinal():
+    return render_template(
+        'blog_content/blog/que_relacion_hay_entre_tu_alimentacion_y_tu_salud_intestinal.html',
+        canonical_url="https://higadograso.mx/blog/que_relacion_hay_entre_tu_alimentacion_y_tu_salud_intestinal"
+    )

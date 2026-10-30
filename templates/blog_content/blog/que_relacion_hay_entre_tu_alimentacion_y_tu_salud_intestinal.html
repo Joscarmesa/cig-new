@@ -1,0 +1,192 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>¿Qué relación hay entre tu alimentación y tu salud intestinal? — CIG</title>
+<meta name="description"
+    content="Conoce qué relación existe entre tu alimentación, la microbiota intestinal y tu salud digestiva, y por qué no todas las personas necesitan comer de la misma manera.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-alimentacion-salud-intestinal">
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="section-title mb-5 text-center">
+            <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+            <h1 class="display-5 mb-0">¿QUÉ RELACIÓN HAY ENTRE TU ALIMENTACIÓN Y TU SALUD INTESTINAL?</h1>
+        </div>
+
+        <!-- Introducción -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <p class="mb-0">
+                Lo que comes no solo influye en tu peso o en la energía que tienes durante el día. Tu alimentación
+                también tiene relación con la forma en que funciona tu aparato digestivo y con los microorganismos que
+                viven en tu intestino. Por eso, hablar de alimentación y salud intestinal no significa buscar un
+                alimento que limpie tu intestino o una dieta que funcione para todas las personas. Se trata de entender
+                cómo tus hábitos alimentarios pueden influir en tu digestión y en tu microbiota intestinal.
+            </p>
+        </section>
+
+        <!-- Imagen principal -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGOCT92026.webp') }}"
+                alt="En tu intestino vive una comunidad de microorganismos principalmente bacterias conocida como microbiota intestinal"
+                loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Microbiota -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+            <h2 class="h3 text-primary mb-3">Lo que comes también llega a tu microbiota</h2>
+
+            <p>
+                En tu intestino vive una comunidad de microorganismos, principalmente bacterias, conocida como
+                microbiota intestinal, esta comunidad participa en diferentes funciones del organismo, entre ellas la
+                digestión, el aprovechamiento de algunos nutrientes y la defensa de tu organismo frente a
+                microorganismos que pueden causar enfermedades.
+            </p>
+
+            <p class="mb-0">
+                La alimentación es uno de los factores que puede influir en la composición y actividad de esta
+                comunidad. Por eso, no importa únicamente lo que comes en una ocasión, sino el tipo de alimentación que
+                mantienes habitualmente. Esto no significa que un alimento por sí solo vaya a cambiar tu microbiota ni
+                que existan alimentos que sean buenos o malos para todas las personas. La alimentación forma parte de un
+                conjunto de factores que influyen en la salud intestinal.
+            </p>
+        </section>
+
+        <!-- Alimentación variada -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+            <h2 class="h3 text-primary mb-3">Una alimentación variada también beneficia a tu intestino</h2>
+
+            <p class="mb-0">
+                Una alimentación saludable se basa en la variedad, el equilibrio y la moderación. La Organización
+                Mundial de la Salud recomienda incluir diferentes grupos de alimentos, como frutas, verduras, legumbres,
+                cereales integrales y fuentes de proteína, y limitar el consumo de alimentos procesados como los que
+                contienen exceso de azúcares, sodio y grasas no saludables. Además de aportar vitaminas, minerales y
+                otros nutrientes, los alimentos de origen vegetal contienen fibra. Parte de esta fibra llega al
+                intestino y puede ser utilizada por las bacterias intestinales, que producen sustancias que participan
+                en diferentes funciones del organismo. Por eso, consumir diferentes fuentes de fibra de manera habitual
+                puede formar parte de una alimentación que favorezca la salud intestinal.
+            </p>
+        </section>
+
+        <!-- Ultraprocesados -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+            <h2 class="h3 text-primary mb-3">¿Y los alimentos ultraprocesados?</h2>
+
+            <p>
+                No se trata de pensar que un alimento está completamente prohibido. Lo importante es observar qué lugar
+                ocupa dentro de tu alimentación habitual.
+            </p>
+
+            <p class="mb-0">
+                Una dieta basada en una gran cantidad de productos ultraprocesados puede aportar cantidades elevadas de
+                azúcares, sodio y grasas no saludables, además de desplazar alimentos que aportan fibra y otros
+                nutrientes. Por eso, más que preocuparte por eliminar un alimento específico, vale la pena revisar el
+                conjunto de lo que comes durante la semana y buscar una alimentación más variada y equilibrada.
+            </p>
+        </section>
+
+        <!-- Imagen secundaria -->
+        <figure class="text-center mb-5">
+            <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGOCT92026.webp') }}"
+                alt="Tener una alimentación saludable no significa que debas seguir la misma dieta que otra persona"
+                loading="lazy" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Necesidades individuales -->
+        <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="h3 text-primary mb-3">No todos necesitamos comer lo mismo</h2>
+
+            <p>
+                Tener una alimentación saludable no significa que debas seguir exactamente la misma dieta que otra
+                persona. Tus necesidades pueden variar según tu edad, actividad física, hábitos y también según la forma
+                en que tu organismo responde a determinados alimentos. Esto es especialmente importante cuando tienes
+                síntomas digestivos. La distensión abdominal, los gases, la diarrea o el estreñimiento pueden
+                relacionarse con diferentes causas y no siempre significan que un alimento específico esté dañando tu
+                intestino.
+            </p>
+
+            <p class="mb-0">
+                Por ejemplo, en algunas personas con síndrome de intestino irritable, una alimentación baja en FODMAP
+                puede utilizarse durante un periodo determinado para identificar qué alimentos pueden estar relacionados
+                con sus síntomas. Después, los alimentos se vuelven a introducir de manera gradual para establecer qué
+                puede tolerar cada persona. Por eso, eliminar muchos alimentos por tu cuenta no siempre es la mejor
+                opción.
+            </p>
+        </section>
+
+        <!-- Cierre -->
+        <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.35s">
+            <h2 class="h3 text-primary mb-3">Cuidar tu alimentación también es cuidar tu intestino</h2>
+
+            <p>
+                No necesitas una dieta perfecta ni eliminar grupos completos de alimentos para cuidar tu salud
+                intestinal. Una alimentación variada, equilibrada y adecuada para tus necesidades puede formar parte de
+                una buena salud digestiva. Y si algo cambia en tu digestión, no se trata solo de preguntarte ¿qué comí?,
+                sino también de entender qué está ocurriendo y si existe alguna otra causa a la que debas prestar
+                atención.
+            </p>
+
+            <p class="mb-0">
+                En el Centro de Investigación y Gastroenterología (CIG) contamos con atención especializada para la
+                valoración de enfermedades digestivas y el cuidado de tu salud intestinal. Además de participar en
+                distintos protocolos de investigación.
+            </p>
+        </section>
+
+        <!-- WhatsApp CTA Start -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="mb-4">¿Necesitas atención personalizada?</h3>
+                <p class="mb-4">Haz clic en uno de los botones para enviarnos un mensaje directo por WhatsApp. ¡Estamos
+                    para
+                    ayudarte!</p>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525565430983?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Durango."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Durango
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://wa.me/525644071939?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20sucursal%20Universidad."
+                        target="_blank"
+                        class="btn btn-whatsapp-custom btn-lg w-100 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Mándanos un WhatsApp - Sucursal Universidad
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- WhatsApp CTA End -->
+
+        <!-- Referencias -->
+        <section class="bg-secondary text-white p-4 rounded wow fadeIn" data-wow-delay="0.4s">
+            <h2 class="h4 text-white mb-3">Referencias</h2>
+
+            <ol class="mb-0">
+                <li>Organización Mundial de la Salud (OMS). Alimentación saludable.
+                    https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet</li>
+                <li>National Institutes of Health (NIH). Mantener el intestino bajo control.
+                    https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/mantener-el-intestino-bajo-control
+                </li>
+                <li>Revista de Gastroenterología de México. Microbiota intestinal y su relación con la salud y la
+                    enfermedad.
+                    https://www.revistagastroenterologiamexico.org/es-microbiota-intestinal-salud-enfermedad-articulo-S0375090613001468
+                </li>
+                <li>Scielo. La dieta como factor determinante de la microbiota intestinal.
+                    https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112018001200004</li>
+            </ol>
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}
