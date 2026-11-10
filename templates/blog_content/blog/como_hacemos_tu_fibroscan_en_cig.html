@@ -1,0 +1,133 @@
+{% extends 'index.html' %}
+
+{# ---------- HEAD (SEO) ---------- #}
+{% block head %}
+<title>¿Cómo hacemos tu FibroScan en CIG? — CIG</title>
+<meta name="description"
+  content="Conoce cómo realizamos tu FibroScan en CIG, desde tu llegada y preparación hasta el estudio, la explicación de tus resultados y la entrega de tu reporte.">
+<link rel="canonical" href="{{ canonical_url }}">
+{{ super() }}
+{% endblock %}
+
+{# ---------- CONTENIDO PRINCIPAL ---------- #}
+{% block main_content %}
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.05s" id="blog-como-hacemos-fibroscan-cig">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="section-title mb-5 text-center">
+      <h5 class="position-relative d-inline-block text-primary text-uppercase">Blog</h5>
+      <h1 class="display-5 mb-0">¿Cómo hacemos tu FibroScan en CIG?</h1>
+    </div>
+
+    <!-- Introducción -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <p class="mb-0">
+        Si tienes una cita para realizarte un FibroScan, quizá te preguntes qué sucederá cuando llegues, cómo se lleva a
+        cabo el estudio y qué significan los resultados que recibirás. En el Centro de Investigación y Gastroenterología
+        (CIG), te acompañamos durante todo el proceso para que conozcas cada paso y sepas qué esperar durante tu visita.
+      </p>
+    </section>
+
+    <!-- Antes de comenzar -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.15s">
+      <h2 class="h3 text-primary mb-3">Antes de comenzar, preparamos tu visita</h2>
+
+      <p>
+        Cuando llegas a recepción, confirmamos tu cita y te preguntamos si tienes alguna alergia a medicamentos y si has
+        cumplido con el ayuno de al menos cuatro horas. Esto último es importante porque realizar el estudio sin la
+        preparación indicada podría afectar sus resultados.
+      </p>
+
+      <p class="mb-0">
+        Si no refieres alergias, te administramos dimeticona en gotas, un medicamento que ayuda a reducir los gases
+        intestinales. Mientras esperamos aproximadamente 15 minutos para que actúe, te pedimos que llenes un
+        cuestionario con tus datos personales, antecedentes de enfermedades, año de diagnóstico y tratamientos que
+        recibes, si corresponde. También te proporcionamos un aviso de privacidad para que conozcas cómo se maneja tu
+        información.
+      </p>
+    </section>
+
+    <!-- Te acompañamos -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.2s">
+      <h2 class="h3 text-primary mb-3">Te acompañamos durante el estudio</h2>
+
+      <p>
+        Cuando llega tu turno, una persona capacitada para realizar el FibroScan te llama por tu nombre y te acompaña a
+        la sala. Si deseas que un familiar pase contigo, puedes solicitarlo y te indicaremos si es posible. Antes de
+        comenzar, nos presentamos contigo y confirmamos la información que proporcionaste en recepción. También te
+        preguntamos tu peso y estatura, si no conoces estos datos, te ayudamos a obtenerlos. Además, medimos tu cintura
+        y cadera para completar tu valoración.
+      </p>
+
+      <p class="mb-0">
+        Si llevas estudios de laboratorio, los revisamos y registramos la información correspondiente. Si no cuentas con
+        ellos, no te preocupes, esto no impide que continuemos con tu FibroScan.
+      </p>
+    </section>
+
+    <!-- Imagen principal -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGNOV22026.webp') }}"
+        alt="Posición del paciente durante la realización de un FibroScan en CIG" loading="lazy"
+        style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Procedimiento -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.25s">
+      <h2 class="h3 text-primary mb-3">Así realizamos tu FibroScan</h2>
+
+      <p class="mb-0">
+        Una vez en la sala, te pedimos que descubras la parte superior derecha de tu abdomen, a la altura de las
+        costillas. Antes de iniciar, confirmamos nuevamente tu nombre completo, fecha de nacimiento y que hayas cumplido
+        con el ayuno indicado. Después, te explicamos cómo colocarte para realizar el estudio: cruzas la pierna derecha
+        sobre la izquierda, colocas la mano derecha detrás de la nuca, dejas la mano izquierda hacia abajo y te inclinas
+        ligeramente, siguiendo las indicaciones del personal capacitado, después te avisamos que el estudio ha concluido
+        y limpiamos tu abdomen para retirar el gel conductor que utilizamos durante el procedimiento. También limpiamos
+        el equipo después de cada paciente para mantener las condiciones de higiene necesarias.
+      </p>
+    </section>
+
+    <!-- Imagen secundaria -->
+    <figure class="text-center mb-5">
+      <img class="img-fluid rounded shadow" src="{{ url_for('static', filename='img/BLOGNOV12026.webp') }}"
+        alt="FibroScan para evaluar la rigidez del hígado y estimar la cantidad de grasa acumulada" loading="lazy"
+        style="max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- Resultados -->
+    <section class="bg-light p-4 rounded shadow mb-5 wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="h3 text-primary mb-3">¿Qué significan tus resultados?</h2>
+
+      <p>
+        Mientras enviamos tus resultados para imprimirlos en recepción, te explicamos qué indican los valores
+        relacionados con la grasa y la rigidez de tu hígado. Según tus resultados, también podemos orientarte sobre
+        algunas medidas generales para cuidar tu salud, cómo mantener una alimentación equilibrada o acudir con un
+        nutriólogo si necesitas apoyo para mejorar tus hábitos alimenticios.
+      </p>
+
+      <p class="mb-0">
+        Si encontramos alteraciones importantes, te explicamos por qué es necesario que acudas con tu médico para
+        complementar los resultados con tus antecedentes, estudios de laboratorio y valoración clínica. Recuerda que el
+        FibroScan aporta información importante sobre tu hígado, pero sus resultados no sustituyen por sí solos un
+        diagnóstico médico; es necesario interpretarlos de acuerdo con tu situación particular.
+      </p>
+    </section>
+
+    <!-- Final -->
+    <section class="p-4 rounded shadow mb-5 border wow fadeIn" data-wow-delay="0.35s">
+      <h2 class="h3 text-primary mb-3">Al terminar tu visita</h2>
+
+      <p class="mb-0">
+        Una vez que tu resultado está impreso, pasas a recepción para que se selle y se complete la documentación
+        correspondiente. Después, te entregamos tu reporte y realizas el pago del estudio. En CIG buscamos que, además
+        de conocer información importante sobre tu hígado, comprendas qué significan tus resultados y sepas cuáles son
+        los siguientes pasos cuando necesitas una valoración médica.
+      </p>
+    </section>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -474,3 +474,10 @@ def que_relacion_hay_entre_tu_alimentacion_y_tu_salud_intestinal():
         'blog_content/blog/que_relacion_hay_entre_tu_alimentacion_y_tu_salud_intestinal.html',
         canonical_url="https://higadograso.mx/blog/que_relacion_hay_entre_tu_alimentacion_y_tu_salud_intestinal"
     )
+
+@blog_bp.route('/blog/como_hacemos_tu_fibroscan_en_cig.html')
+def como_hacemos_tu_fibroscan_en_cig():
+    return render_template(
+        'blog_content/blog/como_hacemos_tu_fibroscan_en_cig.html',
+        canonical_url="https://higadograso.mx/blog/como_hacemos_tu_fibroscan_en_cig"
+    )
